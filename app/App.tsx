@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 
 import index from './assets/nrs-index.json';
+import concepts from './assets/concepts.json';
 
 // Every section is searchable. Only `t` (verbatim text) is selective, because
 // carrying full text for all of NRS would be ~150 MB. See data/scripts/build_index.py
@@ -21,7 +22,7 @@ type Section = {
   h: string;  // heading
   u: string;  // source URL
   k: string[];// keywords
-  ct: string; // chapter title
+  ch: string; // chapter number, "484B". Title comes from CHAPTER_TITLES.
   t?: string; // verbatim text, present for user-facing sections
   r?: number; // repealed
   e?: string; // effective-date label
@@ -34,9 +35,19 @@ const META = (index as any).meta as {
   chapters: number;
   sections: number;
 };
+const CHAPTER_TITLES = (index as any).chapterTitles as Record<string, string>;
+
+type Concept = {
+  id: string;
+  colloquial: string[];
+  statutory: string[];
+  chapters: string[];
+};
+const CONCEPTS = concepts as Concept[];
 
 const ACCENT = '#1B4965';
-const EXAMPLES = ['helmet', 'bicycle', 'speed limit', 'off-highway vehicle'];
+// Deliberately colloquial. These only work because of the lexicon.
+const EXAMPLES = ['dirtbike', 'jetski', 'helmet', 'texting while driving'];
 
 const STOP = new Set(['the', 'a', 'an', 'of', 'to', 'in', 'for', 'or', 'and',
   'on', 'is', 'are', 'can', 'i', 'my', 'do', 'need', 'what', 'me', 'you']);
@@ -49,23 +60,65 @@ function tokenize(q: string): string[] {
     .filter((t) => t.length > 2 && !STOP.has(t));
 }
 
+// The plain-English to legal-English bridge. Nobody types "off-highway vehicle",
+// they type "dirtbike". Without this the app can only find statutes you already
+// know the legal name of, which defeats the point.
+function expand(tokens: string[], raw: string) {
+  const terms = new Set<string>();
+  const chapters = new Set<string>();
+  const q = raw.toLowerCase();
+
+  for (const c of CONCEPTS) {
+    const hit = c.colloquial.some((term) =>
+      term.includes(' ') ? q.includes(term) : tokens.includes(term)
+    );
+    if (!hit) continue;
+    // Keep statutory phrases WHOLE. Splitting "off-highway vehicle" into its
+    // words matched 4,922 sections including "Use of may, must, shall", because
+    // "all" and "vehicle" appear all over the code. The phrase is the signal.
+    for (const phrase of c.statutory) terms.add(flat(phrase));
+    for (const ch of c.chapters) chapters.add(ch);
+  }
+  return { terms: [...terms], chapters };
+}
+
+// Hyphens vary between the lexicon and the statute text, so flatten both sides.
+function flat(s: string): string {
+  return s.toLowerCase().replace(/[-\s]+/g, ' ').trim();
+}
+
 function search(query: string): Section[] {
   const tokens = tokenize(query);
   if (!tokens.length) return [];
+  const { terms, chapters } = expand(tokens, query);
 
   const scored: { s: Section; score: number }[] = [];
   for (const s of SECTIONS) {
     let score = 0;
     const heading = s.h.toLowerCase();
+
     for (const t of tokens) {
       // Heading matches are worth far more than body matches. Without this,
       // a tax provision that happens to say "bicycle" outranks the actual
       // bicycle statute.
       if (heading.includes(t)) score += 10;
       if (s.k.some((k) => k.startsWith(t))) score += 6;
-      if (s.ct.toLowerCase().includes(t)) score += 2;
+      if ((CHAPTER_TITLES[s.ch] || '').toLowerCase().includes(t)) score += 2;
       if (s.t && s.t.toLowerCase().includes(t)) score += 1;
     }
+
+    // Lexicon-derived phrases score lower than what the user actually typed, so
+    // a literal match always beats an inferred one.
+    const flatHeading = flat(s.h);
+    for (const t of terms) {
+      if (flatHeading.includes(t)) score += 8;
+      if (s.t && flat(s.t).includes(t)) score += 2;
+    }
+
+    // Chapter hint is a boost, never a filter, so a wrong lexicon entry degrades
+    // ranking instead of hiding real law.
+    if (score > 0 && chapters.has(s.ch)) score += 8;
+
     if (s.r) score -= 20;                    // repealed, bury it
     if (s.e && s.ec === 0) score -= 15;      // not yet in force
     if (score > 0) scored.push({ s, score });
@@ -141,7 +194,7 @@ export default function App() {
             ) : (
               <Text style={styles.tapFor}>Tap to read the full text</Text>
             )}
-            <Text style={styles.link}>{item.ct}</Text>
+            <Text style={styles.link}>{CHAPTER_TITLES[item.ch]}</Text>
           </Pressable>
         )}
       />

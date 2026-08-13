@@ -64,12 +64,30 @@ def keywords(heading: str, chapter_title: str) -> list:
     return out[:14]
 
 
-def user_facing(sec: dict) -> bool:
+def load_lexicon_chapters() -> set:
+    """Chapters the concept lexicon points at.
+
+    These are the chapters real user questions actually land in, so they are the
+    only ones worth carrying full statute text for. Everything else stays fully
+    searchable by heading and keyword and links out. As the lexicon grows, offline
+    text coverage grows with it, which is a nice property: the human work directly
+    expands what the app can show without touching this script.
+    """
+    path = os.path.join(ROOT, "data", "concepts.json")
+    if not os.path.exists(path):
+        return set()
+    with open(path, encoding="utf-8") as f:
+        return {ch for c in json.load(f) for ch in c.get("chapters", [])}
+
+
+def user_facing(sec: dict, text_chapters: set) -> bool:
     if sec.get("status") == "repealed":
         return False
     if "effective" in sec and not sec["effective"].get("isCurrent", True):
         return False  # pending version, not the law today
     if BORING.match(sec.get("heading", "")):
+        return False
+    if sec.get("chapter") not in text_chapters:
         return False
     return len(sec.get("text", "")) >= 200
 
@@ -80,19 +98,22 @@ def main() -> int:
         print("no corpus found. run scrape_nrs.py first.", file=sys.stderr)
         return 1
 
-    sections, kept_text, chapters = [], 0, set()
+    text_chapters = load_lexicon_chapters()
+    sections, kept_text, titles = [], 0, {}
     for path in files:
         with open(path, encoding="utf-8") as f:
             for sec in json.load(f):
-                chapters.add(sec["chapter"])
-                uf = user_facing(sec)
+                # Chapter titles repeat across thousands of sections. Storing them
+                # once in a lookup saves megabytes over repeating the string.
+                titles.setdefault(sec["chapter"], sec.get("chapterTitle", ""))
+                uf = user_facing(sec, text_chapters)
                 entry = {
                     "i": sec["id"],
                     "c": sec["citation"],
                     "h": sec["heading"],
                     "u": sec["sourceUrl"],
                     "k": keywords(sec["heading"], sec.get("chapterTitle", "")),
-                    "ct": sec.get("chapterTitle", ""),
+                    "ch": sec["chapter"],
                 }
                 if uf:
                     entry["t"] = sec["text"]
@@ -109,10 +130,11 @@ def main() -> int:
         "meta": {
             "generated": date.today().isoformat(),
             "source": "Nevada Revised Statutes, leg.state.nv.us",
-            "chapters": len(chapters),
+            "chapters": len(titles),
             "sections": len(sections),
             "withFullText": kept_text,
         },
+        "chapterTitles": titles,
         "sections": sections,
     }
 
@@ -120,8 +142,19 @@ def main() -> int:
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
 
+    # The lexicon lives in data/ (humans edit it there) but Metro can only bundle
+    # files under app/, so mirror it across on every build.
+    src = os.path.join(ROOT, "data", "concepts.json")
+    if os.path.exists(src):
+        with open(src, encoding="utf-8") as f:
+            concepts = json.load(f)
+        dst = os.path.join(ROOT, "app", "assets", "concepts.json")
+        with open(dst, "w", encoding="utf-8") as f:
+            json.dump(concepts, f, ensure_ascii=False, separators=(",", ":"))
+        print(f"lexicon       {len(concepts)} concepts -> app/assets/concepts.json")
+
     mb = os.path.getsize(OUT) / 1_000_000
-    print(f"chapters      {len(chapters)}")
+    print(f"chapters      {len(titles)}")
     print(f"sections      {len(sections)}  (all searchable)")
     print(f"w/ full text  {kept_text}  ({kept_text * 100 // max(len(sections),1)}%)")
     print(f"bundle size   {mb:.1f} MB -> app/assets/nrs-index.json")
