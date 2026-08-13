@@ -1,0 +1,110 @@
+[
+  {
+    "_group": "PASS cases: verified working. If one of these breaks, something regressed.",
+    "query": "ride my dirtbike on the street",
+    "expectChapter": "490",
+    "note": "OHV. Should surface operation-on-roads, not dealer licensing."
+  },
+  {
+    "query": "dirtbike",
+    "expectChapter": "490",
+    "note": "Bare keyword still has to work, not just full sentences."
+  },
+  {
+    "query": "take the boat out on Lake Mead",
+    "expectChapter": "488",
+    "note": "Watercraft."
+  },
+  {
+    "query": "jetski",
+    "expectChapter": "488",
+    "note": "Nobody types 'vessel'. This is the lexicon earning its keep."
+  },
+  {
+    "query": "ride my ebike to school",
+    "expectChapter": "484B",
+    "note": "Rules of the road."
+  },
+  {
+    "query": "put my little brother in the front seat",
+    "expectChapter": "484B",
+    "note": "Child restraint. Was NRS 164.885 (marital deduction) before the stopword fix."
+  },
+  {
+    "query": "do I need a helmet on my scooter",
+    "expectChapter": "484B",
+    "note": "Scooter concept."
+  },
+  {
+    "query": "going out skateboarding at night",
+    "expectChapter": "484B",
+    "note": "Regression guard for the stemmer. 'skateboarding' must reach 'skateboard'."
+  },
+  {
+    "query": "I want to go fishing this weekend",
+    "expectChapter": "502",
+    "note": "Passes on raw keyword match, NOT the lexicon. Still add chapters to the fishing concept."
+  },
+  {
+    "query": "hunting in the desert",
+    "expectChapter": "502",
+    "note": "Same as fishing. Passing by luck is not the same as being wired up."
+  },
+
+  {
+    "_group": "TODO cases: the lexicon worklist. Research the chapter, add it to concepts.json, then set expectChapter here.",
+    "query": "can I get a job at 15",
+    "expectChapter": null,
+    "todo": "concept 'minor-work' has chapters: []. Find the NRS chapter for employment of minors and work permits. Note: the app also drops '15' entirely, so age conditions will not work regardless."
+  },
+  {
+    "query": "my friend wants to drive me home from school",
+    "expectChapter": null,
+    "todo": "concept 'driving-teen' has chapters: []. Likely NRS 483, but confirm which chapter covers instruction permits and restricted licenses."
+  },
+  {
+    "query": "we want to have a party in the backyard",
+    "expectChapter": null,
+    "todo": "concept 'noise' has chapters: []. Also add 'party' to its colloquial list. Currently ranks 'contract with third party'."
+  },
+  {
+    "query": "can I use my phone at a red light",
+    "expectChapter": null,
+    "todo": "concept 'phone-driving' only matches the whole phrase 'phone while driving'. Add 'phone', 'texting', 'text' as single colloquial terms and set the chapter."
+  },
+  {
+    "query": "what time do I have to be home",
+    "expectChapter": null,
+    "todo": "concept 'curfew' has chapters: []. Confirm whether curfew is state law or purely county ordinance. If county-only, say so in the app rather than returning nothing."
+  },
+  {
+    "query": "is vaping allowed at 16",
+    "expectChapter": null,
+    "todo": "concept 'vape' has chapters: []. Find the chapter for vapor and tobacco products."
+  },
+  {
+    "query": "my parents let me drink at home",
+    "expectChapter": null,
+    "todo": "concept 'alcohol' has chapters: []. Find the chapter for alcoholic beverages and underage possession."
+  },
+  {
+    "query": "going to the shooting range with my dad",
+    "expectChapter": null,
+    "todo": "concept 'firearms' has chapters: []. Confirm the chapter covering minors and firearms."
+  },
+  {
+    "query": "getting a tattoo at 17",
+    "expectChapter": null,
+    "todo": "concept 'tattoo' has chapters: []. Tattoo and body art may be regulated at county level, not state. Check before assuming."
+  },
+  {
+    "query": "walking my dog off leash at the park",
+    "expectChapter": null,
+    "todo": "concept 'pets' has chapters: []. Leash rules are probably county ordinance. Verify."
+  },
+  {
+    "query": "cutting through someone's property",
+    "expectChapter": null,
+    "todo": "concept 'trespass' has chapters: []. Find the chapter for trespass and unlawful entry."
+  }
+]

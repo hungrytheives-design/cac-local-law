@@ -151,10 +151,26 @@ boost and no offline text.
    are guesses. "Employment of minors" may not be the phrase NRS uses.
 5. Add the chapter number to `chapters`.
 6. Re-run `python3 data/scripts/build_index.py`.
-7. Search the colloquial word in the app. Confirm a sensible statute is top 3.
+7. Re-run `python3 data/scripts/test_search.py` and confirm the TODO flipped to
+   PASS. Set `expectChapter` for that case in `data/search-tests.json`.
+
+**The test harness is how you work this phase.** `test_search.py` runs 21 real
+queries and reports PASS / FAIL / TODO. The 11 TODOs *are* this phase's worklist,
+written as failing tests. When the suite is all PASS with zero TODO, P5 is done.
+No phone required, and it takes about two seconds.
+
+```bash
+python3 data/scripts/test_search.py            # the suite
+python3 data/scripts/test_search.py "vaping"   # try one query, see why it fails
+```
 
 **Do these first** (highest-traffic, most demo-relevant): `driving-teen`,
 `minor-work`, `curfew`, `vape`, `alcohol`.
+
+**Two leads already visible from the harness output:** `vape` queries surface
+NRS 202.2493 (chapter **202**) and `driving-teen` queries surface NRS 483.255
+(chapter **483**). Confirm both by reading the chapters, do not just paste them in.
+`tattoo` returns zero results, which suggests it is county-regulated, not state.
 
 **Also extend the list.** Twenty concepts is thin. Every concept you add is a
 question the app can answer that it currently cannot.
