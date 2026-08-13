@@ -1,0 +1,45 @@
+[
+  {
+    "id": "placeholder-one",
+    "displayName": "Placeholder activity one",
+    "keywords": ["placeholder", "example", "test"],
+    "summary": "Synthetic record so the app has something to render before real data lands.",
+    "rules": [
+      {
+        "id": "p1-r1",
+        "text": "This is a placeholder rule with a clear confidence level.",
+        "citation": "NRS 000.000",
+        "sourceUrl": "https://example.invalid/placeholder",
+        "jurisdiction": "NV",
+        "confidence": "clear"
+      },
+      {
+        "id": "p1-r2",
+        "text": "This is a placeholder rule that only applies to some people.",
+        "citation": "Clark County Code 00.00.000",
+        "sourceUrl": "https://example.invalid/placeholder",
+        "jurisdiction": "Clark",
+        "appliesIf": "you are under 18",
+        "confidence": "ambiguous"
+      }
+    ],
+    "lastVerified": "2026-01-01"
+  },
+  {
+    "id": "placeholder-two",
+    "displayName": "Placeholder activity two",
+    "keywords": ["second", "placeholder"],
+    "summary": "A second synthetic record so list and no-match screens can be built.",
+    "rules": [
+      {
+        "id": "p2-r1",
+        "text": "Another placeholder rule.",
+        "citation": "NRS 000.001",
+        "sourceUrl": "https://example.invalid/placeholder",
+        "jurisdiction": "NV",
+        "confidence": "clear"
+      }
+    ],
+    "lastVerified": "2026-01-01"
+  }
+]
