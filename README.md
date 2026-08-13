@@ -16,16 +16,32 @@ The plan lives in `plans/`. Read it before you start a session.
 
 ## Who owns what
 
-DATA owns everything in `data/` except `types.ts`.
-APP owns everything in `app/`.
+Neither of us writes code by hand. We drive Claude Code. So splitting the work
+into "DATA person" and "APP person" does not describe reality. We split by the
+kind of work instead:
 
-`data/types.ts` is shared and **frozen**. Changing it breaks the other person's
-work in progress. If it truly has to change, message the other person first and
-do it together. This is the only file you can realistically conflict on.
+**Human work. Claude cannot do this for us and it is what makes the project
+credible:**
 
-Because ownership is by directory, you two should almost never hit a merge
-conflict. That is deliberate. If you are getting conflicts, someone is working
-outside their lane.
+- Reading actual statute text and confirming a rule really says what we claim
+- Building the concept lexicon (`data/concepts.json`): the plain-English to
+  legal-English bridge, e.g. "dirtbike" maps to "off-highway vehicle"
+- QA sampling the generated plain-language layer and recording a real accuracy number
+- Being able to explain how the app works, out loud, without notes
+- The demo video
+
+**Claude-driven work:**
+
+- The NRS scraper and parser
+- The search index and ranking
+- The Expo app itself
+
+Either of us can drive either side. Just say in `plans/log.md` what you touched
+so we do not both rewrite the same file on the same night.
+
+`data/types.ts` is shared. Changing it can break the other person's work in
+progress, so say so in the log when you do. It is the one file we can
+realistically conflict on.
 
 ## Working separately
 
