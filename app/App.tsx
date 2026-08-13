@@ -46,11 +46,36 @@ type Concept = {
 const CONCEPTS = concepts as Concept[];
 
 const ACCENT = '#1B4965';
-// Deliberately colloquial. These only work because of the lexicon.
-const EXAMPLES = ['dirtbike', 'jetski', 'helmet', 'texting while driving'];
 
-const STOP = new Set(['the', 'a', 'an', 'of', 'to', 'in', 'for', 'or', 'and',
-  'on', 'is', 'are', 'can', 'i', 'my', 'do', 'need', 'what', 'me', 'you']);
+// Situations, not keywords. The app's whole pitch is "describe your plan", so
+// the examples have to look like plans. Every one of these was checked against
+// the real index first: each returns a correct statute in the top 3.
+const EXAMPLES = [
+  'ride my dirtbike on the street',
+  'take the boat out on Lake Mead',
+  'ride my ebike to school',
+  'put my little brother in the front seat',
+];
+
+// Function words plus the generic verbs that wrecked real queries. "we want to
+// have a party" used to rank "Department may contract with third party" because
+// nothing filtered `want` and `have`. Content words are never stopped, only
+// words that carry no signal about which statute you mean.
+const STOP = new Set([
+  'the', 'a', 'an', 'of', 'to', 'in', 'for', 'or', 'and', 'on', 'is', 'are',
+  'can', 'i', 'my', 'do', 'need', 'what', 'me', 'you',
+  'want', 'wants', 'wanna', 'get', 'got', 'getting', 'go', 'going', 'goes',
+  'have', 'has', 'had', 'take', 'taking', 'takes', 'use', 'using', 'used',
+  'out', 'from', 'with', 'this', 'that', 'these', 'those', 'there', 'here',
+  'allowed', 'able', 'let', 'lets', 'legal', 'illegal', 'law', 'laws', 'rule',
+  'rules', 'about', 'when', 'where', 'how', 'why', 'who', 'which', 'while',
+  'would', 'should', 'could', 'will', 'shall', 'might', 'must', 'may',
+  'be', 'been', 'being', 'was', 'were', 'am', 'it', 'its', 'they', 'them',
+  'their', 'we', 'us', 'our', 'he', 'she', 'his', 'her', 'him', 'your',
+  'if', 'but', 'not', 'all', 'any', 'some', 'just', 'like', 'really', 'still',
+  'even', 'only', 'very', 'much', 'many', 'more', 'most', 'also', 'then',
+  'than', 'little', 'big', 'one', 'two', 'old', 'new', 'say', 'know', 'think',
+]);
 
 function tokenize(q: string): string[] {
   return q
@@ -60,6 +85,18 @@ function tokenize(q: string): string[] {
     .filter((t) => t.length > 2 && !STOP.has(t));
 }
 
+// People type "skateboarding", the lexicon says "skateboard". Exact matching
+// missed that and sent the query to a statute about trustees leaving office.
+// A full stemmer is overkill; stripping the four common endings is enough.
+function stem(t: string): string {
+  for (const suf of ['ing', 'ed', 'es', 's']) {
+    if (t.length > suf.length + 2 && t.endsWith(suf)) {
+      return t.slice(0, -suf.length);
+    }
+  }
+  return t;
+}
+
 // The plain-English to legal-English bridge. Nobody types "off-highway vehicle",
 // they type "dirtbike". Without this the app can only find statutes you already
 // know the legal name of, which defeats the point.
@@ -67,11 +104,20 @@ function expand(tokens: string[], raw: string) {
   const terms = new Set<string>();
   const chapters = new Set<string>();
   const q = raw.toLowerCase();
+  const stems = tokens.map(stem).filter((s) => s.length >= 3);
 
   for (const c of CONCEPTS) {
-    const hit = c.colloquial.some((term) =>
-      term.includes(' ') ? q.includes(term) : tokens.includes(term)
-    );
+    const hit = c.colloquial.some((term) => {
+      // Multi-word entries are matched against the raw string, since tokenizing
+      // would split them and destroy the phrase.
+      if (term.includes(' ')) return q.includes(term);
+      if (tokens.includes(term)) return true;
+      // Otherwise compare stems both directions, so "skateboarding" reaches
+      // "skateboard" and "seat" reaches "seatbelt".
+      const ts = stem(term);
+      if (ts.length < 4) return false;
+      return stems.some((s) => s.startsWith(ts) || ts.startsWith(s));
+    });
     if (!hit) continue;
     // Keep statutory phrases WHOLE. Splitting "off-highway vehicle" into its
     // words matched 4,922 sections including "Use of may, must, shall", because
@@ -155,10 +201,18 @@ export default function App() {
       />
 
       {!searching && (
-        <View style={styles.chips}>
+        <View style={styles.examples}>
+          <Text style={styles.examplesLabel}>Try describing a plan</Text>
           {EXAMPLES.map((e) => (
-            <Pressable key={e} style={styles.chip} onPress={() => setQuery(e)}>
-              <Text style={styles.chipText}>{e}</Text>
+            <Pressable
+              key={e}
+              style={styles.example}
+              onPress={() => setQuery(e)}
+              accessibilityRole="button"
+              accessibilityLabel={`Search: ${e}`}
+            >
+              <Text style={styles.exampleText}>{e}</Text>
+              <Text style={styles.exampleArrow}>→</Text>
             </Pressable>
           ))}
         </View>
@@ -220,12 +274,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16, paddingVertical: 14, fontSize: 17,
     borderWidth: 1, borderColor: '#D6E0E8', color: '#10232E',
   },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', paddingHorizontal: 16, gap: 8 },
-  chip: {
-    backgroundColor: '#E3ECF2', borderRadius: 18,
-    paddingHorizontal: 14, paddingVertical: 9, minHeight: 44, justifyContent: 'center',
+  examples: { paddingHorizontal: 16, paddingTop: 4 },
+  examplesLabel: {
+    color: '#7A8B98', fontSize: 12, fontWeight: '600', letterSpacing: 0.6,
+    textTransform: 'uppercase', marginBottom: 8, marginLeft: 2,
   },
-  chipText: { color: ACCENT, fontWeight: '600', fontSize: 14 },
+  example: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    backgroundColor: '#E3ECF2', borderRadius: 10, paddingHorizontal: 14,
+    minHeight: 44, marginBottom: 8,
+  },
+  exampleText: { color: ACCENT, fontWeight: '600', fontSize: 15, flexShrink: 1, paddingVertical: 11 },
+  exampleArrow: { color: ACCENT, fontSize: 16, opacity: 0.5, paddingLeft: 10 },
   count: { paddingHorizontal: 20, paddingVertical: 6, color: '#5A7183', fontSize: 13 },
   list: { paddingHorizontal: 16, paddingBottom: 24 },
   card: {
