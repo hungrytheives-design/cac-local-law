@@ -4,11 +4,31 @@ node_modules/
 dist/
 web-build/
 *.log
+npm-debug.log*
+
+# Secrets. Never commit these.
 .env
 .env.local
-.DS_Store
+.env.*
+!.env.example
+*.pem
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+
+# Native build output. We are not using EAS, but just in case.
+ios/
+android/
+
+# Raw scraped HTML cache. The parsed JSON in data/corpus/ IS committed;
+# the multi-hundred-MB raw pages are not.
+data/raw-html/
+scratch/
+tmp/
+
+.DS_Store
+.vscode/
+.idea/
+*.swp

@@ -327,6 +327,9 @@ The video is a graded artifact. Teams routinely code until the deadline and subm
 | One team member goes quiet | Medium | Every phase has a named owner; the other can pick up any phase from its context brief |
 | A rule turns out to be wrong | Medium | `confidence: "ambiguous"` exists for this; when unsure, say so in-app |
 | Deadline is 9am PT, not end of day | **Confirmed** | Submit Oct 24 |
+| Expo Go App Store version lags the project SDK | **Hit in P0** | Project pinned to SDK 54 to match Expo Go. Do not run `expo install expo@latest` |
+| Demo device runs an iOS developer beta | Medium | Record the video on the non-beta phone. Stop taking beta updates Oct 1 through submission |
+| Solo stretch: one person doing both DATA and APP | Medium | Parallelism assumption breaks; 45h becomes 45h of one person's time. Re-cut scope if this persists past week 3 |
 
 ---
 
