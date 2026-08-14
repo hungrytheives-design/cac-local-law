@@ -1,9 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import {
   FlatList,
   Image,
+  KeyboardAvoidingView,
   Linking,
+  Platform,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -225,8 +227,13 @@ type Screen =
 export default function App() {
   const [query, setQuery] = useState('');
   const [screen, setScreen] = useState<Screen>({ kind: 'search' });
-  const { hits, total } = useMemo(() => search(query), [query]);
-  const searching = tokenize(query).length > 0;
+
+  // Scanning 49,742 sections on every keystroke stuttered badly on a real
+  // phone. Deferring means the box stays live under your thumb and the results
+  // catch up a frame later, instead of the keyboard fighting the search.
+  const settled = useDeferredValue(query);
+  const { hits, total } = useMemo(() => search(settled), [settled]);
+  const searching = tokenize(settled).length > 0;
 
   if (screen.kind === 'detail') {
     return (
@@ -237,47 +244,12 @@ export default function App() {
     return <About onBack={() => setScreen({ kind: 'search' })} />;
   }
 
-  // Home. The box is the whole screen's job, so it opens focused with the
-  // keyboard already up. Suggestions sit directly above it, small, where a
-  // thumb reaches them without covering the box.
-  if (!searching) {
-    return (
-      <SafeAreaView style={styles.screen}>
-        <StatusBar style="dark" />
-        <Nav onAbout={() => setScreen({ kind: 'about' })} />
-
-        <View style={styles.homeBody}>
-          <View style={styles.chips}>
-            {EXAMPLES.map((e) => (
-              <Pressable
-                key={e}
-                style={styles.chip}
-                onPress={() => setQuery(e)}
-                accessibilityRole="button"
-                accessibilityLabel={`Search: ${e}`}
-              >
-                <Text style={styles.chipText}>{e}</Text>
-              </Pressable>
-            ))}
-          </View>
-
-          <TextInput
-            style={styles.homeInput}
-            value={query}
-            onChangeText={setQuery}
-            placeholder="What are you planning to do?"
-            placeholderTextColor={C.faint}
-            autoCorrect={false}
-            autoFocus
-            accessibilityLabel="Describe what you are planning to do"
-          />
-        </View>
-
-        <Disclaimer />
-      </SafeAreaView>
-    );
-  }
-
+  // Home and results are ONE tree, not two returns. They used to be separate
+  // branches, so the moment tokenize() found its first real word - your third
+  // letter - the whole screen swapped, the TextInput unmounted, and the
+  // keyboard closed mid-sentence. Same element in both states now, so typing
+  // never interrupts itself. The box stays pinned at the bottom either way and
+  // results grow upward above it.
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar style="dark" />
@@ -286,70 +258,103 @@ export default function App() {
           there was no exit from a search at all. */}
       <Nav
         onAbout={() => setScreen({ kind: 'about' })}
-        onBack={() => setQuery('')}
+        onBack={searching ? () => setQuery('') : undefined}
       />
 
-      <View style={styles.searchBar}>
-        <TextInput
-          style={styles.barInput}
-          value={query}
-          onChangeText={setQuery}
-          placeholder="What are you planning to do?"
-          placeholderTextColor={C.faint}
-          autoCorrect={false}
-          accessibilityLabel="Describe what you are planning to do"
-        />
-      </View>
-
-      <FlatList
-          data={hits}
-          keyExtractor={(s) => s.i}
-          keyboardShouldPersistTaps="handled"
-          contentContainerStyle={styles.list}
-          ListHeaderComponent={
-            <Text style={styles.count}>
-              {total === 0
-                ? 'Nothing matched. Try different words.'
-                : total > SHOWN
-                ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
-                : `${total} match${total === 1 ? '' : 'es'}`}
-            </Text>
-          }
-          renderItem={({ item, index: rank }) => (
-            <Pressable
-              style={[styles.card, rank === 0 && styles.cardTop]}
-              onPress={() => setScreen({ kind: 'detail', section: item })}
-              accessibilityRole="button"
-              accessibilityLabel={`${item.c}. ${item.h}`}
-            >
-              {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
-              <Text style={styles.heading} numberOfLines={3}>
-                {item.h}
+      <KeyboardAvoidingView
+        style={styles.fill}
+        // iOS reports the keyboard but does not resize for it; Android already
+        // resizes the window, and adding padding on top of that double-counts.
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      >
+        {searching ? (
+          <FlatList
+            style={styles.fill}
+            data={hits}
+            keyExtractor={(s) => s.i}
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="on-drag"
+            contentContainerStyle={styles.list}
+            ListHeaderComponent={
+              <Text style={styles.count}>
+                {total === 0
+                  ? 'Nothing matched. Try different words.'
+                  : total > SHOWN
+                  ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
+                  : `${total} match${total === 1 ? '' : 'es'}`}
               </Text>
-              <View style={styles.metaRow}>
-                <Text style={styles.citation}>{item.c}</Text>
-                <Text style={styles.chapterTag} numberOfLines={1}>
-                  {CHAPTER_TITLES[item.ch]}
+            }
+            renderItem={({ item, index: rank }) => (
+              <Pressable
+                style={[styles.card, rank === 0 && styles.cardTop]}
+                onPress={() => setScreen({ kind: 'detail', section: item })}
+                accessibilityRole="button"
+                accessibilityLabel={`${item.c}. ${item.h}`}
+              >
+                {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
+                <Text style={styles.heading} numberOfLines={3}>
+                  {item.h}
                 </Text>
-              </View>
-              {item.e ? (
-                <Text style={[styles.flag, item.ec !== 1 && styles.flagWarn]}>
-                  {item.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
-                  {item.e}
-                </Text>
-              ) : null}
-              {item.t ? (
-                <Text style={styles.preview} numberOfLines={3}>
-                  {bodyOf(item)}
-                </Text>
-              ) : (
-                <Text style={styles.tapFor}>Tap to open the official text</Text>
-              )}
-            </Pressable>
-          )}
-      />
+                <View style={styles.metaRow}>
+                  <Text style={styles.citation}>{item.c}</Text>
+                  <Text style={styles.chapterTag} numberOfLines={1}>
+                    {CHAPTER_TITLES[item.ch]}
+                  </Text>
+                </View>
+                {item.e ? (
+                  <Text style={[styles.flag, item.ec !== 1 && styles.flagWarn]}>
+                    {item.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
+                    {item.e}
+                  </Text>
+                ) : null}
+                {item.t ? (
+                  <Text style={styles.preview} numberOfLines={3}>
+                    {bodyOf(item)}
+                  </Text>
+                ) : (
+                  <Text style={styles.tapFor}>Tap to open the official text</Text>
+                )}
+              </Pressable>
+            )}
+          />
+        ) : (
+          <View style={styles.fill} />
+        )}
 
-      <Disclaimer />
+        <View style={styles.composer}>
+          {searching ? null : (
+            <View style={styles.chips}>
+              {EXAMPLES.map((e) => (
+                <Pressable
+                  key={e}
+                  style={styles.chip}
+                  onPress={() => setQuery(e)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Search: ${e}`}
+                >
+                  <Text style={styles.chipText}>{e}</Text>
+                </Pressable>
+              ))}
+            </View>
+          )}
+
+          <TextInput
+            style={styles.input}
+            value={query}
+            onChangeText={setQuery}
+            placeholder="What are you planning to do?"
+            placeholderTextColor={C.faint}
+            autoCorrect={false}
+            autoFocus
+            returnKeyType="search"
+            accessibilityLabel="Describe what you are planning to do"
+          />
+        </View>
+
+        {/* Inside the avoider, so the disclaimer rides above the keyboard
+            instead of hiding behind it. It has to be visible on every view. */}
+        <Disclaimer />
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
@@ -556,12 +561,13 @@ const styles = StyleSheet.create({
     color: C.ink, fontSize: 17, fontWeight: '700', letterSpacing: -0.3,
   },
 
-  // Input sits low so it stays just above the keyboard, with the suggestions
-  // stacked directly on top of it rather than buried under the fold.
-  homeBody: {
-    flex: 1, paddingHorizontal: 16, justifyContent: 'flex-end',
-    paddingBottom: 16,
-  },
+  // The empty space above the box on the home screen, and the results list once
+  // there is one. Both take the same slot so the composer below never moves.
+  fill: { flex: 1 },
+
+  // Box pinned to the bottom, suggestions stacked directly on top of it, where
+  // a thumb reaches them without covering what you are typing.
+  composer: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 10 },
   chips: {
     flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginBottom: 10,
   },
@@ -570,19 +576,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 11, paddingVertical: 7,
   },
   chipText: { color: C.accent, fontSize: 12.5, fontWeight: '600' },
-  homeInput: {
+  input: {
     backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 16,
-    paddingVertical: 15, fontSize: 17, borderWidth: 1, borderColor: C.line,
+    paddingVertical: 14, fontSize: 17, borderWidth: 1, borderColor: C.line,
     color: C.ink,
   },
-
-  searchBar: { paddingHorizontal: 16, paddingTop: 10, paddingBottom: 8 },
-  barInput: {
-    backgroundColor: C.card, borderRadius: 12, paddingHorizontal: 14,
-    paddingVertical: 11, fontSize: 16, borderWidth: 1, borderColor: C.line,
-    color: C.ink,
-  },
-
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
   count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
