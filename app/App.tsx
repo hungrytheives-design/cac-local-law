@@ -237,26 +237,29 @@ export default function App() {
     return <About onBack={() => setScreen({ kind: 'search' })} />;
   }
 
-  // Home. Modelled on the search apps people already know: the box is the
-  // centre of gravity, the identity sits above it, and suggestions sit below.
-  // Chrome stays off this screen entirely.
+  // Home. The box is the whole screen's job, so it opens focused with the
+  // keyboard already up. Suggestions sit directly above it, small, where a
+  // thumb reaches them without covering the box.
   if (!searching) {
     return (
       <SafeAreaView style={styles.screen}>
         <StatusBar style="dark" />
-        <ScrollView
-          contentContainerStyle={styles.home}
-          keyboardShouldPersistTaps="handled"
-        >
-          <Image
-            source={require('./assets/splash-icon.png')}
-            style={styles.mark}
-            accessibilityIgnoresInvertColors
-          />
-          <Text style={styles.homeWordmark}>Sage</Text>
-          <Text style={styles.homeTagline}>
-            Nevada law, on your phone, with no internet
-          </Text>
+        <Nav onAbout={() => setScreen({ kind: 'about' })} />
+
+        <View style={styles.homeBody}>
+          <View style={styles.chips}>
+            {EXAMPLES.map((e) => (
+              <Pressable
+                key={e}
+                style={styles.chip}
+                onPress={() => setQuery(e)}
+                accessibilityRole="button"
+                accessibilityLabel={`Search: ${e}`}
+              >
+                <Text style={styles.chipText}>{e}</Text>
+              </Pressable>
+            ))}
+          </View>
 
           <TextInput
             style={styles.homeInput}
@@ -265,33 +268,11 @@ export default function App() {
             placeholder="What are you planning to do?"
             placeholderTextColor={C.faint}
             autoCorrect={false}
+            autoFocus
             accessibilityLabel="Describe what you are planning to do"
           />
+        </View>
 
-          <Text style={styles.sectionLabel}>Try describing a plan</Text>
-          {EXAMPLES.map((e) => (
-            <Pressable
-              key={e}
-              style={styles.example}
-              onPress={() => setQuery(e)}
-              accessibilityRole="button"
-              accessibilityLabel={`Search: ${e}`}
-            >
-              <Text style={styles.exampleText}>{e}</Text>
-              <Text style={styles.exampleArrow}>→</Text>
-            </Pressable>
-          ))}
-
-          <Pressable
-            onPress={() => setScreen({ kind: 'about' })}
-            style={styles.footerLink}
-            accessibilityRole="button"
-          >
-            <Text style={styles.footerLinkText}>
-              {META.sections.toLocaleString()} statutes inside · About Sage
-            </Text>
-          </Pressable>
-        </ScrollView>
         <Disclaimer />
       </SafeAreaView>
     );
@@ -303,15 +284,12 @@ export default function App() {
 
       {/* Clearing the query is the way back to the home screen. Without this
           there was no exit from a search at all. */}
+      <Nav
+        onAbout={() => setScreen({ kind: 'about' })}
+        onBack={() => setQuery('')}
+      />
+
       <View style={styles.searchBar}>
-        <Pressable
-          onPress={() => setQuery('')}
-          style={styles.searchBack}
-          accessibilityRole="button"
-          accessibilityLabel="Clear search and return home"
-        >
-          <Text style={styles.searchBackText}>←</Text>
-        </Pressable>
         <TextInput
           style={styles.barInput}
           value={query}
@@ -501,6 +479,44 @@ function About({ onBack }: { onBack: () => void }) {
   );
 }
 
+// One bar across every screen. The leaf is the About affordance, which keeps
+// identity and navigation in the same strip instead of spending a headline on
+// the app's own name every time you look at it.
+function Nav({ onAbout, onBack }: { onAbout: () => void; onBack?: () => void }) {
+  return (
+    <View style={styles.nav}>
+      {onBack ? (
+        <Pressable
+          onPress={onBack}
+          style={styles.navBack}
+          accessibilityRole="button"
+          accessibilityLabel="Clear search and return home"
+        >
+          <Text style={styles.navBackText}>←</Text>
+        </Pressable>
+      ) : (
+        <View style={styles.navBack} />
+      )}
+
+      <Pressable
+        onPress={onAbout}
+        style={styles.navBrand}
+        accessibilityRole="button"
+        accessibilityLabel="About Sage"
+      >
+        <Image
+          source={require('./assets/splash-icon.png')}
+          style={styles.navMark}
+          accessibilityIgnoresInvertColors
+        />
+        <Text style={styles.navWordmark}>Sage</Text>
+      </Pressable>
+
+      <View style={styles.navBack} />
+    </View>
+  );
+}
+
 // Required on every view that shows statute content. Not dismissible.
 function Disclaimer() {
   return (
@@ -524,53 +540,49 @@ const styles = StyleSheet.create({
   backBtn: { minHeight: 44, justifyContent: 'center', paddingRight: 16, marginLeft: -4 },
   backText: { color: C.accent, fontSize: 16, fontWeight: '600' },
 
-  home: { paddingHorizontal: 20, paddingTop: 48, paddingBottom: 32 },
-  mark: { width: 56, height: 56, alignSelf: 'center', resizeMode: 'contain' },
-  homeWordmark: {
-    color: C.ink, fontSize: 32, fontWeight: '700', textAlign: 'center',
-    letterSpacing: -0.8, marginTop: 10,
+  nav: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    paddingHorizontal: 8, paddingTop: 4, paddingBottom: 6,
+    borderBottomWidth: 1, borderBottomColor: C.line,
   },
-  homeTagline: {
-    color: C.muted, fontSize: 14, textAlign: 'center', marginTop: 6,
-    marginBottom: 28,
+  navBack: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  navBackText: { color: C.accent, fontSize: 22, fontWeight: '600' },
+  navBrand: {
+    flexDirection: 'row', alignItems: 'center', gap: 7,
+    minHeight: 44, paddingHorizontal: 8,
   },
-  homeInput: {
-    backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 18,
-    paddingVertical: 16, fontSize: 17, borderWidth: 1, borderColor: C.line,
-    color: C.ink, marginBottom: 28,
+  navMark: { width: 20, height: 20, resizeMode: 'contain' },
+  navWordmark: {
+    color: C.ink, fontSize: 17, fontWeight: '700', letterSpacing: -0.3,
   },
 
-  searchBar: {
-    flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12,
-    paddingTop: 4, paddingBottom: 10, gap: 4,
+  // Input sits low so it stays just above the keyboard, with the suggestions
+  // stacked directly on top of it rather than buried under the fold.
+  homeBody: {
+    flex: 1, paddingHorizontal: 16, justifyContent: 'flex-end',
+    paddingBottom: 16,
   },
-  searchBack: {
-    width: 44, height: 44, alignItems: 'center', justifyContent: 'center',
+  chips: {
+    flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginBottom: 10,
   },
-  searchBackText: { color: C.accent, fontSize: 22, fontWeight: '600' },
+  chip: {
+    backgroundColor: C.accentSoft, borderRadius: 14,
+    paddingHorizontal: 11, paddingVertical: 7,
+  },
+  chipText: { color: C.accent, fontSize: 12.5, fontWeight: '600' },
+  homeInput: {
+    backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 16,
+    paddingVertical: 15, fontSize: 17, borderWidth: 1, borderColor: C.line,
+    color: C.ink,
+  },
+
+  searchBar: { paddingHorizontal: 16, paddingTop: 10, paddingBottom: 8 },
   barInput: {
-    flex: 1, backgroundColor: C.card, borderRadius: 12, paddingHorizontal: 14,
+    backgroundColor: C.card, borderRadius: 12, paddingHorizontal: 14,
     paddingVertical: 11, fontSize: 16, borderWidth: 1, borderColor: C.line,
     color: C.ink,
   },
 
-  footerLink: { marginTop: 28, minHeight: 44, justifyContent: 'center' },
-  footerLinkText: { color: C.faint, fontSize: 13, textAlign: 'center' },
-
-  sectionLabel: {
-    color: C.faint, fontSize: 11, fontWeight: '700', letterSpacing: 0.8,
-    textTransform: 'uppercase', marginBottom: 10, marginLeft: 2,
-  },
-  example: {
-    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
-    backgroundColor: C.accentSoft, borderRadius: 12, paddingHorizontal: 16,
-    minHeight: 48, marginBottom: 8,
-  },
-  exampleText: {
-    color: C.accent, fontWeight: '600', fontSize: 15, flexShrink: 1,
-    paddingVertical: 13,
-  },
-  exampleArrow: { color: C.accent, fontSize: 16, opacity: 0.45, paddingLeft: 12 },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
   count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
