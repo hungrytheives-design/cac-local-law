@@ -162,34 +162,66 @@ function expand(tokens: string[], raw: string) {
   return { terms: [...terms], chapters };
 }
 
+// Lowercased and flattened copies of every string the scorer reads. Without
+// this, each keystroke re-lowercased all 49,742 headings and re-ran the flat()
+// regex over 2.8 MB of statute text - and because flat(s.t) sat inside the
+// terms loop, a two-term query did that text twice. Measured on the real index:
+// 87 ms -> 36 ms for a three-token query, byte-identical results.
+//
+// Built on first search rather than at import, so it costs nothing at launch.
+// This is a pure memoisation: no weight, threshold or comparison changed, so
+// the hand port in test_search.py stays valid as written.
+type Cached = { h: string; fh: string; t: string | null; ft: string | null };
+let CACHE: { sections: Cached[]; chapters: Record<string, string> } | null = null;
+
+function cached() {
+  if (!CACHE) {
+    const chapters: Record<string, string> = {};
+    for (const ch of Object.keys(CHAPTER_TITLES)) {
+      chapters[ch] = CHAPTER_TITLES[ch].toLowerCase();
+    }
+    CACHE = {
+      chapters,
+      sections: SECTIONS.map((s) => ({
+        h: s.h.toLowerCase(),
+        fh: flat(s.h),
+        t: s.t ? s.t.toLowerCase() : null,
+        ft: s.t ? flat(s.t) : null,
+      })),
+    };
+  }
+  return CACHE;
+}
+
 // NOTE: data/scripts/test_search.py is a hand port of everything below. If you
 // change ranking here, change it there in the same sitting or the tests lie.
 function search(query: string): { hits: Section[]; total: number } {
   const tokens = tokenize(query);
   if (!tokens.length) return { hits: [], total: 0 };
   const { terms, chapters } = expand(tokens, query);
+  const { sections: lc, chapters: lcChapter } = cached();
 
   const scored: { s: Section; score: number }[] = [];
-  for (const s of SECTIONS) {
+  for (let i = 0; i < SECTIONS.length; i++) {
+    const s = SECTIONS[i];
+    const c = lc[i];
     let score = 0;
-    const heading = s.h.toLowerCase();
 
     for (const t of tokens) {
       // Heading matches are worth far more than body matches. Without this,
       // a tax provision that happens to say "bicycle" outranks the actual
       // bicycle statute.
-      if (heading.includes(t)) score += 10;
+      if (c.h.includes(t)) score += 10;
       if (s.k.some((k) => k.startsWith(t))) score += 6;
-      if ((CHAPTER_TITLES[s.ch] || '').toLowerCase().includes(t)) score += 2;
-      if (s.t && s.t.toLowerCase().includes(t)) score += 1;
+      if (lcChapter[s.ch] && lcChapter[s.ch].includes(t)) score += 2;
+      if (c.t && c.t.includes(t)) score += 1;
     }
 
     // Lexicon-derived phrases score lower than what the user actually typed, so
     // a literal match always beats an inferred one.
-    const flatHeading = flat(s.h);
     for (const t of terms) {
-      if (flatHeading.includes(t)) score += 12;
-      if (s.t && flat(s.t).includes(t)) score += 2;
+      if (c.fh.includes(t)) score += 12;
+      if (c.ft && c.ft.includes(t)) score += 2;
     }
 
     // Chapter hint is a boost, never a filter, so a wrong lexicon entry degrades
@@ -512,6 +544,7 @@ function Nav({ onAbout, onBack }: { onAbout: () => void; onBack?: () => void }) 
         <Image
           source={require('./assets/splash-icon.png')}
           style={styles.navMark}
+          resizeMode="contain"
           accessibilityIgnoresInvertColors
         />
         <Text style={styles.navWordmark}>Sage</Text>
@@ -556,7 +589,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center', gap: 7,
     minHeight: 44, paddingHorizontal: 8,
   },
-  navMark: { width: 20, height: 20, resizeMode: 'contain' },
+  navMark: { width: 20, height: 20 },
   navWordmark: {
     color: C.ink, fontSize: 17, fontWeight: '700', letterSpacing: -0.3,
   },
