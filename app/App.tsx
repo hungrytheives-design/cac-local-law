@@ -48,17 +48,21 @@ const CONCEPTS = concepts as Concept[];
 
 // ---------------------------------------------------------------------- theme
 
+// Sage and cream. Nevada is the Sagebrush State and "sage" also means wise
+// counsel. Keep in sync with PALETTE in data/scripts/make_icons.py, which
+// generates the app icon from these same values.
 const C = {
-  bg: '#F5F8FA',
-  card: '#FFFFFF',
-  ink: '#10232E',
-  muted: '#5F7585',
-  faint: '#8DA0AE',
-  line: '#E3EAEF',
-  accent: '#1B4965',
-  accentSoft: '#E8F0F5',
+  bg: '#F2EDE1',       // cream, matches the icon and splash background
+  card: '#FBF9F3',
+  ink: '#22271E',      // warm near-black, never pure #000 on cream
+  muted: '#5D6656',
+  faint: '#8B9382',
+  line: '#E3DDCD',
+  accent: '#5E7351',   // sage
+  accentDeep: '#43542F',
+  accentSoft: '#E7E6D4',
   warn: '#8A5A00',
-  warnSoft: '#FDF3E2',
+  warnSoft: '#F6EBD6',
 };
 
 // Situations, not keywords. The app's whole pitch is "describe your plan", so
@@ -233,7 +237,7 @@ export default function App() {
 
       <View style={styles.topbar}>
         <View>
-          <Text style={styles.wordmark}>nvlaw</Text>
+          <Text style={styles.wordmark}>Sage</Text>
           <Text style={styles.tagline}>Nevada law, offline</Text>
         </View>
         <Pressable
@@ -407,7 +411,7 @@ function About({ onBack }: { onBack: () => void }) {
       </View>
 
       <ScrollView contentContainerStyle={styles.detail}>
-        <Text style={styles.aboutTitle}>About nvlaw</Text>
+        <Text style={styles.aboutTitle}>About Sage</Text>
 
         <Text style={styles.aboutBody}>
           You say “dirtbike.” The law says “off-highway vehicle.” That gap is why
