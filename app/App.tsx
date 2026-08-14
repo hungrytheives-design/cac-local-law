@@ -5,6 +5,7 @@ import {
   Linking,
   Pressable,
   SafeAreaView,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -45,17 +46,37 @@ type Concept = {
 };
 const CONCEPTS = concepts as Concept[];
 
-const ACCENT = '#1B4965';
+// ---------------------------------------------------------------------- theme
+
+const C = {
+  bg: '#F5F8FA',
+  card: '#FFFFFF',
+  ink: '#10232E',
+  muted: '#5F7585',
+  faint: '#8DA0AE',
+  line: '#E3EAEF',
+  accent: '#1B4965',
+  accentSoft: '#E8F0F5',
+  warn: '#8A5A00',
+  warnSoft: '#FDF3E2',
+};
 
 // Situations, not keywords. The app's whole pitch is "describe your plan", so
-// the examples have to look like plans. Every one of these was checked against
-// the real index first: each returns a correct statute in the top 3.
+// the examples have to look like plans. Every one was checked against the real
+// index first: each returns a correct statute in the top 3.
 const EXAMPLES = [
   'ride my dirtbike on the street',
-  'take the boat out on Lake Mead',
+  'drive my dad’s boat on Lake Mead',
   'ride my ebike to school',
   'put my little brother in the front seat',
 ];
+
+// How many results a person will actually look at. The index happily returns
+// 40+, but a wall of 40 statutes reads as "no answer" to someone who just wants
+// to know if they can drive the boat.
+const SHOWN = 12;
+
+// ---------------------------------------------------------------------- search
 
 // Function words plus the generic verbs that wrecked real queries. "we want to
 // have a party" used to rank "Department may contract with third party" because
@@ -71,7 +92,7 @@ const STOP = new Set([
   'rules', 'about', 'when', 'where', 'how', 'why', 'who', 'which', 'while',
   'would', 'should', 'could', 'will', 'shall', 'might', 'must', 'may',
   'be', 'been', 'being', 'was', 'were', 'am', 'it', 'its', 'they', 'them',
-  'their', 'we', 'us', 'our', 'he', 'she', 'his', 'her', 'him', 'your',
+  'their', 'we', 'us', 'our', 'he', 'she', 'her', 'him', 'your',
   'if', 'but', 'not', 'all', 'any', 'some', 'just', 'like', 'really', 'still',
   'even', 'only', 'very', 'much', 'many', 'more', 'most', 'also', 'then',
   'than', 'little', 'big', 'one', 'two', 'old', 'new', 'say', 'know', 'think',
@@ -95,6 +116,11 @@ function stem(t: string): string {
     }
   }
   return t;
+}
+
+// Hyphens vary between the lexicon and the statute text, so flatten both sides.
+function flat(s: string): string {
+  return s.toLowerCase().replace(/[-\s]+/g, ' ').trim();
 }
 
 // The plain-English to legal-English bridge. Nobody types "off-highway vehicle",
@@ -128,14 +154,11 @@ function expand(tokens: string[], raw: string) {
   return { terms: [...terms], chapters };
 }
 
-// Hyphens vary between the lexicon and the statute text, so flatten both sides.
-function flat(s: string): string {
-  return s.toLowerCase().replace(/[-\s]+/g, ' ').trim();
-}
-
-function search(query: string): Section[] {
+// NOTE: data/scripts/test_search.py is a hand port of everything below. If you
+// change ranking here, change it there in the same sitting or the tests lie.
+function search(query: string): { hits: Section[]; total: number } {
   const tokens = tokenize(query);
-  if (!tokens.length) return [];
+  if (!tokens.length) return { hits: [], total: 0 };
   const { terms, chapters } = expand(tokens, query);
 
   const scored: { s: Section; score: number }[] = [];
@@ -170,39 +193,72 @@ function search(query: string): Section[] {
     if (score > 0) scored.push({ s, score });
   }
   scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, 40).map((x) => x.s);
+  return { hits: scored.slice(0, SHOWN).map((x) => x.s), total: scored.length };
 }
+
+// Statute text repeats its own citation and heading before the body. Showing
+// that again under a heading we already rendered wastes the first screenful.
+function bodyOf(s: Section): string {
+  const t = s.t;
+  if (!t) return '';
+  const prefix = `${s.c} ${s.h}`;
+  return (t.startsWith(prefix) ? t.slice(prefix.length) : t).trim();
+}
+
+// ----------------------------------------------------------------------- views
+
+type Screen =
+  | { kind: 'search' }
+  | { kind: 'detail'; section: Section }
+  | { kind: 'about' };
 
 export default function App() {
   const [query, setQuery] = useState('');
-  const results = useMemo(() => search(query), [query]);
+  const [screen, setScreen] = useState<Screen>({ kind: 'search' });
+  const { hits, total } = useMemo(() => search(query), [query]);
   const searching = tokenize(query).length > 0;
+
+  if (screen.kind === 'detail') {
+    return (
+      <Detail section={screen.section} onBack={() => setScreen({ kind: 'search' })} />
+    );
+  }
+  if (screen.kind === 'about') {
+    return <About onBack={() => setScreen({ kind: 'search' })} />;
+  }
 
   return (
     <SafeAreaView style={styles.screen}>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
 
-      <View style={styles.header}>
-        <Text style={styles.title}>Nevada law lookup</Text>
-        <Text style={styles.subtitle}>
-          {META.sections.toLocaleString()} statutes across {META.chapters} chapters,
-          searched on your phone with no internet
-        </Text>
+      <View style={styles.topbar}>
+        <View>
+          <Text style={styles.wordmark}>nvlaw</Text>
+          <Text style={styles.tagline}>Nevada law, offline</Text>
+        </View>
+        <Pressable
+          onPress={() => setScreen({ kind: 'about' })}
+          style={styles.aboutBtn}
+          accessibilityRole="button"
+          accessibilityLabel="About this app"
+        >
+          <Text style={styles.aboutBtnText}>About</Text>
+        </Pressable>
       </View>
 
       <TextInput
         style={styles.input}
         value={query}
         onChangeText={setQuery}
-        placeholder="What do you want to do?"
-        placeholderTextColor="#8A9BA8"
+        placeholder="What are you planning to do?"
+        placeholderTextColor={C.faint}
         autoCorrect={false}
-        accessibilityLabel="Search Nevada statutes"
+        accessibilityLabel="Describe what you are planning to do"
       />
 
       {!searching && (
-        <View style={styles.examples}>
-          <Text style={styles.examplesLabel}>Try describing a plan</Text>
+        <ScrollView contentContainerStyle={styles.examples}>
+          <Text style={styles.sectionLabel}>Try describing a plan</Text>
           {EXAMPLES.map((e) => (
             <Pressable
               key={e}
@@ -215,89 +271,310 @@ export default function App() {
               <Text style={styles.exampleArrow}>→</Text>
             </Pressable>
           ))}
-        </View>
+          <Text style={styles.blurb}>
+            {META.sections.toLocaleString()} Nevada statutes are stored in this app.
+            Searching works with no internet connection.
+          </Text>
+        </ScrollView>
       )}
 
       {searching && (
-        <Text style={styles.count}>
-          {results.length === 0
-            ? 'No statute matched. Try different words.'
-            : `${results.length} matching statute${results.length === 1 ? '' : 's'}`}
-        </Text>
+        <FlatList
+          data={hits}
+          keyExtractor={(s) => s.i}
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={styles.list}
+          ListHeaderComponent={
+            <Text style={styles.count}>
+              {total === 0
+                ? 'Nothing matched. Try different words.'
+                : total > SHOWN
+                ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
+                : `${total} match${total === 1 ? '' : 'es'}`}
+            </Text>
+          }
+          renderItem={({ item, index: rank }) => (
+            <Pressable
+              style={[styles.card, rank === 0 && styles.cardTop]}
+              onPress={() => setScreen({ kind: 'detail', section: item })}
+              accessibilityRole="button"
+              accessibilityLabel={`${item.c}. ${item.h}`}
+            >
+              {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
+              <Text style={styles.heading} numberOfLines={3}>
+                {item.h}
+              </Text>
+              <View style={styles.metaRow}>
+                <Text style={styles.citation}>{item.c}</Text>
+                <Text style={styles.chapterTag} numberOfLines={1}>
+                  {CHAPTER_TITLES[item.ch]}
+                </Text>
+              </View>
+              {item.e ? (
+                <Text style={[styles.flag, item.ec !== 1 && styles.flagWarn]}>
+                  {item.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
+                  {item.e}
+                </Text>
+              ) : null}
+              {item.t ? (
+                <Text style={styles.preview} numberOfLines={3}>
+                  {bodyOf(item)}
+                </Text>
+              ) : (
+                <Text style={styles.tapFor}>Tap to open the official text</Text>
+              )}
+            </Pressable>
+          )}
+        />
       )}
 
-      <FlatList
-        data={results}
-        keyExtractor={(s) => s.i}
-        keyboardShouldPersistTaps="handled"
-        contentContainerStyle={styles.list}
-        renderItem={({ item }) => (
-          <Pressable style={styles.card} onPress={() => Linking.openURL(item.u)}>
-            <Text style={styles.citation}>{item.c}</Text>
-            <Text style={styles.heading}>{item.h}</Text>
-            {item.e ? (
-              <Text style={styles.flag}>
-                {item.ec === 1 ? 'In force now: ' : 'Not yet in force: '}
-                {item.e}
-              </Text>
-            ) : null}
-            {item.t ? (
-              <Text style={styles.body} numberOfLines={4}>
-                {item.t}
-              </Text>
-            ) : (
-              <Text style={styles.tapFor}>Tap to read the full text</Text>
-            )}
-            <Text style={styles.link}>{CHAPTER_TITLES[item.ch]}</Text>
-          </Pressable>
-        )}
-      />
-
-      {/* Not dismissible. Required by the blueprint on every result view. */}
-      <View style={styles.disclaimer}>
-        <Text style={styles.disclaimerText}>
-          Not legal advice. Statute text from leg.state.nv.us, captured{' '}
-          {META.generated}. Always confirm against the linked source.
-        </Text>
-      </View>
+      <Disclaimer />
     </SafeAreaView>
   );
 }
 
+function Detail({ section, onBack }: { section: Section; onBack: () => void }) {
+  const body = bodyOf(section);
+  return (
+    <SafeAreaView style={styles.screen}>
+      <StatusBar style="dark" />
+      <View style={styles.topbar}>
+        <Pressable onPress={onBack} style={styles.backBtn} accessibilityRole="button">
+          <Text style={styles.backText}>← Back</Text>
+        </Pressable>
+      </View>
+
+      <ScrollView contentContainerStyle={styles.detail}>
+        <Text style={styles.detailCitation}>{section.c}</Text>
+        <Text style={styles.detailHeading}>{section.h}</Text>
+        <Text style={styles.detailChapter}>
+          Chapter {section.ch} · {CHAPTER_TITLES[section.ch]}
+        </Text>
+
+        {section.e ? (
+          <View style={styles.detailFlag}>
+            <Text style={[styles.flag, section.ec !== 1 && styles.flagWarn]}>
+              {section.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
+              {section.e}
+            </Text>
+          </View>
+        ) : null}
+        {section.r ? (
+          <View style={styles.detailFlag}>
+            <Text style={[styles.flag, styles.flagWarn]}>
+              This section has been repealed.
+            </Text>
+          </View>
+        ) : null}
+
+        {body ? (
+          <Text style={styles.detailBody}>{body}</Text>
+        ) : (
+          <Text style={styles.detailMissing}>
+            The full text of this section is not stored in the app. Open it on the
+            Nevada Legislature website below.
+          </Text>
+        )}
+
+        <Pressable
+          style={styles.sourceBtn}
+          onPress={() => Linking.openURL(section.u)}
+          accessibilityRole="link"
+          accessibilityLabel={`Open ${section.c} on the Nevada Legislature website`}
+        >
+          <Text style={styles.sourceBtnText}>View official source ↗</Text>
+        </Pressable>
+
+        <Text style={styles.captured}>
+          Captured from leg.state.nv.us on {META.generated}. Always confirm against
+          the official source.
+        </Text>
+      </ScrollView>
+
+      <Disclaimer />
+    </SafeAreaView>
+  );
+}
+
+function About({ onBack }: { onBack: () => void }) {
+  return (
+    <SafeAreaView style={styles.screen}>
+      <StatusBar style="dark" />
+      <View style={styles.topbar}>
+        <Pressable onPress={onBack} style={styles.backBtn} accessibilityRole="button">
+          <Text style={styles.backText}>← Back</Text>
+        </Pressable>
+      </View>
+
+      <ScrollView contentContainerStyle={styles.detail}>
+        <Text style={styles.aboutTitle}>About nvlaw</Text>
+
+        <Text style={styles.aboutBody}>
+          You say “dirtbike.” The law says “off-highway vehicle.” That gap is why
+          looking up the rules that apply to your own life usually fails. This app
+          closes it.
+        </Text>
+
+        <Text style={styles.aboutH}>What is in here</Text>
+        <Text style={styles.aboutBody}>
+          All {META.sections.toLocaleString()} sections of the Nevada Revised
+          Statutes, across {META.chapters} chapters, captured on {META.generated}.
+          Everything is stored inside the app.
+        </Text>
+
+        <Text style={styles.aboutH}>How search works</Text>
+        <Text style={styles.aboutBody}>
+          We built a translation list by hand that maps everyday words onto the
+          legal terms statutes actually use. Your words are matched against that
+          list and against real statute headings and text. Results are ranked, and
+          statutes that are repealed or not yet in force are pushed down.
+        </Text>
+
+        <Text style={styles.aboutH}>No AI runs when you search</Text>
+        <Text style={styles.aboutBody}>
+          Everything is prepared ahead of time and shipped with the app. Searching
+          is keyword matching against a fixed list of real statutes. There is no
+          model running, so the app cannot invent a law or reword one into
+          something it does not say. It works in airplane mode.
+        </Text>
+
+        <Text style={styles.aboutH}>This is not legal advice</Text>
+        <Text style={styles.aboutBody}>
+          This app helps you find statutes. It does not tell you what they mean for
+          your situation, and it does not cover city or county rules, which often
+          apply on top of state law. Every result links to the official text so you
+          can read it yourself. If something matters, talk to a real lawyer.
+        </Text>
+
+        <Text style={styles.aboutH}>Source</Text>
+        <Text style={styles.aboutBody}>
+          Nevada Revised Statutes, published by the Nevada Legislature at
+          leg.state.nv.us. Built for the 2026 Congressional App Challenge.
+        </Text>
+      </ScrollView>
+
+      <Disclaimer />
+    </SafeAreaView>
+  );
+}
+
+// Required on every view that shows statute content. Not dismissible.
+function Disclaimer() {
+  return (
+    <View style={styles.disclaimer}>
+      <Text style={styles.disclaimerText}>
+        Not legal advice · Statute text captured {META.generated}
+      </Text>
+    </View>
+  );
+}
+
+// ---------------------------------------------------------------------- styles
+
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#F4F7F9' },
-  header: { backgroundColor: ACCENT, paddingHorizontal: 20, paddingTop: 16, paddingBottom: 18 },
-  title: { color: '#fff', fontSize: 26, fontWeight: '700' },
-  subtitle: { color: '#C6D8E4', fontSize: 13, marginTop: 4, lineHeight: 18 },
-  input: {
-    margin: 16, marginBottom: 8, backgroundColor: '#fff', borderRadius: 10,
-    paddingHorizontal: 16, paddingVertical: 14, fontSize: 17,
-    borderWidth: 1, borderColor: '#D6E0E8', color: '#10232E',
+  screen: { flex: 1, backgroundColor: C.bg },
+
+  topbar: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    paddingHorizontal: 20, paddingTop: 8, paddingBottom: 12,
   },
-  examples: { paddingHorizontal: 16, paddingTop: 4 },
-  examplesLabel: {
-    color: '#7A8B98', fontSize: 12, fontWeight: '600', letterSpacing: 0.6,
-    textTransform: 'uppercase', marginBottom: 8, marginLeft: 2,
+  wordmark: { color: C.accent, fontSize: 22, fontWeight: '800', letterSpacing: -0.4 },
+  tagline: { color: C.faint, fontSize: 12, marginTop: 1 },
+  aboutBtn: {
+    minHeight: 44, justifyContent: 'center', paddingHorizontal: 12,
+    marginRight: -12,
+  },
+  aboutBtnText: { color: C.accent, fontSize: 15, fontWeight: '600' },
+  backBtn: { minHeight: 44, justifyContent: 'center', paddingRight: 16, marginLeft: -4 },
+  backText: { color: C.accent, fontSize: 16, fontWeight: '600' },
+
+  input: {
+    marginHorizontal: 16, marginBottom: 12, backgroundColor: C.card,
+    borderRadius: 12, paddingHorizontal: 16, paddingVertical: 14, fontSize: 17,
+    borderWidth: 1, borderColor: C.line, color: C.ink,
+  },
+
+  examples: { paddingHorizontal: 16, paddingBottom: 24 },
+  sectionLabel: {
+    color: C.faint, fontSize: 11, fontWeight: '700', letterSpacing: 0.8,
+    textTransform: 'uppercase', marginBottom: 10, marginLeft: 2,
   },
   example: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
-    backgroundColor: '#E3ECF2', borderRadius: 10, paddingHorizontal: 14,
-    minHeight: 44, marginBottom: 8,
+    backgroundColor: C.accentSoft, borderRadius: 12, paddingHorizontal: 16,
+    minHeight: 48, marginBottom: 8,
   },
-  exampleText: { color: ACCENT, fontWeight: '600', fontSize: 15, flexShrink: 1, paddingVertical: 11 },
-  exampleArrow: { color: ACCENT, fontSize: 16, opacity: 0.5, paddingLeft: 10 },
-  count: { paddingHorizontal: 20, paddingVertical: 6, color: '#5A7183', fontSize: 13 },
+  exampleText: {
+    color: C.accent, fontWeight: '600', fontSize: 15, flexShrink: 1,
+    paddingVertical: 13,
+  },
+  exampleArrow: { color: C.accent, fontSize: 16, opacity: 0.45, paddingLeft: 12 },
+  blurb: {
+    color: C.faint, fontSize: 13, lineHeight: 19, marginTop: 20,
+    marginHorizontal: 2,
+  },
+
   list: { paddingHorizontal: 16, paddingBottom: 24 },
+  count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
+
   card: {
-    backgroundColor: '#fff', borderRadius: 12, padding: 16, marginBottom: 10,
-    borderWidth: 1, borderColor: '#E2EAF0',
+    backgroundColor: C.card, borderRadius: 14, padding: 16, marginBottom: 10,
+    borderWidth: 1, borderColor: C.line,
   },
-  citation: { color: ACCENT, fontWeight: '700', fontSize: 15 },
-  heading: { color: '#10232E', fontSize: 15, marginTop: 4, lineHeight: 21 },
-  flag: { marginTop: 6, fontSize: 12, color: '#8A5A00', fontWeight: '600' },
-  body: { marginTop: 8, color: '#4A5C68', fontSize: 13, lineHeight: 19 },
-  tapFor: { marginTop: 8, color: '#7A8B98', fontSize: 13, fontStyle: 'italic' },
-  link: { marginTop: 10, color: '#5A7183', fontSize: 11, textTransform: 'uppercase' },
-  disclaimer: { backgroundColor: '#10232E', paddingHorizontal: 20, paddingVertical: 12 },
-  disclaimerText: { color: '#B9C9D4', fontSize: 11, lineHeight: 16, textAlign: 'center' },
+  cardTop: { borderColor: C.accent, borderWidth: 1.5 },
+  bestLabel: {
+    color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+    marginBottom: 6,
+  },
+  heading: { color: C.ink, fontSize: 16, fontWeight: '600', lineHeight: 22 },
+  metaRow: {
+    flexDirection: 'row', alignItems: 'center', marginTop: 8, gap: 8,
+  },
+  citation: { color: C.accent, fontWeight: '700', fontSize: 13 },
+  chapterTag: {
+    color: C.faint, fontSize: 11, textTransform: 'uppercase', flexShrink: 1,
+    letterSpacing: 0.3,
+  },
+  flag: { fontSize: 12, color: C.muted, fontWeight: '600', marginTop: 8 },
+  flagWarn: { color: C.warn },
+  preview: { marginTop: 10, color: C.muted, fontSize: 13, lineHeight: 20 },
+  tapFor: { marginTop: 10, color: C.faint, fontSize: 13, fontStyle: 'italic' },
+
+  detail: { paddingHorizontal: 20, paddingBottom: 40 },
+  detailCitation: { color: C.accent, fontSize: 15, fontWeight: '800' },
+  detailHeading: {
+    color: C.ink, fontSize: 20, fontWeight: '700', lineHeight: 27, marginTop: 6,
+  },
+  detailChapter: {
+    color: C.faint, fontSize: 12, marginTop: 8, textTransform: 'uppercase',
+    letterSpacing: 0.4,
+  },
+  detailFlag: {
+    backgroundColor: C.warnSoft, borderRadius: 8, paddingHorizontal: 12,
+    paddingVertical: 4, marginTop: 14, alignSelf: 'flex-start',
+  },
+  detailBody: { color: C.ink, fontSize: 15, lineHeight: 24, marginTop: 18 },
+  detailMissing: {
+    color: C.muted, fontSize: 15, lineHeight: 23, marginTop: 18,
+    fontStyle: 'italic',
+  },
+  sourceBtn: {
+    backgroundColor: C.accent, borderRadius: 12, minHeight: 48,
+    alignItems: 'center', justifyContent: 'center', marginTop: 24,
+  },
+  sourceBtnText: { color: '#fff', fontSize: 15, fontWeight: '700' },
+  captured: { color: C.faint, fontSize: 12, lineHeight: 18, marginTop: 16 },
+
+  aboutTitle: { color: C.ink, fontSize: 26, fontWeight: '800' },
+  aboutH: {
+    color: C.accent, fontSize: 13, fontWeight: '800', marginTop: 24,
+    textTransform: 'uppercase', letterSpacing: 0.6,
+  },
+  aboutBody: { color: C.ink, fontSize: 15, lineHeight: 23, marginTop: 8 },
+
+  disclaimer: {
+    borderTopWidth: 1, borderTopColor: C.line, backgroundColor: C.card,
+    paddingHorizontal: 20, paddingVertical: 9,
+  },
+  disclaimerText: { color: C.faint, fontSize: 11, textAlign: 'center' },
 });
