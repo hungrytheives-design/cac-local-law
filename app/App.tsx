@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
 import {
   FlatList,
+  Image,
   Linking,
   Pressable,
   SafeAreaView,
@@ -48,21 +49,22 @@ const CONCEPTS = concepts as Concept[];
 
 // ---------------------------------------------------------------------- theme
 
-// Sage and cream. Nevada is the Sagebrush State and "sage" also means wise
-// counsel. Keep in sync with PALETTE in data/scripts/make_icons.py, which
-// generates the app icon from these same values.
+// Sage, with the cream pulled right back. Full cream everywhere read soft and
+// spa-like; the app is a reference tool, so the chrome is near-white and the
+// sage does the work. The icon keeps its cream field because an icon needs to
+// hold its own against a white home screen.
 const C = {
-  bg: '#F2EDE1',       // cream, matches the icon and splash background
-  card: '#FBF9F3',
-  ink: '#22271E',      // warm near-black, never pure #000 on cream
-  muted: '#5D6656',
-  faint: '#8B9382',
-  line: '#E3DDCD',
-  accent: '#5E7351',   // sage
-  accentDeep: '#43542F',
-  accentSoft: '#E7E6D4',
+  bg: '#FBFAF7',
+  card: '#FFFFFF',
+  ink: '#1A1F1A',      // warm near-black, never pure #000
+  muted: '#5A6358',
+  faint: '#8E958A',
+  line: '#E7E7E1',
+  accent: '#4A6046',   // deeper than the icon sage; carries small text legibly
+  accentDeep: '#33452F',
+  accentSoft: '#EEF1EC',
   warn: '#8A5A00',
-  warnSoft: '#F6EBD6',
+  warnSoft: '#F7EFE0',
 };
 
 // Situations, not keywords. The app's whole pitch is "describe your plan", so
@@ -235,37 +237,37 @@ export default function App() {
     return <About onBack={() => setScreen({ kind: 'search' })} />;
   }
 
-  return (
-    <SafeAreaView style={styles.screen}>
-      <StatusBar style="dark" />
-
-      <View style={styles.topbar}>
-        <View>
-          <Text style={styles.wordmark}>Sage</Text>
-          <Text style={styles.tagline}>Nevada law, offline</Text>
-        </View>
-        <Pressable
-          onPress={() => setScreen({ kind: 'about' })}
-          style={styles.aboutBtn}
-          accessibilityRole="button"
-          accessibilityLabel="About this app"
+  // Home. Modelled on the search apps people already know: the box is the
+  // centre of gravity, the identity sits above it, and suggestions sit below.
+  // Chrome stays off this screen entirely.
+  if (!searching) {
+    return (
+      <SafeAreaView style={styles.screen}>
+        <StatusBar style="dark" />
+        <ScrollView
+          contentContainerStyle={styles.home}
+          keyboardShouldPersistTaps="handled"
         >
-          <Text style={styles.aboutBtnText}>About</Text>
-        </Pressable>
-      </View>
+          <Image
+            source={require('./assets/splash-icon.png')}
+            style={styles.mark}
+            accessibilityIgnoresInvertColors
+          />
+          <Text style={styles.homeWordmark}>Sage</Text>
+          <Text style={styles.homeTagline}>
+            Nevada law, on your phone, with no internet
+          </Text>
 
-      <TextInput
-        style={styles.input}
-        value={query}
-        onChangeText={setQuery}
-        placeholder="What are you planning to do?"
-        placeholderTextColor={C.faint}
-        autoCorrect={false}
-        accessibilityLabel="Describe what you are planning to do"
-      />
+          <TextInput
+            style={styles.homeInput}
+            value={query}
+            onChangeText={setQuery}
+            placeholder="What are you planning to do?"
+            placeholderTextColor={C.faint}
+            autoCorrect={false}
+            accessibilityLabel="Describe what you are planning to do"
+          />
 
-      {!searching && (
-        <ScrollView contentContainerStyle={styles.examples}>
           <Text style={styles.sectionLabel}>Try describing a plan</Text>
           {EXAMPLES.map((e) => (
             <Pressable
@@ -279,15 +281,49 @@ export default function App() {
               <Text style={styles.exampleArrow}>→</Text>
             </Pressable>
           ))}
-          <Text style={styles.blurb}>
-            {META.sections.toLocaleString()} Nevada statutes are stored in this app.
-            Searching works with no internet connection.
-          </Text>
-        </ScrollView>
-      )}
 
-      {searching && (
-        <FlatList
+          <Pressable
+            onPress={() => setScreen({ kind: 'about' })}
+            style={styles.footerLink}
+            accessibilityRole="button"
+          >
+            <Text style={styles.footerLinkText}>
+              {META.sections.toLocaleString()} statutes inside · About Sage
+            </Text>
+          </Pressable>
+        </ScrollView>
+        <Disclaimer />
+      </SafeAreaView>
+    );
+  }
+
+  return (
+    <SafeAreaView style={styles.screen}>
+      <StatusBar style="dark" />
+
+      {/* Clearing the query is the way back to the home screen. Without this
+          there was no exit from a search at all. */}
+      <View style={styles.searchBar}>
+        <Pressable
+          onPress={() => setQuery('')}
+          style={styles.searchBack}
+          accessibilityRole="button"
+          accessibilityLabel="Clear search and return home"
+        >
+          <Text style={styles.searchBackText}>←</Text>
+        </Pressable>
+        <TextInput
+          style={styles.barInput}
+          value={query}
+          onChangeText={setQuery}
+          placeholder="What are you planning to do?"
+          placeholderTextColor={C.faint}
+          autoCorrect={false}
+          accessibilityLabel="Describe what you are planning to do"
+        />
+      </View>
+
+      <FlatList
           data={hits}
           keyExtractor={(s) => s.i}
           keyboardShouldPersistTaps="handled"
@@ -333,8 +369,7 @@ export default function App() {
               )}
             </Pressable>
           )}
-        />
-      )}
+      />
 
       <Disclaimer />
     </SafeAreaView>
@@ -486,23 +521,42 @@ const styles = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingTop: 8, paddingBottom: 12,
   },
-  wordmark: { color: C.accent, fontSize: 22, fontWeight: '800', letterSpacing: -0.4 },
-  tagline: { color: C.faint, fontSize: 12, marginTop: 1 },
-  aboutBtn: {
-    minHeight: 44, justifyContent: 'center', paddingHorizontal: 12,
-    marginRight: -12,
-  },
-  aboutBtnText: { color: C.accent, fontSize: 15, fontWeight: '600' },
   backBtn: { minHeight: 44, justifyContent: 'center', paddingRight: 16, marginLeft: -4 },
   backText: { color: C.accent, fontSize: 16, fontWeight: '600' },
 
-  input: {
-    marginHorizontal: 16, marginBottom: 12, backgroundColor: C.card,
-    borderRadius: 12, paddingHorizontal: 16, paddingVertical: 14, fontSize: 17,
-    borderWidth: 1, borderColor: C.line, color: C.ink,
+  home: { paddingHorizontal: 20, paddingTop: 48, paddingBottom: 32 },
+  mark: { width: 56, height: 56, alignSelf: 'center', resizeMode: 'contain' },
+  homeWordmark: {
+    color: C.ink, fontSize: 32, fontWeight: '700', textAlign: 'center',
+    letterSpacing: -0.8, marginTop: 10,
+  },
+  homeTagline: {
+    color: C.muted, fontSize: 14, textAlign: 'center', marginTop: 6,
+    marginBottom: 28,
+  },
+  homeInput: {
+    backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 18,
+    paddingVertical: 16, fontSize: 17, borderWidth: 1, borderColor: C.line,
+    color: C.ink, marginBottom: 28,
   },
 
-  examples: { paddingHorizontal: 16, paddingBottom: 24 },
+  searchBar: {
+    flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12,
+    paddingTop: 4, paddingBottom: 10, gap: 4,
+  },
+  searchBack: {
+    width: 44, height: 44, alignItems: 'center', justifyContent: 'center',
+  },
+  searchBackText: { color: C.accent, fontSize: 22, fontWeight: '600' },
+  barInput: {
+    flex: 1, backgroundColor: C.card, borderRadius: 12, paddingHorizontal: 14,
+    paddingVertical: 11, fontSize: 16, borderWidth: 1, borderColor: C.line,
+    color: C.ink,
+  },
+
+  footerLink: { marginTop: 28, minHeight: 44, justifyContent: 'center' },
+  footerLinkText: { color: C.faint, fontSize: 13, textAlign: 'center' },
+
   sectionLabel: {
     color: C.faint, fontSize: 11, fontWeight: '700', letterSpacing: 0.8,
     textTransform: 'uppercase', marginBottom: 10, marginLeft: 2,
@@ -517,10 +571,6 @@ const styles = StyleSheet.create({
     paddingVertical: 13,
   },
   exampleArrow: { color: C.accent, fontSize: 16, opacity: 0.45, paddingLeft: 12 },
-  blurb: {
-    color: C.faint, fontSize: 13, lineHeight: 19, marginTop: 20,
-    marginHorizontal: 2,
-  },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
   count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
