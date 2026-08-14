@@ -20,24 +20,25 @@
   {
     "id": "boating",
     "colloquial": ["boat", "boating", "jetski", "jet ski", "kayak", "canoe", "paddleboard", "lake mead"],
-    "statutory": ["vessel", "motorboat", "watercraft"],
+    "statutory": ["vessel", "motorboat", "watercraft", "personal watercraft"],
     "chapters": ["488"]
   },
   {
     "id": "driving-teen",
-    "colloquial": ["learners permit", "learner permit", "permit", "drivers license", "driving test", "student driver"],
-    "statutory": ["instruction permit", "restricted license", "driver's license"],
-    "chapters": []
+    "colloquial": ["learners permit", "learner permit", "permit", "drivers license", "driving test", "student driver", "driving school"],
+    "statutory": ["instruction permit", "restricted license", "driver's license", "driver education"],
+    "chapters": ["483"],
+    "note": "Confirmed via NRS 483.267, 'Restricted license for person between ages of 14 and 18 years'. Chapter 463 also matches 'nonrestricted license' but that is gaming licensure, not driving."
   },
   {
     "id": "phone-driving",
-    "colloquial": ["texting while driving", "phone while driving", "text and drive"],
+    "colloquial": ["texting while driving", "phone while driving", "text and drive", "phone", "texting", "text"],
     "statutory": ["handheld wireless communications device"],
     "chapters": ["484B"]
   },
   {
     "id": "seatbelt",
-    "colloquial": ["seatbelt", "seat belt", "buckle up", "car seat", "booster seat"],
+    "colloquial": ["seatbelt", "seat belt", "buckle up", "car seat", "booster seat", "front seat"],
     "statutory": ["safety belt", "child restraint system"],
     "chapters": ["484B"]
   },
@@ -45,61 +46,67 @@
     "id": "helmet",
     "colloquial": ["helmet", "do i need a helmet"],
     "statutory": ["protective headgear", "helmet"],
-    "chapters": ["484B"]
+    "chapters": ["484B", "486"]
   },
   {
     "id": "curfew",
-    "colloquial": ["curfew", "out late", "stay out past"],
-    "statutory": ["curfew", "child in need of supervision"],
-    "chapters": []
+    "colloquial": ["curfew", "out late", "stay out past", "be home by"],
+    "statutory": ["curfew"],
+    "chapters": ["484B"],
+    "note": "The ONLY curfew in NRS is NRS 484B.907, a driving curfew for 16 and 17 year olds. A general 'be home by' curfew is county or city ordinance, not state law."
   },
   {
     "id": "minor-work",
-    "colloquial": ["get a job", "work permit", "working under 18", "part time job", "hire a minor"],
+    "colloquial": ["get a job", "work permit", "working under 18", "part time job", "hire a minor", "job"],
     "statutory": ["employment of minors", "child labor"],
-    "chapters": []
+    "chapters": ["609"],
+    "note": "Chapter 609 is literally titled EMPLOYMENT OF MINORS. Chapter 159A also matches 'minor' but is guardianship."
   },
   {
     "id": "fishing",
     "colloquial": ["fishing", "fish", "fishing license"],
-    "statutory": ["fishing license", "game fish", "angling"],
-    "chapters": []
+    "statutory": ["fishing", "angling", "game fish"],
+    "chapters": ["502", "503"]
   },
   {
     "id": "hunting",
     "colloquial": ["hunting", "hunt", "hunting license"],
-    "statutory": ["hunting license", "wildlife", "big game"],
-    "chapters": []
+    "statutory": ["hunting", "big game", "wildlife"],
+    "chapters": ["502", "503"]
   },
   {
     "id": "vape",
     "colloquial": ["vape", "vaping", "e-cig", "juul", "nicotine", "smoking", "cigarettes"],
-    "statutory": ["vapor product", "tobacco product", "nicotine"],
-    "chapters": []
+    "statutory": ["vapor product", "alternative nicotine product", "tobacco"],
+    "chapters": ["202", "370"],
+    "note": "'Vapor product' is defined at NRS 370.054. Age and sale restrictions are in chapter 202 (NRS 202.2493); chapter 370 carries the definitions and licensing."
   },
   {
     "id": "alcohol",
-    "colloquial": ["drinking", "alcohol", "beer", "underage drinking", "fake id"],
+    "colloquial": ["drinking", "alcohol", "beer", "underage drinking", "fake id", "drink"],
     "statutory": ["alcoholic beverage", "intoxicating liquor"],
-    "chapters": []
+    "chapters": ["202", "369"],
+    "note": "'Alcoholic beverage' defined at NRS 202.015. Chapter 369 is licensing and taxes."
   },
   {
     "id": "firearms",
-    "colloquial": ["gun", "firearm", "shooting range", "carry a gun"],
-    "statutory": ["firearm", "concealed firearm", "weapon"],
-    "chapters": []
+    "colloquial": ["gun", "firearm", "shooting range", "carry a gun", "shooting"],
+    "statutory": ["firearm", "concealed firearm", "deadly weapon"],
+    "chapters": ["202"]
   },
   {
     "id": "tattoo",
     "colloquial": ["tattoo", "piercing", "body art"],
-    "statutory": ["tattoo", "body piercing"],
-    "chapters": []
+    "statutory": [],
+    "chapters": [],
+    "note": "NOT STATE LAW. Searched every NRS heading: 'tattoo' and 'body art' appear nowhere, and 'piercing' only in a chiropractic prohibition. Chapter 644A is Cosmetology and covers esthetics, not tattooing. Body art is regulated by county health districts. Left empty deliberately so the app returns nothing rather than something wrong."
   },
   {
     "id": "pets",
     "colloquial": ["pet", "dog", "cat", "snake", "exotic pet", "leash"],
-    "statutory": ["domestic animal", "dangerous animal", "livestock"],
-    "chapters": []
+    "statutory": ["animal", "domestic animal", "livestock"],
+    "chapters": ["574"],
+    "note": "Chapter 574 is cruelty to animals, the main state animal law. Leash and licensing rules are county ordinance."
   },
   {
     "id": "skateboard",
@@ -109,14 +116,16 @@
   },
   {
     "id": "trespass",
-    "colloquial": ["trespassing", "private property", "no trespassing"],
+    "colloquial": ["trespassing", "private property", "no trespassing", "cutting through"],
     "statutory": ["trespass", "unlawful entry"],
-    "chapters": []
+    "chapters": ["207"],
+    "note": "NRS 207.200, 'Unlawful trespass upon land; warning against trespassing'."
   },
   {
     "id": "noise",
-    "colloquial": ["loud music", "noise complaint", "party too loud"],
-    "statutory": ["noise", "disturbing the peace", "breach of the peace"],
-    "chapters": []
+    "colloquial": ["loud music", "noise complaint", "party too loud", "party", "loud"],
+    "statutory": ["noise", "breach of the peace"],
+    "chapters": ["244", "268", "269"],
+    "note": "State law does not set a noise limit. It authorises counties (NRS 244.363), cities (NRS 268.412) and towns to do it, so the real answer is always local. Pointing here at least tells the user that."
   }
 ]

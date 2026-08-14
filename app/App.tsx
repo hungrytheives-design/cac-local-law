@@ -184,13 +184,17 @@ function search(query: string): { hits: Section[]; total: number } {
     // a literal match always beats an inferred one.
     const flatHeading = flat(s.h);
     for (const t of terms) {
-      if (flatHeading.includes(t)) score += 8;
+      if (flatHeading.includes(t)) score += 12;
       if (s.t && flat(s.t).includes(t)) score += 2;
     }
 
     // Chapter hint is a boost, never a filter, so a wrong lexicon entry degrades
-    // ranking instead of hiding real law.
-    if (score > 0 && chapters.has(s.ch)) score += 8;
+    // ranking instead of hiding real law. Weighted heavily on purpose: once the
+    // lexicon has identified the topic, a section in the right chapter should
+    // beat one that merely shares a common word. At +8 it lost, and "cutting
+    // through someone's property" ranked a tax-abatement statute above
+    // NRS 207.200 Unlawful trespass on the strength of "property" alone.
+    if (score > 0 && chapters.has(s.ch)) score += 20;
 
     if (s.r) score -= 20;                    // repealed, bury it
     if (s.e && s.ec === 0) score -= 15;      // not yet in force

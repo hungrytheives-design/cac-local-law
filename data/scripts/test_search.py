@@ -146,12 +146,12 @@ def search(query, sections, titles, concepts, limit=10):
         ft = flat(text) if text else None
         for t in terms:
             if t in fh:
-                score += 8
+                score += 12
             if ft and t in ft:
                 score += 2
 
         if score > 0 and s["ch"] in chapters:
-            score += 8
+            score += 20
         if s.get("r"):
             score -= 20
         if s.get("e") and s.get("ec") == 0:
@@ -230,6 +230,22 @@ def main():
         want_ch = case.get("expectChapter")
         want_cite = case.get("expectCitation")
 
+        # Some topics genuinely are not in NRS (body art is county health
+        # district, not state law). Returning nothing is the correct answer
+        # there, so it needs to be assertable rather than sitting as a TODO.
+        if case.get("expectNone"):
+            if not top:
+                npass += 1
+                print(f"{GREEN}PASS{OFF}  {q}")
+                print(f"      {DIM}no results, as expected (not state law){OFF}")
+            else:
+                nfail += 1
+                got = f"{top[0][1]['c']} ({top[0][1]['h'][:40]})"
+                print(f"{RED}FAIL{OFF}  {q}")
+                print(f"      {DIM}expected no results, got {got}{OFF}")
+                failures.append((q, "no results", got))
+            continue
+
         if want_ch is None and want_cite is None:
             ntodo += 1
             print(f"{YELLOW}TODO{OFF}  {q}")
@@ -245,7 +261,11 @@ def main():
         if want_cite:
             ok = any(s["c"] == want_cite for _, s in top)
         elif want_ch:
-            ok = any(s["ch"] == want_ch for _, s in top)
+            # A topic can legitimately live in more than one chapter: fishing is
+            # split between 502 (licences) and 503 (manner and means), and either
+            # is a correct answer. Accept a string or a list.
+            wanted = want_ch if isinstance(want_ch, list) else [want_ch]
+            ok = any(s["ch"] in wanted for _, s in top)
 
         if ok:
             npass += 1

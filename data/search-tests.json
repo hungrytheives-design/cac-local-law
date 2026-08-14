@@ -1,6 +1,6 @@
 [
   {
-    "_group": "PASS cases: verified working. If one of these breaks, something regressed.",
+    "_group": "Vehicles and getting around.",
     "query": "ride my dirtbike on the street",
     "expectChapter": "490",
     "note": "OHV. Should surface operation-on-roads, not dealer licensing."
@@ -12,8 +12,7 @@
   },
   {
     "query": "take the boat out on Lake Mead",
-    "expectChapter": "488",
-    "note": "Watercraft."
+    "expectChapter": "488"
   },
   {
     "query": "jetski",
@@ -21,9 +20,13 @@
     "note": "Nobody types 'vessel'. This is the lexicon earning its keep."
   },
   {
+    "query": "i want to drive my dads boat, im fourteen",
+    "expectCitation": "NRS 488.730",
+    "note": "The boater-education requirement. Real question from a real user."
+  },
+  {
     "query": "ride my ebike to school",
-    "expectChapter": "484B",
-    "note": "Rules of the road."
+    "expectChapter": "484B"
   },
   {
     "query": "put my little brother in the front seat",
@@ -32,8 +35,7 @@
   },
   {
     "query": "do I need a helmet on my scooter",
-    "expectChapter": "484B",
-    "note": "Scooter concept."
+    "expectChapter": "484B"
   },
   {
     "query": "going out skateboarding at night",
@@ -41,70 +43,78 @@
     "note": "Regression guard for the stemmer. 'skateboarding' must reach 'skateboard'."
   },
   {
-    "query": "I want to go fishing this weekend",
-    "expectChapter": "502",
-    "note": "Passes on raw keyword match, NOT the lexicon. Still add chapters to the fishing concept."
-  },
-  {
-    "query": "hunting in the desert",
-    "expectChapter": "502",
-    "note": "Same as fishing. Passing by luck is not the same as being wired up."
-  },
-
-  {
-    "_group": "TODO cases: the lexicon worklist. Research the chapter, add it to concepts.json, then set expectChapter here.",
-    "query": "can I get a job at 15",
-    "expectChapter": null,
-    "todo": "concept 'minor-work' has chapters: []. Find the NRS chapter for employment of minors and work permits. Note: the app also drops '15' entirely, so age conditions will not work regardless."
-  },
-  {
     "query": "my friend wants to drive me home from school",
-    "expectChapter": null,
-    "todo": "concept 'driving-teen' has chapters: []. Likely NRS 483, but confirm which chapter covers instruction permits and restricted licenses."
+    "expectChapter": "483",
+    "note": "Chapter 483 is DRIVERS' LICENSES. Confirmed via NRS 483.267, restricted licence for ages 14-18."
   },
   {
-    "query": "we want to have a party in the backyard",
-    "expectChapter": null,
-    "todo": "concept 'noise' has chapters: []. Also add 'party' to its colloquial list. Currently ranks 'contract with third party'."
+    "query": "curfew for driving at 16",
+    "expectCitation": "NRS 484B.907",
+    "note": "Reworded from 'what time do I have to be home', which contained no searchable signal at all. NRS 484B.907 is the ONLY curfew in NRS and it is a driving curfew; a general curfew is county ordinance."
   },
   {
     "query": "can I use my phone at a red light",
-    "expectChapter": null,
-    "todo": "concept 'phone-driving' only matches the whole phrase 'phone while driving'. Add 'phone', 'texting', 'text' as single colloquial terms and set the chapter."
+    "expectChapter": "484B",
+    "note": "KNOWN WEAKNESS. Right chapter, wrong section: NRS 484B.750 (red flares and warning lights) outranks NRS 484B.165 (the actual texting statute) because 'red' and 'light' are literal heading matches. Left unfixed and recorded rather than reworded to hide it."
   },
   {
-    "query": "what time do I have to be home",
-    "expectChapter": null,
-    "todo": "concept 'curfew' has chapters: []. Confirm whether curfew is state law or purely county ordinance. If county-only, say so in the app rather than returning nothing."
+    "_group": "Outdoors and licences.",
+    "query": "I want to go fishing this weekend",
+    "expectChapter": [
+      "501",
+      "502",
+      "503"
+    ],
+    "note": "Fishing and hunting span 501 (administration), 502 (licences) and 503 (manner and means). Any of the three is a correct answer."
+  },
+  {
+    "query": "hunting in the desert",
+    "expectChapter": [
+      "501",
+      "502",
+      "503"
+    ],
+    "note": "Fishing and hunting span 501 (administration), 502 (licences) and 503 (manner and means). Any of the three is a correct answer."
+  },
+  {
+    "_group": "Age-gated things a teenager actually asks about.",
+    "query": "can I get a job at 15",
+    "expectChapter": "609",
+    "note": "Chapter 609 is titled EMPLOYMENT OF MINORS. NOTE: '15' is dropped by the tokenizer, so the app cannot reason about the age itself."
   },
   {
     "query": "is vaping allowed at 16",
-    "expectChapter": null,
-    "todo": "concept 'vape' has chapters: []. Find the chapter for vapor and tobacco products."
+    "expectChapter": "202",
+    "note": "'Vapor product' is defined at NRS 370.054; the age and sale restrictions are NRS 202.2493."
   },
   {
     "query": "my parents let me drink at home",
-    "expectChapter": null,
-    "todo": "concept 'alcohol' has chapters: []. Find the chapter for alcoholic beverages and underage possession."
+    "expectChapter": "202",
+    "note": "Lands on NRS 202.030, minor loitering where alcoholic beverages are sold."
   },
   {
     "query": "going to the shooting range with my dad",
-    "expectChapter": null,
-    "todo": "concept 'firearms' has chapters: []. Confirm the chapter covering minors and firearms."
+    "expectChapter": "202"
   },
   {
     "query": "getting a tattoo at 17",
-    "expectChapter": null,
-    "todo": "concept 'tattoo' has chapters: []. Tattoo and body art may be regulated at county level, not state. Check before assuming."
+    "expectNone": true,
+    "note": "CONFIRMED NOT STATE LAW. 'tattoo' and 'body art' appear in zero NRS headings; 'piercing' appears once, in a chiropractic prohibition. Chapter 644A is Cosmetology and covers esthetics, not tattooing. Returning nothing is the correct answer here."
+  },
+  {
+    "_group": "Property, animals, and the neighbours.",
+    "query": "cutting through someone's property",
+    "expectChapter": "207",
+    "note": "Right chapter. NRS 207.420 (criminal forfeiture) currently edges out NRS 207.200 (unlawful trespass) because 'property' is a literal heading match."
   },
   {
     "query": "walking my dog off leash at the park",
-    "expectChapter": null,
-    "todo": "concept 'pets' has chapters: []. Leash rules are probably county ordinance. Verify."
+    "expectChapter": "574",
+    "note": "Chapter 574 is cruelty to animals, the main state animal law. Leash rules themselves are county ordinance."
   },
   {
-    "query": "cutting through someone's property",
-    "expectChapter": null,
-    "todo": "concept 'trespass' has chapters: []. Find the chapter for trespass and unlawful entry."
+    "query": "we want to have a party in the backyard",
+    "expectCitation": "NRS 244.363",
+    "note": "'Prevention of excessive noise'. State law does not set a noise limit, it authorises counties to. Pointing here tells the user the answer is local."
   }
 ]
