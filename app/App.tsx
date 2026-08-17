@@ -17,6 +17,7 @@ import {
 
 import index from './assets/nrs-index.json';
 import concepts from './assets/concepts.json';
+import activities from './assets/activities.json';
 
 // Every section is searchable. Only `t` (verbatim text) is selective, because
 // carrying full text for all of NRS would be ~150 MB. See data/scripts/build_index.py
@@ -48,6 +49,29 @@ type Concept = {
   chapters: string[];
 };
 const CONCEPTS = concepts as Concept[];
+
+// The curated tier. Search finds the right statute; it cannot make one readable.
+// NRS 488.730 is titled "Operation of certain power-driven vessels on interstate
+// waters of State by persons born on or after January 1, 1983". Nobody learns
+// "you need a boater education card" from that sentence, so for the activities
+// people actually ask about, a human wrote the answer and cited every line.
+type Rule = {
+  id: string;
+  text: string;
+  citation: string;
+  sourceUrl: string;
+  appliesIf?: string;
+  confidence: 'clear' | 'ambiguous';
+};
+type Activity = {
+  id: string;
+  displayName: string;
+  keywords: string[];
+  summary: string;
+  rules: Rule[];
+  lastVerified: string;
+};
+const ACTIVITIES = activities as Activity[];
 
 // ---------------------------------------------------------------------- theme
 
@@ -249,6 +273,42 @@ function bodyOf(s: Section): string {
   return (t.startsWith(prefix) ? t.slice(prefix.length) : t).trim();
 }
 
+// Statute headings cram the whole scope of the section into one sentence:
+// "Traffic controlled by official traffic-control devices exhibiting different
+// colored lights: Rights and duties of vehicular traffic and pedestrians
+// depending upon particular signal displayed; exceptions for person driving
+// motorcycle, moped or trimobile..." The part before the first colon or
+// semicolon is the subject; everything after it is scope. Cards show the
+// subject, the detail screen still shows the heading whole.
+function titleOf(h: string): string {
+  const cut = h.split(/[:;]/)[0].trim();
+  return cut.length >= 12 && cut.length < h.length ? cut : h;
+}
+
+// Does this query name something we wrote a real answer for? Same matching
+// shape as the lexicon: whole phrases against the raw string, single words
+// against stems, so "ebikes" and "riding my ebike" both land on the e-bike card.
+function matchActivity(query: string): Activity | null {
+  const q = query.toLowerCase();
+  const tokens = tokenize(query);
+  const stems = tokens.map(stem).filter((s) => s.length >= 3);
+
+  for (const a of ACTIVITIES) {
+    for (const k of a.keywords) {
+      if (k.includes(' ')) {
+        if (q.includes(k)) return a;
+        continue;
+      }
+      if (tokens.includes(k)) return a;
+      const ks = stem(k);
+      if (ks.length >= 4 && stems.some((s) => s.startsWith(ks) || ks.startsWith(s))) {
+        return a;
+      }
+    }
+  }
+  return null;
+}
+
 // ----------------------------------------------------------------------- views
 
 type Screen =
@@ -265,6 +325,7 @@ export default function App() {
   // catch up a frame later, instead of the keyboard fighting the search.
   const settled = useDeferredValue(query);
   const { hits, total } = useMemo(() => search(settled), [settled]);
+  const hero = useMemo(() => matchActivity(settled), [settled]);
   const searching = tokenize(settled).length > 0;
 
   if (screen.kind === 'detail') {
@@ -308,13 +369,31 @@ export default function App() {
             keyboardDismissMode="on-drag"
             contentContainerStyle={styles.list}
             ListHeaderComponent={
-              <Text style={styles.count}>
-                {total === 0
-                  ? 'Nothing matched. Try different words.'
-                  : total > SHOWN
-                  ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
-                  : `${total} match${total === 1 ? '' : 'es'}`}
-              </Text>
+              <View>
+                {hero ? (
+                  <Hero
+                    activity={hero}
+                    onOpen={(citation, url) => {
+                      // Prefer our own reader so the statute opens in the app
+                      // with its in-force flags; fall back to the official
+                      // site only if the section is not in the index.
+                      const s = SECTIONS.find((x) => x.c === citation);
+                      if (s) setScreen({ kind: 'detail', section: s });
+                      else Linking.openURL(url);
+                    }}
+                  />
+                ) : null}
+                {hero ? (
+                  <Text style={styles.listLabel}>EVERY MATCHING STATUTE</Text>
+                ) : null}
+                <Text style={styles.count}>
+                  {total === 0
+                    ? 'Nothing matched. Try different words.'
+                    : total > SHOWN
+                    ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
+                    : `${total} match${total === 1 ? '' : 'es'}`}
+                </Text>
+              </View>
             }
             renderItem={({ item, index: rank }) => (
               <Pressable
@@ -325,7 +404,7 @@ export default function App() {
               >
                 {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
                 <Text style={styles.heading} numberOfLines={3}>
-                  {item.h}
+                  {titleOf(item.h)}
                 </Text>
                 <View style={styles.metaRow}>
                   <Text style={styles.citation}>{item.c}</Text>
@@ -516,6 +595,56 @@ function About({ onBack }: { onBack: () => void }) {
   );
 }
 
+// The answer, before the search results. Every line is hand-written and every
+// line carries the statute it came from, so a reader can check us rather than
+// trust us. Rules we are not certain about say so instead of being dropped.
+function Hero({
+  activity,
+  onOpen,
+}: {
+  activity: Activity;
+  onOpen: (citation: string, url: string) => void;
+}) {
+  return (
+    <View style={styles.hero}>
+      <Text style={styles.heroLabel}>WHAT YOU NEED TO KNOW</Text>
+      <Text style={styles.heroTitle}>{activity.displayName}</Text>
+      <Text style={styles.heroSummary}>{activity.summary}</Text>
+
+      {activity.rules.map((r) => (
+        <View key={r.id} style={styles.rule}>
+          <View style={styles.ruleRow}>
+            <Text style={styles.bullet}>•</Text>
+            <Text style={styles.ruleText}>{r.text}</Text>
+          </View>
+          {r.appliesIf ? (
+            <Text style={styles.ruleIf}>Only if: {r.appliesIf}</Text>
+          ) : null}
+          <View style={styles.ruleFoot}>
+            <Pressable
+              onPress={() => onOpen(r.citation, r.sourceUrl)}
+              accessibilityRole="button"
+              accessibilityLabel={`Read ${r.citation}`}
+              hitSlop={6}
+            >
+              <Text style={styles.ruleCite}>{r.citation} ›</Text>
+            </Pressable>
+            {r.confidence === 'ambiguous' ? (
+              <Text style={styles.ruleFlag}>NOT SETTLED</Text>
+            ) : null}
+          </View>
+        </View>
+      ))}
+
+      <Text style={styles.heroFoot}>
+        Written by hand against the statute text and last checked{' '}
+        {activity.lastVerified}. State law only, and it does not cover city or
+        county rules.
+      </Text>
+    </View>
+  );
+}
+
 // One bar across every screen. The leaf is the About affordance, which keeps
 // identity and navigation in the same strip instead of spending a headline on
 // the app's own name every time you look at it.
@@ -616,6 +745,49 @@ const styles = StyleSheet.create({
   },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
+
+  // The curated answer. Sage field and a left rule so it reads as OUR writing,
+  // clearly separated from the verbatim statute cards below it.
+  hero: {
+    backgroundColor: C.accentSoft, borderRadius: 14, padding: 16,
+    marginBottom: 22, borderLeftWidth: 3, borderLeftColor: C.accent,
+  },
+  heroLabel: {
+    color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+  },
+  heroTitle: {
+    color: C.ink, fontSize: 19, fontWeight: '700', marginTop: 6,
+    lineHeight: 25,
+  },
+  heroSummary: { color: C.ink, fontSize: 14.5, lineHeight: 21, marginTop: 8 },
+  rule: {
+    marginTop: 14, borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 12,
+  },
+  ruleRow: { flexDirection: 'row', gap: 8 },
+  bullet: { color: C.accent, fontSize: 14, lineHeight: 21, fontWeight: '800' },
+  ruleText: { flex: 1, color: C.ink, fontSize: 14, lineHeight: 21 },
+  ruleIf: {
+    color: C.muted, fontSize: 12.5, lineHeight: 18, marginTop: 6,
+    marginLeft: 16, fontStyle: 'italic',
+  },
+  ruleFoot: {
+    flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 8,
+    marginLeft: 16,
+  },
+  ruleCite: { color: C.accentDeep, fontSize: 12.5, fontWeight: '700' },
+  ruleFlag: {
+    color: C.warn, fontSize: 9.5, fontWeight: '800', letterSpacing: 0.6,
+    backgroundColor: C.warnSoft, paddingHorizontal: 6, paddingVertical: 3,
+    borderRadius: 5, overflow: 'hidden',
+  },
+  heroFoot: {
+    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 16,
+    borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 10,
+  },
+  listLabel: {
+    color: C.faint, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+    marginLeft: 2, marginBottom: 6,
+  },
   count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
 
   card: {
