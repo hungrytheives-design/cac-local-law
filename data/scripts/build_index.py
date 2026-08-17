@@ -153,6 +153,31 @@ def main() -> int:
             json.dump(concepts, f, ensure_ascii=False, separators=(",", ":"))
         print(f"lexicon       {len(concepts)} concepts -> app/assets/concepts.json")
 
+    # Same reason, for the curated tier: hand-written plain-language rules with
+    # citations. Every citation is checked against the corpus first, because a
+    # rule pointing at a section that does not exist is worse than no rule.
+    src = os.path.join(ROOT, "data", "activities.json")
+    if os.path.exists(src):
+        with open(src, encoding="utf-8") as f:
+            activities = json.load(f)
+        known = {s["c"] for s in sections}
+        missing = sorted(
+            {
+                r["citation"]
+                for a in activities
+                for r in a["rules"]
+                if r["citation"] not in known
+            }
+        )
+        if missing:
+            print(f"\nERROR: activities.json cites sections not in the corpus: {missing}")
+            return 1
+        dst = os.path.join(ROOT, "app", "assets", "activities.json")
+        with open(dst, "w", encoding="utf-8") as f:
+            json.dump(activities, f, ensure_ascii=False, separators=(",", ":"))
+        rules = sum(len(a["rules"]) for a in activities)
+        print(f"curated       {len(activities)} activities, {rules} rules -> app/assets/activities.json")
+
     mb = os.path.getsize(OUT) / 1_000_000
     print(f"chapters      {len(titles)}")
     print(f"sections      {len(sections)}  (all searchable)")
