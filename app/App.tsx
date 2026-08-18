@@ -63,6 +63,7 @@ type Rule = {
   appliesIf?: string;
   confidence: 'clear' | 'ambiguous';
   brokenBy?: string[];   // condition ids that directly contradict this rule
+  minAge?: number;       // you must be at least this old for this to be allowed
 };
 type Activity = {
   id: string;
@@ -323,6 +324,32 @@ const SIGNALS: { id: string; phrases: string[] }[] = [
   },
 ];
 
+// The number a teenager states about themselves is usually the whole question -
+// "can I get a job at 15" is not a question about jobs, it is a question about
+// 15 - and the tokenizer throws it away because it filters short tokens.
+//
+// The trap is times. "drive at 11pm" must not read as an eleven-year-old, so a
+// number followed by am/pm or a colon is rejected outright.
+function detectAge(raw: string): number | null {
+  const q = raw.toLowerCase();
+  const patterns = [
+    /\b(\d{1,2})\s*(?:and a half\s*)?(?:years?|yrs?)\s*old\b/,
+    /\b(?:i'?m|im|i am|he'?s|she'?s|they'?re)\s+(\d{1,2})\b/,
+    /\bage\s+(?:of\s+)?(\d{1,2})\b/,
+    /\b(?:at|turn|turning|turned|only)\s+(\d{1,2})\b/,
+  ];
+  for (const re of patterns) {
+    const m = q.match(re);
+    if (!m) continue;
+    const at = m.index ?? 0;
+    const after = q.slice(at + m[0].length, at + m[0].length + 3);
+    if (/^\s*(?:am|pm|:)/.test(after)) continue;   // a clock time, not an age
+    const n = parseInt(m[1], 10);
+    if (n >= 1 && n <= 25) return n;                // outside that it is not an age
+  }
+  return null;
+}
+
 function detectSignals(raw: string): Set<string> {
   const q = raw.toLowerCase();
   const found = new Set<string>();
@@ -336,16 +363,27 @@ function detectSignals(raw: string): Set<string> {
 // shape as the lexicon: whole phrases against the raw string, single words
 // against stems, so "ebikes" and "riding my ebike" both land on the e-bike card.
 function matchActivity(query: string): Activity | null {
-  const q = query.toLowerCase();
-  const tokens = tokenize(query);
+  // Hyphens are flattened on both sides. Without this "e-bike" tokenized to
+  // ["bike"] - the one-letter "e" is dropped - and matched no keyword at all,
+  // so the most obvious way to spell the thing returned nothing.
+  const q = flat(query);
+  const tokens = tokenize(query.replace(/-/g, ' '));
   const stems = tokens.map(stem).filter((s) => s.length >= 3);
+
+  // Phrases first, across every activity, because a phrase is more specific
+  // than any single word in it. Checking activities in order instead meant
+  // "work permit" hit the driving card, since learners-permit owns "permit"
+  // and is listed before minor-work.
+  for (const a of ACTIVITIES) {
+    for (const k of a.keywords) {
+      const fk = flat(k);
+      if (fk.includes(' ') && q.includes(fk)) return a;
+    }
+  }
 
   for (const a of ACTIVITIES) {
     for (const k of a.keywords) {
-      if (k.includes(' ')) {
-        if (q.includes(k)) return a;
-        continue;
-      }
+      if (flat(k).includes(' ')) continue;
       if (tokens.includes(k)) return a;
       // Both sides must be 4+ characters. Guarding only the keyword let the
       // three-letter token "off" prefix-match the keyword "offroad", so
@@ -380,6 +418,7 @@ export default function App() {
   const { hits, total } = useMemo(() => search(settled), [settled]);
   const hero = useMemo(() => matchActivity(settled), [settled]);
   const signals = useMemo(() => detectSignals(settled), [settled]);
+  const age = useMemo(() => detectAge(settled), [settled]);
   const searching = tokenize(settled).length > 0;
 
   if (screen.kind === 'detail') {
@@ -428,6 +467,7 @@ export default function App() {
                   <Hero
                     activity={hero}
                     signals={signals}
+                    age={age}
                     onOpen={(citation, url) => {
                       // Prefer our own reader so the statute opens in the app
                       // with its in-force flags; fall back to the official
@@ -656,16 +696,20 @@ function About({ onBack }: { onBack: () => void }) {
 function Hero({
   activity,
   signals,
+  age,
   onOpen,
 }: {
   activity: Activity;
   signals: Set<string>;
+  age: number | null;
   onOpen: (citation: string, url: string) => void;
 }) {
   // Rules the person's own description runs into. Not a prediction about what
   // happens to them, just: you said X, and this rule says X is the problem.
-  const conflicts = activity.rules.filter((r) =>
-    r.brokenBy?.some((b) => signals.has(b))
+  const tooYoung = (r: Rule) =>
+    r.minAge !== undefined && age !== null && age < r.minAge;
+  const conflicts = activity.rules.filter(
+    (r) => r.brokenBy?.some((b) => signals.has(b)) || tooYoung(r)
   );
 
   return (
@@ -676,6 +720,11 @@ function Hero({
           {conflicts.map((r) => (
             <View key={`v-${r.id}`}>
               <Text style={styles.verdictText}>{r.text}</Text>
+              {tooYoung(r) ? (
+                <Text style={styles.verdictIf}>
+                  You said {age}. This one needs {r.minAge}.
+                </Text>
+              ) : null}
               {r.appliesIf ? (
                 <Text style={styles.verdictIf}>Applies if: {r.appliesIf}</Text>
               ) : null}

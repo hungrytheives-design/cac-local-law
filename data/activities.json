@@ -8,7 +8,12 @@
       "electric bike",
       "electric bicycle",
       "pedal assist",
-      "motorized bike"
+      "motorized bike",
+      "ebikes",
+      "electric bicycles",
+      "e bike",
+      "class 3",
+      "throttle bike"
     ],
     "summary": "Nevada treats an e-bike as a bicycle, not a motor vehicle. No licence, no registration, no plate. What the law does control is where you ride and what your bike has on it.",
     "lastVerified": "2026-08-17",
@@ -80,7 +85,15 @@
       "utv",
       "off road",
       "offroad",
-      "ohv"
+      "ohv",
+      "dirt bikes",
+      "quads",
+      "atvs",
+      "four wheelers",
+      "razor",
+      "sand dunes",
+      "trails",
+      "moto"
     ],
     "summary": "The opposite of an e-bike. An off-highway vehicle has to be titled and registered with the DMV, and putting one on a public road is tightly limited.",
     "lastVerified": "2026-08-17",
@@ -143,7 +156,18 @@
       "driving test",
       "student driver",
       "driving school",
-      "driver education"
+      "driver education",
+      "learners",
+      "learner",
+      "permit test",
+      "behind the wheel",
+      "supervised driving",
+      "driving alone",
+      "drive alone",
+      "my permit",
+      "road test",
+      "get my license",
+      "driving hours"
     ],
     "summary": "Nevada runs a graduated system. Permit at 15 and a half, licence at 16 with 50 logged hours behind it, then a night curfew until you turn 18.",
     "lastVerified": "2026-08-17",
@@ -154,7 +178,8 @@
         "citation": "NRS 483.280",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-483.html#NRS483Sec280",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "minAge": 15.5
       },
       {
         "id": "permit-supervision",
@@ -173,7 +198,8 @@
         "citation": "NRS 483.2521",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-483.html#NRS483Sec2521",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "minAge": 16
       },
       {
         "id": "license-clean-record",
@@ -209,7 +235,19 @@
       "lake mead",
       "lake tahoe",
       "personal watercraft",
-      "water ski"
+      "water ski",
+      "boats",
+      "jetskis",
+      "jet skis",
+      "wave runner",
+      "waverunner",
+      "pontoon",
+      "life jacket",
+      "life vest",
+      "boater education",
+      "boating license",
+      "tubing",
+      "water skiing"
     ],
     "summary": "The rule that catches people out is boater education. If you were born on or after January 1, 1983, you need a safety card for anything over 15 horsepower on Lake Mead or Lake Tahoe.",
     "lastVerified": "2026-08-17",
@@ -246,7 +284,8 @@
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-488.html#NRS488Sec580",
         "jurisdiction": "NV",
         "appliesIf": "You are on a personal watercraft rather than a boat.",
-        "confidence": "clear"
+        "confidence": "clear",
+        "minAge": 14
       },
       {
         "id": "life-jacket-under-13",
@@ -268,7 +307,16 @@
       "cell phone",
       "cellphone",
       "snapchat",
-      "facetime"
+      "facetime",
+      "texting and driving",
+      "on my phone",
+      "using my phone",
+      "hands free",
+      "handsfree",
+      "phone while driving",
+      "answer a call",
+      "gps",
+      "airpods"
     ],
     "summary": "Nevada is a hands-free state. Typing anything is out, and holding the phone to talk is out. There are extra penalties in a work zone or a pedestrian safety zone.",
     "lastVerified": "2026-08-17",
@@ -319,7 +367,19 @@
       "child restraint",
       "front seat",
       "back seat",
-      "rear facing"
+      "rear facing",
+      "car seats",
+      "booster seats",
+      "baby seat",
+      "infant seat",
+      "toddler",
+      "rear-facing",
+      "forward facing",
+      "little brother",
+      "little sister",
+      "my kid",
+      "my son",
+      "my daughter"
     ],
     "summary": "Nevada ties the car seat rule to age AND height, not age alone, and under 2 the seat has to be rear-facing in the back.",
     "lastVerified": "2026-08-17",
@@ -353,7 +413,18 @@
       "employed",
       "hire",
       "part time job",
-      "employment"
+      "employment",
+      "jobs",
+      "working papers",
+      "first job",
+      "summer job",
+      "minor working",
+      "under 18 job",
+      "work hours",
+      "school night",
+      "hiring",
+      "babysitting",
+      "fast food job"
     ],
     "summary": "Three separate limits stack up: what age you can work at all, how many hours, and how late on a school night.",
     "lastVerified": "2026-08-17",
@@ -364,7 +435,8 @@
         "citation": "NRS 609.245",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-609.html#NRS609Sec245",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "minAge": 14
       },
       {
         "id": "work-school-hours",
@@ -417,7 +489,16 @@
       "tobacco",
       "cigarette",
       "cigarettes",
-      "smoking"
+      "smoking",
+      "vapes",
+      "vaping age",
+      "nicotine pouches",
+      "zyn",
+      "dip",
+      "chew",
+      "cigars",
+      "hookah",
+      "smoke"
     ],
     "summary": "The legal age is 21, and Nevada writes this law as a rule for shops rather than a rule for you.",
     "lastVerified": "2026-08-17",
@@ -428,7 +509,8 @@
         "citation": "NRS 202.2493",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-202.html#NRS202Sec2493",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "minAge": 21
       },
       {
         "id": "vape-unopened",
