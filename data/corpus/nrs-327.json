@@ -8,7 +8,7 @@
   "text": "NRS 327.005 Sole coordinate system in Nevada for describing land. 1. On and after publication of the North American Datum of 1983 for Nevada by the National Geodetic Survey of the National Oceanic and Atmospheric Administration, or the federal agency which succeeds it, the Nevada Coordinate System of 1983, which is a transverse Mercator projection of the North American Datum of 1983, is the sole coordinate system in Nevada for describing land. 2. On and after that date of publication, the Nevada Coordinate System of 1927 may be used only for purposes of reference. (Added to NRS by 1983, 1338 ; A 1987, 392 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec005",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.010",
@@ -19,7 +19,7 @@
   "text": "NRS 327.010 Designation of systems; division of State into three zones. 1. The system of plane coordinates which has been established for defining and stating the positions or locations of points on the surface of the earth within the State of Nevada: (a) By the United States Coast and Geodetic Survey is designated as the Nevada Coordinate System of 1927. (b) By the National Geodetic Survey of the National Oceanic and Atmospheric Administration, or the federal agency which succeeds it, is designated as the Nevada Coordinate System of 1983. 2. For the purpose of the use of these systems the State is divided into an East Zone, a Central Zone, and a West Zone. The area now included in: (a) Clark, Elko, Eureka, Lincoln and White Pine counties constitutes the East Zone. (b) Lander and Nye counties constitutes the Central Zone. (c) Carson City and Churchill, Douglas, Esmeralda, Humboldt, Lyon, Mineral, Pershing, Storey and Washoe counties constitutes the West Zone. [1:84:1945; 1943 NCL § 5589]—(NRS A 1969, 329 ; 1983, 1339 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.020",
@@ -30,7 +30,7 @@
   "text": "NRS 327.020 Names of zones. 1. As established for use in the East Zone, the Nevada Coordinate System of 1927 or the Nevada Coordinate System of 1983 must be named, and in any land description in which it is used it must be designated, the “Nevada Coordinate System of 1927, East Zone” or the “Nevada Coordinate System of 1983, East Zone.” 2. As established for use in the Central Zone, the Nevada Coordinate System of 1927, or the Nevada Coordinate System of 1983 must be named, and in any land description in which it is used it must be designated, the “Nevada Coordinate System of 1927, Central Zone” or the “Nevada Coordinate System of 1983, Central Zone.” 3. As established for use in the West Zone, the Nevada Coordinate System of 1927 or the Nevada Coordinate System of 1983 must be named, and in any land description in which it is used it must be designated, the “Nevada Coordinate System of 1927, West Zone” or the “Nevada Coordinate System of 1983, West Zone.” [2:84:1945; 1943 NCL § 5589.01]—(NRS A 1983, 1339 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.030",
@@ -41,7 +41,7 @@
   "text": "NRS 327.030 Plane coordinates. 1. The plane coordinates of a point on the earth’s surface, to be used in expressing the location of the point in the appropriate zone, must consist of two distances, expressed in: (a) Feet and decimals of a foot under the Nevada Coordinate System of 1927; or (b) Meters and decimals of a meter under the Nevada Coordinate System of 1983. Ê One of these distances, to be known as the “x-coordinate,” must give the position in an east-and-west direction; the other, to be known as the “y-coordinate,” must give the position in a north-and-south direction. 2. These coordinates must be made to conform to the values of the plane rectangular coordinates for the monumented stations of the North American Horizontal Geodetic Control Network, as published by the National Geodetic Survey of the National Oceanic and Atmospheric Administration or the federal agency which succeeds it, and whose plane coordinates have been computed on the systems defined in this chapter. Any such station may be used for connecting a survey to either Nevada coordinate system. 3. As used in this section: (a) “Foot” means the United States Survey Foot. (b) “Meter” means exactly 39.37 inches. [3:84:1945; 1943 NCL § 5589.02]—(NRS A 1983, 1340 ; 1987, 392 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.040",
@@ -52,7 +52,7 @@
   "text": "NRS 327.040 Reference may be made to either zone when tract extends into another zone. When any tract of land to be defined by a single description extends from one into another of the above coordinate zones, the positions of all points on its boundaries may be referred to either of such zones, the zone which is used being specifically named in the description. [4:84:1945; 1943 NCL § 5589.03]",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.050",
@@ -63,7 +63,7 @@
   "text": "NRS 327.050 Definitions of Nevada coordinate systems. 1. For purposes of more specifically defining the Nevada Coordinate System of 1927, the following definition by the United States Coast and Geodetic Survey is adopted: (a) The Nevada Coordinate System of 1927, East Zone, is a transverse Mercator projection of the Clarke Spheroid of 1866, having a central meridian 115 ° 35 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 115 ° 35 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 500,000 feet and y = 0 feet. (b) The Nevada Coordinate System of 1927, Central Zone, is a transverse Mercator projection of the Clarke Spheroid of 1866, having a central meridian 116 ° 40 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 116 ° 40 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 500,000 feet and y = 0 feet. (c) The Nevada Coordinate System of 1927, West Zone, is a transverse Mercator projection of the Clarke Spheroid of 1866, having a central meridian 118 ° 35 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 118 ° 35 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 500,000 feet and y = 0 feet. 2. For purposes of more specifically defining the Nevada Coordinate System of 1983, the following definition by the National Geodetic Survey of the National Oceanic and Atmospheric Administration is adopted: (a) The Nevada Coordinate System of 1983, East Zone, is a transverse Mercator projection of the North American Datum of 1983, having a central meridian 115 ° 35 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 115 ° 35 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 200,000 meters and y = 8,000,000 meters. (b) The Nevada Coordinate System of 1983, Central Zone, is a transverse Mercator projection of the North American Datum of 1983, having a central meridian 116 ° 40 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 116 ° 40 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 500,000 meters and y = 6,000,000 meters. (c) The Nevada Coordinate System of 1983, West Zone, is a transverse Mercator projection of the North American Datum of 1983, having a central meridian 118 ° 35 ¢ west of Greenwich, on which meridian the scale is set at one part in 10,000 too small. The origin of coordinates is at the intersection of the meridian 118 ° 35 ¢ west of Greenwich and the parallel 34 ° 45 ¢ north latitude. This origin is given the coordinates: x = 800,000 meters and y = 4,000,000 meters. [5:84:1945; 1943 NCL § 5589.04]—(NRS A 1983, 1340 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.060",
@@ -74,7 +74,7 @@
   "text": "NRS 327.060 Limitations on use of coordinates in documents to be recorded. No coordinate based on either of the Nevada coordinate systems which purports to define the position of a point on a land boundary may be presented to be recorded in any public land records or deed records unless the document to be recorded contains: 1. A description of the monumented station or stations from which the coordinates being recorded have been determined. 2. Annotations which accompany the values for state plane coordinates and clearly describe the method and accuracy of the determinations. [6:84:1945; 1943 NCL § 5589.05]—(NRS A 1983, 1341 ; 1987, 393 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.070",
@@ -85,7 +85,7 @@
   "text": "NRS 327.070 Limitation on use of terms “Nevada Coordinate System of 1927” and “Nevada Coordinate System of 1983.” The use of the term “Nevada Coordinate System of 1927” or “Nevada Coordinate System of 1983” on any map, report of survey, or other document is limited to use for coordinates based on the system as defined in this chapter. [7:84:1945; 1943 NCL § 5589.06]—(NRS A 1983, 1342 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.090",
@@ -96,7 +96,7 @@
   "text": "NRS 327.090 Purchaser or mortgagee need not rely on description depending exclusively on coordinate system. Nothing contained in this chapter requires any purchaser or mortgagee of real property to rely on a land description, any part of which depends exclusively upon either of the systems established by this chapter. [9:84:1945; 1943 NCL § 5589.08]—(NRS A 1983, 1342 ) GEOGRAPHIC NAMES",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.100",
@@ -107,7 +107,7 @@
   "text": "NRS 327.100 “Board” defined. As used in NRS 327.110 to 327.150 , inclusive, unless the context otherwise requires, the term “Board” means the Nevada State Board on Geographic Names. (Added to NRS by 1985, 588 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.110",
@@ -118,7 +118,7 @@
   "text": "NRS 327.110 Nevada State Board on Geographic Names: Creation; purpose. The Nevada State Board on Geographic Names is hereby created to coordinate and approve geographic names within the State for official recommendation to the United States Board on Geographic Names. (Added to NRS by 1985, 588 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.120",
@@ -129,7 +129,7 @@
   "text": "NRS 327.120 Nevada State Board on Geographic Names: Composition. The Board consists of: 1. Nine voting members, which include one representative of each of the following agencies or organizations: (a) Bureau of Mines and Geology of the State of Nevada. (b) Faculty of the University of Nevada, Reno. (c) Faculty of the University of Nevada, Las Vegas. (d) Division of State Library, Archives and Public Records of the Department of Administration. (e) Department of Transportation of the State. (f) State Department of Conservation and Natural Resources. (g) Division of Museums and History of the Department of Tourism and Cultural Affairs. (h) Department of Native American Affairs of the State. (i) Inter-Tribal Council of Nevada, Inc., or its successor organization. Ê Each agency or organization shall designate a representative and one alternative representative for this purpose. 2. Three nonvoting members who shall serve in an advisory capacity to the Board, which include one representative of each of the following agencies: (a) United States Bureau of Land Management. (b) United States Forest Service. (c) United States National Park Service. 3. An Executive Secretary who is a nonvoting member of the Board. The voting members of the Board shall select the Executive Secretary. (Added to NRS by 1985, 588 ; A 1993, 507 ; 2017, 432 ; 2021, 168 ; 2023, 2771 ; 2025, 829 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.130",
@@ -140,7 +140,7 @@
   "text": "NRS 327.130 Nevada State Board on Geographic Names: Officers; rules; quorum; meetings; compensation. 1. The Board shall designate from among its voting members a Chair and a Vice Chair. The Vice Chair presides in the absence of the Chair. 2. The Board shall adopt rules for its own management. 3. A majority of the voting members of the Board constitutes a quorum for the transaction of business. 4. The Board shall meet at such times and places as are specified by the Chair, but may not hold more than four meetings in any 1 year. 5. Members of the Board shall serve without compensation, travel expenses or subsistence allowances except as they may be provided by the members’ respective agencies and organizations. (Added to NRS by 1985, 588 ; A 2021, 169 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.140",
@@ -151,7 +151,7 @@
   "text": "NRS 327.140 Nevada State Board on Geographic Names: Powers and duties. 1. The Board shall: (a) Receive and evaluate all proposals for changes in or additions to names of geographic features and places in the State to determine the most appropriate and acceptable names for use in maps and official documents of all levels of government. (b) Make official recommendations on behalf of the State with respect to each proposal. (c) Assist and cooperate with the United States Board on Geographic Names in matters relating to names of geographic features and places in Nevada. (d) Maintain a list of advisers who have special knowledge of or expertise in Nevada history, geography or culture and consult with those advisers on a regular basis in the course of its work. (e) Recommend to change the name of any geographic feature or place in this State that is racially discriminatory or contains racially discriminatory language or imagery. (f) Report annually on any recommendation to change the name of a geographic feature or place pursuant to paragraph (e) and submit the report to the Director of the Legislative Counsel Bureau for transmittal to the Legislature or, if the Legislature is not in session, to the Legislative Commission. 2. The Board may: (a) Adopt regulations to assist in carrying out the functions and duties assigned to it by law. (b) Initiate proposals for changes in or additions to geographic names in the State. Any proposal initiated by the Board must be evaluated in accordance with the same procedures prescribed for the consideration of other proposals. (Added to NRS by 1985, 588 ; A 2021, 2074 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-327.150",
@@ -162,6 +162,6 @@
   "text": "NRS 327.150 Changes in or additions of geographic names: Submission of proposal; preliminary consideration; final action and notice. 1. Any person, group or agency of federal, state or local government may propose a change in or the addition of any geographic name within the State by submitting it to the Board for evaluation and recommendation. 2. Upon receipt of any such proposal, together with sufficient supporting information, the Board shall: (a) Place the proposal on the agenda for preliminary consideration at its next meeting. (b) Give appropriate notice to persons and groups who are affected by the proposal or might have an interest in it. (c) Provide opportunities for public comment. (d) Conduct such research and field investigations as it deems necessary. 3. The Board may not take final action on any proposal until it has been given preliminary consideration at one or more previous meetings. 4. Whenever the Board takes final action on a proposal, it shall notify the person, group or agency who submitted the proposal and shall transmit the official recommendation to the United States Board on Geographic Names. (Added to NRS by 1985, 589 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-327.html#NRS327Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

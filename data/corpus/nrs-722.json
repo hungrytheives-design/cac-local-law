@@ -8,7 +8,7 @@
   "text": "NRS 722.010 Short title. This chapter may be cited as the Revised Uniform Fiduciary Access to Digital Assets Act of 2015. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.020",
@@ -19,7 +19,7 @@
   "text": "NRS 722.020 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 722.030 to 722.290 , inclusive, have the meaning ascribed to them in those sections. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.030",
@@ -30,7 +30,7 @@
   "text": "NRS 722.030 “Account” defined. “Account” means an arrangement under a terms-of-service agreement in which a custodian carries, maintains, processes, receives or stores a digital asset of the user or provides goods or services to the user. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.040",
@@ -41,7 +41,7 @@
   "text": "NRS 722.040 “Agent” defined. “Agent” means an attorney-in-fact granted authority under a durable or nondurable power of attorney. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.050",
@@ -52,7 +52,7 @@
   "text": "NRS 722.050 “Carries” defined. “Carries” means engages in the transmission of an electronic communication. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.060",
@@ -63,7 +63,7 @@
   "text": "NRS 722.060 “Catalogue of electronic communications” defined. “Catalogue of electronic communications” means information that identifies each person with which a user has had an electronic communication, the time and date of the communication and the electronic address of the person. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.070",
@@ -74,7 +74,7 @@
   "text": "NRS 722.070 “Content of an electronic communication” defined. “Content of an electronic communication” means information concerning the substance or meaning of the communication that: 1. Has been sent or received by a user; 2. Is in electronic storage by a custodian providing an electronic-communication service to the public or is carried or maintained by a custodian providing a remote-computing service to the public; and 3. Is not readily accessible to the public. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.080",
@@ -85,7 +85,7 @@
   "text": "NRS 722.080 “Court” defined. “Court” means a district court of this State. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.090",
@@ -96,7 +96,7 @@
   "text": "NRS 722.090 “Custodian” defined. “Custodian” means a person that carries, maintains, processes, receives or stores a digital asset of a user. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.100",
@@ -107,7 +107,7 @@
   "text": "NRS 722.100 “Designated recipient” defined. “Designated recipient” means a person chosen by a user using an online tool to administer digital assets of the user. (Added to NRS by 2017, 154 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.110",
@@ -118,7 +118,7 @@
   "text": "NRS 722.110 “Digital asset” defined. “Digital asset” means an electronic record in which a natural person has a right or interest. The term does not include an underlying asset or liability unless the asset or liability is itself an electronic record. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.120",
@@ -129,7 +129,7 @@
   "text": "NRS 722.120 “Electronic” defined. “Electronic” means relating to technology having electrical, digital, magnetic, wireless, optical, electromagnetic or similar capabilities. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.130",
@@ -140,7 +140,7 @@
   "text": "NRS 722.130 “Electronic communication” defined. “Electronic communication” has the meaning set forth in 18 U.S.C. § 2510(12). (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.140",
@@ -151,7 +151,7 @@
   "text": "NRS 722.140 “Electronic communication service” defined. “Electronic-communication service” means a custodian that provides to a user the ability to send or receive an electronic communication. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.150",
@@ -162,7 +162,7 @@
   "text": "NRS 722.150 “Fiduciary” defined. “Fiduciary” means an original, additional or successor personal representative, guardian, agent or trustee. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.160",
@@ -173,7 +173,7 @@
   "text": "NRS 722.160 “Guardian” defined. “Guardian” means a person appointed by a court to manage the estate of a living natural person. The term includes a special guardian as defined in NRS 159.026 . (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec160",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.170",
@@ -184,7 +184,7 @@
   "text": "NRS 722.170 “Information” defined. “Information” means data, text, images, videos, sounds, codes, computer programs, software, databases or the like. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec170",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.180",
@@ -195,7 +195,7 @@
   "text": "NRS 722.180 “Online tool” defined. “Online tool” means an electronic service provided by a custodian that allows the user, in an agreement distinct from the terms-of-service agreement between the custodian and user, to provide directions for disclosure or nondisclosure of digital assets to a third person. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec180",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.190",
@@ -206,7 +206,7 @@
   "text": "NRS 722.190 “Person” defined. “Person” means a natural person, estate, business or nonprofit entity, public corporation, government or governmental subdivision, agency or instrumentality or other legal entity. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec190",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.200",
@@ -217,7 +217,7 @@
   "text": "NRS 722.200 “Personal representative” defined. “Personal representative” means an executor, administrator, special administrator or person that performs substantially the same function under law of this State other than this chapter. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec200",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.210",
@@ -228,7 +228,7 @@
   "text": "NRS 722.210 “Power of attorney” defined. “Power of attorney” means a record that grants an agent authority to act in the place of a principal. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec210",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.220",
@@ -239,7 +239,7 @@
   "text": "NRS 722.220 “Principal” defined. “Principal” means a natural person who grants authority to an agent in a power of attorney. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec220",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.230",
@@ -250,7 +250,7 @@
   "text": "NRS 722.230 “Protected person” defined. “Protected person” means a natural person for whom a guardian has been appointed. The term includes a natural person for whom an application for the appointment of a guardian is pending. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec230",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.240",
@@ -261,7 +261,7 @@
   "text": "NRS 722.240 “Record” defined. “Record” means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec240",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.250",
@@ -272,7 +272,7 @@
   "text": "NRS 722.250 “Remote-computing service” defined. “Remote-computing service” means a custodian that provides to a user computer-processing services or the storage of digital assets by means of an electronic communications system as defined in 18 U.S.C. § 2510(14). (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec250",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.260",
@@ -283,7 +283,7 @@
   "text": "NRS 722.260 “Terms-of-service agreement” defined. “Terms-of-service agreement” means an agreement that controls the relationship between a user and a custodian. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec260",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.270",
@@ -294,7 +294,7 @@
   "text": "NRS 722.270 “Trustee” defined. “Trustee” means a fiduciary with legal title to property under an agreement or declaration that creates a beneficial interest in another. The term includes a successor trustee. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec270",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.280",
@@ -305,7 +305,7 @@
   "text": "NRS 722.280 “User” defined. “User” means a person that has an account with a custodian. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec280",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.290",
@@ -316,7 +316,7 @@
   "text": "NRS 722.290 “Will” defined. “Will” includes a codicil, testamentary instrument that only appoints an executor and instrument that revokes or revises a testamentary instrument. (Added to NRS by 2017, 155 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec290",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.300",
@@ -327,7 +327,7 @@
   "text": "NRS 722.300 Applicability. 1. This chapter applies to: (a) A fiduciary acting under a will or power of attorney executed before, on or after October 1, 2017; (b) A personal representative acting for a decedent who died before, on or after October 1, 2017; (c) A guardianship proceeding commenced before, on or after October 1, 2017; and (d) A trustee acting under a trust created before, on or after October 1, 2017. 2. This chapter applies to a custodian if the user resides in this State or resided in this State at the time of the user’s death. 3. This chapter does not apply to a digital asset of an employer used by an employee in the ordinary course of the employer’s business. (Added to NRS by 2017, 156 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec300",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.310",
@@ -338,7 +338,7 @@
   "text": "NRS 722.310 User direction for disclosure of digital assets. 1. A user may use an online tool to direct the custodian to disclose to a designated recipient or not to disclose some or all of the user’s digital assets, including the content of electronic communications. If the online tool allows the user to modify or delete a direction at all times, a direction regarding disclosure using an online tool overrides a contrary direction by the user in a will, trust, power of attorney or other record. 2. If a user has not used an online tool to give direction under subsection 1 or if the custodian has not provided an online tool, the user may allow or prohibit in a will, trust, power of attorney or other record, disclosure to a fiduciary of some or all of the user’s digital assets, including the content of electronic communications sent or received by the user. 3. A user’s direction under subsection 1 or 2 overrides a contrary provision in a terms-of-service agreement that does not require the user to act affirmatively and distinctly from the user’s assent to the terms of service. (Added to NRS by 2017, 156 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec310",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.320",
@@ -349,7 +349,7 @@
   "text": "NRS 722.320 Terms-of-service agreement. 1. This chapter does not change or impair a right of a custodian or a user under a terms-of-service agreement to access and use digital assets of the user. 2. This chapter does not give a fiduciary or designated recipient any new or expanded rights other than those held by the user for whom, or for whose estate, the fiduciary or designated recipient acts or represents. 3. A fiduciary’s or designated recipient’s access to digital assets may be modified or eliminated by a user, by federal law or by a terms-of-service agreement if the user has not provided direction under NRS 722.310 . (Added to NRS by 2017, 156 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec320",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.330",
@@ -360,7 +360,7 @@
   "text": "NRS 722.330 Procedure for disclosing digital assets. 1. When disclosing digital assets of a user under this chapter, the custodian may at its sole discretion: (a) Grant a fiduciary or designated recipient full access to the user’s account; (b) Grant a fiduciary or designated recipient partial access to the user’s account sufficient to perform the tasks with which the fiduciary or designated recipient is charged; or (c) Provide a fiduciary or designated recipient a copy in a record of any digital asset that, on the date the custodian received the request for disclosure, the user could have accessed if the user were alive and had full capacity and access to the account. 2. A custodian may assess a reasonable administrative charge for the cost of disclosing digital assets under this chapter. 3. A custodian need not disclose under this chapter a digital asset deleted by a user. 4. If a user directs or a fiduciary requests a custodian to disclose under this chapter some, but not all, of the user’s digital assets, the custodian need not disclose the assets if segregation of the assets would impose an undue burden on the custodian. If the custodian believes the direction or request imposes an undue burden, the custodian or fiduciary may seek an order from the court to disclose: (a) A subset limited by date of the user’s digital assets; (b) All of the user’s digital assets to the fiduciary or designated recipient; (c) None of the user’s digital assets; or (d) All of the user’s digital assets to the court for review in camera. (Added to NRS by 2017, 156 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec330",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.340",
@@ -371,7 +371,7 @@
   "text": "NRS 722.340 Disclosure of contents of electronic communications of deceased user. If a deceased user consented to or a court directs disclosure of the contents of electronic communications of the user, the custodian shall disclose to the personal representative of the estate of the user the content of an electronic communication sent or received by the user if the representative gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. A certified copy of the death certificate of the user; 3. A certified copy of the court order appointing the representative; 4. Unless the user provided direction using an online tool, a copy of the user’s will, trust, power of attorney or other record evidencing the user’s consent to disclosure of the content of electronic communications; and 5. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the user’s account; (b) Evidence linking the account to the user; or (c) A finding by the court that: (1) The user had a specific account with the custodian, identifiable by the information specified in paragraph (a); (2) Disclosure of the content of electronic communications of the user would not violate 18 U.S.C. §§ 2701 et seq. or 47 U.S.C. § 222 or other applicable law; (3) Unless the user provided direction using an online tool, the user consented to disclosure of the content of electronic communications; or (4) Disclosure of the content of electronic communications of the user is reasonably necessary for administration of the estate. (Added to NRS by 2017, 157 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec340",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.350",
@@ -382,7 +382,7 @@
   "text": "NRS 722.350 Disclosure of other digital assets of deceased user. Unless the user prohibited disclosure of digital assets or the court directs otherwise, a custodian shall disclose to the personal representative of the estate of a deceased user a catalogue of electronic communications sent or received by the user and digital assets, other than the content of electronic communications, of the user, if the representative gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. A certified copy of the death certificate of the user; 3. A certified copy of the court order appointing the representative; and 4. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the user’s account; (b) Evidence linking the account to the user; (c) An affidavit stating that disclosure of the user’s digital assets is reasonably necessary for administration of the estate; or (d) A finding by the court that: (1) The user had a specific account with the custodian, identifiable by the information specified in paragraph (a); or (2) Disclosure of the user’s digital assets is reasonably necessary for administration of the estate. (Added to NRS by 2017, 157 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec350",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.360",
@@ -393,7 +393,7 @@
   "text": "NRS 722.360 Disclosure of content of electronic communications of principal. To the extent a power of attorney expressly grants an agent authority over the content of electronic communications sent or received by the principal and unless directed otherwise by the principal or the court, a custodian shall disclose to the agent the content if the agent gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. An original or copy of the power of attorney expressly granting the agent authority over the content of electronic communications of the principal; 3. A certification by the agent, under penalty of perjury, that the power of attorney is in effect; and 4. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the principal’s account; or (b) Evidence linking the account to the principal. (Added to NRS by 2017, 158 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec360",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.370",
@@ -404,7 +404,7 @@
   "text": "NRS 722.370 Disclosure of other digital assets of principal. Unless otherwise ordered by the court, directed by the principal or provided by a power of attorney, a custodian shall disclose to an agent with specific authority over digital assets or general authority to act on behalf of a principal a catalogue of electronic communications sent or received by the principal and digital assets, other than the content of electronic communications, of the principal if the agent gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. An original or a copy of the power of attorney that gives the agent specific authority over digital assets or general authority to act on behalf of the principal; 3. A certification by the agent, under penalty of perjury, that the power of attorney is in effect; and 4. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the principal’s account; or (b) Evidence linking the account to the principal. (Added to NRS by 2017, 158 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec370",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.380",
@@ -415,7 +415,7 @@
   "text": "NRS 722.380 Disclosure of digital assets held in trust when trustee is original user. Unless otherwise ordered by the court or provided in a trust, a custodian shall disclose to a trustee that is an original user of an account any digital asset of the account held in trust, including a catalogue of electronic communications of the trustee and the content of electronic communications. (Added to NRS by 2017, 158 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec380",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.390",
@@ -426,7 +426,7 @@
   "text": "NRS 722.390 Disclosure of content of electronic communications held in trust when trustee is not original user. Unless otherwise ordered by the court, directed by the user or provided in a trust, a custodian shall disclose to a trustee that is not an original user of an account the content of an electronic communication sent or received by an original or successor user and carried, maintained, processed, received or stored by the custodian in the account of the trust if the trustee gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. A certified copy of the trust instrument or a certification of trust pursuant to NRS 164.400 to 164.440 , inclusive, that includes consent to disclosure of the content of electronic communications to the trustee; 3. A certification by the trustee, under penalty of perjury, that the trust exists and the trustee is a currently acting trustee of the trust; and 4. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the trust’s account; or (b) Evidence linking the account to the trust. (Added to NRS by 2017, 158 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec390",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.400",
@@ -437,7 +437,7 @@
   "text": "NRS 722.400 Disclosure of other digital assets held in trust when trustee is not original user. Unless otherwise ordered by the court, directed by the user or provided in a trust, a custodian shall disclose, to a trustee that is not an original user of an account, a catalogue of electronic communications sent or received by an original or successor user and stored, carried or maintained by the custodian in an account of the trust and any digital assets, other than the content of electronic communications, in which the trust has a right or interest if the trustee gives the custodian: 1. A written request for disclosure in physical or electronic form; 2. A certified copy of the trust instrument or a certification of trust pursuant to NRS 164.400 to 164.440 , inclusive; 3. A certification by the trustee, under penalty of perjury, that the trust exists and the trustee is a currently acting trustee of the trust; and 4. If requested by the custodian: (a) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the trust’s account; or (b) Evidence linking the account to the trust. (Added to NRS by 2017, 159 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec400",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.410",
@@ -448,7 +448,7 @@
   "text": "NRS 722.410 Disclosure of digital assets to guardian of protected person. 1. After an opportunity for a hearing under chapter 159 , 159A or 160 of NRS, the court may grant a guardian access to the digital assets of a protected person. 2. Unless otherwise ordered by the court or directed by the user, a custodian shall disclose to a guardian the catalogue of electronic communications sent or received by a protected person and any digital assets, other than the content of electronic communications, in which the protected person has a right or interest if the guardian gives the custodian: (a) A written request for disclosure in physical or electronic form; (b) A certified copy of the court order that gives the guardian authority over the digital assets of the protected person; and (c) If requested by the custodian: (1) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the account of the protected person; or (2) Evidence linking the account to the protected person. 3. A guardian with general authority to manage the assets of a protected person may request a custodian of the digital assets of the protected person to suspend or terminate an account of the protected person for good cause. A request made under this section must be accompanied by a certified copy of the court order giving the guardian authority over the protected person’s property. (Added to NRS by 2017, 159 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec410",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.420",
@@ -459,7 +459,7 @@
   "text": "NRS 722.420 Fiduciary duties and authority. 1. The legal duties imposed on a fiduciary charged with managing tangible property apply to the management of digital assets, including: (a) The duty of care; (b) The duty of loyalty; and (c) The duty of confidentiality. 2. A fiduciary’s or designated recipient’s authority with respect to a digital asset of a user: (a) Except as otherwise provided in NRS 722.310 , is subject to the applicable terms of service; (b) Is subject to other applicable law, including copyright law; (c) In the case of a fiduciary, is limited by the scope of the fiduciary’s duties; and (d) May not be used to impersonate the user. 3. A fiduciary with authority over the property of a decedent, protected person, principal or settlor has the right to access any digital asset in which the decedent, protected person, principal or settlor had a right or interest and that is not held by a custodian or subject to a terms-of-service agreement. 4. A fiduciary acting within the scope of the fiduciary’s duties is an authorized user of the property of the decedent, protected person, principal or settlor for the purpose of NRS 205.473 to 205.513 , inclusive. 5. A fiduciary with authority over the tangible personal property of a decedent, protected person, principal or settlor: (a) Has the right to access the property and any digital asset stored in it; and (b) Is an authorized user for the purpose of computer-fraud and unauthorized-computer-access laws. 6. A custodian may disclose information in an account to a fiduciary of the user when the information is required to terminate an account used to access digital assets licensed to the user. 7. A fiduciary of a user may request a custodian to terminate the user’s account. A request for termination must be in writing, in either physical or electronic form, and accompanied by: (a) If the user is deceased, a certified copy of the death certificate of the user; (b) A certified copy of the court order appointing the representative or the court order, power of attorney or trust giving the fiduciary authority over the account; and (c) If requested by the custodian: (1) A number, username, address or other unique subscriber or account identifier assigned by the custodian to identify the user’s account; (2) Evidence linking the account to the user; or (3) A finding by the court that the user had a specific account with the custodian, identifiable by the information specified in subparagraph (1). (Added to NRS by 2017, 159 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec420",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.430",
@@ -470,7 +470,7 @@
   "text": "NRS 722.430 Custodian compliance and immunity. 1. Not later than 60 days after receipt of the information required under NRS 722.340 to 722.420 , inclusive, a custodian shall comply with a request under this chapter from a fiduciary or designated recipient to disclose digital assets or terminate an account. If the custodian fails to comply, the fiduciary or designated recipient may apply to the court for an order directing compliance. 2. An order under subsection 1 directing compliance must contain a finding that compliance is not in violation of 18 U.S.C. § 2702. 3. A custodian may notify the user that a request for disclosure or to terminate an account was made under this chapter. 4. A custodian may deny a request under this chapter from a fiduciary or designated recipient for disclosure of digital assets or to terminate an account if the custodian is aware of any lawful access to the account following the receipt of the fiduciary’s request. 5. This chapter does not limit a custodian’s ability to obtain or require a fiduciary or designated recipient requesting disclosure or termination under this chapter to obtain a court order which: (a) Specifies that an account belongs to the protected person or principal; (b) Specifies that there is sufficient consent from the protected person or principal to support the requested disclosure; and (c) Contains a finding required by law other than this chapter. 6. A custodian and its officers, employees and agents are immune from liability for an act or omission done in good faith in compliance with this chapter. (Added to NRS by 2017, 160 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec430",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.440",
@@ -481,7 +481,7 @@
   "text": "NRS 722.440 Uniformity of application and construction. In applying and construing this uniform act, consideration must be given to the need to promote uniformity of the law with respect to its subject matter among states that enact it. (Added to NRS by 2017, 161 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec440",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-722.450",
@@ -492,6 +492,6 @@
   "text": "NRS 722.450 Relation to Electronic Signatures in Global and National Commerce Act. This chapter modifies, limits or supersedes the Electronic Signatures in Global and National Commerce Act, 15 U.S.C. §§ 7001 et seq., but does not modify, limit or supersede section 101(c) of that act, 15 U.S.C. § 7001(c), or authorize electronic delivery of any of the notices described in section 103(b) of that act, 15 U.S.C. § 7003(b). (Added to NRS by 2017, 161 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-722.html#NRS722Sec450",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

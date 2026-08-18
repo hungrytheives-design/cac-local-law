@@ -8,7 +8,7 @@
   "text": "NRS 720.010 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 720.020 to 720.130 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 1999, 1953 ; A 2001, 2722 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.020",
@@ -19,7 +19,7 @@
   "text": "NRS 720.020 “Asymmetric cryptosystem” defined. “Asymmetric cryptosystem” means an algorithm or series of algorithms that provide a secure key pair. (Added to NRS by 1999, 1953 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.030",
@@ -30,7 +30,7 @@
   "text": "NRS 720.030 “Certificate” defined. “Certificate” means a computer-based record that: 1. Identifies the certification authority using it; 2. Identifies a subscriber; 3. Sets forth the public key of the subscriber; and 4. Is digitally signed by the certification authority issuing it. (Added to NRS by 1999, 1953 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.040",
@@ -41,7 +41,7 @@
   "text": "NRS 720.040 “Certification authority” defined. “Certification authority” means a person who issues a certificate. (Added to NRS by 1999, 1953 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.050",
@@ -52,7 +52,7 @@
   "text": "NRS 720.050 “Correspond” defined. “Correspond” means, with reference to keys, belonging to the same key pair. (Added to NRS by 1999, 1953 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.060",
@@ -63,7 +63,7 @@
   "text": "NRS 720.060 “Digital signature” defined. “Digital signature” means an electronic signature that transforms a message by using an asymmetric cryptosystem. As used in this section, “electronic signature” has the meaning ascribed to it in NRS 719.100 . (Added to NRS by 1999, 1953 ; A 2001, 2722 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.070",
@@ -74,7 +74,7 @@
   "text": "NRS 720.070 “Hold a private key” defined. “Hold a private key” means to be authorized to use a private key. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.080",
@@ -85,7 +85,7 @@
   "text": "NRS 720.080 “Key pair” defined. “Key pair” means a private key and its corresponding public key in an asymmetric cryptosystem, which may be used in such a manner that the public key can verify a digital signature created by the private key. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.090",
@@ -96,7 +96,7 @@
   "text": "NRS 720.090 “Message” defined. “Message” means a digital representation of information. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.100",
@@ -107,7 +107,7 @@
   "text": "NRS 720.100 “Private key” defined. “Private key” means the key of a key pair used to create a digital signature. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.110",
@@ -118,7 +118,7 @@
   "text": "NRS 720.110 “Public key” defined. “Public key” means the key of a key pair used to verify a digital signature. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.115",
@@ -129,7 +129,7 @@
   "text": "NRS 720.115 “Record” defined. “Record” has the meaning ascribed to it in NRS 719.150 . (Added to NRS by 2001, 2721 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec115",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.120",
@@ -140,7 +140,7 @@
   "text": "NRS 720.120 “Subscriber” defined. “Subscriber” means a person who: 1. Is identified as such in a certificate; 2. Accepts the certificate; and 3. Holds the private key that corresponds to the public key set forth in the certificate. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.130",
@@ -151,7 +151,7 @@
   "text": "NRS 720.130 “Verify a digital signature” defined. “Verify a digital signature” means, in relation to a given digital signature, message and public key, to determine accurately that: 1. The digital signature was created by the private key corresponding to the public key; and 2. The message has not been altered since the digital signature was created. (Added to NRS by 1999, 1954 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.140",
@@ -162,7 +162,7 @@
   "text": "NRS 720.140 Applicability of chapter. 1. Except as otherwise provided in this subsection, the provisions of this chapter apply to any transaction for which a digital signature is used to sign an electronic record. The provisions of this chapter do not apply to a digital signature that is used to sign an electronic health record in accordance with NRS 439.581 to 439.597 , inclusive, and the regulations adopted pursuant thereto. 2. As used in this section, “electronic record” has the meaning ascribed to it in NRS 719.090 . (Added to NRS by 1999, 1954 ; A 2001, 2722 ; 2011, 1766 ; 2023, 1857 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.150",
@@ -173,7 +173,7 @@
   "text": "NRS 720.150 Adoption of regulations by Secretary of State. The Secretary of State shall adopt regulations regarding digital signatures, including, without limitation, regulations pertaining to: 1. The use of a digital signature, including, without limitation, standards for the commercial use of a digital signature; 2. Licensure of a certification authority, including, without limitation, professional standards that a certification authority must meet in conducting its business; 3. The verification of a digital signature; 4. The liability that may be incurred by a subscriber, certification authority or recipient of a message transformed by a digital signature, including, without limitation, the limitation of such liability; 5. The use of a digital signature as an acknowledgment, as that term is defined in NRS 240.002 ; 6. The issuance of injunctions and orders and the imposition of civil penalties pursuant to NRS 720.190 ; 7. The status of a private key as personal property; 8. The responsibilities of a subscriber with respect to the use and handling of a private key; 9. The confidentiality of information represented in a message that is transformed by a digital signature; and 10. Any other aspect of the use or verification of digital signatures that the Secretary of State determines to be necessary. (Added to NRS by 1999, 1955 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.160",
@@ -184,7 +184,7 @@
   "text": "NRS 720.160 Use of digital signature. 1. Except as otherwise provided in this section, if each person who will be involved in the submission and acceptance of a record agrees to the use of a digital signature, the use of a message which: (a) Represents the record; and (b) Is transformed by a digital signature, Ê constitutes a sufficient signing of the record. 2. The provisions of this section do not apply with respect to: (a) A record that is required to be signed in the presence of a third party; or (b) A record with respect to which the requirement that the record must be signed is accompanied by an additional qualifying requirement. (Added to NRS by 1999, 1954 ; A 2001, 2722 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec160",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.180",
@@ -195,7 +195,7 @@
   "text": "NRS 720.180 Licensure of certification authorities: Requirement; fee. 1. A person shall not conduct business as a certification authority without first obtaining a license as a certification authority from the Secretary of State. 2. The Secretary of State may charge a reasonable fee for such licensure. (Added to NRS by 1999, 1955 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec180",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.190",
@@ -206,7 +206,7 @@
   "text": "NRS 720.190 Enforcement of chapter: Injunctions and other orders; civil penalty. The Secretary of State may: 1. Issue injunctions and orders to enforce the provisions of this chapter and any regulations adopted by the Secretary of State pursuant thereto. 2. Impose a civil penalty not to exceed $10,000 for a willful violation of a provision of this chapter or a regulation adopted by the Secretary of State pursuant thereto. (Added to NRS by 1999, 1955 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec190",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-720.200",
@@ -217,6 +217,6 @@
   "text": "NRS 720.200 Unlawful acts; penalty. 1. It is unlawful for a person to: (a) Forge a digital signature; or (b) Provide false information knowingly to the Secretary of State with respect to any provision of this chapter or a regulation adopted pursuant thereto that requires such a person to provide information to the Secretary of State. 2. A person who violates the provisions of subsection 1 is guilty of a gross misdemeanor. 3. As used in this section, “forge a digital signature” means to create a digital signature that: (a) Is not authorized by the person who holds the private key used to create the digital signature; or (b) Although verifiable by a public key, the certificate that contains the public key identifies a subscriber who: (1) Does not exist; or (2) Does not hold the private key that corresponds to the public key contained in the certificate. (Added to NRS by 1999, 1955 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-720.html#NRS720Sec200",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

@@ -8,7 +8,7 @@
   "text": "NRS 683C.010 “Insurance consultant” defined. As used in this chapter, unless the context otherwise requires, “insurance consultant” means a person who, for a fee, holds himself or herself out to the public as engaged in the business of offering advice, counsel, opinion or service with respect to the benefits, advantages or disadvantages promised pursuant to any policy of insurance that could be issued in this State. (Added to NRS by 1995, 1610 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.018",
@@ -19,7 +19,7 @@
   "text": "NRS 683C.018 Applicability of other provisions. The provisions of chapters 679A and 679B of NRS and NRS 683A.301 , 683A.341 and 683A.351 apply to an insurance consultant. (Added to NRS by 2003, 3297 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec018",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.020",
@@ -30,18 +30,33 @@
   "text": "NRS 683C.020 License required; exceptions; administrative fine. 1. Except as otherwise provided in subsection 2, no person may engage in the business of an insurance consultant unless a license has been issued to the person by the Commissioner. 2. An insurance consultant’s license is not required for: (a) An attorney licensed to practice law in this State who is acting in his or her professional capacity; (b) A licensed producer of insurance, broker or surplus lines broker; (c) A trust officer of a bank who is acting in the normal course of his or her employment; or (d) An actuary or a certified public accountant who provides information, recommendations, advice or services in his or her professional capacity. 3. A person required to be licensed in this State who acts as an insurance consultant without a license is subject to an administrative fine of not more than $1,000 for each act or violation. (Added to NRS by 1995, 1610 ; A 2003, 3297 ; 2017, 2339 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.030",
   "citation": "NRS 683C.030",
   "chapter": "683C",
   "chapterTitle": "INSURANCE CONSULTANTS",
-  "heading": "Application for license; requirements; duration of license. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "heading": "Application for license; requirements; duration of license. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
   "text": "NRS 683C.030 Application for license; requirements; duration of license. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. An application for a license to act as an insurance consultant must be submitted to the Commissioner on forms prescribed by the Commissioner and must be accompanied by the applicable license fee set forth in NRS 680B.010 and, in addition to any other fee or charge, all applicable fees required pursuant to NRS 680C.110 . The license fee set forth in NRS 680B.010 is not refundable. If the applicant is a natural person, the application must include the social security number of the applicant. 2. An applicant for an insurance consultant’s license must successfully complete an examination which the Commissioner shall establish by regulation. 3. Each license issued pursuant to this chapter is valid for 3 years from the date of issuance or until it is suspended, revoked or otherwise terminated, and each insurance consultant must pay, in addition to any other fee or charge, all applicable fees required pursuant to NRS 680C.110 . (Added to NRS by 1995, 1610 ; A 1997, 2189 ; 2003, 3297 ; 2005, 2125 ; 2009, 1777 ; 2015, 2841 ; 2019, 3032 ) NRS 683C.030 Application for license; requirements; duration of license. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. An application for a license to act as an insurance consultant must be made to the Commissioner on forms prescribed by the Commissioner and must be accompanied by the applicable license fee set forth in NRS 680B.010 and, in addition to any other fee or charge, all applicable fees required pursuant to NRS 680C.110 . The license fee set forth in NRS 680B.010 is not refundable. 2. An applicant for an insurance consultant’s license must successfully complete an examination which the Commissioner shall establish by regulation. 3. Each license issued pursuant to this chapter is valid for 3 years from the date of issuance or until it is suspended, revoked or otherwise terminated, and each insurance consultant must pay, in addition to any other fee or charge, all applicable fees required pursuant to NRS 680C.110 . (Added to NRS by 1995, 1610 ; A 1997, 2189 ; 2003, 3297 ; 2005, 2125 , 2126 ; 2009, 1777 ; 2015, 2841 ; 2019, 3032 , effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec030",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-683C.030-v2",
+  "citation": "NRS 683C.030",
+  "chapter": "683C",
+  "chapterTitle": "INSURANCE CONSULTANTS",
+  "heading": "Application for license; requirements; duration of license. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec030",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -56,18 +71,33 @@
   "text": "NRS 683C.035 Form and prerequisites for approval of application for license; licensing of business organization; verification of information; duration of license; lines of authority. 1. The Commissioner shall prescribe the form of application by a natural person for a license as an insurance consultant. The applicant must declare, under penalty of refusal to issue, or suspension or revocation of, the license, that the statements made in the application are true, correct and complete to the best of his or her knowledge and belief. Before approving the application, the Commissioner must find that the applicant has: (a) Attained the age of 18 years. (b) Not committed any act that is a ground for refusal to issue, or suspension or revocation of, a license pursuant to NRS 683A.451 . (c) Paid all applicable fees prescribed for the license, which may not be refunded. (d) Passed each examination required for the license unless the applicant is a resident of another state and holds a similar license in that state. 2. A business organization must be licensed as an insurance consultant in order to act as such. Application must be made on a form prescribed by the Commissioner. Before approving the application, the Commissioner must find that the applicant has: (a) Paid all applicable fees prescribed for the license, which may not be refunded; and (b) Designated a natural person who is licensed as an insurance consultant in this State and who is authorized to transact business on behalf of the business organization to be responsible for the organization’s compliance with the laws and regulations of this State relating to insurance. 3. The Commissioner may require any document reasonably necessary to verify information contained in an application. 4. A license issued pursuant to this chapter is valid for 3 years after the date of issuance or until it is suspended, revoked or otherwise terminated. 5. An insurance consultant may qualify for a license pursuant to this chapter in one or more of the lines of authority set forth in paragraphs (a) to (d), inclusive, of subsection 1 of NRS 683A.261 . (Added to NRS by 1995, 1611 ; A 2001, 2211 ; 2003, 3298 ; 2005, 2126 ; 2009, 1777 ; 2015, 2841 ; 2019, 3032 ; 2023, 2632 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec035",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.040",
   "citation": "NRS 683C.040",
   "chapter": "683C",
   "chapterTitle": "INSURANCE CONSULTANTS",
-  "heading": "Renewal of license; fees; expiration; reinstatement; contents of license; change of address. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "heading": "Renewal of license; fees; expiration; reinstatement; contents of license; change of address. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
   "text": "NRS 683C.040 Renewal of license; fees; expiration; reinstatement; contents of license; change of address. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. A license may be renewed for additional 3-year periods by submitting to the Commissioner an application for renewal and: (a) If the application is made: (1) On or before the renewal date of the license, all applicable renewal fees; or (2) Not more than 30 days after the renewal date of the license, all applicable renewal fees plus a penalty of 50 percent of all applicable renewal fees except for any fee required pursuant to NRS 680C.110 ; (b) If the applicant is a natural person, the statement required pursuant to NRS 683C.043 ; and (c) If the applicant is a resident, proof of the successful completion of appropriate courses of study required for renewal, as established by the Commissioner by regulation. 2. Except as otherwise provided in subsection 5, a license as an insurance consultant expires if the Commissioner does not receive from the insurance consultant an application for renewal pursuant to subsection 1 on or before the date which is 30 days after the renewal date. 3. The fees specified in this section are not refundable. 4. A natural person who allows his or her license as an insurance consultant to expire pursuant to subsection 2 may, within 12 months after the renewal date, reinstate the license without passing a written examination if the natural person: (a) Completes all applicable continuing education requirements; and (b) Pays a penalty of twice all applicable fees for renewal, except for any fee required pursuant to NRS 680C.110 . 5. An insurance consultant who is unable to renew his or her license because of military service, extended medical disability or other extenuating circumstance may request a waiver of the time limit and of any fine or sanction otherwise required or imposed because of the failure to renew. 6. A license must state the licensee’s name, address, personal identification number, the date of issuance, the lines of authority and the date of expiration and must contain any other information the Commissioner considers necessary. The license must be made available for public inspection upon request. 7. A licensee shall inform the Commissioner of each change of business, residence or electronic mail address, in writing or by other means acceptable to the Commissioner, within 30 days after the change. 8. As used in this section, “renewal date” means: (a) For the first renewal of the license, the last day of the month which is 3 years after the month in which the Commissioner originally issued the license. (b) For each renewal after the first renewal of the license, the last day of the month which is 3 years after the month in which the license was last due to be renewed. (Added to NRS by 1995, 1610 ; A 1997, 2190 ; 2001, 2210 ; 2003, 3298 ; 2005, 2126 ; 2009, 1778 ; 2015, 2842 ; 2021, 2965 ) NRS 683C.040 Renewal of license; fees; expiration; reinstatement; contents of license; change of address. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. A license may be renewed for additional 3-year periods by submitting to the Commissioner an application for renewal and: (a) If the application is made: (1) On or before the renewal date of the license, all applicable renewal fees; or (2) Not more than 30 days after the renewal date of the license, all applicable renewal fees plus a penalty of 50 percent of all applicable renewal fees except for any fee required pursuant to NRS 680C.110 ; and (b) If the applicant is a resident, proof of the successful completion of appropriate courses of study required for renewal, as established by the Commissioner by regulation. 2. Except as otherwise provided in subsection 5, a license as an insurance consultant expires if the Commissioner does not receive from the insurance consultant an application for renewal pursuant to subsection 1 on or before the date which is 30 days after the renewal date. 3. The fees specified in this section are not refundable. 4. A natural person who allows his or her license as an insurance consultant to expire pursuant to subsection 2 may, within 12 months after the renewal date, reinstate the license without passing a written examination if the natural person: (a) Completes all applicable continuing education requirements; and (b) Pays a penalty of twice all applicable fees for renewal, except for any fee required pursuant to NRS 680C.110 . 5. An insurance consultant who is unable to renew his or her license because of military service, extended medical disability or other extenuating circumstance may request a waiver of the time limit and of any fine or sanction otherwise required or imposed because of the failure to renew. 6. A license must state the licensee’s name, address, personal identification number, the date of issuance, the lines of authority and the date of expiration and must contain any other information the Commissioner considers necessary. The license must be made available for public inspection upon request. 7. A licensee shall inform the Commissioner of each change of business, residence or electronic mail address, in writing or by other means acceptable to the Commissioner, within 30 days after the change. 8. As used in this section, “renewal date” means: (a) For the first renewal of the license, the last day of the month which is 3 years after the month in which the Commissioner originally issued the license. (b) For each renewal after the first renewal of the license, the last day of the month which is 3 years after the month in which the license was last due to be renewed. (Added to NRS by 1995, 1610 ; A 1997, 2190 ; 2001, 2210 ; 2003, 3298 ; 2005, 2126 , 2127 ; 2009, 1778 ; 2015, 2842 ; 2021, 2965 , effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec040",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-683C.040-v2",
+  "citation": "NRS 683C.040",
+  "chapter": "683C",
+  "chapterTitle": "INSURANCE CONSULTANTS",
+  "heading": "Renewal of license; fees; expiration; reinstatement; contents of license; change of address. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec040",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -82,7 +112,7 @@
   "text": "NRS 683C.043 Payment of child support: Statement by applicant for license; grounds for denial of license; duty of Commissioner. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. A natural person who applies for the issuance or renewal of a license to act as an insurance consultant shall submit to the Commissioner the statement prescribed by the Division of Social Services of the Department of Human Services pursuant to NRS 425.520 . The statement must be completed and signed by the applicant. 2. The Commissioner shall include the statement required pursuant to subsection 1 in: (a) The application or any other forms that must be submitted for the issuance or renewal of the license; or (b) A separate form prescribed by the Commissioner. 3. A license to act as an insurance consultant may not be issued or renewed by the Commissioner if the applicant is a natural person who: (a) Fails to submit the statement required pursuant to subsection 1; or (b) Indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order. 4. If an applicant indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order, the Commissioner shall advise the applicant to contact the district attorney or other public agency enforcing the order to determine the actions that the applicant may take to satisfy the arrearage. (Added to NRS by 1997, 2188 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec043",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -97,7 +127,7 @@
   "text": "NRS 683C.047 Suspension of license for failure to pay child support or comply with certain subpoenas or warrants; reinstatement of license. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. If the Commissioner receives a copy of a court order issued pursuant to NRS 425.540 that provides for the suspension of all professional, occupational and recreational licenses, certificates and permits issued to a person who is the holder of a license to act as an insurance consultant, the Commissioner shall deem the license issued to that person to be suspended at the end of the 30th day after the date on which the court order was issued unless the Commissioner receives a letter issued to the holder of the license by the district attorney or other public agency pursuant to NRS 425.550 stating that the holder of the license has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 . 2. The Commissioner shall reinstate a license to act as an insurance consultant that has been suspended by a district court pursuant to NRS 425.540 if the Commissioner receives a letter issued by the district attorney or other public agency pursuant to NRS 425.550 to the person whose license was suspended stating that the person whose license was suspended has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 . (Added to NRS by 1997, 2189 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec047",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -112,7 +142,7 @@
   "text": "NRS 683C.050 Requirements for partnership or corporation licensed as insurance consultant. A partnership or corporation licensed as an insurance consultant must require a license of each natural person who is authorized to act for the corporation or partnership. Each natural person must be named in the partnership’s or corporation’s license and qualify as an individual licensee. (Added to NRS by 1995, 1611 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.060",
@@ -123,7 +153,7 @@
   "text": "NRS 683C.060 Written agreement with client: Required before rendering services; contents; retention; availability. In advance of rendering any service, a written agreement on a form approved by the Commissioner must be prepared by the insurance consultant and must be signed by both the consultant and the client. The agreement must outline the professional services to be provided by the consultant and state the fee for those services. The consultant shall retain a copy of the agreement for not less than 3 years after completion of the services. A copy of the agreement must be made available to the Commissioner upon request. (Added to NRS by 1995, 1611 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.070",
@@ -134,7 +164,7 @@
   "text": "NRS 683C.070 Licensee prohibited from holding other licenses concurrently. A person licensed pursuant to this chapter may not concurrently hold a license as a producer of insurance or a surplus lines broker’s license in any line. (Added to NRS by 1995, 1611 ; A 2003, 3299 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.080",
@@ -145,7 +175,7 @@
   "text": "NRS 683C.080 Association with and compensation from certain persons who sell insurance prohibited. A licensed insurance consultant shall not employ, be employed by or be in partnership with, or receive any remuneration arising out of his or her activities as an insurance consultant from, any licensed producer of insurance or surplus lines broker or insurer. (Added to NRS by 1995, 1611 ; A 2003, 3299 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.100",
@@ -156,7 +186,7 @@
   "text": "NRS 683C.100 Obligations. An insurance consultant is obligated under his or her license to: 1. Serve with objectivity and complete loyalty the interests of his or her client; and 2. Render to his or her client information, counsel and service which, to the best of the consultant’s knowledge, understanding and opinion, best serves the client’s insurance needs and interests. (Added to NRS by 1995, 1611 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.105",
@@ -167,7 +197,7 @@
   "text": "NRS 683C.105 Submission of location of business or change in location of business or residence; penalty. A licensee shall inform the Commissioner of all locations from which business is conducted and of any change of business or residence address, in writing or by any other means acceptable to the Commissioner, within 30 days after the change. If a licensee changes his or her address without giving written notice and the Commissioner is unable to locate the licensee after making a diligent effort, the Commissioner may revoke the license without a hearing. The mailing of a letter by certified mail, return receipt requested, addressed to the licensee at the last mailing address appearing on the records of the Division, and the return of the letter undelivered, constitutes a diligent effort by the Commissioner. (Added to NRS by 2003, 3297 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec105",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.110",
@@ -178,7 +208,7 @@
   "text": "NRS 683C.110 Nonresident licensees: Service of process; promise to appear. 1. A nonresident who is licensed by this state as an insurance consultant shall appoint the Commissioner, in writing, as his or her attorney upon whom may be served all legal process issued in connection with any action or proceeding brought or pending in this state against or involving the nonresident licensee and relating to transactions under his or her Nevada license. The appointment is irrevocable and remains in force so long as such an action or proceeding exists or may arise. Duplicate copies of process must be served upon the Commissioner, or other person in apparent charge of the Division during the Commissioner’s absence, accompanied by payment of the fee for service of process. Promptly after any such service, the Commissioner shall forward a copy of the process by certified mail, return receipt requested, to the nonresident licensee at his or her business address of most recent record with the Division. Process so served and the copy so forwarded constitutes personal service upon the licensee for all purposes. 2. Each such nonresident licensee shall also file with the Commissioner a written promise to appear before the Commissioner pursuant to notice of hearing, order to show cause, or subpoena issued by the Commissioner and sent by certified mail to the licensee at his or her business address of most recent record with the Division, and that if the nonresident licensee fails to appear, the nonresident licensee thereby consents to any subsequent suspension, revocation or refusal to renew his or her license. (Added to NRS by 2001, 2210 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.120",
@@ -189,7 +219,7 @@
   "text": "NRS 683C.120 Disciplinary action. 1. The Commissioner may place an insurance consultant on probation, suspend his or her license for not more than 12 months, or revoke or refuse to renew his or her license, or may impose an administrative fine or take any combination of the foregoing actions, for one or more of the causes set forth in NRS 683A.451 . 2. The provisions of NRS 683A.461 also apply to an insurance consultant. (Added to NRS by 2001, 2210 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-683C.130",
@@ -200,6 +230,6 @@
   "text": "NRS 683C.130 Notice and effect of suspension, limitation or revocation of license. 1. Upon suspension, limitation or revocation of the license of an insurance consultant, the Commissioner shall immediately notify the licensee in person or by mail addressed to the licensee at his or her most recent address of record with the Division. Notice by mail is effective when mailed. 2. The Commissioner shall not again issue a license under this chapter to any natural person whose license has been revoked until at least 1 year after the revocation has become final, and thereafter not until the person again qualifies for it under this chapter. A person whose license has been revoked twice is not eligible for any license under this title. 3. If the license of a business organization is suspended, limited or revoked, no member, officer or director of the organization may be licensed, or designated in a license to exercise its powers, during the period of suspension or revocation, unless the Commissioner determines, by a preponderance of the evidence, that the member, officer or director was not personally at fault and did not knowingly aid, abet, assist or acquiesce in the matter for which the license was suspended or revoked. 4. As used in this section, “preponderance of the evidence” has the meaning ascribed to it in NRS 233B.0375 . (Added to NRS by 2001, 2210 ; A 2015, 722 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-683C.html#NRS683CSec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

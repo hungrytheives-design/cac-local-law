@@ -8,7 +8,7 @@
   "text": "NRS 645G.010 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 645G.020 to 645G.075 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2007, 3105 ; A 2021, 2061 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.020",
@@ -19,7 +19,7 @@
   "text": "NRS 645G.020 “Commissioner” defined. “Commissioner” means the Commissioner of Financial Institutions. (Added to NRS by 2007, 3105 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.030",
@@ -30,7 +30,7 @@
   "text": "NRS 645G.030 “Division” defined. “Division” means the Division of Financial Institutions of the Department of Business and Industry. (Added to NRS by 2007, 3105 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.040",
@@ -41,7 +41,7 @@
   "text": "NRS 645G.040 “Exchange facilitator” defined. 1. “Exchange facilitator” means a person who, for compensation of any kind, acts as: (a) A qualified intermediary as defined in 26 C.F.R. § 1.1031(k)-1(g)(4) for a client whose relinquished property is located in this State; or (b) An exchange accommodation titleholder, as that term is defined in Revenue Procedure 2000-37, who holds title to property located in this State. 2. The term includes any person who: (a) Maintains an office in this State for the purpose of soliciting business as an exchange facilitator; or (b) Advertises or holds himself or herself out as prepared to facilitate a tax-deferred exchange of property in this State by acting as the custodian of money or other property. 3. The term does not include: (a) A taxpayer or disqualified person, as those terms are defined in 26 C.F.R. § 1.1031(k)-1(k), who is seeking to qualify for nonrecognition pursuant to 26 U.S.C. § 1031; (b) A financial institution when acting solely as a depository for funds used in a tax-deferred exchange of property; (c) A person who advertises for and teaches seminars or classes, or otherwise gives presentations to attorneys, accountants, real estate professionals, tax professionals or other professionals with the primary purpose of teaching such professionals about tax-deferred exchanges or training such professionals to act as exchange facilitators; or (d) A qualified intermediary, as defined in 26 C.F.R. § 1.1031(k)-1(g)(4), who holds exchange funds received from the disposition of relinquished property located outside this State. (Added to NRS by 1993, 2019 ; A 1995, 994 ; 1997, 2167 ; 1999, 1539 ; 2005, 2807 ; 2007, 3115 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.050",
@@ -52,7 +52,7 @@
   "text": "NRS 645G.050 “Financial institution” defined. “Financial institution” means any bank, savings and loan association, savings bank or trust company, including a subsidiary or holding company of these, doing business in this State that is federally insured and organized under, or supervised pursuant to, the laws of the United States or of any state. (Added to NRS by 2007, 3105 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.060",
@@ -63,7 +63,7 @@
   "text": "NRS 645G.060 “Licensee” defined. “Licensee” means a person licensed as an exchange facilitator pursuant to the provisions of this chapter. (Added to NRS by 2007, 3105 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.075",
@@ -74,7 +74,7 @@
   "text": "NRS 645G.075 “Nationwide Multistate Licensing System and Registry” defined. “Nationwide Multistate Licensing System and Registry” or “Registry” has the meaning ascribed to it in NRS 604A.083 . (Added to NRS by 2021, 2059 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec075",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.090",
@@ -85,7 +85,7 @@
   "text": "NRS 645G.090 Inapplicability of chapter to participants in Regulatory Experimentation Program for Product Innovation; exception. Except as otherwise required by the Director of the Department of Business and Industry pursuant to NRS 657A.430 or 657A.620 , the provisions of this chapter do not apply to a participant in the Regulatory Experimentation Program for Product Innovation established and administered pursuant to chapter 657A of NRS. (Added to NRS by 2019, 3996 ) LICENSES",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.100",
@@ -96,18 +96,33 @@
   "text": "NRS 645G.100 License required; regulations; application; issuance, expiration and renewal of license. 1. Except as otherwise provided in NRS 645G.120 , a person shall not act as an exchange facilitator unless he or she is licensed as such with the Division. The Division may adopt such regulations as it deems necessary to carry out the provisions of this chapter, including, without limitation, regulations prescribing amounts required for liquidity purposes. 2. To apply for a license as an exchange facilitator, a person must pay the Division the fee prescribed by NRS 645G.220 . 3. In addition to the requirements set forth in subsection 2, the person must submit to the Division: (a) The following information on a form provided by the Division: (1) The applicant’s name, business address and telephone number; (2) The name under which the applicant will hold the money or other property of a client; (3) The names, residence and business addresses of all shareholders or members who hold 10 percent or more of the voting stock of the applicant’s business and all persons having an interest in the business as principals, partners, officers, trustees or directors, specifying the capacity and title of each; (4) The length of time the applicant has been engaged in the business of acting as an exchange facilitator; (5) A summary description of the business of the applicant; (6) A list of any similar licenses obtained and maintained in other states or other jurisdiction and information regarding revocation of any such license; (7) The tax identification number of the applicant; and (8) A current certificate of good standing for the applicant from the state or other jurisdiction in which the applicant’s business is formed; and (b) All information required to complete the application. 4. The Division shall approve an application submitted pursuant to this section within 45 days after the submission of the completed application, any additional information required by the Division and proof satisfactory to the Division that the applicant has complied with the provisions of NRS 645G.320 . Upon approval of an application, the Division shall issue a license to the applicant. 5. A license issued pursuant to this chapter expires on December 31 of each year unless it is renewed. To renew such a license, the licensee must submit to the Commissioner on or after November 1 and on or before December 31 of each year: (a) An application for renewal which contains the information required by the Division for that purpose; and (b) A renewal fee prescribed by NRS 645G.220 . (Added to NRS by 1993, 2019 ; A 1997, 2167 ; 2003, 1293 , 2862 ; 2005, 1290 , 1291 , 2777 , 2807 , 2814 ; 2007, 3116 ; 2021, 2061 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.110",
   "citation": "NRS 645G.110",
   "chapter": "645G",
   "chapterTitle": "EXCHANGE FACILITATORS",
-  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Division. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.]",
+  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Division. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
   "text": "NRS 645G.110 Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Division. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. In addition to any other requirements set forth in this chapter: (a) A natural person who applies for the issuance of a license as an exchange facilitator shall include the social security number of the applicant in the application submitted to the Division. (b) A natural person who applies for the issuance or renewal of a license as an exchange facilitator shall submit to the Division the statement prescribed by the Division of Social Services of the Department of Human Services pursuant to NRS 425.520 . The statement must be completed and signed by the applicant. 2. The Division shall include the statement required pursuant to subsection 1 in: (a) The application or any other forms that must be submitted for the issuance or renewal of the license; or (b) A separate form prescribed by the Division. 3. An applicant may not be licensed as an exchange facilitator by the Division if the applicant is a natural person who: (a) Fails to submit the statement required pursuant to subsection 1; or (b) Indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order. 4. If an applicant indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order, the Division shall advise the applicant to contact the district attorney or other public agency enforcing the order to determine the actions that the applicant may take to satisfy the arrearage. (Added to NRS by 1997, 2164 ; A 2005, 2777 , 2807 ; 2007, 3117 ) NRS 645G.110 Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Division. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.] 1. In addition to any other requirements set forth in this chapter, a natural person who applies for the issuance or renewal of a license as an exchange facilitator shall submit to the Division the statement prescribed by the Division of Social Services of the Department of Human Services pursuant to NRS 425.520 . The statement must be completed and signed by the applicant. 2. The Division shall include the statement required pursuant to subsection 1 in: (a) The application or any other forms that must be submitted for the issuance or renewal of the license; or (b) A separate form prescribed by the Division. 3. An applicant may not be licensed as an exchange facilitator by the Division if the applicant is a natural person who: (a) Fails to submit the statement required pursuant to subsection 1; or (b) Indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order. 4. If an applicant indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order, the Division shall advise the applicant to contact the district attorney or other public agency enforcing the order to determine the actions that the applicant may take to satisfy the arrearage. (Added to NRS by 1997, 2164 ; A 2005, 2777 , 2778 , 2807 ; 2007, 3117 , 3118 , effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec110",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-645G.110-v2",
+  "citation": "NRS 645G.110",
+  "chapter": "645G",
+  "chapterTitle": "EXCHANGE FACILITATORS",
+  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Division. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec110",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.",
    "isCurrent": true
@@ -122,7 +137,7 @@
   "text": "NRS 645G.120 License required for certain members and officers of certain business organizations. 1. If the exchange facilitator is a corporation qualified to do business in this State, every officer, director and exchange facilitator officer designated pursuant to NRS 645G.170 of the corporation who does business in this State must be licensed. No other employee is required to be licensed. 2. If the exchange facilitator is not a natural person or a publicly traded company, each shareholder, member or other owner who owns 10 percent or more of the voting stock, shares or other ownership interest of the exchange facilitator must be licensed. (Added to NRS by 1993, 2020 ; A 2007, 3119 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.130",
@@ -133,7 +148,7 @@
   "text": "NRS 645G.130 Duties of licensee: Maintenance of principal place of business or registered agent in state; notice of change of address or telephone number; provision of information required by Division; notice of licensing changes to clients. A licensee shall: 1. Maintain a principal place of business in this State or maintain a registered agent in this State; 2. Inform the Division in writing within 10 working days after any change in the address or telephone number of his or her principal place of business or registered agent, and provide any other information required by the Division; and 3. Inform all clients within 10 working days after: (a) A change in any of the officers, directors, employees or owners of the licensee who are required to obtain a license pursuant to NRS 645G.120 or 645G.170 ; or (b) The licensee or any person described in paragraph (a) acquires a new license, has his or her license suspended or revoked or otherwise relinquishes, loses or has any other change in the status of the license. (Added to NRS by 1993, 2020 ; A 2007, 3119 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.140",
@@ -144,7 +159,7 @@
   "text": "NRS 645G.140 License nontransferable; business of licensee may only be sold or transferred to another licensee. 1. A license issued pursuant to this chapter is nontransferable. 2. The business of a licensee must not be sold or ownership of the business transferred before the prospective buyer or owner has complied with the provisions of NRS 645G.100 . (Added to NRS by 2007, 3106 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.150",
@@ -155,7 +170,7 @@
   "text": "NRS 645G.150 Branch offices. 1. A licensee may establish one or more branch offices in this State. 2. A licensee who establishes one or more branch offices in this State shall provide written notice to the Division of the establishment of any such branch office within 30 days after establishment of the branch office. (Added to NRS by 2007, 3106 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.160",
@@ -166,7 +181,7 @@
   "text": "NRS 645G.160 Display of license. A license issued pursuant to the provisions of this chapter must be conspicuously displayed in the primary place of business of the licensee, and a copy of the license must be conspicuously displayed in each branch office of the licensee. (Added to NRS by 2007, 3106 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec160",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.170",
@@ -177,7 +192,7 @@
   "text": "NRS 645G.170 Designation of exchange facilitator officer. 1. The business of a licensee, if the licensee is not a natural person, must be conducted under the direct management of an officer or employee of the licensee designated by the licensee as an exchange facilitator officer, who is licensed pursuant to the provisions of this chapter and who is: (a) An attorney or certified public accountant admitted to practice in any state or territory of the United States; (b) A certified exchange specialist certified by the Federation of Exchange Accommodators or its successor; or (c) A person who has been actively conducting the business of an exchange facilitator or who has equivalent experience, as determined by the Division, for the 3 years immediately preceding his or her designation as an exchange facilitator officer. 2. A licensee shall notify the Division in writing within 10 working days after: (a) The designation of any exchange facilitator officer, setting forth the experience and qualifications of the exchange facilitator officer and other such information as may be required by the Division; and (b) The termination of the employment of any exchange facilitator officer. (Added to NRS by 2007, 3106 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec170",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.180",
@@ -188,7 +203,7 @@
   "text": "NRS 645G.180 Cancellation of license for failure to submit item required for renewal; reinstatement. 1. Except as otherwise provided in subsection 2, if a licensee fails to submit any item required for the renewal of his or her license pursuant to NRS 645G.100 , 645G.200 or 645G.210 , as applicable, to the Commissioner on or after November 1 and on or before December 31 of any year, the license is cancelled as of December 31 of that year and no license may be issued to the licensee except upon another application for an original license. 2. The Commissioner may reinstate a license which has been cancelled pursuant to subsection 1 if the licensee submits to the Commissioner on or before February 28 of the year following the cancellation of the license: (a) An application for renewal which contains the information required by the Division for that purpose; and (b) A fee one and one-half times the amount otherwise required for renewal. (Added to NRS by 2007, 3108 ; A 2021, 2063 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec180",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.200",
@@ -199,7 +214,7 @@
   "text": "NRS 645G.200 Reciprocal license: Person licensed in another jurisdiction. 1. A person who is licensed as an exchange facilitator in another state or territory of the United States and is not otherwise required to be licensed pursuant to the provisions of this chapter may submit an application for a reciprocal license as an exchange facilitator pursuant to the provisions of this section. The Division shall issue a reciprocal license to the applicant if: (a) The applicant is licensed in a jurisdiction that grants reciprocal licensing to a person licensed pursuant to this chapter; (b) The Division determines that the laws and regulations governing exchange facilitators of the jurisdiction in which the applicant is licensed are at least equivalent to the provisions of this chapter; (c) The applicant provides proof satisfactory to the Division that the applicant has complied with the requirements of NRS 645G.320 and 645G.330 ; (d) The applicant pays the fee required pursuant to NRS 645G.220 ; (e) The applicant designates the Division as its representative to receive service of process for matters arising in this State; and (f) The applicant does not maintain an office in this State in connection with the conduct of the business of an exchange facilitator. 2. The Division shall: (a) Examine the laws of each state to identify the jurisdictions that meet the requirements for recognition of a reciprocal license pursuant to this section; and (b) Publish annually a list of the jurisdictions that meet the requirements of this section. 3. A license issued pursuant to this section expires on December 31 of each year unless it is renewed. To renew such a license, the licensee must submit to the Commissioner on or after November 1 and on or before December 31 of each year: (a) An application for renewal which contains the information required by the Division for that purpose; and (b) The renewal fee prescribed by NRS 645G.220 . (Added to NRS by 2007, 3113 ; A 2021, 2063 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec200",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.210",
@@ -210,7 +225,7 @@
   "text": "NRS 645G.210 Special license: Financial institutions. 1. A financial institution may obtain a special license pursuant to this section. 2. The Division shall issue a special license to a financial institution if the financial institution: (a) Maintains an office in this State; (b) Pays the fee required pursuant to NRS 645G.220 for the issuance of a license; and (c) Complies with any other requirements set forth by regulations adopted by the Division. 3. A financial institution which obtains a special license pursuant to this section is exempt from the requirements of subsections 2, 3 and 4 of NRS 645G.100 except as otherwise required by regulations adopted by the Division. 4. A license issued pursuant to this section expires on December 31 of each year unless it is renewed. To renew such a license, the licensee must submit to the Commissioner on or after November 1 and on or before December 31 of each year: (a) An application for renewal which contains the information required by the Division for that purpose; and (b) The renewal fee prescribed by NRS 645G.220 . (Added to NRS by 2007, 3113 ; A 2021, 2064 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec210",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.220",
@@ -221,7 +236,7 @@
   "text": "NRS 645G.220 Fees; regulations. 1. The Commissioner shall charge and collect the following fees: (a) For the filing and investigation of an application for a license, a nonrefundable fee of not more than $1,000 and any additional expenses incurred in the process of investigation; (b) For the issuance of a license, at least $200; (c) For the annual renewal of a license, at least $200; (d) For the issuance of a license for each branch office of a licensee, a nonrefundable fee of at least $200; (e) For the annual renewal of a license for each branch office of a licensee, at least $250; (f) For the issuance of a reciprocal license, at least $150; (g) For the annual renewal of a reciprocal license, at least $150; and (h) For the reissuance of a license because of a change in the business address of the licensee, at least $200. 2. All money received by the Commissioner pursuant to paragraph (a) of subsection 1 must be placed in the Investigative Account for Financial Institutions created by NRS 232.545 . 3. The Commissioner shall adopt regulations establishing the amount of fees required pursuant to this section. (Added to NRS by 2007, 3108 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec220",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.230",
@@ -232,7 +247,7 @@
   "text": "NRS 645G.230 Audit of licensees; report to Legislature. 1. The Commissioner shall cause to be conducted at least every 5 years an audit of all licensees. The Commissioner shall cause to be conducted each year on a random basis additional partial audits of any licensee who has a history of violations of the provisions of this chapter, or the regulations adopted pursuant thereto, as determined by the Commissioner. 2. The Commissioner shall require the use of standard auditing procedures and shall establish a manual to describe the standard auditing procedures. The manual must include, without limitation: (a) Specific audit objectives; (b) Standards for documentation; (c) Policies for supervisory review; (d) Policies for the training of auditors; (e) The format for the audit report; and (f) Procedures for the presentation, distribution and retention of the audit report. 3. On or before March 1 of each year, the Commissioner shall make a report of each audit to the Legislature, if it is in session, or to the Interim Finance Committee, if the Legislature is not in session. (Added to NRS by 2007, 3114 ) NATIONWIDE MULTISTATE LICENSING SYSTEM AND REGISTRY",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec230",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.250",
@@ -243,7 +258,7 @@
   "text": "NRS 645G.250 Commissioner authorized to take action to participate; charges for use; regulations; provisions do not replace or affect authority of Commissioner regarding licensing. 1. The Commissioner may, in furtherance of his or her duties and the duties of the Division with respect to the issuance and renewal of licenses pursuant to this chapter, participate in the Nationwide Multistate Licensing System and Registry. The Commissioner may take any action with respect to participation in the Registry that the Commissioner deems necessary to carry out such duties, including, without limitation: (a) Facilitating and participating in the establishment and implementation of the Registry; (b) Establishing relationships or contracts with the Registry or other entities designated by the Registry; (c) Authorizing the Registry to collect and maintain records of applicants for licenses and licensees; (d) Authorizing the Registry to, on behalf of the Commissioner or the Division, as applicable, collect and process any fees associated with licensure, examinations, fines, assessments and any other similar fees; (e) Requiring an applicant for a license or a licensee to use the Registry to: (1) Apply for the issuance or renewal of a license; (2) Amend or surrender a license; (3) Submit any reports or the results of any examination that the Commissioner may require; (4) Pay any applicable fees; and (5) Engage in any other activity that the Commissioner may require; and (f) Authorizing the Registry to, on behalf of the Commissioner or the Division, as applicable, collect fingerprints in order to receive or conduct a background check on the criminal history of an applicant for a license or a licensee. 2. An applicant for a license or a licensee shall, in addition to any other fees associated with the license, pay all applicable charges to use the Registry, including, without limitation, any processing charges established by the administrator of the Registry. 3. The Commissioner may adopt any regulations the Commissioner determines to be necessary or appropriate to carry out the provisions of this section. Such regulations may, without limitation, establish additional procedures and requirements for participation in the Registry. 4. The provisions of this section shall not be construed to replace or affect the authority of the Commissioner or the Division to grant, deny, suspend, terminate, revoke or refuse to renew a license. (Added to NRS by 2021, 2059 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec250",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.260",
@@ -254,7 +269,7 @@
   "text": "NRS 645G.260 Submission and processing of fingerprints. 1. The Commissioner may require an applicant for a license or a licensee to submit a complete set of fingerprints when the Commissioner determines necessary. 2. The Commissioner may use the services of the Registry to process and to submit the fingerprints to the Federal Bureau of Investigation, to the Central Repository for Nevada Records of Criminal History, to any federal or state law enforcement agency or to any other entity authorized to receive such information for the purpose of conducting a background check of the criminal history of an applicant for a license or a licensee. (Added to NRS by 2021, 2060 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec260",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.270",
@@ -265,7 +280,7 @@
   "text": "NRS 645G.270 Commissioner required to report certain information or material; confidentiality of information or material provided; Commissioner authorized to enter into certain agreements and arrangements. 1. Subject to any limitations or restrictions contained in federal or state law governing the privacy or confidentiality of records, the Commissioner shall report regularly any violations of applicable laws committed by applicants for licenses or licensees, enforcement actions and other relevant information to the Registry. 2. The requirements under any federal or state law, including, without limitation, rules of a federal or state court, regarding the privacy and confidentiality of any information or material provided to the Registry and any privilege arising under federal or state law with respect to such information or material, continue to apply to such information or material after it has been disclosed to the Registry. Such information and material may be shared with federal and state regulatory officials with oversight authority over licensees without the loss of privilege or the loss of confidentiality protections provided by federal or state law. 3. The Commissioner may enter into agreements or sharing arrangements with other governmental agencies, the Conference of State Bank Supervisors, the State Regulatory Registry, LLC, or other associations representing governmental agencies. (Added to NRS by 2021, 2060 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec270",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.280",
@@ -276,7 +291,7 @@
   "text": "NRS 645G.280 Additional materials required to be submitted. 1. In addition to any other requirements set forth in this chapter, each applicant for the issuance of a license pursuant to this chapter and each owner, officer, director and responsible person of the applicant, each person in control of the applicant and any other person the Commissioner may require in accordance with guidelines of the Registry or other multistate agreements shall submit to the Registry: (a) A complete set of fingerprints for submission to the Federal Bureau of Investigation and any other governmental agency or entity authorized to receive such information for a state, national and international background check on the criminal history of the person; (b) Information concerning the personal history, financial history and experience of the person in a form prescribed by the Registry, including, without limitation, an authorization of the person for the Registry and the Commissioner to obtain: (1) An independent credit report and credit score from a consumer reporting agency described in section 603(f) of the Fair Credit Reporting Act, 15 U.S.C. § 1681a(f), for the purpose of evaluating the financial responsibility of the person at the time of the submission of the application; and (2) Additional independent credit reports and credit scores to confirm that the person continues to comply with any applicable requirements concerning financial responsibility; (c) Information related to any administrative, civil or criminal findings made by any governmental jurisdiction concerning the person; and (d) Any other information concerning the person that the Registry or Commissioner may require. 2. As used in this section: (a) “Control” has the meaning ascribed to it in NRS 682A.047 . (b) “Responsible person” means a person who is employed by an applicant and who has principal, active managerial authority over the provision of services in this State. (Added to NRS by 2021, 2060 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec280",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.290",
@@ -287,7 +302,7 @@
   "text": "NRS 645G.290 Licensee required to register and maintain unique identifier; Commissioner authorized to issue license through Registry; references to Commissioner deemed references to Registry. 1. Each licensee shall register with and maintain a valid unique identifier with the Registry. 2. The Commissioner may, on behalf of the Division, issue a license through the Registry. 3. To the extent that the Commissioner has delegated to the Registry any of his or her duties or the duties of the Division with respect to the issuance and renewal of licenses as authorized by the provisions of this chapter, any reference to the Commissioner or the Division in this chapter shall be deemed to be a reference to the Registry. 4. As used in this section, “unique identifier” means a number or other identifier assigned by the protocols established by the Registry. (Added to NRS by 2021, 2061 ) MONEY RECEIVED BY LICENSEE; FIDELITY BONDS OR DEPOSITS; INSURANCE",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec290",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.300",
@@ -298,7 +313,7 @@
   "text": "NRS 645G.300 Client’s money and property: Fiduciary duty of licensee. 1. Each licensee is a fiduciary of all money, property, other considerations and instruments received by the licensee from the client. 2. Each licensee shall invest money related to a tax-deferred exchange of property in investments which meet the reasonable standards that are applicable to persons acting as fiduciaries in this State. (Added to NRS by 2007, 3106 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec300",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.310",
@@ -309,7 +324,7 @@
   "text": "NRS 645G.310 Money held for client: Written approval required for withdrawal. Money held in any account for a client may not be withdrawn from the account without the written approval of the licensee and the client. (Added to NRS by 2007, 3107 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec310",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.320",
@@ -320,7 +335,7 @@
   "text": "NRS 645G.320 Fidelity bond or deposit. 1. Except as otherwise provided in subsection 2, an exchange facilitator shall maintain one or more fidelity bonds in a total amount of not less than $1,000,000 executed by an insurer authorized to do business in this State and approved by the Division. 2. In lieu of such a bond, a licensee may deposit with the Division under such terms and conditions as the Division may prescribe, a like amount of lawful money of the United States or any other form of security authorized by NRS 100.065 . If security is provided in the form of a savings certificate, certificate of deposit or investment certificate, the certificate must state that the amount is unavailable for withdrawal except upon order of the Division. 3. A licensee shall provide proof of the bond required pursuant to this section, including, without limitation, the name and address of the insurer, to a client. 4. Any person claiming against a bond or deposit required by this section may bring an action in a court of competent jurisdiction on the bond or deposit for damages to the extent covered by the bond or deposit. A person who brings an action on a bond or deposit shall notify the Division in writing upon filing the action. 5. Upon receiving a request from a person for whose benefit a bond or deposit is required, the Division shall notify the person: (a) That a bond is in effect or that a deposit has been made, and the amount of either; and (b) If there is an action against the bond, of the title, court and case number of the action and the amount sought by the plaintiff. 6. If an insurer or, in the case of a deposit, the Division wishes to make a payment without awaiting action by a court, the amount of the bond or deposit must be reduced to the extent of any payment made by the insurer or the Division in good faith under the bond or deposit. Any payment must be based on written claims received by the insurer or the Division before any action is taken by a court. 7. Claims against a bond or deposit have equal priority, and if the bond or deposit is insufficient to pay all claims in full, they must be paid on a pro rata basis. Partial payment of claims is not full payment, and any claimant may bring an action against the licensee for the unpaid balance. (Added to NRS by 1993, 2020 ; A 2007, 3119 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec320",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.330",
@@ -331,7 +346,7 @@
   "text": "NRS 645G.330 Insurance: Maintenance of policy; other security; proof of coverage; claims; duty of Division. 1. Except as otherwise provided in subsection 2, a licensee shall maintain a policy of insurance covering liability for errors and omissions in an amount not less than $250,000 executed by an insurer authorized to do business in this State and approved by the Division. 2. In lieu of such a policy of insurance, a licensee may deposit with the Division under such terms and conditions as the Division may prescribe, a like amount of lawful money of the United States or any other form of security authorized by NRS 100.065 . If security is provided in the form of a savings certificate, certificate of deposit or investment certificate, the certificate must state that the amount is unavailable for withdrawal except upon order of the Division. 3. A licensee shall provide proof of the coverage required pursuant to this section, including, without limitation, the name and address of the insurer, to a client. 4. The provisions of subsections 1 and 2 do not prohibit the licensee from maintaining a policy of insurance, deposits or other forms of security in excess of the amounts required by subsections 1 and 2. 5. Any person claiming against a policy of insurance or deposit required by this section may bring an action in a court of competent jurisdiction on the policy of insurance or deposit for damages to the extent covered by the policy. A person who brings an action on a policy or deposit shall notify the Division in writing upon filing the action. 6. Upon receiving a request from a client of an exchange facilitator, the Division shall notify the client: (a) That a policy of insurance is in effect or that a deposit has been made, and the amount of either; and (b) If there is an action against the policy of insurance, of the title, court and case number of the action and the amount sought by the plaintiff. 7. If an insurer or, in the case of a deposit, the Division wishes to make payment without awaiting action by a court, the amount of the policy or deposit must be reduced to the extent of any payment made by the insurer or the Division in good faith under the policy or deposit. Any payment must be based on written claims received by the insurer or the Division before any action is taken by a court. 8. Claims against a policy of insurance or deposit have equal priority, and if the policy or deposit is insufficient to pay all claims in full, they must be paid on a pro rata basis. Partial payment of claims is not full payment, and any claimant may bring an action against the exchange facilitator for the unpaid balance. (Added to NRS by 2007, 3107 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec330",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.340",
@@ -342,7 +357,7 @@
   "text": "NRS 645G.340 Written notice of cancellation or withdrawal of bond, insurance or other security; suspension of license. A licensee shall provide written notice to the Division at least 30 days before the cancellation or withdrawal of any bond, policy of insurance or security required pursuant to NRS 645G.320 or 645G.330 . The Division shall suspend the license of a licensee upon notice that the licensee has cancelled or withdrawn any bond, policy of insurance or security required pursuant to NRS 645G.320 or 645G.330 . (Added to NRS by 2007, 3107 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec340",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.350",
@@ -353,7 +368,7 @@
   "text": "NRS 645G.350 Exchange funds required to be kept separate. All exchange funds must be kept separate from money belonging to the licensee and must be deposited in a financial institution that is federally insured or insured by a private insurer approved pursuant to NRS 672.755 unless another financial institution has been designated in writing in the exchange agreement. The money when deposited must be designated as “trust funds” or “escrow accounts” or under some other appropriate name indicating that the money is not the money of the licensee. (Added to NRS by 2007, 3107 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec350",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.360",
@@ -364,7 +379,7 @@
   "text": "NRS 645G.360 Exchange funds not subject to execution or attachment; commingling prohibited. 1. Exchange funds are not subject to execution or attachment on any claim against the licensee. 2. A licensee shall not knowingly keep or cause to be kept any money in any bank, credit union or other financial institution under any name designating the money as belonging to the clients of any licensee, unless the money belongs to the client and was actually entrusted to the licensee by the client. (Added to NRS by 2007, 3108 ) MONEY RECEIVED BY COMMISSIONER OR DIVISION",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec360",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.400",
@@ -375,7 +390,7 @@
   "text": "NRS 645G.400 Deposit of money received by Commissioner. Except as otherwise provided in NRS 645G.220 and 645G.410 , all money received by the Commissioner pursuant to this chapter must be deposited in the State Treasury pursuant to the provisions of NRS 658.091 . (Added to NRS by 2007, 3108 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec400",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.410",
@@ -386,7 +401,7 @@
   "text": "NRS 645G.410 Deposit and use of money received by Division from civil penalty. The Division shall deposit any money it receives from a civil penalty imposed pursuant to NRS 205.960 and 645G.900 with the State Treasurer for credit to a separate account in the State General Fund. The Division shall expend at least 75 percent of the money so received to pay administrative costs related to: 1. The licensing of exchange facilitators; and 2. Any program it develops to supply information regarding exchange facilitators to the public. Ê Any remaining money may be used by the Division to reimburse residents of Nevada for financial losses caused by the illegal conduct of an exchange facilitator. (Added to NRS by 1993, 2020 ; A 2007, 3120 ) DISCIPLINARY AND OTHER ACTIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec410",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.500",
@@ -397,7 +412,7 @@
   "text": "NRS 645G.500 Investigation of actions of exchange facilitators and other persons. The Commissioner or the Division may investigate the actions of any exchange facilitator or any person who acts in any such capacity within this State. (Added to NRS by 2007, 3108 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec500",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.505",
@@ -408,7 +423,7 @@
   "text": "NRS 645G.505 Division required to maintain records of complaints, investigations and denials of applications. The Division shall maintain a public docket or other record in which it shall record from time to time as made: 1. The rulings or decisions upon all complaints filed with the Division concerning an exchange facilitator. 2. All investigations instituted by the Commissioner or the Division in the first instance, upon or in connection with which any hearing has been held, or in which the licensee charged has made no defense. 3. Denials of applications made to the Division for licensing. (Added to NRS by 2007, 3108 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec505",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.510",
@@ -419,7 +434,7 @@
   "text": "NRS 645G.510 Confidentiality of certain records of Division; exception. 1. Except as otherwise provided in this section and NRS 239.0115 , a complaint filed with the Division alleging a violation of this chapter, all documents and other information filed with the complaint and all documents and other information compiled as a result of an investigation conducted to determine whether to initiate disciplinary action are confidential. 2. A complaint or other document filed with the Division to initiate disciplinary action and all documents and information considered by the Division when determining whether to impose discipline are public records. (Added to NRS by 2007, 3109 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec510",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.515",
@@ -430,7 +445,7 @@
   "text": "NRS 645G.515 Authorized disciplinary action; grounds; orders imposing discipline deemed public records; payment of costs incurred by Division. 1. The Commissioner may require a licensee to pay an administrative fine of not more than $200 per day for each violation the licensee commits or may suspend, revoke, deny the renewal of or place conditions upon the license, or impose any combination of those actions, at any time if: (a) The licensee, by false or fraudulent representation, obtained a license. (b) The licensee, whether or not acting as such, is found guilty of: (1) Making any material misrepresentation. (2) Making any false promises of a character likely to influence, persuade or induce. (c) The licensee has failed, within a reasonable time, to account for or to remit any money which comes into his or her possession or under his or her control and which belongs to others. (d) The licensee has engaged in any fraudulent act. (e) The licensee, or an owner, officer, director or employee of a licensee, is found guilty of any crime involving fraud, misrepresentation, deceit, embezzlement, misappropriation of money, robbery or theft. (f) The licensee has failed to fulfill a contractual duty to deliver property or money, unless the failure to deliver such property or money is beyond the control of the licensee. (g) A receiver or conservator is appointed to take control of the assets of a licensee. (h) The licensee is dissolved. (i) The licensee is bankrupt. (j) The licensee fails to maintain, for review and audit by the Division, each agreement governed by the provisions of this chapter and entered into by the licensee. (k) The licensee violates any provision of this chapter or any regulations adopted pursuant thereto. 2. An order that imposes discipline and the findings of fact and conclusions of law supporting that order are public records. 3. In addition to any action set forth in subsection 1, the Division may, if it determines that an applicant for a license or a licensee has committed any of the acts set forth in subsection 1, after notice and a hearing required by law, require the applicant or licensee to pay the costs incurred by the Division to conduct any related investigation or hearing. (Added to NRS by 2007, 3109 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec515",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.520",
@@ -441,7 +456,7 @@
   "text": "NRS 645G.520 Limitations on suspension and reissuance of license after revocation. 1. The Division shall not suspend the license of a licensee pursuant to NRS 645G.515 for more than 2 years. 2. After the revocation of any license by the Commissioner as provided in this chapter, no new license may be issued to the same licensee within 2 years after the date of the revocation and then only provided that the licensee satisfies all the requirements for an original license. (Added to NRS by 2007, 3109 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec520",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.525",
@@ -452,7 +467,7 @@
   "text": "NRS 645G.525 Suspension of license for failure to pay child support or comply with certain subpoenas or warrants; reinstatement of license. [Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. If the Division receives a copy of a court order issued pursuant to NRS 425.540 that provides for the suspension of all professional, occupational and recreational licenses, certificates and permits issued to a person who is licensed as an exchange facilitator, the Division shall deem the license issued to that person to be suspended at the end of the 30th day after the date on which the court order was issued unless the Division receives a letter issued by the district attorney or other public agency pursuant to NRS 425.550 to the person who is licensed as an exchange facilitator stating that the person has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 . 2. The Division shall reinstate the license of an exchange facilitator that has been suspended by a district court pursuant to NRS 425.540 if the Division receives a letter issued by the district attorney or other public agency pursuant to NRS 425.550 to the person whose license was suspended stating that the person whose license was suspended has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 . (Added to NRS by 1997, 2165 ; A 2005, 2807 ; 2007, 3118 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec525",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -467,7 +482,7 @@
   "text": "NRS 645G.530 Investigations, disciplinary or other proceedings, fines and penalties not affected by expiration, revocation or voluntary surrender of license. The expiration or revocation of a license by operation of law or by order or decision of the Division or a court of competent jurisdiction, or the voluntary surrender of a license does not: 1. Prohibit the Commissioner or the Division from initiating or continuing an investigation of, or action or disciplinary proceeding against, the exchange facilitator as authorized pursuant to the provisions of this chapter or the regulations adopted pursuant thereto; or 2. Prevent the imposition or collection of any penalty authorized pursuant to the provisions of this chapter or the regulations adopted pursuant thereto against the exchange facilitator. (Added to NRS by 2007, 3110 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec530",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.535",
@@ -478,7 +493,7 @@
   "text": "NRS 645G.535 Revocation, suspension or denial of renewal of license: Complaint; notice of hearing. 1. The procedure set forth in this section and NRS 645G.540 must be followed before the Division revokes, suspends or denies the renewal of any license issued pursuant to this chapter. 2. Upon the initiation of a complaint by the Division, the matter must be set for a hearing by the Commissioner, who shall schedule a hearing before the Commissioner, and the licensee is entitled to be heard thereon in person or by counsel. 3. The Commissioner shall hold the hearing within 90 days after the filing of a complaint by the Division. The time of the hearing may be continued at the discretion of the Commissioner or upon the written request of the licensee or of the Division for good cause shown. 4. The licensee must be given at least 30 days’ notice in writing by the Division of the date, time and place of the hearing, together with a copy of the complaint and copies of all communications, reports, affidavits or depositions in possession of the Division relevant to the complaint. The Division may present evidence obtained after the notice only if the Division shows that the evidence was not available after diligent investigation before the time notice was given to the licensee and that the evidence was given or communicated to the licensee immediately after it was obtained. 5. Notice is complete upon delivery personally to the licensee or by mailing by certified mail to the last known address of the licensee. (Added to NRS by 2007, 3110 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec535",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.540",
@@ -489,7 +504,7 @@
   "text": "NRS 645G.540 Revocation, suspension or denial of renewal of license: Answer; limitations on time of commencing proceeding. 1. The licensee shall file an answer to the charges with the Commissioner not later than 30 days after service of the notice and other documents described in subsection 4 of NRS 645G.535 . The answer must contain an admission or denial of the allegations contained in the complaint and any defenses upon which the licensee will rely. If no answer is filed within the time limit described in this subsection, the Division may, after notice to the licensee served in the manner authorized in subsection 5 of NRS 645G.535 , move for the entry of a default against the licensee. 2. The answer may be served by delivery to the Division, or by mailing the answer by certified mail to the principal office of the Division. 3. No proceeding to suspend, revoke or deny the renewal of any license may be maintained unless it is commenced by the giving of notice to the licensee within 3 years of the time of the act charged, whether of commission or omission, except: (a) If the charges are based upon a misrepresentation or failure to disclose, the period does not commence until the discovery of facts which do or should lead to the discovery of the misrepresentation or failure to disclose; and (b) Whenever any action or proceeding is instituted to which the Division or the licensee is a party and which involves the conduct of the licensee in the transaction with which the charges are related, the running of the 3-year period with respect to the institution of a proceeding pursuant to this chapter to suspend, revoke or deny the renewal of the license is suspended during the pendency of the action or proceeding. (Added to NRS by 2007, 3110 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec540",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.545",
@@ -500,7 +515,7 @@
   "text": "NRS 645G.545 Revocation, suspension or denial of renewal of license: Hearing; transcript. The hearing on the charges must be held at such time and place as the Commissioner prescribes. At the hearing, a stenographic transcript of the proceedings must be made if requested or required for judicial review. Any party to the proceedings desiring a transcript must be furnished with a copy upon payment to the Division of the reasonable cost of transcription. (Added to NRS by 2007, 3111 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec545",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.550",
@@ -511,7 +526,7 @@
   "text": "NRS 645G.550 Power of Commissioner to administer oaths, certify acts and issue subpoenas; service of process. 1. The Commissioner shall have the power to administer oaths, certify to all official acts, and issue subpoenas for attendance of witnesses and the production of books and papers. 2. In any hearing or investigation in any part of the State, the process issued by the Commissioner shall extend to all parts of the State and may be served by any person authorized to serve process of courts of record. The person serving any such process shall receive such compensation as may be allowed by the Commissioner, not to exceed the fees prescribed by law for similar service, and such fees must be paid in the same manner as provided in NRS 645G.555 for the payment of the fees of witnesses. (Added to NRS by 2007, 3111 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec550",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.555",
@@ -522,7 +537,7 @@
   "text": "NRS 645G.555 Fees and mileage for witness. 1. Each witness who appears by order of the Commissioner is entitled to receive for his or her attendance the same fees and mileage allowed by law to a witness in civil cases, which amount must be paid by the party at whose request the witness is subpoenaed. 2. When any witness not otherwise required to attend is subpoenaed by the Commissioner, his or her fees and mileage must be paid by the Division. (Added to NRS by 2007, 3111 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec555",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.560",
@@ -533,7 +548,7 @@
   "text": "NRS 645G.560 Enforcement of subpoenas. 1. The district court in and for the county in which any hearing may be held shall have the power to compel the attendance of witnesses, the giving of testimony and the production of books and papers as required by any subpoena issued by the Commissioner. 2. In case of the refusal of any witness to attend or testify or produce any papers required by such subpoena, the Commissioner may report to the district court in and for the county in which the hearing is pending by petition, setting forth: (a) That due notice has been given of the time and place of attendance of the witness or the production of the books and papers; (b) That the witness has been subpoenaed in the manner prescribed in this chapter; and (c) That the witness has failed and refused to attend or produce the papers required by subpoena before the Commissioner in the cause or proceeding named in the subpoena, or has refused to answer questions propounded to him or her in the course of such hearing, Ê and asking an order of the court compelling the witness to attend and testify or produce the books or papers before the Commissioner. 3. The court, upon petition of the Commissioner, shall enter an order directing the witness to appear before the court at a time and place to be fixed by the court in such order, the time to be not more than 10 days from the date of the order, and then and there show cause why the witness has not attended or testified or produced the books or papers before the Commissioner. A certified copy of the order shall be served upon the witness. If it shall appear to the court that the subpoena was regularly issued by the Commissioner, the court shall thereupon enter an order that the witness appear before the Commissioner at the time and place fixed in the order and testify or produce the required books or papers, and upon failure to obey the order, the witness shall be dealt with as for contempt of court. (Added to NRS by 2007, 3111 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec560",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.565",
@@ -544,7 +559,7 @@
   "text": "NRS 645G.565 Depositions; taking of evidence in another state; rights of party to hearing to request subpoenas. 1. The Commissioner may, in any hearing before the Commissioner, cause the depositions of witnesses residing within or without the State to be taken in the manner prescribed by the Nevada Rules of Civil Procedure for like depositions in civil actions in the district courts of this State, and to that end may compel the attendance of witnesses and the production of books and papers. 2. The clerk of the district court in and for the county in which any hearing may be held by the Commissioner shall, upon the application of the Commissioner, issue commissions to other states for the taking of evidence therein for use in any proceedings before the Commissioner. 3. Any party to any hearing before the Commissioner shall have the right to the attendance of witnesses in his or her behalf at such hearing or upon deposition as set forth in this section upon making request therefor to the Commissioner and designating the name and address of the person or persons sought to be subpoenaed. (Added to NRS by 2007, 3112 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec565",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.570",
@@ -555,7 +570,7 @@
   "text": "NRS 645G.570 Decision of Commissioner on complaint: Rendition; notice; effective date; stay of decision. 1. The Commissioner shall render an informal decision on any complaint within 15 days after the final hearing thereon and shall give notice in writing of the ruling or decision to the applicant or licensee affected thereby within 60 days after the final hearing thereon by certified mail to the last known address of the person to whom the notice is sent. 2. If the ruling is adverse to the licensee, the Commissioner shall also state in the notice the date upon which the ruling or decision becomes effective, which date must not be less than 30 days after the date of the notice. 3. The decision of the Commissioner may not be stayed by any appeal in accordance with the provisions of NRS 645G.575 , unless the district court so orders upon motion of the licensee, notice to the Division of the motion and opportunity for the Division to be heard. 4. An appeal from a decision of the district court affirming the revocation or suspension of a license does not stay the order of the Commissioner unless the district or appellate court, in its discretion and upon petition of the licensee, after notice and hearing orders such stay, and upon the filing of a bond for costs in the amount of $1,000. (Added to NRS by 2007, 3112 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec570",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.575",
@@ -566,7 +581,7 @@
   "text": "NRS 645G.575 Decision of Commissioner in disciplinary action final when in favor of licensee; judicial review of decision against licensee. 1. A ruling or decision of the Commissioner in any disciplinary action is final when in favor of the licensee. 2. If a ruling or decision is against the licensee, the licensee is entitled to judicial review of the ruling or decision in the manner provided by chapter 233B of NRS. (Added to NRS by 2007, 3112 ) PROHIBITED ACTS; PENALTIES; ENFORCEMENT",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec575",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-645G.900",
@@ -577,6 +592,6 @@
   "text": "NRS 645G.900 Prohibited acts; penalties; injunctive relief. 1. Any person who is not licensed pursuant to this chapter who acts as an exchange facilitator in this State or holds himself or herself out as a licensee and any licensee who commits an act set forth in subsection 1 of NRS 645G.515 is: (a) Guilty of a gross misdemeanor. (b) Liable to the Division for a civil penalty of $200 per day for each day that the violation continues. 2. The Division may file an action for injunctive relief in the appropriate district court in this State to prevent the occurrence or continuance of that act. (Added to NRS by 2007, 3113 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-645G.html#NRS645GSec900",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

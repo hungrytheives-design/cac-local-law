@@ -143,50 +143,107 @@ MONTHS = {
 }
 
 
+def label_of(s: str):
+    """The [Effective ...] label carried by a heading or the head of a body."""
+    m = EFFECTIVE_RE.search(s)
+    return normalize(m.group(1)) if m else None
+
+
+def pair_versions(heads: list, bods: list) -> list:
+    """Match each TOC heading to the body carrying the SAME effective label.
+
+    The overwhelmingly common case is one heading and one body, which pairs
+    trivially. Only sections with a pending amendment have more, and for those
+    the label is the only reliable link between the two halves - position is
+    not, because the TOC and the body do not always list them in the same order.
+    """
+    if len(heads) == 1 and len(bods) == 1:
+        return [(heads[0], bods[0])]
+
+    out, remaining = [], list(bods)
+    for cite, head in heads:
+        want = label_of(head)
+        pick = None
+        if want:
+            for b in remaining:
+                if label_of(b[:400]) == want:
+                    pick = b
+                    break
+        if pick is None:
+            pick = remaining[0] if remaining else ""
+        if pick in remaining:
+            remaining.remove(pick)
+        out.append(((cite, head), pick))
+    return out
+
+
 def parse_chapter(doc: str, chapter: str, url: str) -> list:
     title_m = re.search(r"<title>(.*?)</title>", doc, re.I | re.S)
     raw_title = normalize(title_m.group(1)) if title_m else f"CHAPTER {chapter}"
     chapter_title = re.sub(r"^NRS:?\s*CHAPTER\s*[0-9A-Z]+\s*-\s*", "", raw_title, flags=re.I)
 
-    # 1. Table of contents gives us anchor -> (citation, heading).
+    # 1. Table of contents gives us anchor -> [(citation, heading), ...].
+    #
+    # When a chapter carries a pending amendment, the TOC lists BOTH versions of
+    # the section under the SAME anchor, and so does the body. This used to be
+    # `headings[anchor] = ...`, which kept the LAST, paired with a
+    # `bodies.setdefault()` that kept the FIRST. They disagreed, and 56 sections
+    # shipped one version's text underneath the other version's effective date.
+    # NRS 483.280 read "Effective ON the date..." in its heading over a body that
+    # said "Effective UNTIL the date..." - opposite meanings, one word apart.
+    #
+    # So: keep every version, then pair heading to body by the [Effective ...]
+    # label they both carry.
     headings = {}
     for m in TOC_RE.finditer(doc):
         anchor, cite_html, head_html = m.groups()
-        headings[anchor] = (normalize(strip_tags(cite_html)), strip_tags(head_html))
+        headings.setdefault(anchor, []).append(
+            (normalize(strip_tags(cite_html)), strip_tags(head_html))
+        )
 
     # 2. Body: each <a name="..."> starts a section, running to the next one.
     marks = [(m.group(1), m.start()) for m in ANCHOR_RE.finditer(doc)]
     bodies = {}
     for i, (anchor, pos) in enumerate(marks):
         end = marks[i + 1][1] if i + 1 < len(marks) else len(doc)
-        bodies.setdefault(anchor, strip_tags(doc[pos:end]))
+        bodies.setdefault(anchor, []).append(strip_tags(doc[pos:end]))
 
     today = date.today().isoformat()
     out = []
-    for anchor in headings:
-        citation, heading = headings[anchor]
-        text = bodies.get(anchor, "")
-        if not citation:
-            continue
+    for anchor, heads in headings.items():
+        pairs = pair_versions(heads, bodies.get(anchor, []))
 
-        repealed = bool(re.match(r"^\s*Repealed\b", heading, re.I))
-        eff = EFFECTIVE_RE.search(heading) or EFFECTIVE_RE.search(text[:400])
+        # A section with a pending amendment produces two records. The one in
+        # force today is emitted first and keeps the plain id, so the shipped
+        # index still has exactly one canonical NRS-483.280; the other gets a
+        # -v2 suffix and its own effective label, and the app scores it down.
+        records = []
+        for (citation, heading), text in pairs:
+            if not citation:
+                continue
+            eff_m = EFFECTIVE_RE.search(heading) or EFFECTIVE_RE.search(text[:400])
+            label = normalize(eff_m.group(1)) if eff_m else None
+            records.append((citation, heading, text, label))
+        records.sort(key=lambda r: not (r[3] is None or is_current(r[3])))
 
-        sec = {
-            "id": citation.replace(" ", "-"),
-            "citation": citation,
-            "chapter": chapter,
-            "chapterTitle": chapter_title,
-            "heading": heading,
-            "text": text,
-            "sourceUrl": f"{url}#{anchor}",
-            "status": "repealed" if repealed else "active",
-            "scrapedAt": today,
-        }
-        if eff:
-            label = normalize(eff.group(1))
-            sec["effective"] = {"label": label, "isCurrent": is_current(label)}
-        out.append(sec)
+        for n, (citation, heading, text, label) in enumerate(records):
+            repealed = bool(re.match(r"^\s*Repealed\b", heading, re.I))
+            eff = label
+
+            sec = {
+                "id": citation.replace(" ", "-") + ("" if n == 0 else f"-v{n + 1}"),
+                "citation": citation,
+                "chapter": chapter,
+                "chapterTitle": chapter_title,
+                "heading": heading,
+                "text": text,
+                "sourceUrl": f"{url}#{anchor}",
+                "status": "repealed" if repealed else "active",
+                "scrapedAt": today,
+            }
+            if eff:
+                sec["effective"] = {"label": eff, "isCurrent": is_current(eff)}
+            out.append(sec)
 
     out.sort(key=lambda s: s["citation"])
     return out

@@ -8,7 +8,7 @@
   "text": "NRS 580.010 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 580.020 to 580.120 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2025, 3516 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.020",
@@ -19,7 +19,7 @@
   "text": "NRS 580.020 “Department” defined. “Department” means the State Department of Agriculture. (Added to NRS by 2025, 3516 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.030",
@@ -30,7 +30,7 @@
   "text": "NRS 580.030 “ Farm-to-fork event” defined. “Farm-to-fork event” means an event organized on a farm where prepared food is provided for immediate consumption to paying guests and that meets the requirements of NRS 580.610 . (Added to NRS by 2025, 3516 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.040",
@@ -41,18 +41,33 @@
   "text": "NRS 580.040 “Food” defined. “Food” means any food, drink, confection or beverage, or any component in the preparation or manufacture thereof, intended for ultimate human consumption, stored, being prepared or manufactured, displayed, offered for sale, sold or served in a food establishment. (Added to NRS by 2025, 3516 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.050",
   "citation": "NRS 580.050",
   "chapter": "580",
   "chapterTitle": "FOOD ESTABLISHMENTS",
-  "heading": "“Food establishment” defined. [Effective July 1, 2027.]",
+  "heading": "“Food establishment” defined. [Effective through June 30, 2027.]",
   "text": "NRS 580.050 “Food establishment” defined. [Effective through June 30, 2027.] 1. Except as otherwise limited by subsection 2, “food establishment” means any place, structure, premises, vehicle or vessel, or any part thereof, in which any food intended for ultimate human consumption is manufactured or prepared by any manner or means whatever, or in which any food is sold, offered or displayed for sale or served. 2. The term does not include: (a) Private homes, unless the food prepared or manufactured in the home is sold, or offered or displayed for sale or for compensation or contractual consideration of any kind; (b) Fraternal or social clubhouses at which attendance is limited to members of the club; (c) Vehicles operated by common carriers engaged in interstate commerce; (d) Any establishment in which religious, charitable and other nonprofit organizations sell food occasionally to raise money or in which charitable organizations receive salvaged food in bulk quantities for free distribution, unless the establishment is open on a regular basis to sell food to members of the general public; (e) Any establishment regulated under chapter 583 of NRS where animals, including, without limitation, mammals, fish and poultry, are slaughtered; (f) Dairy farms and plants regulated under chapter 584 of NRS which process milk and products of milk or frozen desserts; (g) The premises of a wholesale dealer of alcoholic beverages licensed under chapter 369 of NRS who handles only alcoholic beverages which are in sealed containers; (h) A facility regulated under chapter 583 of NRS that produces eggs; (i) A cottage food operation that meets the requirements of NRS 580.600 with respect to food items as defined in that section; (j) A craft food operation that meets the requirements of NRS 587.6945 with respect to food items as defined in that section; or (k) A farm for purposes of holding a farm-to-fork event. 3. As used in this section, “poultry” has the meaning ascribed to it in NRS 583.405 . (Added to NRS by 2025, 3516 ) NRS 580.050 “Food establishment” defined. [Effective July 1, 2027.] 1. Except as otherwise limited by subsection 2, “food establishment” means any place, structure, premises, vehicle or vessel, or any part thereof, in which any food intended for ultimate human consumption is manufactured or prepared by any manner or means whatever, or in which any food is sold, offered or displayed for sale or served. 2. The term does not include: (a) Private homes, unless the food prepared or manufactured in the home is sold, or offered or displayed for sale or for compensation or contractual consideration of any kind; (b) Fraternal or social clubhouses at which attendance is limited to members of the club; (c) Vehicles operated by common carriers engaged in interstate commerce; (d) Any establishment in which religious, charitable and other nonprofit organizations sell food occasionally to raise money or in which charitable organizations receive salvaged food in bulk quantities for free distribution, unless the establishment is open on a regular basis to sell food to members of the general public; (e) Any establishment regulated under chapter 583 of NRS where animals, including, without limitation, mammals, fish and poultry, are slaughtered; (f) Dairy farms and plants regulated under chapter 584 of NRS which process milk and products of milk or frozen desserts; (g) The premises of a wholesale dealer of alcoholic beverages licensed under chapter 369 of NRS who handles only alcoholic beverages which are in sealed containers; (h) A facility regulated under chapter 583 of NRS that produces eggs; (i) A cottage food operation that meets the requirements of NRS 585.730 with respect to food items as defined in NRS 585.720 ; (j) A craft food operation that meets the requirements of NRS 587.6945 with respect to food items as defined in that section; or (k) A farm for purposes of holding a farm-to-fork event. 3. As used in this section, “poultry” has the meaning ascribed to it in NRS 583.405 . (Added to NRS by 2025, 3516 ; A 2025, 2687 , effective July 1, 2027)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through June 30, 2027.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-580.050-v2",
+  "citation": "NRS 580.050",
+  "chapter": "580",
+  "chapterTitle": "FOOD ESTABLISHMENTS",
+  "heading": "“Food establishment” defined. [Effective July 1, 2027.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec050",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective July 1, 2027.",
    "isCurrent": false
@@ -67,7 +82,7 @@
   "text": "NRS 580.060 “Food handler” defined. 1. “Food handler” means any person employed in or operating a food establishment, whether that person is an employer, employee or other natural person, who handles, stores, transports, prepares, manufactures, serves or sells food, or who comes in contact with eating or cooking utensils or other equipment used in the handling, preparation, manufacture, service or sale of food. 2. The term does not include a person who: (a) Only handles, stores, transports, sells or otherwise comes in contact with food that is sealed and packaged for sale directly to the consumer; (b) If the food is potentially hazardous food, handles the food only occasionally and incidentally to his or her responsibilities or employment, and such handling is not part of his or her regularly scheduled responsibilities or employment; or (c) Is providing services as a cashier, salesperson, stock clerk, warehouse or dockworker, delivery person or maintenance staff or providing services in a similar position with limited food-handling responsibility. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.070",
@@ -78,7 +93,7 @@
   "text": "NRS 580.070 “Food processing establishment” defined. “Food processing establishment” means a commercial establishment in which food is processed or otherwise prepared and packaged for human consumption. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.080",
@@ -89,7 +104,7 @@
   "text": "NRS 580.080 “Food safety authority” defined. “Food safety authority” means the officers and agents of the Department or the officers and agents of the local boards of health. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.090",
@@ -100,7 +115,7 @@
   "text": "NRS 580.090 “Misbranded” defined. “Misbranded” means the presence of any written, printed or graphic matter, upon or accompanying food or containers of food, which is false or misleading or which violates any applicable state or local labeling requirements. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.100",
@@ -111,7 +126,7 @@
   "text": "NRS 580.100 “Potentially hazardous food” defined. “Potentially hazardous food” has the meaning ascribed to it in subpart 1-201 of the 1999 edition of the Food Code published by the Food and Drug Administration of the United States Department of Health and Human Services, unless the Department has adopted a later edition of the Food Code for this purpose. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.110",
@@ -122,7 +137,7 @@
   "text": "NRS 580.110 “Temporary food establishment” defined. “Temporary food establishment” means any food establishment which operates at a fixed location for a temporary period of time, not to exceed 2 weeks, in connection with a fair, carnival, circus, public exhibition, celebration or similar transitory gathering. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.120",
@@ -133,7 +148,7 @@
   "text": "NRS 580.120 “Wholesome” defined. “Wholesome” means in sound condition, clean, free from adulteration and otherwise suitable for use as human food. (Added to NRS by 2025, 3517 ) REGULATORY DUTIES AND ADMINISTRATION",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.200",
@@ -144,7 +159,7 @@
   "text": "NRS 580.200 Authority of Department to adopt regulations. The Department may adopt regulations: 1. Necessary to carry out the provisions of this chapter; and 2. To provide for the sanitary protection of water and food supplies. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec200",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.210",
@@ -155,7 +170,7 @@
   "text": "NRS 580.210 Enforcement of provisions of chapter by food safety authority; authority to adopt regulations. 1. Except as provided in subsection 2, this chapter must be enforced by the food safety authority in accordance with any regulations adopted by the Department pursuant to NRS 580.200 . 2. A local board of health may adopt such regulations as it may deem necessary to carry out the requirements of this chapter. Such regulations: (a) Become effective when approved by the Department; (b) Must be enforced by the food safety authority; and (c) Supersede the regulations adopted by the Department pursuant to subsection 1. 3. All sheriffs, constables, police officers, marshals and other peace officers shall render such services and assistance to the food safety authority in regard to enforcement as the food safety authority may request. (Added to NRS by 2025, 3528 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec210",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.220",
@@ -166,7 +181,7 @@
   "text": "NRS 580.220 Inapplicability of certain regulations to child care facilities with limited menus. 1. Any regulation adopted by the Department or a local board of health pursuant to NRS 580.210 that establishes a standard for the construction of a food establishment or the equipment required to be present in a food establishment does not apply to any child care facility that limits its menu to: (a) Food that does not constitute a potential or actual hazard to the public health; and (b) Potentially hazardous food that has been: (1) Commercially prepared and precooked; or (2) Pasteurized, Ê regardless of whether the child care facility includes a kindergarten. 2. As used in this section: (a) “Child care facility” includes: (1) A child care facility licensed pursuant to chapter 432A of NRS; or (2) A child care facility licensed by a city or county. (b) “Kindergarten” means a program of education for children who are 5 and 6 years of age which is: (1) Licensed to operate as such pursuant to chapter 394 of NRS or which is exempt from licensure pursuant to NRS 394.211 ; and (2) Located on the premises of a child care facility. (Added to NRS by 2025, 3528 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec220",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.230",
@@ -177,7 +192,7 @@
   "text": "NRS 580.230 Restriction on adoption of regulations concerning construction, maintenance, operation or safety of building, structure or other property. Before the Department may adopt any regulation concerning the construction, maintenance, operation or safety of a building, structure or other property in this State, the Department shall consult with the Deputy Administrator of the Public Works - Compliance and Code Enforcement Section for the purposes of subsection 9 of NRS 341.100 . (Added to NRS by 2025, 3529 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec230",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.240",
@@ -188,7 +203,7 @@
   "text": "NRS 580.240 Regulations requiring certain employees of food establishment to wear hair covering to confine hair. The Department shall adopt reasonable rules and regulations requiring that any person employed in the preparation or service of food or beverages to patrons on the premises of a food establishment, or who comes in contact with eating or cooking utensils used for such service, whose hair length exceeds specified limits shall wear a hair net, cap or other suitable covering which confines the hair while such person is engaged in the performance of his or her duties. Such rules and regulations shall specify the minimum hair length to which such requirement applies. (Added to NRS by 2025, 3520 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec240",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.250",
@@ -199,7 +214,7 @@
   "text": "NRS 580.250 Payment of assessment by counties for services of Department; exemption; regulations. 1. Unless an exemption is approved pursuant to subsection 3, each county shall pay an assessment to the Department, in an amount determined by the Department, for the costs of services provided in that county by the Department pursuant to this chapter and any regulations adopted pursuant thereto, regardless of whether the county has a local health authority. 2. Each county shall pay the assessment to the Department in quarterly installments that are due on the first day of the first month of each calendar quarter. 3. A county may submit a proposal to the Governor for the county to carry out the services that would otherwise be provided by the Department pursuant to this chapter and any regulations adopted pursuant thereto. If the Governor approves the proposal, the Governor shall submit a recommendation to the Interim Finance Committee to exempt the county from the assessment required pursuant to subsection 1. The Interim Finance Committee, upon receiving the recommendation from the Governor, shall consider the proposal and determine whether to approve the exemption. In considering whether to approve the exemption, the Interim Finance Committee shall consider, among other things, the best interests of the State, the effect of the exemption and the intent of the Legislature in requiring the assessment to be paid by each county. 4. An exemption that is approved by the Interim Finance Committee pursuant to subsection 3 must not become effective until at least 6 months after that approval. 5. A county that receives approval pursuant to subsection 3 to carry out the services that would otherwise be provided by the Department pursuant to this chapter and any regulations adopted pursuant thereto shall carry out those services in the manner set forth in those chapters and regulations. 6. The Department may adopt such regulations as necessary to carry out the provisions of this section. Any regulation adopted pursuant to this subsection must ensure the financial solvency of the Department in the provision of services pursuant to this chapter and any regulations adopted pursuant thereto. (Added to NRS by 2025, 3517 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec250",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.260",
@@ -210,7 +225,7 @@
   "text": "NRS 580.260 Review of plans and specifications for construction or remodeling of food establishment or alteration of existing structure. If, after April 18, 1963, a food establishment is constructed or extensively remodeled, or if an existing structure is converted for use as a food establishment, properly prepared plans and specifications for such construction, remodeling or alteration showing the layout, arrangement and construction materials of work areas and the location, size and type of fixed equipment and facilities shall be submitted to the food safety authority for approval before such work is begun. Where full-time city, county or district health departments exist, such plans and specifications shall be submitted to such food safety authorities for approval before such work is begun. (Added to NRS by 2025, 3528 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec260",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.270",
@@ -221,7 +236,7 @@
   "text": "NRS 580.270 Inspection of food establishment by food safety authority. 1. At least once every year, the food safety authority shall inspect each food establishment located in the State. 2. The food safety authority shall make as many additional inspections and reinspections as are necessary for the enforcement of this chapter. 3. It is unlawful for any person to interfere with the food safety authority in the performance of his or her duties. (Added to NRS by 2025, 3525 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec270",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.280",
@@ -232,7 +247,7 @@
   "text": "NRS 580.280 Access to food establishment; form for inspection report. 1. The food safety authority, after he or she has properly identified himself or herself, must be permitted to enter, at any reasonable time, any food establishment within the State for the purpose of making any inspection to determine compliance with this chapter. The food safety authority must be permitted to examine the records of the establishment to obtain pertinent information pertaining to food and supplies purchased, received or used, and persons employed. 2. Whenever the food safety authority makes an inspection of a food establishment, the food safety authority shall record his or her findings on an inspection report form provided for this purpose. The food safety authority shall furnish the original or an electronic original of the inspection report form to the permit holder or operator. The form must summarize the requirements of this chapter. (Added to NRS by 2025, 3525 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec280",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.290",
@@ -243,7 +258,7 @@
   "text": "NRS 580.290 Issuance of notice of violation. Except as otherwise provided in subsection 3 of NRS 580.800 , whenever the food safety authority makes an inspection of a food establishment and discovers that any of the requirements of this chapter have been violated, the food safety authority shall notify the permit holder or operator of the violations by means of an inspection report form or other written notice. The notice must: 1. Set forth the specific violations found; 2. Establish a specific and reasonable time for the correction of those violations; 3. In the case of temporary food establishments, state that the violations must be corrected within a specified period which must not be more than 24 hours. Failure to comply with the notice results in immediate suspension of the permit; 4. State that failure to comply with the requirements of any notice issued in accordance with the provisions of this chapter may result in immediate suspension of the permit or in downgrading of the establishment; and 5. State that an opportunity for appeal from any notice or inspection findings will be provided if a written request for a hearing is filed with the food safety authority within the period established in the notice for correction. (Added to NRS by 2025, 3526 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec290",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.300",
@@ -254,7 +269,7 @@
   "text": "NRS 580.300 Service of notice. 1. Notices provided for in NRS 580.290 shall be deemed to have been properly served when the original of the inspection report form or other notice has been: (a) Delivered personally to the permit holder or person in charge; (b) Sent by registered or certified mail, return receipt requested, to the last known address of the permit holder; or (c) Except for any notice required pursuant to NRS 580.800 , sent to the electronic mail address, if any, provided by the permit holder to the food safety authority. 2. A copy of any inspection report form or other notice provided pursuant to subsection 1 shall be filed with the records of the food safety authority. (Added to NRS by 2025, 3526 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec300",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.310",
@@ -265,7 +280,7 @@
   "text": "NRS 580.310 Authority of food safety authority to examine or sample food, issue hold order and order denaturing or destruction of food. 1. Food may be examined or sampled by the food safety authority as often as may be necessary to determine freedom from adulteration or misbranding. The food safety authority may, upon written notice to the owner or person in charge, place a hold order on any food which the food safety authority determines is or has probable cause to believe to be unwholesome or otherwise adulterated or misbranded. 2. Under a hold order, food shall be permitted to be suitably stored. It shall be unlawful for any person to remove or alter a hold order, notice or tag placed on food by the food safety authority. Neither such food nor the containers thereof shall be relabeled, repacked, reprocessed, altered, disposed of or destroyed without permission of the food safety authority, except by order of a court of competent jurisdiction. 3. After the owner or person in charge has had a hearing as provided for in NRS 580.290 , and on the basis of evidence produced at such hearing, or on the basis of his or her examination in the event a written request for a hearing is not received within 10 days, the food safety authority may vacate the hold order, or may by written order direct the owner or person in charge of the food which was placed under the hold order to denature or destroy such food or to bring it into compliance with the provisions of this chapter. Such order of the food safety authority to denature or destroy such food or bring it into compliance with the provisions of this chapter shall be stayed if the order is appealed to a court of competent jurisdiction within 3 days. (Added to NRS by 2025, 3526 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec310",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.320",
@@ -276,7 +291,7 @@
   "text": "NRS 580.320 Authority of food safety authority to require food processing establishment to have food tested under certain circumstances; requirements of test; period for retention of records of test; reporting of test results. 1. Except as otherwise provided in this subsection, whenever the food safety authority determines there are reasonable grounds to suspect that the food processed or otherwise prepared by a food processing establishment may constitute a substantial health hazard, the food safety authority may require that the food processing establishment have its food tested for the presence of contaminants typically associated with the suspected health hazard. When carrying out the provisions of this subsection, the food safety authority shall comply with the Federal Food Safety Modernization Act, 21 U.S.C. §§ 2201 et seq., and any regulations adopted pursuant thereto. The provisions of this subsection do not apply to the extent that a food processing establishment is under investigation for the same purpose pursuant to federal law. 2. If the food safety authority requires pursuant to subsection 1 that the food processed or otherwise prepared by a food processing establishment be tested: (a) The food processing establishment: (1) Is responsible for the cost of the testing; and (2) May perform such testing itself or cause the testing to be performed by a third party. (b) The testing must be conducted in a manner that is consistent with nationally recognized laboratory standards. 3. Records of the results of any tests conducted pursuant to this section must be retained by the food processing establishment to which the tests pertain for a period of not less than 2 years. The food processing establishment shall, upon request, make those records available to the food safety authority for its review. 4. If the testing required pursuant to subsection 1 indicates that the food processed or otherwise prepared by a food processing establishment is contaminated, the person or entity that conducted the testing shall, within 24 hours after obtaining the test results, report those test results to the food safety authority. (Added to NRS by 2025, 3527 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec320",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.330",
@@ -287,7 +302,7 @@
   "text": "NRS 580.330 Procedure when infection of food handler is suspected. 1. When the food safety authority has reasonable cause to suspect the possibility of disease transmission from any food handler of a food establishment, the food safety authority shall secure a morbidity history of the suspected food handler, or make such other investigation as may be indicated, and take appropriate action. 2. The food safety authority may require any or all of the following measures: (a) The immediate exclusion of the food handler from all food establishments. (b) The immediate closure of the food establishment concerned until, in the opinion of the food safety authority, no further danger of disease outbreak exists. (c) Restriction of the food handler’s services to some area of the establishment where there would be no danger of transmitting disease. (d) Adequate medical and laboratory examinations of: (1) The food handler and his or her body discharges; and (2) Other food handlers and their body discharges. (Added to NRS by 2025, 3528 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec330",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.340",
@@ -298,7 +313,7 @@
   "text": "NRS 580.340 Compliance with chapter by temporary food establishment; powers of food safety authority. A temporary food establishment shall comply with all the provisions of this chapter which are applicable to its operation. The food safety authority may: 1. Augment such requirements when needed to assure the service of safe food. 2. Prohibit the sale of certain potentially hazardous food. 3. Modify specific requirements for physical facilities when in the opinion of the food safety authority no imminent health hazard will result. (Added to NRS by 2025, 3520 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec340",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.350",
@@ -309,7 +324,7 @@
   "text": "NRS 580.350 Food establishment outside jurisdiction of Department. Food from food establishments outside the jurisdiction of the Department may be sold within the State of Nevada if such food establishments conform to the provisions of this chapter or to substantially equivalent provisions. To determine the extent of compliance with such provisions, the food safety authority may accept reports from responsible authorities in the jurisdictions where such food establishments are located. (Added to NRS by 2025, 3527 ) PERMITTING AND LICENSING",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec350",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.400",
@@ -320,7 +335,7 @@
   "text": "NRS 580.400 Issuance of permit to operate food establishment. 1. Any person desiring to operate a food establishment must make written application for a permit on forms provided by the food safety authority. The application must: (a) Include the applicant’s full name and post office address. An applicant may include on the application an electronic mail address by which the food safety authority may communicate with the applicant and send any inspection report form or other notice. (b) Include a statement whether the applicant is a natural person, firm or corporation, and, if a partnership, the names of the partners, together with their addresses. (c) Include a statement of the location and type of the proposed food establishment. (d) Include the signature of the applicant or applicants. (e) Be accompanied by a fee prescribed by the food safety authority. 2. An application for a permit to operate a temporary food establishment must also include the inclusive dates of the proposed operation. 3. Upon receipt of such an application, the food safety authority shall make an inspection of the food establishment to determine compliance with the provisions of this chapter. When inspection reveals that the applicable requirements of this chapter have been met, the food safety authority shall issue a permit to the applicant. 4. A permit to operate a temporary food establishment may be issued for a period not to exceed 14 days. 5. A permit issued pursuant to this section: (a) Is not transferable from person to person or from place to place. (b) Must be posted in every food establishment. (Added to NRS by 2025, 3524 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec400",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.410",
@@ -331,7 +346,7 @@
   "text": "NRS 580.410 License of any licensing authority must not be issued until permit issued by food safety authority; exception. 1. Except as otherwise provided in subsection 2, no license under any license ordinance of any licensing authority may be issued for the operation of a food establishment to any person owning or operating such food establishment unless the permit required by this chapter has first been granted by the food safety authority. 2. A board of county commissioners or the city council or other governing body of an incorporated city, whether organized under general law or special charter, may issue a license to operate a food establishment to any person owning or operating the food establishment contingent upon the person’s obtaining the permit required by this chapter from the food safety authority. (Added to NRS by 2025, 3524 ) OPERATION OF FOOD ESTABLISHMENTS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec410",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.500",
@@ -342,7 +357,7 @@
   "text": "NRS 580.500 Use of sawdust in retail meat, poultry and fish food establishments. A food establishment engaged in the cutting and packaging of meat, poultry or fish for retail sale may use sawdust on the floors in that area of such establishment not visited by the public if: 1. Such sawdust is treated in a manner approved by the Department; and 2. The floors are cleaned and fresh sawdust is used daily. (Added to NRS by 2025, 3518 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec500",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.510",
@@ -353,7 +368,7 @@
   "text": "NRS 580.510 Food establishments which sell alcoholic beverages for consumption on premises required to post signs concerning birth defects; exception. 1. Except as otherwise provided in subsection 5, each food establishment in which alcoholic beverages are sold by the drink for consumption on the premises shall post at least one sign that meets the requirements of this section in a location conspicuous to the patrons of the establishment. The conspicuous location described in this subsection may include, without limitation, a women’s restroom that is located within the establishment. 2. Each sign required by subsection 1 must be not less than 8 1/2 by 11 inches in size and must contain a notice in boldface type that is clearly legible and, except as otherwise provided in paragraph (a) of subsection 4, in substantially the following form: HEALTH WARNING Drinking wine, beer and other alcoholic beverages during pregnancy can cause birth defects. ¡ADVERTENCIA! El consumo de vino, cerveza y otras bebidas alcohólicas durante el embarazo puede causar defectos físicos y/o mentales en el feto. 3. The letters in the words “HEALTH WARNING” and “¡ADVERTENCIA!” in the sign must be written in not less than 40-point type, and the letters in all other words in the sign must be written in not less than 30-point type. 4. The Department may: (a) Provide by regulation for one or more alternative forms for the language of the warning to be included on the signs required by subsection 1 to increase the effectiveness of the signs. Each alternative form must contain substantially the same message as is stated in subsection 2. (b) Solicit and accept the donation of signs that satisfy the requirements of this section from a nonprofit organization or any other source. To the extent that such signs are donated, the Department shall distribute the signs upon request to food establishments that are required to post the signs. 5. A food establishment is not required to post the sign otherwise required by this section if the food establishment provides to its patrons a food or drink menu that contains a notice, in boldface type that is clearly legible and not less than the size of the type used for the items on the menu, in substantially the same form and language as is set forth in subsection 2 or authorized pursuant to paragraph (a) of subsection 4. 6. As used in this section, “alcoholic beverage” means: (a) Beer, ale, porter, stout and other similar fermented beverages, including, without limitation, sake and similar products, of any name or description containing one-half of 1 percent or more of alcohol by volume, brewed or produced from malt, wholly or in part, or from any substitute therefor. (b) Any beverage obtained by the fermentation of the natural content of fruits or other agricultural products containing sugar, of one-half of 1 percent or more of alcohol by volume. (c) Any distilled spirits commonly referred to as ethyl alcohol, ethanol or spirits of wine in any form, including, without limitation, all dilutions and mixtures thereof from whatever process produced. (Added to NRS by 2025, 3518 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec510",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.520",
@@ -364,7 +379,7 @@
   "text": "NRS 580.520 Purchase, use and sale of hemp or commodity or product made using hemp by operator of food establishment at which food is not prepared or served for immediate consumption. 1. A person who holds a permit issued pursuant to NRS 580.400 and who operates a food establishment at which food is not prepared or served for immediate consumption may: (a) Purchase hemp or a commodity or product made using hemp from a grower or handler registered by the Department pursuant to chapter 557 of NRS; (b) Use hemp or a commodity or product made using hemp to manufacture or prepare food that contains an approved hemp component at the food establishment; and (c) In compliance with the provisions of NRS 439.532 , sell, offer or display for sale food that contains an approved hemp component at the food establishment. Ê Any hemp or commodity or product made using hemp purchased or used pursuant to this subsection must have been determined to be safe or generally recognized as safe for use as an ingredient in food intended for human consumption by the United States Food and Drug Administration. 2. As used in this section: (a) “Approved hemp component” means any component of hemp that the United States Food and Drug Administration has determined to be safe or generally recognized as safe for use as an ingredient in food intended for human consumption. (b) “Hemp” has the meaning ascribed to it in NRS 557.160 . (Added to NRS by 2025, 3519 ) COTTAGE FOOD OPERATIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec520",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.600",
@@ -375,7 +390,7 @@
   "text": "NRS 580.600 Exemption from certain requirements; certain local governing bodies prevented from prohibiting cottage food operations; registration; fee; inspection; adjustment of gross sales used to determine qualifying cottage food operations. [Effective through June 30, 2027.] 1. A cottage food operation which manufactures or prepares a food item by any manner or means whatever for sale, or which offers or displays a food item for sale, is not a “food establishment” pursuant to paragraph (i) of subsection 2 of NRS 580.050 if each such food item is: (a) Sold on the private property of the natural person who manufactures or prepares the food item or at a location where the natural person who manufactures or prepares the food item sells the food item directly to a consumer, including, without limitation, a farmers’ market licensed pursuant to chapter 244 or 268 of NRS, flea market, swap meet, church bazaar, garage sale or craft fair, by means of an in-person transaction that does not involve selling the food item by telephone or via the Internet; (b) Sold to a natural person for his or her consumption and not for resale; (c) Affixed with a label which complies with the federal labeling requirements set forth in 21 U.S.C. § 343(w), 9 C.F.R. Part 317 and 21 C.F.R. Part 101; (d) Labeled with “MADE IN A COTTAGE FOOD OPERATION THAT IS NOT SUBJECT TO GOVERNMENT FOOD SAFETY INSPECTION” printed prominently on the label for the food item; (e) Prepackaged in a manner that protects the food item from contamination during transport, display, sale and acquisition by consumers; and (f) Prepared and processed in the kitchen of the private home of the natural person who manufactures or prepares the food item or, if allowed by the food safety authority, in the kitchen of a fraternal or social clubhouse, a school or a religious, charitable or other nonprofit organization. 2. No local zoning board, planning commission or governing body of an unincorporated town, incorporated city or county may adopt any ordinance or other regulation that prohibits a natural person from preparing food in a cottage food operation. 3. Each natural person who wishes to conduct a cottage food operation must, before selling any food item, register the cottage food operation with the food safety authority by submitting such information as the food safety authority deems appropriate, including, without limitation: (a) The name, address and contact information of the natural person conducting the cottage food operation; and (b) If the cottage food operation sells food items under a name other than the name of the natural person who conducts the cottage food operation, the name under which the cottage food operation sells food items. 4. The food safety authority may charge a fee for the registration of a cottage food operation pursuant to subsection 3 in an amount not to exceed the actual cost of the food safety authority to establish and maintain a registry of cottage food operations. 5. The food safety authority may inspect a cottage food operation only to investigate a food item that may be deemed to be adulterated pursuant to NRS 585.300 to 585.360 , inclusive, or an outbreak or suspected outbreak of illness known or suspected to be caused by a contaminated food item. The cottage food operation shall cooperate with the food safety authority in any such inspection. If, as a result of such inspection, the food safety authority determines that the cottage food operation has produced an adulterated food item or was the source of an outbreak of illness caused by a contaminated food item, the food safety authority may charge and collect from the cottage food operation a fee in an amount that does not exceed the actual cost of the food safety authority to conduct the investigation. 6. Beginning with Fiscal Year 2026-2027, the amount of gross sales of a cottage food operation specified in paragraph (a) of subsection 7 must be adjusted for each fiscal year by the Department by adding to the amount the product of the amount multiplied by the percentage increase in the Consumer Price Index (All Items) published by the United States Department of Labor from July 2025 to the July preceding the fiscal year for which the adjustment is calculated. The Department shall publish the adjusted amount on the Internet website of the Department on or before September 30 of each year. 7. As used in this section: (a) “Cottage food operation” means a natural person who manufactures or prepares food items in his or her private home or, if allowed by the food safety authority, in the kitchen of a fraternal or social clubhouse, a school or a religious, charitable or other nonprofit organization, for sale to a natural person for consumption and whose gross sales of such food items are not more than $100,000, as adjusted pursuant to subsection 6, per calendar year. (b) “Food item” means: (1) Nuts and nut mixes; (2) Candies; (3) Jams, jellies and preserves; (4) Vinegar and flavored vinegar; (5) Dry herbs and seasoning mixes; (6) Dried fruits; (7) Cereals, trail mixes and granola; (8) Popcorn and popcorn balls; or (9) Baked goods that: (I) Are not potentially hazardous foods; (II) Do not contain cream, uncooked egg, custard, meringue or cream cheese frosting or garnishes; and (III) Do not require time or temperature controls for food safety. (Added to NRS by 2025, 3520 ; R 2025, 2690 , effective July 1, 2027) FARM-TO-FORK EVENTS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec600",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective through June 30, 2027.",
    "isCurrent": true
@@ -386,11 +401,26 @@
   "citation": "NRS 580.610",
   "chapter": "580",
   "chapterTitle": "FOOD ESTABLISHMENTS",
-  "heading": "Exemption from certain requirements; notice to guests. [Effective July 1, 2027.]",
+  "heading": "Exemption from certain requirements; notice to guests. [Effective through June 30, 2027.]",
   "text": "NRS 580.610 Exemption from certain requirements; notice to guests. [Effective through June 30, 2027.] 1. Except as otherwise provided in subsection 3, a farm is not a “food establishment” for the purposes of holding a farm-to-fork event provided that: (a) Any poultry, meat from livestock and meat from a rabbit that is served at the farm-to-fork event is: (1) Raised and prepared on the farm and is butchered and processed on the farm pursuant to the requirements of chapter 583 of NRS; or (2) Obtained from and processed in a facility pursuant to the requirements of chapter 583 of NRS or a facility that is inspected and approved under an inspection program administered by the United States Department of Agriculture; and (b) Any other food item that is served at the farm-to-fork event, including, without limitation, salads, side dishes and desserts, are prepared on the farm from ingredients that are substantially produced on the farm. 2. A farm which holds a farm-to-fork event shall, before a guest consumes any food, provide each guest with a notice which states that no inspection was conducted by a state or local health department of the farm or the food to be consumed, except as otherwise provided in subsection 1. 3. A farm which holds more than two events in any month that would otherwise qualify as farm-to-fork events becomes a food establishment for the remainder of that calendar year subject to all of the requirements of this chapter and any regulations adopted pursuant thereto concerning food establishments. (Added to NRS by 2025, 3522 ) NRS 580.610 Exemption from certain requirements; notice to guests. [Effective July 1, 2027.] 1. Except as otherwise provided in subsection 3, a farm is not a “food establishment” for the purposes of holding a farm-to-fork event provided that: (a) Any poultry, meat from livestock, game animal and meat from a rabbit that is served at the farm-to-fork event is: (1) Raised and prepared on the farm and is butchered and processed on the farm pursuant to the requirements of chapter 583 of NRS; or (2) Obtained from and processed in a facility pursuant to the requirements of chapter 583 of NRS or a facility that is inspected and approved under an inspection program administered by the United States Department of Agriculture; and (b) Any other food item that is served at the farm-to-fork event, including, without limitation, salads, side dishes and desserts, are prepared on the farm from ingredients that are substantially produced on the farm or sourced from a facility that satisfies the requirements of chapter 583 of NRS or was inspected and approved under an inspection program administered by the United States Department of Agriculture. 2. A farm which holds a farm-to-fork event shall, before a guest consumes any food, provide each guest with a notice which states that no inspection was conducted by a state or local health department of the farm or the food to be consumed, except as otherwise provided in subsection 1. 3. Except as otherwise provided in subsection 4, a farm which holds more than four events in any month that would otherwise qualify as farm-to-fork events becomes a food establishment for the remainder of that calendar year subject to all of the requirements of this chapter and any regulations adopted pursuant thereto concerning food establishments. 4. The Director of the Department may provide an exemption from the requirements of subsection 3 to a farm which holds more than four events during a harvest or holiday season. 5. As used in this section: (a) “Game animal” means an animal, the products of which are food, that is not classified as livestock, sheep, swine, goat, horse, mule or other equine, or as poultry or fish. The term includes mammals, including, without limitation, reindeer, elk, deer, antelope, water buffalo, bison, rabbit, squirrel, opossum, raccoon, nutria or muskrat, and nonaquatic reptiles such as land snakes. (b) “Livestock” has the meaning ascribed to it in NRS 583.325 . (Added to NRS by 2025, 3522 ; A 2025, 2688 , effective July 1, 2027)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec610",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through June 30, 2027.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-580.610-v2",
+  "citation": "NRS 580.610",
+  "chapter": "580",
+  "chapterTitle": "FOOD ESTABLISHMENTS",
+  "heading": "Exemption from certain requirements; notice to guests. [Effective July 1, 2027.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec610",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective July 1, 2027.",
    "isCurrent": false
@@ -401,11 +431,26 @@
   "citation": "NRS 580.620",
   "chapter": "580",
   "chapterTitle": "FOOD ESTABLISHMENTS",
-  "heading": "Registration; fees; inspection; registry. [Effective July 1, 2027.]",
+  "heading": "Registration; fees; inspection. [Effective through June 30, 2027.]",
   "text": "NRS 580.620 Registration; fees; inspection. [Effective through June 30, 2027.] 1. A farm that wishes to hold farm-to-fork events must register with the food safety authority by submitting such information as the food safety authority deems appropriate, including, without limitation: (a) The name, address and contact information of the owner of the farm; (b) The name under which the farm operates; and (c) The address of the farm. 2. The food safety authority may charge a fee for the registration of a farm pursuant to this section in an amount not to exceed the actual cost of the food safety authority to establish and maintain a registry of farms holding farm-to-fork events. 3. The food safety authority shall not inspect a farm that holds a farm-to-fork event, except as otherwise provided in subsection 3 of NRS 580.610 and except that the food safety authority may inspect a farm following a farm-to-fork event to investigate a food item that may be deemed to be adulterated pursuant to NRS 585.300 to 585.360 , inclusive, or an outbreak or suspected outbreak of illness known or suspected to be caused by a contaminated food item served at the farm-to-fork event. A farm shall cooperate with the food safety authority in any such inspection. 4. If, as a result of an inspection conducted pursuant to subsection 3, the food safety authority determines that the farm has produced an adulterated food item or was the source of an outbreak of illness caused by a contaminated food item, the food safety authority may charge and collect from the farm a fee in an amount not to exceed the actual cost of the food safety authority to conduct the investigation. (Added to NRS by 2025, 3523 ) NRS 580.620 Registration; fees; inspection; registry. [Effective July 1, 2027.] 1. A farm that wishes to hold farm-to-fork events must register with the Department by submitting such information as the Department deems appropriate, including, without limitation: (a) The name, address and contact information of the owner of the farm; (b) The name under which the farm operates; (c) The address of the farm; and (d) The annual revenue of the farm for the immediately preceding calendar year. 2. Except as otherwise provided in this subsection, the Department may charge a fee for the registration of a farm pursuant to this section in an amount not to exceed the actual cost of the Department to establish and maintain the registry required pursuant to subsection 5. The Department shall not charge a fee for the registration of a farm when the annual revenue of the farm for the immediately preceding calendar year was less than $100,000. 3. The Department shall not inspect a farm that holds a farm-to-fork event, except as otherwise provided in subsection 3 of NRS 580.610 and except that the Department may inspect a farm following a farm-to-fork event to investigate a food item that may be deemed to be adulterated pursuant to NRS 585.300 to 585.360 , inclusive, or an outbreak or suspected outbreak of illness known or suspected to be caused by a contaminated food item served at the farm-to-fork event. A farm shall cooperate with the Department in any such inspection. 4. If, as a result of an inspection conducted pursuant to subsection 3, the Department determines that the farm has produced an adulterated food item or was the source of an outbreak of illness caused by a contaminated food item, the Department may charge and collect from the farm a fee in an amount not to exceed the actual cost of the health authority to conduct the investigation. 5. The Department shall maintain a registry of farms holding farm-to-fork events that are registered with the Department pursuant to subsection 1. The registry must include, without limitation, the name under which the farm operates. (Added to NRS by 2013, 1405 ; A 2025, 2689 , effective July 1, 2027) SIDEWALK VENDORS OF FOOD",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec620",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through June 30, 2027.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-580.620-v2",
+  "citation": "NRS 580.620",
+  "chapter": "580",
+  "chapterTitle": "FOOD ESTABLISHMENTS",
+  "heading": "Registration; fees; inspection; registry. [Effective July 1, 2027.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec620",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective July 1, 2027.",
    "isCurrent": false
@@ -420,7 +465,7 @@
   "text": "NRS 580.700 Regulations. 1. A local board of health in a county whose population is 100,000 or more or a city in a county whose population is 100,000 or more shall adopt regulations pursuant to NRS 580.210 regulating sidewalk vendors of food which must, without limitation: (a) Establish a process for a person to apply to the local board of health for a permit, license or other authorization to operate as a sidewalk vendor; (b) Provide for a person applying for a permit, license or other authorization for sidewalk vending to pay any fees required by the local board of health using a payment plan; (c) Establish procedures for a person seeking to operate as a sidewalk vendor who does not have a driver’s license or identification card issued by this State or another state, the District of Columbia or any territory of the United States to obtain any certification required by the local board of health as a food handler; and (d) Include any other regulation determined to be necessary by the Task Force on Safe Sidewalk Vending pursuant to NRS 225.610 . 2. As used in this section, “sidewalk vendor” means a person who sells food upon a public sidewalk or other pedestrian path from a conveyance, including, without limitation, a pushcart, stand, display, pedal-driven cart, wagon, showcase or rack. The term includes a nonstationary sidewalk vendor and a stationary sidewalk vendor. (Added to NRS by 2025, 3520 ) DISCIPLINARY ACTIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec700",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.800",
@@ -431,7 +476,7 @@
   "text": "NRS 580.800 Suspension or revocation of permit; hearing; reinstatement of suspended permit; notice. 1. Permits issued under the provisions of this chapter may be suspended temporarily by the food safety authority for failure of the holder to comply with the requirements of this chapter. 2. Whenever a permit holder or operator has failed to comply with any notice issued under the provisions of this chapter, the permit holder or operator must be notified in writing that the permit is, upon service of the notice, immediately suspended or that the establishment is downgraded if that is the case. The notice must also contain a statement informing the permit holder or operator that an opportunity for a hearing will be provided if a written request for a hearing is filed by him or her with the food safety authority. 3. Whenever the food safety authority finds an insanitary or other condition in the operation of a food establishment which, in the judgment of the food safety authority, constitutes a substantial hazard to the public health, the food safety authority may, without warning, notice or hearing, issue a written order to the permit holder or operator citing the condition, specifying the corrective action to be taken and specifying the time within which the action must be taken. The order may state that the permit is immediately suspended and all food operations must be immediately discontinued. Any person to whom such an order is issued shall comply with it immediately. Upon written petition to the food safety authority, the person must be afforded a hearing as soon as possible. 4. Any person whose permit has been suspended may, at any time, make application for a reinspection for reinstatement of the permit. Within 10 days following receipt of a written request, including a statement signed by the applicant that in the opinion of the applicant the conditions causing suspension of the permit have been corrected, the food safety authority shall make a reinspection. If the applicant is complying with the requirements of this chapter, the permit must be reinstated. 5. For serious or repeated violations of any of the requirements of this chapter or for interference with the food safety authority in the performance of the duties of the food safety authority, the permit may be permanently revoked after an opportunity for a hearing has been provided by the food safety authority. Before taking such an action, the food safety authority shall notify the permit holder in writing, stating the reasons for which the permit is subject to revocation and advising the permit holder of the requirements for filing a request for a hearing. A permit may be suspended for cause pending its revocation or a hearing relative thereto. 6. The food safety authority may permanently revoke a permit after 5 days following service of the notice unless a request for a hearing is filed with the food safety authority by the permit holder within 5 days. 7. The hearings provided for in this section must be conducted by the food safety authority at a time and place designated by the food safety authority. Based upon the record of the hearing, the food safety authority shall make a finding and may sustain, modify or rescind any official notice or order considered in the hearing. A written report of the hearing decision must be furnished to the permit holder by the food safety authority. (Added to NRS by 2025, 3524 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec800",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.810",
@@ -442,7 +487,7 @@
   "text": "NRS 580.810 Revocation of license to operate food establishment issued by licensing authority under certain circumstances. 1. A license to operate a food establishment issued by any licensing authority to a person owning or operating such food establishment shall be revoked when such person’s permit has been revoked by the food safety authority, and no new license may be issued until such person again possesses an unrevoked permit from the food safety authority. 2. Licensing authorities shall be notified by the food safety authority of the revocation of any permit. (Added to NRS by 2025, 3525 ) PROHIBITED ACTS; PENALTIES; ENFORCEMENT",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec810",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.900",
@@ -453,7 +498,7 @@
   "text": "NRS 580.900 Operation of food establishment without valid permit prohibited; exemptions; sale, offer or display of food prepared in private home without valid permit prohibited. 1. Except as otherwise provided in this section, it is unlawful for any person to operate a food establishment unless the person possesses a valid permit issued to him or her by the food safety authority. 2. The food safety authority may exempt a food establishment from the provisions of this chapter if the food safety authority determines that the food which is sold, offered or displayed for sale, or served at the establishment does not constitute a potential or actual hazard to the public health. 3. Food that is prepared in a private home and given away free of charge or consideration of any kind is exempt from the provisions of this chapter, unless it is given to a food establishment. 4. Except as otherwise provided in subsection 5, food that is prepared in a private home must not be sold, or offered or displayed for sale or for compensation or contractual consideration of any kind, unless the person preparing the food possesses a valid permit issued to him or her by the food safety authority for that purpose. 5. A religious, charitable or other nonprofit organization may, without possessing a permit from the food safety authority, sell food occasionally to raise money, whether or not the food was prepared in a private home, if the sale occurs on the premises of the organization. If the sale is to occur off the premises of the organization, a permit from the food safety authority is required unless an exemption is granted pursuant to subsection 2. (Added to NRS by 2025, 3523 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec900",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.910",
@@ -464,7 +509,7 @@
   "text": "NRS 580.910 Selling flesh of diseased animal or container containing shellfish without approved stamp prohibited. Any person who knowingly sells any flesh of any diseased animal or any container containing shellfish, if the container does not have an approved stamp authorized by the Division of Animal Industry of the Department, is guilty of a gross misdemeanor. (Added to NRS by 2025, 3526 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec910",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.980",
@@ -475,7 +520,7 @@
   "text": "NRS 580.980 District attorney to prosecute violations. The district attorney of each county shall prosecute any person who violates any provision of this chapter or any provision of the regulations of the Department or the local board of health adopted pursuant to this chapter. (Added to NRS by 2025, 3529 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec980",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-580.990",
@@ -486,6 +531,6 @@
   "text": "NRS 580.990 Penalties. Except as otherwise provided in NRS 580.910 , any person who violates any of the provisions of this chapter is guilty of a misdemeanor. In addition thereto, such persons may be enjoined from continuing such violations. Each day upon which such a violation occurs shall constitute a separate violation. (Added to NRS by 2025, 3529 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-580.html#NRS580Sec990",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

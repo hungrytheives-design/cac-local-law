@@ -8,7 +8,7 @@
   "text": "NRS 603.010 Definitions. As used in NRS 603.010 to 603.090 , inclusive, unless the context otherwise requires, the words and terms defined in NRS 603.020 and 603.030 have the meanings ascribed to them in those sections. (Added to NRS by 1983, 1348 ; A 2007, 1400 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.020",
@@ -19,7 +19,7 @@
   "text": "NRS 603.020 “Computer” defined. “Computer” means an electrical device which performs arithmetic or logical functions on information that is recorded in the form of electronic or magnetic impulses, and includes any device connected to a computer for the purpose of communicating, processing, storing or retrieving such information. The term does not include a device such as a radio or television transmitter or receiver, television camera, videotape recorder, sound recorder, phonograph or similar device which is used for reproducing information in aural or visual form without changing the nature or content of the information, unless such a device is connected to and used by a computer. (Added to NRS by 1983, 1348 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.030",
@@ -30,7 +30,7 @@
   "text": "NRS 603.030 “Program” defined. “Program” means a series of statements or instructions in words, numbers or other symbols which are used or to be used directly or indirectly in a computer to bring about an intended result. The term includes the statements or instructions of a program in a form acceptable to a computer or a representation of the statements or instructions in any other form, including the charts and documents used in the design and writing of the program. (Added to NRS by 1983, 1348 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.040",
@@ -41,7 +41,7 @@
   "text": "NRS 603.040 Unfair trade practices. It is an unfair trade practice for a person: 1. To obtain possession of or access to a proprietary program or the data stored in a computer with intent to: (a) Deprive or withhold from the owner his or her control over that program or data; or (b) Convert that program or data to his or her own use or the use of another. 2. With the consent of the owner, to obtain possession of or access to a proprietary program or the data stored in a computer and thereafter, without the consent of the owner, to: (a) Convert that program or data to his or her own use or the use of another; or (b) Make or cause to be made a copy of that data or the statements or instructions of that program or to exhibit that program or data to another. 3. By force, violence, threat, bribe, reward or offer of anything of value on or to another person or a member of his or her family, to obtain or attempt to obtain from that other person an unauthorized copy of a proprietary program or the data stored in a computer. 4. To enter on the premises of another with intent to obtain the unauthorized possession of or access to a proprietary program or the data stored in a computer. (Added to NRS by 1983, 1348 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.050",
@@ -52,7 +52,7 @@
   "text": "NRS 603.050 Infringement of trade secrets. It is an infringement of a trade secret for a person, without the consent of the owner, to obtain possession of or access to a proprietary program or a compilation of proprietary information that is stored as data in a computer and make or cause to be made a copy of that program or data if the program or data: 1. Is used in the owner’s business; 2. Gives the owner an opportunity to obtain an advantage over competitors who do not know or use it; 3. Is treated by the owner as secret; and 4. Is not copyrighted because an application therefor would result in the program or data no longer being secret. (Added to NRS by 1983, 1349 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.060",
@@ -63,7 +63,7 @@
   "text": "NRS 603.060 Presumption and notice that program is proprietary. 1. In a civil action alleging an unfair trade practice respecting a program, it is presumed that a program is proprietary if the person alleging ownership of the program shows that he or she made the program or obtained the exclusive right to manufacture, market and sell, lease, rent or license the program for use and that he or she maintained the proprietary nature of the program by giving notice thereof. 2. Such a notice is sufficient if the program, when: (a) Compiled in a computer and retrieved for the visual display of its statements or instructions, is accompanied by a statement that it is confidential or proprietary. (b) Operated in a computer, either at the beginning of its operation or when the results of the program are displayed visually, displays a statement that the program is confidential or proprietary. (c) Sold to the public or leased, rented or licensed for use, bears on its package or container a statement that the program is proprietary. Ê A statement that the owner or manufacturer retains the right to copy the program is equivalent to a statement that the program is proprietary. (Added to NRS by 1983, 1349 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.070",
@@ -74,7 +74,7 @@
   "text": "NRS 603.070 Use by governmental agency of proprietary program or data. Except as otherwise provided in NRS 239.0115 , a governmental agency which obtains a proprietary program or the data stored in a computer must keep the program or data confidential. The governmental agency may only use the program or data for the purpose for which it was obtained, and may not release the program or data without the prior written consent of the owner. (Added to NRS by 1983, 1350 ; A 2007, 2123 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.080",
@@ -85,7 +85,7 @@
   "text": "NRS 603.080 Owner of program or data may institute civil action; order of court. 1. The owner of the rights to a proprietary program or the data stored in a computer may bring a civil action to enjoin: (a) Unfair trade practices respecting that program or data; or (b) Infringement of a trade secret respecting that program or data. 2. A court of competent jurisdiction may: (a) Grant such injunctions to restrain the unfair trade practices or infringements of a trade secret as it deems just and reasonable; (b) Require a defendant to pay to the owner all profits derived from the wrongful acts of the defendant and all damage suffered by the owner because of those acts; and (c) Order all copies of such a program or data which is in the possession or control of a defendant to be delivered to the owner or to an officer of the court for destruction. (Added to NRS by 1983, 1349 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.090",
@@ -96,7 +96,7 @@
   "text": "NRS 603.090 Civil remedies not exclusive. The civil remedies provided in NRS 603.010 to 603.090 , inclusive: 1. Do not preclude the prosecution of a defendant under the penal laws of this State. 2. Are in addition to any rights or remedies to which the owner of a proprietary program or data stored in a computer is entitled under the common law. (Added to NRS by 1983, 1350 ; A 2007, 1400 ) REGULATION OF USE OF INTERNET BY CHILDREN",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.100",
@@ -107,7 +107,7 @@
   "text": "NRS 603.100 Definitions. As used in NRS 603.100 to 603.170 , inclusive, unless the context otherwise requires, the words and terms defined in NRS 603.110 to 603.140 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2007, 1398 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.110",
@@ -118,7 +118,7 @@
   "text": "NRS 603.110 “Child” defined. “Child” means a person who is less than 18 years of age. (Added to NRS by 2007, 1398 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.120",
@@ -129,7 +129,7 @@
   "text": "NRS 603.120 “Electronic mail” defined. “Electronic mail” has the meaning ascribed to it in NRS 41.715 . (Added to NRS by 2007, 1398 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.130",
@@ -140,7 +140,7 @@
   "text": "NRS 603.130 “Internet or any other computer network” defined. 1. “Internet or any other computer network” means: (a) The computer network commonly known as the Internet and any other local, regional or global computer network that is similar to or is a predecessor or successor of the Internet; and (b) Any identifiable site on the Internet or such other computer network. 2. The term includes, without limitation: (a) A website or other similar site on the World Wide Web; (b) A site that is identifiable through a Uniform Resource Location; (c) A site on a computer network that is owned, operated, administered or controlled by a provider of Internet service; (d) An electronic bulletin board; (e) A list server; (f) A newsgroup; or (g) A chat room. (Added to NRS by 2007, 1398 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.140",
@@ -151,7 +151,7 @@
   "text": "NRS 603.140 “Provider of Internet service” or “provider” defined. “Provider of Internet service” or “provider” means any person who, for a fee or other consideration, provides subscribers with access to the Internet or any other computer network. (Added to NRS by 2007, 1399 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.150",
@@ -162,7 +162,7 @@
   "text": "NRS 603.150 Definition of when person has “reasonable cause to believe.” For the purposes of NRS 603.100 to 603.170 , inclusive, a person has “reasonable cause to believe” if, in light of all the surrounding facts and circumstances which are known or which reasonably should be known to the person at the time, a reasonable person would believe, under those facts and circumstances, that an act, transaction, event, situation or condition exists, is occurring or has occurred. (Added to NRS by 2007, 1399 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.160",
@@ -173,7 +173,7 @@
   "text": "NRS 603.160 Internet service provider required to provide product or service to regulate and monitor child’s use of Internet under certain circumstances. 1. If a provider of Internet service knows or has reasonable cause to believe that a subscriber resides within this State, the provider shall make available to the subscriber a product or service which enables the subscriber to regulate a child’s use of the Internet service provided to the subscriber if such a product or service is reasonably and commercially available for the technology utilized by the subscriber to access the Internet service. The product or service must, subject to such availability, enable the subscriber to: (a) Block all access to the Internet; (b) Block access to specific websites or domains disapproved by the subscriber; (c) Restrict access exclusively to specific websites or domains approved by the subscriber; and (d) Allow the subscriber to monitor a child’s use of the Internet service by providing a report to the subscriber of the specific websites or domains that the child has visited or has attempted to visit but could not access because the websites or domains were blocked or restricted by the subscriber. 2. For the purposes of subsection 1, a provider of Internet service shall be deemed to know that a subscriber resides within this State if the subscriber identifies Nevada as his or her place of residence at the time of subscription. 3. If a product or service described in subsection 1 is reasonably and commercially available for the technology utilized by the subscriber to access the Internet service, the provider of Internet service: (a) Shall provide to the subscriber, at the time of subscription, notice of the availability of the product or service described in subsection 1. The notice must be provided to the subscriber by electronic mail or in a written form through another reasonable means. (b) May make the product or service described in subsection 1 available to the subscriber either directly or through a third-party vendor. The provider or third-party vendor may charge the subscriber a fee for the product or service. (Added to NRS by 2007, 1399 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec160",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-603.170",
@@ -184,6 +184,6 @@
   "text": "NRS 603.170 Violation constitutes deceptive trade practice; remedies, duties and prohibitions not exclusive. 1. Any violation of NRS 603.100 to 603.170 , inclusive, constitutes a deceptive trade practice subject to NRS 598.0903 to 598.0999 , inclusive. 2. The remedies, duties and prohibitions set forth in NRS 603.100 to 603.170 , inclusive, are not exclusive and are in addition to any other remedies, duties and prohibitions provided by law. (Added to NRS by 2007, 1399 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-603.html#NRS603Sec170",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

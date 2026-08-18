@@ -8,7 +8,7 @@
   "text": "NRS 641B.020 Legislative declaration. The practice of social work is hereby declared a learned profession, affecting public safety and welfare and charged with the public interest, and is therefore subject to protection and regulation by the State. (Added to NRS by 1987, 1116 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.030",
@@ -19,7 +19,7 @@
   "text": "NRS 641B.030 Definitions. As used in this chapter, unless the context otherwise requires: 1. “Board” means the Board of Examiners for Social Workers. 2. “Social work” means the application of methods, principles and techniques of case work, group work, community organization, administration, planning, consultation and research to assist persons, groups or communities to enhance or restore their ability to function physically, socially and economically. 3. “Clinical social work” means the application of methods, principles and techniques of case work, group work, community organization, administration, planning, consultation, research and psychotherapeutic methods and techniques to persons, families and groups to help in the diagnosis and treatment of mental and emotional conditions. (Added to NRS by 1987, 1116 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.040",
@@ -27,13 +27,28 @@
   "chapter": "641B",
   "chapterTitle": "SOCIAL WORKERS",
   "heading": "Applicability of chapter. [Effective July 1, 2026.]",
-  "text": "NRS 641B.040 Applicability of chapter. [Effective through June 30, 2026.] The provisions of this chapter do not apply to: 1. A physician who is licensed to practice in this State; 2. A nurse who is licensed to practice in this State; 3. A person who is licensed as a psychologist pursuant to chapter 641 of NRS or authorized to practice psychology in this State pursuant to the Psychology Interjurisdictional Compact enacted in NRS 641.227 ; 4. A person who is licensed as a behavioral health and wellness practitioner pursuant to chapter 641 of NRS; 5. A person who is licensed as a marriage and family therapist or marriage and family therapist intern pursuant to chapter 641A of NRS; 6. A person who is licensed as a clinical professional counselor or clinical professional counselor intern pursuant to chapter 641A of NRS; 7. A person who is licensed as an occupational therapist or occupational therapy assistant pursuant to chapter 640A of NRS; 8. A person who is licensed as a clinical alcohol and drug counselor, licensed or certified as an alcohol and drug counselor or certified as a clinical alcohol and drug counselor intern, an alcohol and drug counselor intern, a problem gambling counselor or a problem gambling counselor intern, pursuant to chapter 641C of NRS; 9. A person who provides or supervises the provision of peer recovery support services in accordance with NRS 433.622 to 433.641 , inclusive; 10. Any member of the clergy; 11. A county public assistance director; 12. Any person who may engage in social work or clinical social work in his or her regular governmental employment but does not hold himself or herself out to the public as a social worker; or 13. A student of social work and any other person preparing for the profession of social work under the supervision of a qualified social worker in a training institution or facility recognized by the Board, unless the student or other person has been issued a provisional license pursuant to paragraph (b) of subsection 1 of NRS 641B.275 . Such a student must be designated by the title “student of social work” or “trainee in social work,” or any other title which clearly indicates the student’s training status. (Added to NRS by 1987, 1116 ; A 1989, 1549 ; 1991, 992 ; 1993, 131 , 1890 ; 1995, 634 ; 1999, 1888 , 3061 ; 2003, 1417 ; 2007, 3062 ; 2017, 933 ; 2021, 808 , 2833 ; 2023, 439 ; 2025, 2513 ; 2025, 36th Special Session, 114 ) NRS 641B.040 Applicability of chapter. [Effective July 1, 2026.] The provisions of this chapter do not apply to: 1. A physician who is licensed to practice in this State; 2. A nurse who is licensed to practice in this State; 3. A person who is licensed as a psychologist pursuant to chapter 641 of NRS or authorized to practice psychology in this State pursuant to the Psychology Interjurisdictional Compact enacted in NRS 641.227 ; 4. A person who is licensed as a behavioral health and wellness practitioner pursuant to chapter 641 of NRS; 5. A person who is licensed as a marriage and family therapist or marriage and family therapist intern pursuant to chapter 641A of NRS; 6. A person who is licensed as a clinical professional counselor or clinical professional counselor intern pursuant to chapter 641A of NRS; 7. A person who is licensed as an occupational therapist or occupational therapy assistant pursuant to chapter 640A of NRS; 8. A person who is licensed as a clinical alcohol and drug counselor, licensed or certified as an alcohol and drug counselor or certified as a clinical alcohol and drug counselor intern, an alcohol and drug counselor intern, a problem gambling counselor or a problem gambling counselor intern, pursuant to chapter 641C of NRS; 9. A person who serves as a certified prevention specialist or provides or supervises the provision of peer recovery support services in accordance with NRS 433.622 to 433.641 , inclusive; 10. Any member of the clergy; 11. A county public assistance director; 12. Any person who may engage in social work or clinical social work in his or her regular governmental employment but does not hold himself or herself out to the public as a social worker; or 13. A student of social work and any other person preparing for the profession of social work under the supervision of a qualified social worker in a training institution or facility recognized by the Board, unless the student or other person has been issued a provisional license pursuant to paragraph (b) of subsection 1 of NRS 641B.275 . Such a student must be designated by the title “student of social work” or “trainee in social work,” or any other title which clearly indicates the student’s training status. (Added to NRS by 1987, 1116 ; A 1989, 1549 ; 1991, 992 ; 1993, 131 , 1890 ; 1995, 634 ; 1999, 1888 , 3061 ; 2003, 1417 ; 2007, 3062 ; 2017, 933 ; 2021, 808 , 2833 ; 2023, 439 ; 2025, 1384 , 2513 ; 2025, 36th Special Session, 114 , effective July 1, 2026) BOARD OF EXAMINERS FOR SOCIAL WORKERS",
+  "text": "",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec040",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective July 1, 2026.",
    "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-641B.040-v2",
+  "citation": "NRS 641B.040",
+  "chapter": "641B",
+  "chapterTitle": "SOCIAL WORKERS",
+  "heading": "Applicability of chapter. [Effective through June 30, 2026.]",
+  "text": "NRS 641B.040 Applicability of chapter. [Effective through June 30, 2026.] The provisions of this chapter do not apply to: 1. A physician who is licensed to practice in this State; 2. A nurse who is licensed to practice in this State; 3. A person who is licensed as a psychologist pursuant to chapter 641 of NRS or authorized to practice psychology in this State pursuant to the Psychology Interjurisdictional Compact enacted in NRS 641.227 ; 4. A person who is licensed as a behavioral health and wellness practitioner pursuant to chapter 641 of NRS; 5. A person who is licensed as a marriage and family therapist or marriage and family therapist intern pursuant to chapter 641A of NRS; 6. A person who is licensed as a clinical professional counselor or clinical professional counselor intern pursuant to chapter 641A of NRS; 7. A person who is licensed as an occupational therapist or occupational therapy assistant pursuant to chapter 640A of NRS; 8. A person who is licensed as a clinical alcohol and drug counselor, licensed or certified as an alcohol and drug counselor or certified as a clinical alcohol and drug counselor intern, an alcohol and drug counselor intern, a problem gambling counselor or a problem gambling counselor intern, pursuant to chapter 641C of NRS; 9. A person who provides or supervises the provision of peer recovery support services in accordance with NRS 433.622 to 433.641 , inclusive; 10. Any member of the clergy; 11. A county public assistance director; 12. Any person who may engage in social work or clinical social work in his or her regular governmental employment but does not hold himself or herself out to the public as a social worker; or 13. A student of social work and any other person preparing for the profession of social work under the supervision of a qualified social worker in a training institution or facility recognized by the Board, unless the student or other person has been issued a provisional license pursuant to paragraph (b) of subsection 1 of NRS 641B.275 . Such a student must be designated by the title “student of social work” or “trainee in social work,” or any other title which clearly indicates the student’s training status. (Added to NRS by 1987, 1116 ; A 1989, 1549 ; 1991, 992 ; 1993, 131 , 1890 ; 1995, 634 ; 1999, 1888 , 3061 ; 2003, 1417 ; 2007, 3062 ; 2017, 933 ; 2021, 808 , 2833 ; 2023, 439 ; 2025, 2513 ; 2025, 36th Special Session, 114 ) NRS 641B.040 Applicability of chapter. [Effective July 1, 2026.] The provisions of this chapter do not apply to: 1. A physician who is licensed to practice in this State; 2. A nurse who is licensed to practice in this State; 3. A person who is licensed as a psychologist pursuant to chapter 641 of NRS or authorized to practice psychology in this State pursuant to the Psychology Interjurisdictional Compact enacted in NRS 641.227 ; 4. A person who is licensed as a behavioral health and wellness practitioner pursuant to chapter 641 of NRS; 5. A person who is licensed as a marriage and family therapist or marriage and family therapist intern pursuant to chapter 641A of NRS; 6. A person who is licensed as a clinical professional counselor or clinical professional counselor intern pursuant to chapter 641A of NRS; 7. A person who is licensed as an occupational therapist or occupational therapy assistant pursuant to chapter 640A of NRS; 8. A person who is licensed as a clinical alcohol and drug counselor, licensed or certified as an alcohol and drug counselor or certified as a clinical alcohol and drug counselor intern, an alcohol and drug counselor intern, a problem gambling counselor or a problem gambling counselor intern, pursuant to chapter 641C of NRS; 9. A person who serves as a certified prevention specialist or provides or supervises the provision of peer recovery support services in accordance with NRS 433.622 to 433.641 , inclusive; 10. Any member of the clergy; 11. A county public assistance director; 12. Any person who may engage in social work or clinical social work in his or her regular governmental employment but does not hold himself or herself out to the public as a social worker; or 13. A student of social work and any other person preparing for the profession of social work under the supervision of a qualified social worker in a training institution or facility recognized by the Board, unless the student or other person has been issued a provisional license pursuant to paragraph (b) of subsection 1 of NRS 641B.275 . Such a student must be designated by the title “student of social work” or “trainee in social work,” or any other title which clearly indicates the student’s training status. (Added to NRS by 1987, 1116 ; A 1989, 1549 ; 1991, 992 ; 1993, 131 , 1890 ; 1995, 634 ; 1999, 1888 , 3061 ; 2003, 1417 ; 2007, 3062 ; 2017, 933 ; 2021, 808 , 2833 ; 2023, 439 ; 2025, 1384 , 2513 ; 2025, 36th Special Session, 114 , effective July 1, 2026) BOARD OF EXAMINERS FOR SOCIAL WORKERS",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec040",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through June 30, 2026.",
+   "isCurrent": false
   }
  },
  {
@@ -45,7 +60,7 @@
   "text": "NRS 641B.100 Appointment by Governor; qualifications. 1. The Board of Examiners for Social Workers consists of five members appointed by the Governor. 2. Four members appointed to the Board must be licensed or eligible for licensure pursuant to this chapter, except the initial members who must be eligible for licensure. 3. One member appointed to the Board must be a representative of the general public. This member must not be: (a) Licensed or eligible for licensure pursuant to this chapter; or (b) The spouse or the parent or child, by blood, marriage or adoption, of a person who is licensed or eligible for licensure pursuant to this chapter. (Added to NRS by 1987, 1117 ; A 2003, 1198 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.105",
@@ -56,7 +71,7 @@
   "text": "NRS 641B.105 Required orientation for new members of Board; policies concerning compensation and performance reviews of staff. The Board shall: 1. Require each new member of the Board to complete orientation within 60 days after his or her appointment to the Board. The orientation must include, without limitation, instruction concerning: (a) The purposes of the Board and the duties of its members; (b) Applicable laws and regulations, including, without limitation, the provisions of NRS 641B.400 to 641B.450 , inclusive, and the importance of complying with applicable laws and regulations in a timely manner; and (c) Requirements concerning managing the finances of the Board. 2. Establish policies concerning compensation and reviewing the performance of the staff of the Board. (Added to NRS by 2017, 2240 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec105",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.110",
@@ -67,7 +82,7 @@
   "text": "NRS 641B.110 Expiration of term; replacement. 1. Upon expiration of his or her term of office, a member shall continue to serve until a person qualified pursuant to this chapter is appointed as a successor. 2. If a member fails to attend meetings of the Board or a member fails to attend to the business of the Board, as determined necessary in the discretion of the Board, the Board shall so notify the Governor, and the Governor shall appoint a person qualified pursuant to this chapter to replace the member for the remainder of the unexpired term. (Added to NRS by 1987, 1117 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.120",
@@ -78,7 +93,7 @@
   "text": "NRS 641B.120 Officers; elections; meetings; quorum. 1. The Board shall elect from its members a President, a Vice President and a Secretary-Treasurer, who hold their respective offices at its pleasure. 2. An election of officers must be held annually. 3. The Board shall meet at least once in each quarter of the year and may meet at other times at the call of the President or a majority of its members. 4. A majority of the Board constitutes a quorum to transact all business. (Added to NRS by 1987, 1117 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec120",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.130",
@@ -89,7 +104,7 @@
   "text": "NRS 641B.130 List of licensed social workers required to be maintained by Board. The Board shall maintain a list of the name and address of each person licensed pursuant to the provisions of this chapter. (Added to NRS by 1987, 1117 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec130",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.140",
@@ -100,7 +115,7 @@
   "text": "NRS 641B.140 Salary of members; per diem allowance and travel expenses for members and employees. 1. Each member of the Board is entitled to receive: (a) A salary of not more than $150 per day, as fixed by the Board, while engaged in the business of the Board; and (b) A per diem allowance and travel expenses at a rate fixed by the Board, while engaged in the business of the Board. The rate must not exceed the rate provided for state officers and employees generally. 2. While engaged in the business of the Board, each employee of the Board is entitled to receive a per diem allowance and travel expenses at a rate fixed by the Board. The rate must not exceed the rate provided for state officers and employees generally. (Added to NRS by 1987, 1117 ; A 1989, 1703 ; 2007, 2956 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec140",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.150",
@@ -111,7 +126,7 @@
   "text": "NRS 641B.150 Payment of expenses; deposit of money; delegation of authority to hearing officer or panel; claim for attorney’s fees or costs of investigation. 1. Except as otherwise provided in subsection 4, all reasonable expenses incurred by the Board in carrying out the provisions of this chapter must be paid from the money which it receives. No part of the salaries or expenses of the Board may be paid out of the State General Fund. 2. All money received by the Board must be deposited in qualified banks, credit unions, savings and loan associations or savings banks in this State and paid out on its order for its expenses. 3. In a manner consistent with the provisions of chapter 622A of NRS, the Board may delegate to a hearing officer or panel its authority to take any disciplinary action pursuant to this chapter, impose and collect fines and penalties therefor and deposit the money therefrom in banks, credit unions, savings and loan associations or savings banks in this State. 4. If a hearing officer or panel is not authorized to take disciplinary action pursuant to subsection 3 and the Board deposits the money collected from the imposition of fines with the State Treasurer for credit to the State General Fund, it may present a claim to the State Board of Examiners for recommendation to the Interim Finance Committee if money is needed to pay attorney’s fees or the costs of an investigation, or both. (Added to NRS by 1987, 1117 ; A 1993, 889 ; 1999, 1536 ; 2005, 791 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec150",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.160",
@@ -122,7 +137,7 @@
   "text": "NRS 641B.160 Regulations. 1. The Board shall adopt: (a) Such regulations as are necessary or desirable to enable it to carry out the provisions of this chapter; (b) Regulations establishing reasonable standards for the psychiatric training and experience necessary for a clinical social worker to be authorized to make the certifications described in NRS 433A.162 , 433A.170 , 433A.195 and 433A.200 , make a sworn statement or declaration described in NRS 433A.335 and perform an evaluation described in NRS 433A.335 ; (c) Regulations prescribing uniform standards concerning the locations at which interns provide services; (d) Regulations authorizing the remote supervision, including, without limitation, electronic supervision, of interns working at remote sites and prescribing standards concerning such remote supervision; and (e) Regulations prescribing the manner by which the qualifications for the issuance or renewal of a license under the provisions of this chapter will be made available to the public such that those qualifications are clearly defined and easily understood. 2. On the date that the Board gives notice pursuant to NRS 233B.060 of its intent to adopt, amend or repeal a regulation, the Board shall submit the regulation to the Commission on Behavioral Health for review. The Commission shall review the regulation and make recommendations to the Board concerning the advisability of adopting, amending or repealing the regulation and any changes that the Commission deems advisable. (Added to NRS by 1987, 1117 ; A 2015, 2995 ; 2017, 2242 ; 2021, 3115 , 3493 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec160",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.165",
@@ -133,7 +148,7 @@
   "text": "NRS 641B.165 Annual report to Joint Interim Standing Committee on Health and Human Services and Chairs of regional behavioral health policy boards. 1. On or before February 1 of each year, the Board shall submit to the Joint Interim Standing Committee on Health and Human Services and to the Chair of each regional behavioral health policy board created by NRS 433.429 a report which must include: (a) The number of complaints received, investigations completed, cases dismissed, cases settled and cases for which hearings were held within the immediately preceding calendar year; (b) The number of applications for the issuance or renewal of a license received by the Board during the immediately preceding calendar year and the number of those applications for which the Board conducted additional review beyond the standard review regularly conducted by the Board; and (c) The number of applications for the issuance of a license by endorsement received by the Board pursuant to NRS 641B.272 during the immediately preceding calendar year, the number of those applications that were denied and the reasons for denial. 2. The report submitted pursuant to this section to the Chair of each regional behavioral policy board created by NRS 433.429 may be submitted in a written format. (Added to NRS by 2017, 2240 ; A 2021, 3494 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec165",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.170",
@@ -144,7 +159,7 @@
   "text": "NRS 641B.170 Confidentiality of certain records of Board; exceptions. 1. Except as otherwise provided in this section and NRS 239.0115 , any records or information received by the Board relating to a licensee or an applicant for a license is confidential. 2. Except as otherwise provided in this section and NRS 239.0115 , a complaint filed with the Board, all documents and other information filed with the complaint and all documents and other information compiled as a result of an investigation conducted to determine whether to initiate disciplinary action against a person are confidential, unless the person submits a written statement to the Board requesting that such documents and information be made public records. 3. The charging documents filed with the Board to initiate disciplinary action pursuant to chapter 622A of NRS and all documents and information considered by the Board when determining whether to impose discipline are public records. 4. The provisions of this section do not prohibit the Board from communicating or cooperating with or providing any documents or other information to any other licensing board or any other agency that is investigating a person, including, without limitation, a law enforcement agency. (Added to NRS by 1995, 448 ; A 2005, 791 ; 2007, 2145 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec170",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.175",
@@ -155,7 +170,7 @@
   "text": "NRS 641B.175 Board may enter into agreement with Department of Human Services for certain types of administrative assistance. The Board may enter into an agreement with the Department of Human Services or a division thereof to provide services to carry out or improve any function of the Board. Such services may include, without limitation: 1. Assistance in processing applications for the issuance or renewal of licenses; 2. Technical assistance; 3. Facilitating cooperation with other boards and licensing entities in this State or any other jurisdiction; 4. Recommendations to improve and standardize procedures used by the Board; and 5. Assistance in identifying resources for improving the operations of the Board. (Added to NRS by 2017, 2241 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec175",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.180",
@@ -166,7 +181,7 @@
   "text": "NRS 641B.180 Forms for licensure. The Board shall prescribe forms for applying for the issuance or renewal of a license. The forms must: 1. Be available to be completed on the Internet website maintained by the Board; 2. Provide immediate, automatic feedback to the applicant concerning whether the applicant has submitted all required information; and 3. Automatically store the data submitted by the applicant upon completion of the application. (Added to NRS by 2017, 2241 ) LICENSES",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec180",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.200",
@@ -177,7 +192,7 @@
   "text": "NRS 641B.200 Preliminary qualifications. Each applicant for a license shall furnish evidence satisfactory to the Board that the applicant is at least 21 years of age. (Added to NRS by 1987, 1117 ; A 2019, 4309 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec200",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.202",
@@ -188,7 +203,7 @@
   "text": "NRS 641B.202 Submission of fingerprints. Each applicant for a license must submit to the Board a complete set of fingerprints which the Board may forward to the Central Repository for Nevada Records of Criminal History for submission to the Federal Bureau of Investigation for its report. (Added to NRS by 2003, 2862 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec202",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.204",
@@ -199,7 +214,7 @@
   "text": "NRS 641B.204 Submission of proof related to degree from or enrollment at college or university located in foreign country. 1. If an applicant for a license to engage in social work is a graduate of a college or university located in a foreign country or currently enrolled in program of study leading to a degree in social work at such a college or university, the application must include: (a) Proof that the applicant possesses the degree required by NRS 641B.220 , 641B.225 , 641B.230 , 641B.240 or 641B.275 , as applicable, or is enrolled in a program of study that meets the requirements of NRS 641B.275 , as applicable; and (b) If applicable, a written statement or other proof from the Council on Social Work Education, or its successor organization, that the degree is equivalent to a degree issued by a college or university accredited by the Council on Social Work Education, or its successor organization. 2. Except as otherwise provided in this subsection, the proof required by paragraph (a) of subsection 1 must be provided to the Board directly by the college or university that granted the degree. If the college or university is unable to provide such proof, the Board may accept proof from another source specified by the Board. (Added to NRS by 2021, 3492 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec204",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.205",
@@ -210,18 +225,33 @@
   "text": "NRS 641B.205 Submission of official transcripts by alternate means. If the Board requires an applicant for a license pursuant to this chapter to submit official transcripts as proof of his or her educational qualifications, the Board must provide an alternate means for the applicant to submit official transcripts if: 1. The college or university from which the applicant graduated has closed or has merged with another institution; and 2. The provision of the official transcripts by ordinary means is not available or possible. (Added to NRS by 2021, 3493 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec205",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.206",
   "citation": "NRS 641B.206",
   "chapter": "641B",
   "chapterTitle": "SOCIAL WORKERS",
-  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Board. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.]",
+  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Board. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
   "text": "NRS 641B.206 Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Board. [Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. In addition to any other requirements set forth in this chapter: (a) An applicant for the issuance of a license to engage in social work as an associate in social work, a social worker, a master social worker, an independent social worker or a clinical social worker shall include the social security number of the applicant in the application submitted to the Board. (b) An applicant for the renewal of a license to engage in social work as an associate in social work or the issuance or renewal of a license to engage in social work as a social worker, a master social worker, an independent social worker or a clinical social worker shall submit to the Board the statement prescribed by the Division of Social Services of the Department of Human Services pursuant to NRS 425.520 . The statement must be completed and signed by the applicant. 2. The Board shall include the statement required pursuant to subsection 1 in: (a) The application or any other forms that must be submitted for the issuance or renewal of the license; or (b) A separate form prescribed by the Board. 3. A license to engage in social work as an associate in social work, a social worker, a master social worker, an independent social worker or a clinical social worker may not be issued or renewed by the Board if the applicant: (a) Fails to submit the statement required pursuant to subsection 1; or (b) Indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order. 4. If an applicant indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order, the Board shall advise the applicant to contact the district attorney or other public agency enforcing the order to determine the actions that the applicant may take to satisfy the arrearage. (Added to NRS by 1997, 2155 ; A 2005, 2759 , 2807 ; 2021, 3494 ) NRS 641B.206 Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Board. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.] 1. In addition to any other requirements set forth in this chapter, an applicant for the renewal of a license to engage in social work as an associate in social work or the issuance or renewal of a license to engage in social work as a social worker, a master social worker, an independent social worker or a clinical social worker shall submit to the Board the statement prescribed by the Division of Social Services of the Department of Human Services pursuant to NRS 425.520 . The statement must be completed and signed by the applicant. 2. The Board shall include the statement required pursuant to subsection 1 in: (a) The application or any other forms that must be submitted for the issuance or renewal of the license; or (b) A separate form prescribed by the Board. 3. A license to engage in social work as an associate in social work, a social worker, a master social worker, an independent social worker or a clinical social worker may not be issued or renewed by the Board if the applicant: (a) Fails to submit the statement required pursuant to subsection 1; or (b) Indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order. 4. If an applicant indicates on the statement submitted pursuant to subsection 1 that the applicant is subject to a court order for the support of a child and is not in compliance with the order or a plan approved by the district attorney or other public agency enforcing the order for the repayment of the amount owed pursuant to the order, the Board shall advise the applicant to contact the district attorney or other public agency enforcing the order to determine the actions that the applicant may take to satisfy the arrearage. (Added to NRS by 1997, 2155 ; A 2005, 2759 , 2760 , 2807 ; 2021, 3494 , effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec206",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective until the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-641B.206-v2",
+  "citation": "NRS 641B.206",
+  "chapter": "641B",
+  "chapterTitle": "SOCIAL WORKERS",
+  "heading": "Payment of child support: Submission of certain information by applicant; grounds for denial of license; duty of Board. [Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec206",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective on the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings and expires by limitation 2 years after that date.",
    "isCurrent": true
@@ -236,7 +266,7 @@
   "text": "NRS 641B.210 Associate in social work: Restriction on issuance of new licenses; conditions for renewal of license; supervision of another social worker; promotion. 1. The Board shall not grant a license to engage in social work as an associate in social work to any person on or after June 19, 1995. 2. The Board shall renew the license of any person who was granted a license to engage in social work as an associate in social work if the person complies with the provisions of NRS 641B.280 . 3. A person who is granted a license to engage in social work as an associate in social work may supervise another person engaged in the practice of social work. 4. The provisions of this section do not prohibit a social worker, supervisor of social work or administrator of social work who is employed by a public employer on July 1, 1988, and who is granted a license to engage in social work as an associate in social work, from being promoted to any position for which he or she would qualify but for the provisions of this chapter. (Added to NRS by 1987, 1117 ; A 1989, 2198 ; 1995, 449 ; 2001 Special Session, 54 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec210",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.220",
@@ -247,7 +277,7 @@
   "text": "NRS 641B.220 Social worker: Qualifications; licensing of associate; supervision of another social worker. 1. The Board shall grant a license to engage in social work as a social worker to any applicant who possesses the preliminary qualifications set forth in NRS 641B.200 and who: (a) Possesses a baccalaureate degree or master’s degree in social work from: (1) A college or university accredited by the Council on Social Work Education, or its successor organization, or which is a candidate for such accreditation; or (2) A college or university located in a foreign country, or the equivalent of a baccalaureate degree or master’s degree in social work from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 ; and (b) Passes an examination prescribed by the Board. 2. The Board shall grant a license to engage in social work as a social worker to an applicant licensed as an associate in social work who: (a) Possesses the preliminary qualifications set forth in NRS 641B.200 ; (b) Possesses a baccalaureate degree or master’s degree in a related field, or has completed equivalent course work in a related field; (c) Completes 3,000 hours of employment in Nevada as an associate in social work; and (d) Passes an examination prescribed by the Board. 3. A person who is granted a license to engage in social work as a social worker pursuant to subsection 1 or 2 may supervise another person engaged in the practice of social work. (Added to NRS by 1987, 1118 ; A 1989, 2198 ; 2021, 3495 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec220",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.225",
@@ -258,7 +288,7 @@
   "text": "NRS 641B.225 Master social worker: Qualifications; practice; supervision of other social workers. 1. The Board shall grant a license to engage in social work as a master social worker to any applicant who possesses the preliminary qualifications set forth in NRS 641B.200 and who: (a) Possesses a master’s or doctoral degree in social work from: (1) A college or university accredited by the Council on Social Work Education, or its successor organization, or which is a candidate for such accreditation; or (2) A college or university located in a foreign country, or the equivalent of a master’s or doctoral degree in social work from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 ; and (b) Passes an examination prescribed by the Board. 2. A person licensed as a master social worker may: (a) Engage in social work independently as part of an internship program approved by the Board to complete the supervised social work required for licensure as an independent social worker pursuant to NRS 641B.230 ; (b) Engage in clinical social work as part of an internship program approved by the Board to complete the supervised, postgraduate, clinical social work required for licensure as a clinical social worker pursuant to NRS 641B.240 ; and (c) Supervise other persons engaging in the practice of social work. (Added to NRS by 2021, 3492 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec225",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.230",
@@ -269,7 +299,7 @@
   "text": "NRS 641B.230 Independent social worker: Qualifications; practice; supervision of other social workers. 1. The Board shall grant a license to engage in social work as an independent social worker to any applicant who possesses the preliminary qualifications set forth in NRS 641B.200 and who: (a) Possesses a master’s or doctoral degree in social work from: (1) A college or university accredited by the Council on Social Work Education, or its successor organization, or which is a candidate for such accreditation; or (2) A college or university located in a foreign country, or the equivalent of a master’s or doctoral degree in social work from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 . (b) Completes 3,000 hours of supervised, postgraduate social work approved by the Board. (c) Passes an examination prescribed by the Board. 2. A person licensed as an independent social worker may: (a) Engage in social work independently or within an agency; (b) Engage in clinical social work as part of an internship program approved by the Board to complete the supervised clinical social work required for licensure as a clinical social worker pursuant to NRS 641B.240 ; and (c) Supervise other persons engaging in the practice of social work. (Added to NRS by 1987, 1118 ; A 2021, 3495 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec230",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.240",
@@ -280,7 +310,7 @@
   "text": "NRS 641B.240 Clinical social worker: Qualifications; practice; supervision of other social workers. 1. The Board shall grant a license to engage in social work as a clinical social worker to any applicant who possesses the preliminary qualifications set forth in NRS 641B.200 and who: (a) Possesses a master’s or doctoral degree in social work from: (1) A college or university accredited by the Council on Social Work Education, or its successor organization, or which is a candidate for such accreditation; or (2) A college or university located in a foreign country, or the equivalent of a master’s or doctoral degree in social work from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 . (b) Completes 3,000 hours of supervised, postgraduate, clinical social work approved by the Board. (c) Passes an examination prescribed by the Board. 2. A person licensed as a clinical social worker may: (a) Engage in social work independently or within an agency; (b) Engage in clinical social work; and (c) Supervise other persons engaging in the practice of social work. (Added to NRS by 1987, 1118 ; A 2021, 3496 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec240",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.250",
@@ -291,7 +321,7 @@
   "text": "NRS 641B.250 Examination; prohibition on participation in grading examination. 1. Except as otherwise provided in NRS 641B.270 , 641B.272 and 641B.275 , before the issuance of a license, each applicant, otherwise eligible for licensure, who has paid the fee and presented the required credentials, other than an applicant for a license to engage in social work as an associate in social work, must appear personally and pass an examination concerning his or her knowledge of the practice of social work. 2. Any such examination must be fair and impartial, practical in character with questions designed to discover the applicant’s fitness. 3. The Board may employ specialists and other professional consultants or examining services in conducting the examination. 4. The member of the Board who is the representative of the general public shall not participate in the grading of the examination. 5. The Board shall examine applicants for licensure at least twice a year. (Added to NRS by 1987, 1119 ; A 1993, 131 ; 1995, 450 ; 2015, 3035 , 3915 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec250",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.260",
@@ -302,7 +332,7 @@
   "text": "NRS 641B.260 Investigations and hearings related to applications for licensure; grounds for denial of license. 1. The Board may hold hearings and conduct investigations into any matter related to an application for licensure. The Board may require the presentation of evidence. 2. The Board may refuse to issue a license to an applicant if the applicant: (a) Is not of good moral character as it relates to the practice of social work; (b) Has submitted any false credential to the Board; (c) Has been disciplined in another state in connection with the practice of social work or a related profession or has committed any act in another state which is a violation of this chapter; (d) Has committed an act that constitutes grounds for initiating disciplinary action pursuant to NRS 641B.400 ; (e) Has entered a plea of guilty, guilty but mentally ill or nolo contendere to, been found guilty or guilty but mentally ill of, or been convicted, in this State or any other jurisdiction, of a crime arising out of, in connection with or related to the activities of such a person in such a manner as to demonstrate his or her unfitness to engage in social work, and the time for appeal has elapsed or the judgment of conviction has been affirmed on appeal; or (f) Fails to comply with any other requirements for licensure. (Added to NRS by 1987, 1119 ; A 1995, 450 ; 2021, 3496 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec260",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.270",
@@ -313,7 +343,7 @@
   "text": "NRS 641B.270 Licensing of person licensed in another state. The Board may grant a license without examination to a person who holds a current license to engage in the practice of social work in a state whose licensing requirements at the time the license was issued are deemed by the Board to be substantially equivalent to the requirements set forth in this chapter. (Added to NRS by 1987, 1119 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec270",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.272",
@@ -324,7 +354,7 @@
   "text": "NRS 641B.272 Expedited license by endorsement: Requirements; procedure for issuance; provisional license pending action on application. 1. The Board may issue a license by endorsement to engage in social work to an applicant who meets the requirements set forth in this section. An applicant may submit to the Board an application for such a license if the applicant holds a corresponding valid and unrestricted license to engage in social work in the District of Columbia or any state or territory of the United States. 2. An applicant for a license by endorsement pursuant to this section must submit to the Board with his or her application: (a) Proof satisfactory to the Board that the applicant: (1) Satisfies the requirements of subsection 1; (2) Has not been disciplined or investigated by the corresponding regulatory authority of the District of Columbia or the state or territory in which the applicant holds a license to engage in social work; and (3) Has not been held civilly or criminally liable for malpractice in the District of Columbia or any state or territory of the United States; (b) A complete set of fingerprints and written permission authorizing the Board to forward the fingerprints in the manner provided in NRS 641B.202 ; (c) An affidavit stating that the information contained in the application and any accompanying material is true and correct; (d) The fee prescribed by the Board pursuant to NRS 641B.300 for the initial application; and (e) Any other information required by the Board. 3. Not later than 15 business days after receiving an application for a license by endorsement to engage in social work pursuant to this section, the Board shall provide written notice to the applicant of any additional information required by the Board to consider the application. Unless the Board denies the application for good cause, the Board shall approve the application and issue a license by endorsement to engage in social work to the applicant not later than 45 days after receiving all the additional information required by the Board to complete the application. 4. A license by endorsement to engage in social work may be issued at a meeting of the Board or between its meetings by the President of the Board. Such an action shall be deemed to be an action of the Board. 5. At any time before making a final decision on an application for a license by endorsement pursuant to this section, the Board may, for any reason, grant a provisional license authorizing an applicant to engage in social work in accordance with regulations adopted by the Board. (Added to NRS by 2015, 3914 ; A 2019, 4310 ; 2021, 3496 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec272",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.275",
@@ -335,7 +365,7 @@
   "text": "NRS 641B.275 Provisional licensure; regulations. 1. The Board shall grant a provisional license to engage in social work as a social worker to a person: (a) Who applies to take the next available examination and who is otherwise eligible to be a social worker pursuant to subsection 1 of NRS 641B.220 ; or (b) Who: (1) Possesses a baccalaureate degree or a master’s degree in a related field of study from: (I) An accredited college or university recognized by the Board; or (II) A college or university located in a foreign country, or the equivalent of a baccalaureate degree or a master’s degree in a related field from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 ; and (2) Presents evidence of enrollment in a program of study leading to a degree in social work at: (I) A college or university accredited by the Council on Social Work Education or which is a candidate for such accreditation and which is approved by the Board; or (II) A college or university located in a foreign country, or a program of study leading to the equivalent of a degree in social work from such a college or university, if the applicant includes in his or her application the documentation required by NRS 641B.204 . 2. The Board shall grant a provisional license to engage in social work as an independent social worker to a person who applies to take the next available examination and who is otherwise eligible to be an independent social worker pursuant to subsection 1 of NRS 641B.230 . 3. The Board shall grant a provisional license to engage in social work as a clinical social worker to a person who applies to take the next available examination and who is otherwise eligible to be a clinical social worker pursuant to subsection 1 of NRS 641B.240 . 4. The Board shall establish by regulation the period during which a provisional license issued pursuant to this section will be valid. The period must be: (a) No longer than 9 months for a person who is granted a provisional license to engage in social work pursuant to paragraph (a) of subsection 1 or subsection 2 or 3; and (b) No longer than 3 years for a person who is granted a provisional license to engage in social work pursuant to paragraph (b) of subsection 1. (Added to NRS by 1993, 130 ; A 2021, 3497 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec275",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.280",
@@ -343,13 +373,28 @@
   "chapter": "641B",
   "chapterTitle": "SOCIAL WORKERS",
   "heading": "Renewal of license: Application; fee; continuing education. [Effective July 1, 2026.]",
-  "text": "NRS 641B.280 Renewal of license: Application; fee; continuing education. [Effective through June 30, 2026.] 1. Every holder of a license issued pursuant to this chapter may renew his or her license annually by: (a) Applying to the Board for renewal; (b) Paying the annual renewal fee set by the Board; (c) Except as otherwise provided in NRS 641B.295 , submitting evidence to the Board of completion of the required continuing education as set forth in regulations adopted by the Board; and (d) Submitting all information required to complete the renewal. 2. Except as otherwise provided in NRS 641B.295 , the Board shall, as a prerequisite for the renewal of a license, require the holder to comply with the requirements for continuing education adopted by the Board, which must include, without limitation: (a) A requirement that every 2 years the holder receive at least 2 hours of instruction on evidence-based suicide prevention and awareness or another course of instruction on suicide prevention and awareness that is approved by the Board which the Board has determined to be effective and appropriate. (b) A requirement that every 2 years the holder receive at least 6 hours of instruction relating to cultural competency and diversity, equity and inclusion. Such instruction: (1) May include the training provided pursuant to NRS 449.103 or 449B.280 , where applicable. (2) Must be based upon a range of research from diverse sources. (3) Must address persons of different cultural backgrounds, including, without limitation: (I) Persons from various gender, racial and ethnic backgrounds; (II) Persons from various religious backgrounds; (III) Lesbian, gay, bisexual, transgender and questioning persons; (IV) Children and senior citizens; (V) Veterans; (VI) Persons with a mental illness; (VII) Persons with an intellectual disability, developmental disability or physical disability; and (VIII) Persons who are part of any other population that the holder of a license issued pursuant to this chapter may need to better understand, as determined by the Board. (Added to NRS by 1987, 1119 ; A 1997, 2156 ; 2005, 2760 , 2807 ; 2015, 2288 ; 2017, 79 , 946 ; 2021, 891 , 3498 ; 2023, 1181 ; 2025, 1002 ) NRS 641B.280 Renewal of license: Application; fee; continuing education. [Effective July 1, 2026.] 1. Every holder of a license issued pursuant to this chapter may renew his or her license annually by: (a) Applying to the Board for renewal; (b) Paying the annual renewal fee set by the Board; (c) Except as otherwise provided in NRS 641B.295 , submitting evidence to the Board of completion of the required continuing education as set forth in regulations adopted by the Board; and (d) Submitting all information required to complete the renewal. 2. Except as otherwise provided in NRS 641B.295 , the Board shall, as a prerequisite for the renewal of a license, require the holder to comply with the requirements for continuing education adopted by the Board, which must include, without limitation, a requirement that every 2 years the holder receive at least 6 hours of instruction relating to cultural competency and diversity, equity and inclusion. Such instruction: (a) May include the training provided pursuant to NRS 449.103 or 449B.280 , where applicable. (b) Must be based upon a range of research from diverse sources. (c) Must address persons of different cultural backgrounds, including, without limitation: (1) Persons from various gender, racial and ethnic backgrounds; (2) Persons from various religious backgrounds; (3) Lesbian, gay, bisexual, transgender and questioning persons; (4) Children and senior citizens; (5) Veterans; (6) Persons with a mental illness; (7) Persons with an intellectual disability, developmental disability or physical disability; and (8) Persons who are part of any other population that the holder of a license issued pursuant to this chapter may need to better understand, as determined by the Board. (Added to NRS by 1987, 1119 ; A 1997, 2156 ; 2005, 2760 , 2807 ; 2015, 2288 ; 2017, 79 , 946 ; 2021, 891 , 3498 ; 2023, 1181 ; 2025, 1002 , effective July 1, 2026)",
+  "text": "",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec280",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective July 1, 2026.",
    "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-641B.280-v2",
+  "citation": "NRS 641B.280",
+  "chapter": "641B",
+  "chapterTitle": "SOCIAL WORKERS",
+  "heading": "Renewal of license: Application; fee; continuing education. [Effective through June 30, 2026.]",
+  "text": "NRS 641B.280 Renewal of license: Application; fee; continuing education. [Effective through June 30, 2026.] 1. Every holder of a license issued pursuant to this chapter may renew his or her license annually by: (a) Applying to the Board for renewal; (b) Paying the annual renewal fee set by the Board; (c) Except as otherwise provided in NRS 641B.295 , submitting evidence to the Board of completion of the required continuing education as set forth in regulations adopted by the Board; and (d) Submitting all information required to complete the renewal. 2. Except as otherwise provided in NRS 641B.295 , the Board shall, as a prerequisite for the renewal of a license, require the holder to comply with the requirements for continuing education adopted by the Board, which must include, without limitation: (a) A requirement that every 2 years the holder receive at least 2 hours of instruction on evidence-based suicide prevention and awareness or another course of instruction on suicide prevention and awareness that is approved by the Board which the Board has determined to be effective and appropriate. (b) A requirement that every 2 years the holder receive at least 6 hours of instruction relating to cultural competency and diversity, equity and inclusion. Such instruction: (1) May include the training provided pursuant to NRS 449.103 or 449B.280 , where applicable. (2) Must be based upon a range of research from diverse sources. (3) Must address persons of different cultural backgrounds, including, without limitation: (I) Persons from various gender, racial and ethnic backgrounds; (II) Persons from various religious backgrounds; (III) Lesbian, gay, bisexual, transgender and questioning persons; (IV) Children and senior citizens; (V) Veterans; (VI) Persons with a mental illness; (VII) Persons with an intellectual disability, developmental disability or physical disability; and (VIII) Persons who are part of any other population that the holder of a license issued pursuant to this chapter may need to better understand, as determined by the Board. (Added to NRS by 1987, 1119 ; A 1997, 2156 ; 2005, 2760 , 2807 ; 2015, 2288 ; 2017, 79 , 946 ; 2021, 891 , 3498 ; 2023, 1181 ; 2025, 1002 ) NRS 641B.280 Renewal of license: Application; fee; continuing education. [Effective July 1, 2026.] 1. Every holder of a license issued pursuant to this chapter may renew his or her license annually by: (a) Applying to the Board for renewal; (b) Paying the annual renewal fee set by the Board; (c) Except as otherwise provided in NRS 641B.295 , submitting evidence to the Board of completion of the required continuing education as set forth in regulations adopted by the Board; and (d) Submitting all information required to complete the renewal. 2. Except as otherwise provided in NRS 641B.295 , the Board shall, as a prerequisite for the renewal of a license, require the holder to comply with the requirements for continuing education adopted by the Board, which must include, without limitation, a requirement that every 2 years the holder receive at least 6 hours of instruction relating to cultural competency and diversity, equity and inclusion. Such instruction: (a) May include the training provided pursuant to NRS 449.103 or 449B.280 , where applicable. (b) Must be based upon a range of research from diverse sources. (c) Must address persons of different cultural backgrounds, including, without limitation: (1) Persons from various gender, racial and ethnic backgrounds; (2) Persons from various religious backgrounds; (3) Lesbian, gay, bisexual, transgender and questioning persons; (4) Children and senior citizens; (5) Veterans; (6) Persons with a mental illness; (7) Persons with an intellectual disability, developmental disability or physical disability; and (8) Persons who are part of any other population that the holder of a license issued pursuant to this chapter may need to better understand, as determined by the Board. (Added to NRS by 1987, 1119 ; A 1997, 2156 ; 2005, 2760 , 2807 ; 2015, 2288 ; 2017, 79 , 946 ; 2021, 891 , 3498 ; 2023, 1181 ; 2025, 1002 , effective July 1, 2026)",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec280",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through June 30, 2026.",
+   "isCurrent": false
   }
  },
  {
@@ -361,7 +406,7 @@
   "text": "NRS 641B.281 Renewal of license: Duty of Board to make data request concerning demographic and practice information available to applicants for voluntary completion and electronic submission; confidentiality of information provided. 1. The Board shall: (a) Make the data request developed by the Director of the Department of Human Services pursuant to NRS 439A.116 available to applicants for the renewal of a license pursuant to this chapter through a link on the electronic application for the renewal of a license; and (b) Request each applicant to complete and electronically submit the data request to the Director. 2. The information provided by an applicant for the renewal of a license pursuant to subsection 1 is confidential and, except as required by subsection 1, must not be disclosed to any person or entity. 3. An applicant for the renewal of a license is not required to complete a data request pursuant to subsection 1 and is not subject to disciplinary action, including, without limitation, refusal to renew the license, for failure to do so. (Added to NRS by 2021, 808 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec281",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.282",
@@ -372,7 +417,7 @@
   "text": "NRS 641B.282 Renewal of license as clinical social worker: Duty of Board to require applicant to report receipt of training in treatment of mental and emotional trauma and willingness to respond during emergency or disaster; maintenance and provision of related lists of names by Board; failure of applicant to comply not ground for denial; confidentiality of information. 1. The Board shall: (a) Require each applicant for the renewal of a license as a clinical social worker to: (1) Report whether he or she has received training in the treatment of mental and emotional trauma immediately following an emergency or disaster, training in the short-term treatment of mental and emotional trauma or training in the long-term treatment of mental and emotional trauma; and (2) If the applicant has received training in the treatment of mental and emotional trauma immediately following an emergency or disaster, describe the training and indicate if he or she is willing to respond immediately should an emergency or disaster arise at any location in this State; (b) Maintain a list of each licensed clinical social worker and any training described in subparagraph (1) of paragraph (a) that the licensee has received and update the list at least annually to include information reported pursuant to paragraph (a) by licensees who renewed their license during the immediately preceding year; (c) Maintain a list of the names and contact information for at least five clinical social workers who indicate that they are willing to respond immediately should an emergency or disaster arise at any location in this State and whom the Board has determined have appropriate training to respond following an emergency or disaster; and (d) Provide the lists maintained pursuant to paragraphs (b) and (c) upon request to a governmental entity responding to a state of emergency or declaration of a disaster by the Governor or the Legislature pursuant to NRS 414.070 . 2. The Board shall not deny the renewal of a license as a clinical social worker solely because the applicant has failed to comply with the requirements of paragraph (a) of subsection 1. 3. Except as otherwise provided in paragraph (d) of subsection 1, any information obtained or maintained by the Board pursuant to this section is confidential. (Added to NRS by 2019, 4160 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec282",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.290",
@@ -383,7 +428,7 @@
   "text": "NRS 641B.290 Delinquent licenses: Date; notice; renewal; expiration; restoration. 1. If a licensee fails to comply with the requirements of NRS 641B.280 , the license becomes delinquent and the Board shall, within 30 days after the license becomes delinquent, send a notice to that effect by certified mail, return receipt requested, to the licensee’s last known address according to the records of the Board. 2. A licensee may renew his or her license within 60 days after the license becomes delinquent if the licensee complies with the requirements of NRS 641B.280 and pays, in addition to the fee for the annual renewal of a license, the fee for the renewal of a delinquent license. 3. If the license is not renewed within 60 days after the license becomes delinquent, the license expires without any further notice or a hearing. 4. A person whose license expires pursuant to subsection 3 may apply to the Board for restoration of the license by: (a) Submitting a written application for restoration; (b) Submitting all information required to complete the restoration; (c) Paying all past due renewal fees and the fee for restoration prescribed by the Board; and (d) Passing the examination deemed necessary by the Board. (Added to NRS by 1987, 1119 ; A 1995, 450 ; 1997, 2156 ; 2005, 2761 , 2807 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec290",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.295",
@@ -394,18 +439,33 @@
   "text": "NRS 641B.295 Inactive status of license: Application; effect; duration; regulations; fees. 1. An associate in social work, social worker, master social worker, independent social worker or clinical social worker may apply to the Board to have his or her license placed on inactive status. The Board may grant the application if the license is in good standing and the licensee has met all requirements for the issuance or renewal of a license as of the date of the application. 2. If the application is granted: (a) The licensee must not engage in social work in this State unless the license is returned to active status; and (b) The licensee is not required to complete continuing education unless his or her license is returned to active status. 3. The inactive status of a license is valid for 5 years after the date that the inactive status is granted. 4. If a license is placed on inactive status, the Board must not refund any portion of the renewal fee that was paid before the license was placed on inactive status. 5. The Board shall adopt regulations prescribing the: (a) Procedures for making an application pursuant to this section; (b) Procedures and terms upon which a person whose license has been placed on inactive status may have his or her license returned to active status; and (c) Fees for the renewal of the inactive status of a license. (Added to NRS by 2021, 3493 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec295",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.300",
   "citation": "NRS 641B.300",
   "chapter": "641B",
   "chapterTitle": "SOCIAL WORKERS",
-  "heading": "Fees. [Effective 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "heading": "Fees. [Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
   "text": "NRS 641B.300 Fees. [Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. The Board shall charge and collect fees not to exceed the following amounts for: Initial application................................................................................................. $200 Provisional license.................................................................................................. 150 Initial issuance of a license as a social worker or a master social worker.... 250 Initial issuance of a license as a clinical social worker or an independent social worker 350 Initial issuance of a license by endorsement...................................................... 200 Annual renewal of a license as a social worker, a master social worker or an associate in social work 175 Annual renewal of a license as a clinical social worker or an independent social worker 225 Restoration of a suspended license or reinstatement of a revoked license... 150 Restoration of an expired license......................................................................... 200 Renewal of a delinquent license.......................................................................... 100 2. If an active member of, or the spouse of an active member of, the Armed Forces of the United States, a veteran or the surviving spouse of a veteran submits an application for a license by endorsement pursuant to NRS 641B.272 , the Board shall collect not more than one-half of the fee set forth in subsection 1 for the initial issuance of the license. 3. As used in this section, “veteran” has the meaning ascribed to it in NRS 417.005 . (Added to NRS by 1987, 1120 ; A 1993, 132 ; 1995, 451 ; 1997, 2157 ; 2005, 792 , 2807 ; 2015, 3035 , 3915 ; 2019, 1780 ; 2021, 3499 ) NRS 641B.300 Fees. [Effective 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. The Board shall charge and collect fees not to exceed the following amounts for: Initial application................................................................................................. $200 Provisional license.................................................................................................. 150 Initial issuance of a license as a social worker or a master social worker.... 250 Initial issuance of a license as a clinical social worker or an independent social worker 350 Initial issuance of a license by endorsement...................................................... 200 Annual renewal of a license as a social worker, a master social worker or an associate in social work 175 Annual renewal of a license as a clinical social worker or an independent social worker 225 Reinstatement of a revoked license..................................................................... 150 Restoration of an expired license......................................................................... 200 Renewal of a delinquent license.......................................................................... 100 2. If an active member of, or the spouse of an active member of, the Armed Forces of the United States, a veteran or the surviving spouse of a veteran submits an application for a license by endorsement pursuant to NRS 641B.272 , the Board shall collect not more than one-half of the fee set forth in subsection 1 for the initial issuance of the license. 3. As used in this section, “veteran” has the meaning ascribed to it in NRS 417.005 . (Added to NRS by 1987, 1120 ; A 1993, 132 ; 1995, 451 ; 1997, 2157 ; 2005, 792 , 2807 ; 2015, 3035 , 3915 ; 2019, 1780 ; 2021, 3499 , effective 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings) MISCELLANEOUS PROVISIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec300",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-641B.300-v2",
+  "citation": "NRS 641B.300",
+  "chapter": "641B",
+  "chapterTitle": "SOCIAL WORKERS",
+  "heading": "Fees. [Effective 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec300",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -420,7 +480,7 @@
   "text": "NRS 641B.350 Inquiry into and documentation of veteran status of new adult clients by clinical social worker; provision of contact information for Department of Veterans Services. 1. A clinical social worker may: (a) Ask each new client who is 18 years of age or older if he or she is a veteran and document the response in the record of the client; and (b) Provide the contact information for the Department of Veterans Services to any such client who indicates that he or she is a veteran. 2. As used in this section, “veteran” has the meaning ascribed to it in NRS 417.125 . (Added to NRS by 2019, 2694 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec350",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.355",
@@ -431,7 +491,7 @@
   "text": "NRS 641B.355 Recordings of certain training activities: Retention; requirements; compliance with and applicability of provisions governing health care records; regulations. 1. A program of education for mental health professionals approved by the Board, a mental health professional or a person receiving training for mental health professionals is not required to retain a recording of the provision of mental health services by a social worker, a master social worker, an independent social worker or a clinical social worker to a client that meets the requirements of subsection 2 if: (a) The recording is used for a training activity that is part of a program of education for mental health professionals approved by the Board; (b) The client has provided informed consent in writing on a form that meets the requirements prescribed by the Board pursuant to subsection 3 to the use of the recording in the training activity; (c) Destroying the recording does not result in noncompliance with the obligations described in subsection 4; and (d) The recording is destroyed after the expiration of the period of time prescribed by the Board pursuant to paragraph (b) of subsection 3. 2. A recording of the provision of mental health services by a social worker, a master social worker, an independent social worker or a clinical social worker to a client used for the purpose described in paragraph (a) of subsection 1: (a) Must meet all requirements of the Health Insurance Portability and Accountability Act of 1996, Public Law 104-191, and any regulations adopted pursuant thereto, that are designed to prevent the reproduction, copying or theft of the recording; and (b) Must not contain any personally identifiable information relating to the client unless the client has provided informed consent in writing specifically authorizing the inclusion of that information in the recording. 3. The Board shall adopt regulations: (a) Prescribing requirements governing the provision of informed written consent pursuant to paragraph (b) of subsection 1, including, without limitation, requirements governing: (1) The form on which such informed written consent must be provided; and (2) The length of time that a social worker, a master social worker, an independent social worker or a clinical social worker who obtains such informed written consent must maintain the informed written consent; (b) Prescribing the length of time that a program of education for mental health professionals, a mental health professional or a person receiving training for mental health professionals that uses a recording of the provision of mental health services by a social worker, a master social worker, an independent social worker or a clinical social worker to a client for the purposes described in paragraph (a) of subsection 1 may retain the recording before destroying it; and (c) Defining “training activity” for the purposes of this section. 4. The provisions of this section do not abrogate, alter or otherwise affect the obligation of a social worker, a master social worker, an independent social worker or a clinical social worker to comply with the applicable requirements of chapter 629 of NRS, including, without limitation, the requirement to retain records concerning the mental health services that he or she provides to clients in accordance with NRS 629.051 to 629.069 , inclusive. 5. Except where necessary for compliance with subsection 4, a recording of the provision of mental health services by a social worker, a master social worker, an independent social worker or a clinical social worker to a client that is used for a training activity by a program of education for mental health professionals, a mental health professional or a person receiving training for mental health professionals in accordance with the provisions of this section is not a health care record for the purposes of chapter 629 of NRS. 6. As used in this section, “mental health professional” means a psychologist, a behavioral health and wellness practitioner, a marriage and family therapist, a clinical professional counselor, a social worker, a master social worker, an independent social worker, a clinical social worker, a clinical alcohol and drug counselor, an alcohol and drug counselor or a problem gambling counselor. (Added to NRS by 2021, 2194 ; A 2025, 2514 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec355",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.360",
@@ -442,7 +502,7 @@
   "text": "NRS 641B.360 Duty of clinical social worker who diagnoses client as having opioid use disorder to counsel and provide certain information to client and to refer client for medication-assisted treatment upon request. 1. Upon diagnosing a client as having an opioid use disorder, a clinical social worker shall counsel and provide information to the client concerning evidence-based treatment for opioid use disorders, including, without limitation, medication-assisted treatment. 2. If the client requests medication-assisted treatment, the clinical social worker shall refer the client to a physician, osteopathic physician, physician assistant licensed pursuant to chapter 630 or 633 of NRS, advanced practice registered nurse or pharmacist who is authorized under federal and state law to prescribe an appropriate medication. 3. As used in this section, “medication-assisted treatment” has the meaning ascribed to it in NRS 639.28079 . (Added to NRS by 2023, 2369 ) DISCIPLINARY AND OTHER ACTIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec360",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.400",
@@ -453,7 +513,7 @@
   "text": "NRS 641B.400 Grounds for disciplinary action. The grounds for initiating disciplinary action pursuant to this chapter are: 1. Unprofessional conduct; 2. Conviction of: (a) A felony relating to the practice of social work; (b) Any offense involving moral turpitude; or (c) A violation of any federal or state law regulating the possession, distribution or use of any controlled substance or dangerous drug as defined in chapter 454 of NRS; 3. Use of fraud or deception in: (a) Applying for a license; (b) Undergoing the initial licensing examination; or (c) Rendering services as a social worker; 4. Allowing unauthorized use of a license issued pursuant to this chapter; 5. Professional incompetence; 6. Practicing social work without a license; 7. Having an alcohol or other substance use disorder which impairs the ability to practice social work; and 8. Operation of a medical facility, as defined in NRS 449.0151 , at any time during which: (a) The license of the facility is suspended or revoked; or (b) An act or omission occurs which results in the suspension or revocation of the license pursuant to NRS 449.160 . Ê This subsection applies to an owner or other principal responsible for the operation of the facility. (Added to NRS by 1987, 1120 ; A 1995, 451 ; 2003, 2716 ; 2009, 902 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec400",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.405",
@@ -464,7 +524,7 @@
   "text": "NRS 641B.405 Suspension of license for failure to pay child support or comply with certain subpoenas or warrants; reinstatement of license. [Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.] 1. If the Board receives a copy of a court order issued pursuant to NRS 425.540 that provides for the suspension of all professional, occupational and recreational licenses, certificates and permits issued to a person who is the holder of a license to engage in social work, the Board shall deem the license issued to that person to be suspended at the end of the 30th day after the date on which the court order was issued unless the Board receives a letter issued to the holder of the license by the district attorney or other public agency pursuant to NRS 425.550 stating that the holder of the license has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 . 2. The Board shall reinstate a license to engage in social work that has been suspended by a district court pursuant to NRS 425.540 if: (a) The Board receives a letter issued by the district attorney or other public agency pursuant to NRS 425.550 to the person whose license was suspended stating that the person whose license was suspended has complied with the subpoena or warrant or has satisfied the arrearage pursuant to NRS 425.560 ; and (b) The person whose license was suspended pays the fee established by the Board pursuant to NRS 641B.300 for the restoration of a suspended license. (Added to NRS by 1997, 2155 ; A 2005, 2807 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec405",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective until 2 years after the date of the repeal of 42 U.S.C. § 666, the federal law requiring each state to establish procedures for withholding, suspending and restricting the professional, occupational and recreational licenses for child support arrearages and for noncompliance with certain processes relating to paternity or child support proceedings.",
    "isCurrent": true
@@ -479,7 +539,7 @@
   "text": "NRS 641B.410 Complaints: Filing; retention. 1. The Board, any member or employee of the Board or any member of a review panel of social workers who becomes aware that any one or combination of the grounds for initiating disciplinary action may exist as to a person practicing social work in this State shall, and any other person who is so aware may, file a written complaint specifying the relevant facts with the Board. The complaint must specifically charge one or more of the grounds for initiating disciplinary action. 2. The Board shall retain all complaints filed with the Board pursuant to this section for at least 10 years, including, without limitation, any complaints not acted upon. (Added to NRS by 1987, 1120 ; A 2009, 903 ; 2021, 3499 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec410",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.425",
@@ -490,7 +550,7 @@
   "text": "NRS 641B.425 Subpoenas: Issuance; enforcement. 1. The Board may issue subpoenas for the attendance of witnesses and the production of books and papers. 2. The district court, in and for the county in which any hearing is held, may compel the attendance of witnesses, the giving of testimony and the production of books and papers as required by any subpoena issued by the Board. 3. If any witness refuses to attend or testify or produce any books or papers required by a subpoena, the Board may file a petition ex parte with the district court, setting forth that: (a) Notice has been given of the time and place for the attendance of the witness or the production of the books or papers; (b) The witness has been subpoenaed in the manner prescribed by this chapter; (c) The witness has failed or refused to attend or produce the books or papers required by the subpoena before the Board in the cause or proceeding named in the subpoena, or has refused to answer questions propounded to him or her in the course of the hearing; and (d) The Board therefore requests an order of the court compelling the witness to attend and testify or produce the books and papers before the Board. 4. The court, upon such a petition, shall enter an order directing the witness to appear before the court at a time and place fixed by the court in the order, and then and there to show cause why the witness has not attended or testified or produced the books or papers before the Board. The time may not be more than 10 days after the date of the order. A certified copy of the order must be served upon the witness. 5. If the court determines that the subpoena was regularly issued by the Board, the court shall thereupon enter an order that the witness appear before the Board at the time and place fixed in the order, and testify or produce the required books or papers. Failure to obey the order is a contempt of the court which issued it. (Added to NRS by 1995, 449 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec425",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.430",
@@ -501,7 +561,7 @@
   "text": "NRS 641B.430 Authorized disciplinary action; private reprimands prohibited; orders imposing discipline deemed public records. 1. If the Board finds a person guilty in a disciplinary proceeding, the Board may, by order: (a) Place the person on probation for a specified period or until further order of the Board. (b) Administer to the person a public reprimand. (c) Limit the practice of the person to, or by exclusion of, one or more specified branches of social work. (d) Suspend the license of the person to practice social work for a specified period or until further order of the Board. (e) Revoke the license of the person to practice social work. (f) Impose a fine of not more than $5,000, which must be deposited with the State Treasurer for credit to the State General Fund. Ê The order of the Board may contain other terms, provisions or conditions as the Board deems proper and which are not inconsistent with law. 2. The Board shall not administer a private reprimand. 3. An order that imposes discipline and the findings of fact and conclusions of law supporting that order are public records. (Added to NRS by 1987, 1120 ; A 1993, 889 ; 1995, 451 ; 2003, 3459 ; 2005, 792 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec430",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.450",
@@ -512,7 +572,7 @@
   "text": "NRS 641B.450 Reinstatement after revocation. After a license is revoked, a licensee may apply to the Board pursuant to the provisions of chapter 622A of NRS for its reinstatement. The Board has complete discretion to accept or reject such an application and may require successful completion of an examination as a condition of reinstatement. (Added to NRS by 1987, 1121 ; A 2005, 793 ) PROHIBITED ACTS; PENALTIES; ENFORCEMENT",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec450",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.500",
@@ -523,7 +583,7 @@
   "text": "NRS 641B.500 Representation as social worker without license. It is unlawful for any person to represent himself or herself as a social worker within the meaning of this chapter unless he or she is licensed pursuant to the provisions of this chapter. (Added to NRS by 1987, 1121 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec500",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.505",
@@ -534,7 +594,7 @@
   "text": "NRS 641B.505 Practice of social work without required license unlawful. 1. Except as otherwise provided in this chapter, it is unlawful for a person to engage in: (a) The independent practice of social work unless he or she: (1) Holds an active license as a clinical social worker or an independent social worker issued pursuant to this chapter; or (2) Holds an active license as a master social worker issued pursuant to this chapter and is engaging in the independent practice of social work under the conditions prescribed in NRS 641B.225 . (b) The clinical practice of social work unless he or she: (1) Holds an active license as a clinical social worker issued pursuant to this chapter; or (2) Holds an active license as an independent social worker or a master social worker issued pursuant to this chapter and is engaging in clinical social work under the conditions prescribed in NRS 641B.225 or 641B.230 , as applicable. (c) The practice of social work unless he or she holds an active license as an associate in social work, a social worker, a master social worker, an independent social worker or a clinical social worker issued pursuant to this chapter. 2. As used in this section, “independent practice of social work” means the unsupervised practice of social work, other than for a public employer, for compensation. (Added to NRS by 1989, 2198 ; A 1995, 452 ; 2021, 3499 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec505",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.510",
@@ -545,7 +605,7 @@
   "text": "NRS 641B.510 Use of title of licensee or otherwise implying licensure. It is unlawful for any person, other than a person licensed pursuant to this chapter, to use the title of a licensee in connection with his or her work, or in any other way imply that the person is licensed by the Board, unless he or she is so licensed. (Added to NRS by 1987, 1121 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec510",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.520",
@@ -556,7 +616,7 @@
   "text": "NRS 641B.520 Penalty. Any person who violates any of the provisions of this chapter or, having had his or her license suspended or revoked, continues to represent himself or herself as a social worker, is guilty of a misdemeanor. (Added to NRS by 1987, 1121 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec520",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-641B.530",
@@ -567,6 +627,6 @@
   "text": "NRS 641B.530 Injunctive relief. A violation of this chapter by a person unlawfully representing himself or herself as a social worker may be enjoined by a district court on petition by the Board. In any such proceeding it is not necessary to show that any person is individually injured. If the respondent is found guilty of misrepresenting himself or herself as a social worker, the court shall enjoin the respondent from such representations unless and until the respondent has been licensed. The procedure in such proceedings must be the same as for any other application for an injunction. The remedy of an injunction is in addition to any applicable criminal prosecution and punishment. (Added to NRS by 1987, 1121 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-641B.html#NRS641BSec530",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]

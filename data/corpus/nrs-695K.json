@@ -8,7 +8,7 @@
   "text": "NRS 695K.010 Purpose and policy of Legislature in enacting chapter. It is hereby declared to be the purpose and policy of the Legislature in enacting this chapter to: 1. Leverage the combined purchasing power of the State to lower premiums and costs relating to health insurance for residents of this State; 2. Improve access to high-quality, affordable health care for residents of this State, including residents of this State who are employed by small businesses; 3. Reduce disparities in access to health care and health outcomes and increase access to health care for historically marginalized communities; and 4. Increase competition in the market for individual health insurance in this State to improve the availability of coverage for residents of rural areas of this State. (Added to NRS by 2021, 3616 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec010",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.020",
@@ -19,7 +19,7 @@
   "text": "NRS 695K.020 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 695K.030 to 695K.110 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2021, 3616 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec020",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.030",
@@ -30,7 +30,7 @@
   "text": "NRS 695K.030 “Certified community behavioral health clinic” defined. “Certified community behavioral health clinic” means a community behavioral health clinic certified in accordance with section 223 of the Protecting Access to Medicare Act of 2014, Public Law No. 113-93. (Added to NRS by 2021, 3616 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec030",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.040",
@@ -41,7 +41,7 @@
   "text": "NRS 695K.040 “Commissioner” defined. “Commissioner” means the Commissioner of Insurance. (Added to NRS by 2021, 3616 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec040",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.050",
@@ -52,7 +52,7 @@
   "text": "NRS 695K.050 “Director” defined. “Director” means the Director of the Nevada Health Authority. (Added to NRS by 2021, 3616 ; A 2025, 3772 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec050",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.060",
@@ -63,7 +63,7 @@
   "text": "NRS 695K.060 “Exchange” defined. “Exchange” means the Silver State Health Insurance Exchange. (Added to NRS by 2021, 3617 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec060",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.070",
@@ -74,7 +74,7 @@
   "text": "NRS 695K.070 “Federally qualified health center” defined. “Federally qualified health center” has the meaning ascribed to it in 42 C.F.R. § 405.2401. (Added to NRS by 2021, 3617 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec070",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.080",
@@ -85,7 +85,7 @@
   "text": "NRS 695K.080 “Provider of health care” defined. “Provider of health care” has the meaning ascribed to it in NRS 695G.070 . (Added to NRS by 2021, 3617 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec080",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.090",
@@ -96,7 +96,7 @@
   "text": "NRS 695K.090 “Public Option” defined. “Public Option” means the Public Option established pursuant to NRS 695K.200 . (Added to NRS by 2021, 3617 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec090",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.100",
@@ -107,7 +107,7 @@
   "text": "NRS 695K.100 “Rural health clinic” defined. “Rural health clinic” has the meaning ascribed to it in 42 C.F.R. § 405.2401. (Added to NRS by 2021, 3617 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec100",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.110",
@@ -118,18 +118,33 @@
   "text": "NRS 695K.110 “Trust Fund” defined. “Trust Fund” means the Public Option Trust Fund created by NRS 695K.300 . (Added to NRS by 2021, 3617 ) ADMINISTRATION; OPERATION",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec110",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.200",
   "citation": "NRS 695K.200",
   "chapter": "695K",
   "chapterTitle": "PUBLIC OPTION",
-  "heading": "Design, establishment and operation; availability; requirements. [Effective January 1, 2030.]",
+  "heading": "Design, establishment and operation; availability; requirements; premiums. [Effective through December 31, 2029.]",
   "text": "NRS 695K.200 Design, establishment and operation; availability; requirements; premiums. [Effective through December 31, 2029.] 1. The Director, in consultation with the Commissioner and the Executive Director of the Exchange, shall design, establish and operate a health benefit plan known as the Public Option. 2. The Director: (a) Shall make the Public Option available: (1) As a qualified health plan through the Exchange to natural persons who reside in this State and are eligible to enroll in such a plan through the Exchange under the provisions of 45 C.F.R. § 155.305; and (2) For direct purchase as a policy of individual health insurance by any natural person who resides in this State. The provisions of chapter 689A of NRS and other applicable provisions of this title apply to the Public Option when offered as a policy of individual health insurance. (b) May make the Public Option available to small employers in this State or their employees to the extent authorized by federal law. The provisions of chapter 689C of NRS and other applicable provisions of this title apply to the Public Option when it is offered as a policy of health insurance for small employers. (c) Shall comply with all state and federal laws and regulations applicable to insurers when carrying out the provisions of this chapter, to the extent that such laws and regulations are not waived. 3. The Public Option must: (a) Be a qualified health plan, as defined in 42 U.S.C. § 18021; and (b) Provide at least levels of coverage consistent with the actuarial value of one silver plan and one gold plan. 4. Except as otherwise provided in this section, the premiums for the Public Option: (a) Must be at least 5 percent lower than the reference premium for that zip code; and (b) Must not increase in any year by a percentage greater than the increase in the Medicare Economic Index for that year. 5. The Director, in consultation with the Commissioner and the Executive Director of the Exchange, may revise the requirements of subsection 4, provided that the average premiums for the Public Option must be at least 15 percent lower than the average reference premium in this State over the first 4 years in which the Public Option is in operation. 6. As used in this section: (a) “Gold plan” means a qualified health plan that meets the requirements established by 42 U.S.C. § 18022 for a gold level plan. (b) “Health benefit plan” means a policy, contract, certificate or agreement to provide, deliver, arrange for, pay for or reimburse any of the costs of health care services. (c) “Medicare Economic Index” means the Medicare Economic Index, as designated by the Centers for Medicare and Medicaid Services of the United States Department of Health and Human Services pursuant to 42 C.F.R. § 405.504. (d) “Reference premium” means, for any zip code, the lower of: (1) The premium for the second-lowest cost silver level plan available through the Exchange in the zip code during the 2024 plan year, adjusted by the percentage change in the Medicare Economic Index between January 1, 2024, and January 1 of the year to which a premium applies; or (2) The premium for the second-lowest cost silver level plan available through the Exchange in the zip code during the year immediately preceding the year to which a premium applies. (e) “Silver plan” means a qualified health plan that meets the requirements established by 42 U.S.C. § 18022 for a silver level plan. (f) “Small employer” has the meaning ascribed to it in 42 U.S.C. § 18024(b)(2). (Added to NRS by 2021, 3617 ) NRS 695K.200 Design, establishment and operation; availability; requirements. [Effective January 1, 2030.] 1. The Director, in consultation with the Commissioner and the Executive Director of the Exchange, shall design, establish and operate a health benefit plan known as the Public Option. 2. The Director: (a) Shall make the Public Option available: (1) As a qualified health plan through the Exchange to natural persons who reside in this State and are eligible to enroll in such a plan through the Exchange under the provisions of 45 C.F.R. § 155.305; and (2) For direct purchase as a policy of individual health insurance by any natural person who resides in this State. The provisions of chapter 689A of NRS and other applicable provisions of this title apply to the Public Option when offered as a policy of individual health insurance. (b) May make the Public Option available to small employers in this State or their employees to the extent authorized by federal law. The provisions of chapter 689C of NRS and other applicable provisions of this title apply to the Public Option when it is offered as a policy of health insurance for small employers. (c) Shall comply with all state and federal laws and regulations applicable to insurers when carrying out the provisions of this chapter, to the extent that such laws and regulations are not waived. 3. The Public Option must: (a) Be a qualified health plan, as defined in 42 U.S.C. § 18021; and (b) Provide at least levels of coverage consistent with the actuarial value of one silver plan and one gold plan. 4. As used in this section: (a) “Gold plan” means a qualified health plan that meets the requirements established by 42 U.S.C. § 18022 for a gold level plan. (b) “Health benefit plan” means a policy, contract, certificate or agreement to provide, deliver, arrange for, pay for or reimburse any of the costs of health care services. (c) “Silver plan” means a qualified health plan that meets the requirements established by 42 U.S.C. § 18022 for a silver level plan. (d) “Small employer” has the meaning ascribed to it in 42 U.S.C. § 18024(b)(2). (Added to NRS by 2021, 3617 ; A 2021, 3645 , effective January 1, 2030)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec200",
   "status": "active",
-  "scrapedAt": "2026-08-12",
+  "scrapedAt": "2026-08-17",
+  "effective": {
+   "label": "Effective through December 31, 2029.",
+   "isCurrent": true
+  }
+ },
+ {
+  "id": "NRS-695K.200-v2",
+  "citation": "NRS 695K.200",
+  "chapter": "695K",
+  "chapterTitle": "PUBLIC OPTION",
+  "heading": "Design, establishment and operation; availability; requirements. [Effective January 1, 2030.]",
+  "text": "",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec200",
+  "status": "active",
+  "scrapedAt": "2026-08-17",
   "effective": {
    "label": "Effective January 1, 2030.",
    "isCurrent": false
@@ -144,7 +159,7 @@
   "text": "NRS 695K.210 Application for federal waivers and approvals; acceptance of gifts, grants and donations; deposit of money; contracts for services. 1. The Director, the Commissioner and the Executive Director of the Exchange: (a) Shall collaborate to apply to the Secretary of Health and Human Services for a waiver pursuant to 42 U.S.C. § 18052 to obtain pass-through federal funding to carry out the provisions of this chapter; and (b) Except as otherwise provided in subsection 4, may collaboratively apply to the Secretary of Health and Human Services for any other federal waivers or approval necessary to carry out the provisions of this chapter, including, without limitation, and to the extent necessary, a waiver pursuant to 42 U.S.C. § 1315 of Title XIX of the Social Security Act. Such waivers or approval may include, without limitation, any waiver or approval necessary to: (1) Combine risk pools for the Public Option with risk pools established for Medicaid, if the Director can demonstrate that doing so would lower costs, result in savings to the federal and state governments and not increase the costs of private insurance or Medicaid; or (2) Obtain federal financial participation to subsidize the cost of health insurance for residents of this State with low incomes. 2. In preparing an application for any waiver described in subsection 1, the Director, the Commissioner and the Executive Director of the Exchange may contract with an independent actuary to assess the impact of the Public Option on the markets for health care and health insurance in this State and health coverage for natural persons, families and small businesses. The actuary must have specialized expertise or experience with state health insurance exchanges, the type of waiver for which the application is being made, measures to contain the costs of providing health coverage, reforming procedures for the purchasing and delivery of governmental services and Medicaid managed care programs. A contract pursuant to this subsection is exempt from the provisions of chapter 333 of NRS. 3. The Director, the Commissioner and the Executive Director of the Exchange shall: (a) Cooperate with the Federal Government in obtaining any waiver for which he or she applies pursuant to this section. (b) Deposit any money received from the Federal Government pursuant to such a waiver in the Trust Fund. 4. The Director, the Commissioner and the Executive Director of the Exchange shall not apply under the provisions of subsection 1 to waive any provision of federal law prescribing conditions of eligibility to purchase a qualified health plan, as defined in 42 U.S.C. § 18021, through the Exchange or receive federal advanced payment of premium tax credits pursuant to 42 U.S.C. § 18082 for such a purchase. 5. The Director may: (a) Accept gifts, grants and donations to carry out the provisions of this chapter. The Director shall deposit any such gifts, grants or donations in the Trust Fund. (b) Employ or enter into contracts with actuaries and other professionals and may enter into contracts with other state agencies, health carriers or other qualified persons and entities as are necessary to carry out the provisions of this chapter. Such contracts are exempt from the requirements of chapter 333 of NRS. (Added to NRS by 2021, 3618 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec210",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.220",
@@ -155,7 +170,7 @@
   "text": "NRS 695K.220 Administration: Contract with health carrier or other qualified person or entity or performance by Director; duties of administrator; deposit of money. 1. The Director, in consultation with the Commissioner and the Executive Director of the Exchange, shall use a statewide competitive bidding process, including, without limitation, a request for proposals, to solicit and enter into contracts with health carriers or other qualified persons or entities to administer the Public Option. If a statewide Medicaid managed care program is established pursuant to subsection 1 of NRS 422.273 , the competitive bidding process must coincide with the statewide procurement process for that Medicaid managed care program. 2. Each health carrier that provides health care services through managed care to recipients of Medicaid under the State Plan for Medicaid or the Children’s Health Insurance Program shall, as a condition of continued participation in any Medicaid managed care program established in this State, submit a good faith proposal in response to a request for proposals issued pursuant to subsection 1. 3. Each proposal submitted pursuant to subsection 2 must demonstrate that the applicant is able to meet the requirements of NRS 695K.200 . 4. When selecting a health carrier or other qualified person or entity to administer the Public Option, the Director shall prioritize applicants whose proposals: (a) Demonstrate alignment of networks of providers between the Public Option and Medicaid managed care, where applicable; (b) Provide for the inclusion of critical access hospitals, rural health clinics, certified community behavioral health clinics and federally-qualified health centers in the networks of providers for the Public Option and Medicaid managed care, where applicable; (c) Include proposals for strengthening the workforce in this State and particularly in rural areas of this State for providers of primary care, mental health care and treatment for substance use disorders; (d) Use payment models for providers included in the networks of providers for the Public Option that increase value for persons enrolled in the Public Option and the State; and (e) Include proposals to contract with providers of health care in a manner that decreases disparities among different populations in this State with regard to access to health care and health outcomes and supports culturally competent care. 5. Notwithstanding the provisions of subsections 1 to 4, inclusive, the Director may directly administer the Public Option if necessary to carry out the provisions of this chapter. 6. Any health carrier or other person or entity with which the Director contracts to administer the Public Option pursuant to this section or the Director, if the Director directly administers the Public Option pursuant to subsection 5, shall take any measures necessary to make the Public Option available as described in paragraph (a) of subsection 2 of NRS 695K.200 and, if required by the Director, paragraph (b) of that subsection. Such measures include, without limitation: (a) Filing rates and supporting information with the Commissioner of Insurance as required by NRS 686B.010 to 686B.1799 , inclusive; and (b) Obtaining certification as a qualified health plan pursuant to 42 U.S.C. § 18031. 7. The Director shall deposit into the Trust Fund any money received from: (a) A health carrier or other person or entity with which the Director contracts to administer the Public Option pursuant to subsection 1 which relates to duties performed under the contract; or (b) If the Director directly administers the Public Option pursuant to subsection 5, any money received from any person or entity in the course of administering the Public Option. 8. As used in this section: (a) “Critical access hospital” means a hospital which has been certified as a critical access hospital by the Secretary of Health and Human Services pursuant to 42 U.S.C. § 1395i-4(e). (b) “Health carrier” means an entity subject to the insurance laws and regulations of this State, or subject to the jurisdiction of the Commissioner, that contracts or offers to contract to provide, deliver, arrange for, pay for or reimburse any of the costs of health care services, including, without limitation, a sickness and accident health insurance company, a health maintenance organization, a nonprofit hospital and health service corporation or any other entity providing a plan of health insurance, health benefits or health care services. (Added to NRS by 2021, 3619 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec220",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.230",
@@ -166,7 +181,7 @@
   "text": "NRS 695K.230 Duties of certain providers of health care; exception. 1. Except as otherwise provided in subsection 2, each provider of health care who participates in the Public Employees’ Benefits Program established pursuant to subsection 1 of NRS 287.043 or the Medicaid program, or who provides care to an injured employee pursuant to the provisions of chapters 616A to 616D , inclusive, or chapter 617 of NRS, shall: (a) Enroll as a participating provider in at least one network of providers established for the Public Option; and (b) Accept new patients who are enrolled in the Public Option to the same extent as the provider or facility accepts new patients who are not enrolled in the Public Option. 2. The Director and the Executive Officer of the Public Employees’ Benefits Program may waive the requirements of subsection 1 when necessary to ensure that recipients of Medicaid and officers, employees and retirees of this State who receive benefits under the Public Employees’ Benefits Program have sufficient access to covered services. (Added to NRS by 2021, 3620 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec230",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.240",
@@ -177,7 +192,7 @@
   "text": "NRS 695K.240 Establishment of networks and reimbursement of providers of health care: Requirements. 1. In establishing networks for the Public Option and reimbursing providers of health care that participate in the Public Option, the Director shall, to the extent practicable: (a) Ensure that care for persons who were previously covered by Medicaid or the Children’s Health Insurance Program and enroll in the Public Option is minimally disrupted; (b) Encourage the use of payment models that increase value for persons enrolled in the Public Option and the State; (c) Improve health outcomes for persons enrolled in the Public Option; (d) Reward providers of health care and medical facilities for delivering high-quality services; and (e) Lower the cost of care in both urban and rural areas of this State. 2. Except as otherwise provided in subsections 3 to 6, inclusive, reimbursement rates under the Public Option must be, in the aggregate, comparable to or better than reimbursement rates available under Medicare. For the purposes of this section, the aggregate reimbursement rate under Medicare: (a) Includes any add-on payments or other subsidies that a provider receives under Medicare; and (b) Does not include payments under Medicare for a patient encounter or a cost-based payment rate under Medicare. 3. If a provider of health care currently receives reimbursement under Medicare at rates that are cost-based, the reimbursement rates for that provider of health care under the Public Option must be comparable to or better than the cost-based reimbursement rates provided for that provider of health care by Medicare. 4. The reimbursement rates for a federally-qualified health center or a rural health clinic under the Public Option must be comparable to or better than the reimbursement rates established for patient encounters under the applicable Prospective Payment System established for Medicare by the Centers for Medicare and Medicaid Services of the United States Department of Health and Human Services. 5. The reimbursement rates for a certified community behavioral health clinic under the Public Option must be comparable to or better than the reimbursement rates established for community behavioral health clinics under the State Plan for Medicaid. 6. The requirements of subsections 2 to 5, inclusive, do not apply to a payment model described in paragraph (b) of subsection 1. 7. As used in this section, “Medicare” means the program of health insurance for aged persons and persons with disabilities established pursuant to Title XVIII of the Social Security Act, 42 U.S.C. §§ 1395 et seq. (Added to NRS by 2021, 3621 ) PUBLIC OPTION TRUST FUND",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec240",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  },
  {
   "id": "NRS-695K.300",
@@ -188,6 +203,6 @@
   "text": "NRS 695K.300 Creation; administration; sources of money; interest; nonreversion; uses. 1. There is hereby created in the State Treasury the Public Option Trust Fund as a nonreverting trust fund. The Trust Fund must be administered by the State Treasurer. 2. The Trust Fund consists of: (a) Any money deposited in the Trust Fund pursuant to NRS 695K.210 and 695K.220 ; (b) Any money appropriated by the Legislature for the purpose of carrying out the provisions of this chapter; and (c) All income and interest earned on the money in the Trust Fund. 3. Any interest earned on money in the Trust Fund, after deducting any applicable charges, must be credited to the Trust Fund. Money that remains in the Trust Fund at the end of a fiscal year does not revert to the State General Fund, and the balance in the Trust Fund must be carried forward to the next fiscal year. 4. Except as otherwise provided in subsection 5, the money in the Trust Fund must be used to carry out the provisions of this chapter. Such money must not be used to pay administrative costs that are not directly related to the operations of the Public Option. 5. If the State Treasurer determines that there is sufficient money in the Trust Fund to carry out the provisions of this chapter for the current fiscal year, the Director may use a portion determined by the State Treasurer of any additional money in the Trust Fund to increase the affordability of the Public Option. (Added to NRS by 2021, 3621 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-695K.html#NRS695KSec300",
   "status": "active",
-  "scrapedAt": "2026-08-12"
+  "scrapedAt": "2026-08-17"
  }
 ]
