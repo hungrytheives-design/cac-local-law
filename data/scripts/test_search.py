@@ -104,9 +104,12 @@ def expand(tokens, raw, concepts):
                 hit = True
                 break
             else:
+                # Both sides must be 4+ chars; see the matching comment in
+                # App.tsx. "off" used to prefix-match "offroad".
                 ts = stem(term)
                 if len(ts) >= 4 and any(
-                    s.startswith(ts) or ts.startswith(s) for s in stems
+                    len(s) >= 4 and (s.startswith(ts) or ts.startswith(s))
+                    for s in stems
                 ):
                     hit = True
                     break

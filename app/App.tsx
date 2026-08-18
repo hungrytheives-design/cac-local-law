@@ -172,9 +172,12 @@ function expand(tokens: string[], raw: string) {
       if (tokens.includes(term)) return true;
       // Otherwise compare stems both directions, so "skateboarding" reaches
       // "skateboard" and "seat" reaches "seatbelt".
+      // Both sides must be 4+ characters. Guarding only the lexicon term let
+      // the three-letter token "off" prefix-match "offroad", so "walking my
+      // dog off leash" pulled a +20 chapter boost toward off-highway vehicles.
       const ts = stem(term);
       if (ts.length < 4) return false;
-      return stems.some((s) => s.startsWith(ts) || ts.startsWith(s));
+      return stems.some((s) => s.length >= 4 && (s.startsWith(ts) || ts.startsWith(s)));
     });
     if (!hit) continue;
     // Keep statutory phrases WHOLE. Splitting "off-highway vehicle" into its
@@ -300,8 +303,14 @@ function matchActivity(query: string): Activity | null {
         continue;
       }
       if (tokens.includes(k)) return a;
+      // Both sides must be 4+ characters. Guarding only the keyword let the
+      // three-letter token "off" prefix-match the keyword "offroad", so
+      // "walking my dog off leash" opened the dirt bike card.
       const ks = stem(k);
-      if (ks.length >= 4 && stems.some((s) => s.startsWith(ks) || ks.startsWith(s))) {
+      if (
+        ks.length >= 4 &&
+        stems.some((s) => s.length >= 4 && (s.startsWith(ks) || ks.startsWith(s)))
+      ) {
         return a;
       }
     }
