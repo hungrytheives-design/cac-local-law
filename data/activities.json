@@ -44,7 +44,10 @@
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-484B.html#NRS484BSec783",
         "jurisdiction": "NV",
         "appliesIf": "You are riding after dark.",
-        "confidence": "clear"
+        "confidence": "clear",
+        "brokenBy": [
+          "at-night"
+        ]
       },
       {
         "id": "ebike-equipment",
@@ -104,7 +107,10 @@
         "citation": "NRS 490.090",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-490.html#NRS490Sec090",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "brokenBy": [
+          "on-pavement"
+        ]
       },
       {
         "id": "ohv-license",
@@ -156,7 +162,10 @@
         "citation": "NRS 483.280",
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-483.html#NRS483Sec280",
         "jurisdiction": "NV",
-        "confidence": "clear"
+        "confidence": "clear",
+        "brokenBy": [
+          "alone"
+        ]
       },
       {
         "id": "license-16",
@@ -181,7 +190,10 @@
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-484B.html#NRS484BSec907",
         "jurisdiction": "NV",
         "appliesIf": "You hold a licence issued at 16 or 17.",
-        "confidence": "clear"
+        "confidence": "clear",
+        "brokenBy": [
+          "at-night"
+        ]
       }
     ]
   },
@@ -377,7 +389,10 @@
         "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-609.html#NRS609Sec240",
         "jurisdiction": "NV",
         "appliesIf": "You are 16 to 18 and enrolled in high school.",
-        "confidence": "clear"
+        "confidence": "clear",
+        "brokenBy": [
+          "at-night"
+        ]
       },
       {
         "id": "work-hazardous",

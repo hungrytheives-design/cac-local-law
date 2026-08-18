@@ -62,6 +62,7 @@ type Rule = {
   sourceUrl: string;
   appliesIf?: string;
   confidence: 'clear' | 'ambiguous';
+  brokenBy?: string[];   // condition ids that directly contradict this rule
 };
 type Activity = {
   id: string;
@@ -288,6 +289,49 @@ function titleOf(h: string): string {
   return cut.length >= 12 && cut.length < h.length ? cut : h;
 }
 
+// Conditions a person states about their own plan. "drive to school alone with
+// my permit" is not one fact but three: the activity (permit driving), and the
+// condition (alone) that contradicts what the permit actually allows. Detecting
+// the condition is what lets the app answer "no" instead of listing rules and
+// leaving you to notice the conflict yourself.
+//
+// Phrase matching, not a model. Deliberately narrow: a missed condition just
+// falls back to showing the rules, but a WRONG one would tell someone their
+// legal plan is illegal, which is the worse failure.
+const SIGNALS: { id: string; phrases: string[] }[] = [
+  {
+    id: 'alone',
+    phrases: [
+      'alone', 'by myself', 'on my own', 'without my parents', 'without a parent',
+      'without my mom', 'without my dad', 'no adult', 'nobody else', 'by himself',
+      'by herself', 'by themselves',
+    ],
+  },
+  {
+    id: 'on-pavement',
+    phrases: [
+      'on the street', 'on the road', 'on the highway', 'on pavement',
+      'on a paved', 'down the street', 'through town', 'on the freeway',
+    ],
+  },
+  {
+    id: 'at-night',
+    phrases: [
+      'at night', 'after dark', 'at midnight', 'past midnight', 'late at night',
+      'after 10', 'after 11', 'at 11pm', 'at midnight', 'overnight',
+    ],
+  },
+];
+
+function detectSignals(raw: string): Set<string> {
+  const q = raw.toLowerCase();
+  const found = new Set<string>();
+  for (const sig of SIGNALS) {
+    if (sig.phrases.some((ph) => q.includes(ph))) found.add(sig.id);
+  }
+  return found;
+}
+
 // Does this query name something we wrote a real answer for? Same matching
 // shape as the lexicon: whole phrases against the raw string, single words
 // against stems, so "ebikes" and "riding my ebike" both land on the e-bike card.
@@ -335,6 +379,7 @@ export default function App() {
   const settled = useDeferredValue(query);
   const { hits, total } = useMemo(() => search(settled), [settled]);
   const hero = useMemo(() => matchActivity(settled), [settled]);
+  const signals = useMemo(() => detectSignals(settled), [settled]);
   const searching = tokenize(settled).length > 0;
 
   if (screen.kind === 'detail') {
@@ -382,6 +427,7 @@ export default function App() {
                 {hero ? (
                   <Hero
                     activity={hero}
+                    signals={signals}
                     onOpen={(citation, url) => {
                       // Prefer our own reader so the statute opens in the app
                       // with its in-force flags; fall back to the official
@@ -609,13 +655,40 @@ function About({ onBack }: { onBack: () => void }) {
 // trust us. Rules we are not certain about say so instead of being dropped.
 function Hero({
   activity,
+  signals,
   onOpen,
 }: {
   activity: Activity;
+  signals: Set<string>;
   onOpen: (citation: string, url: string) => void;
 }) {
+  // Rules the person's own description runs into. Not a prediction about what
+  // happens to them, just: you said X, and this rule says X is the problem.
+  const conflicts = activity.rules.filter((r) =>
+    r.brokenBy?.some((b) => signals.has(b))
+  );
+
   return (
     <View style={styles.hero}>
+      {conflicts.length > 0 ? (
+        <View style={styles.verdict}>
+          <Text style={styles.verdictLabel}>THIS LOOKS LIKE A PROBLEM</Text>
+          {conflicts.map((r) => (
+            <View key={`v-${r.id}`}>
+              <Text style={styles.verdictText}>{r.text}</Text>
+              {r.appliesIf ? (
+                <Text style={styles.verdictIf}>Applies if: {r.appliesIf}</Text>
+              ) : null}
+              <Text style={styles.verdictCite}>{r.citation}</Text>
+            </View>
+          ))}
+          <Text style={styles.verdictFoot}>
+            Based on what you described. Read the rest before you decide, and
+            remember this is not legal advice.
+          </Text>
+        </View>
+      ) : null}
+
       <Text style={styles.heroLabel}>WHAT YOU NEED TO KNOW</Text>
       <Text style={styles.heroTitle}>{activity.displayName}</Text>
       <Text style={styles.heroSummary}>{activity.summary}</Text>
@@ -760,6 +833,23 @@ const styles = StyleSheet.create({
   hero: {
     backgroundColor: C.accentSoft, borderRadius: 14, padding: 16,
     marginBottom: 22, borderLeftWidth: 3, borderLeftColor: C.accent,
+  },
+  // The verdict. Amber, not red: this is "you have run into a rule", not a
+  // prediction that you will be arrested.
+  verdict: {
+    backgroundColor: C.warnSoft, borderRadius: 10, padding: 13, marginBottom: 14,
+    borderLeftWidth: 3, borderLeftColor: C.warn,
+  },
+  verdictLabel: {
+    color: C.warn, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+    marginBottom: 7,
+  },
+  verdictText: { color: C.ink, fontSize: 14.5, lineHeight: 21, fontWeight: '600' },
+  verdictIf: { color: C.muted, fontSize: 12.5, lineHeight: 18, marginTop: 5, fontStyle: 'italic' },
+  verdictCite: { color: C.warn, fontSize: 12.5, fontWeight: '700', marginTop: 6 },
+  verdictFoot: {
+    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 10,
+    borderTopWidth: 1, borderTopColor: '#E7D9BC', paddingTop: 8,
   },
   heroLabel: {
     color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
