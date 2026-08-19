@@ -8,7 +8,7 @@
   "text": "NRS 75.010 Definitions. As used in this title, unless the context otherwise requires, the words and terms defined in NRS 75.015 to 75.090 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2011, 2765 ; A 2019, 2821 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.015",
@@ -19,7 +19,7 @@
   "text": "NRS 75.015 “Blockchain” defined. “Blockchain” has the meaning ascribed to it in NRS 719.045 . (Added to NRS by 2019, 2821 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec015",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.020",
@@ -30,7 +30,7 @@
   "text": "NRS 75.020 “Deliver” and “delivery” defined. “Deliver” or “delivery” means any method of delivery used in conventional commercial practice, including, without limitation, delivery by hand, mail, commercial delivery and, if authorized in accordance with NRS 75.150 , by electronic transmission. (Added to NRS by 2011, 2765 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.030",
@@ -41,7 +41,7 @@
   "text": "NRS 75.030 “Electronic” defined. “Electronic” means relating to any technology, process or system having electrical, digital, magnetic, wireless, optical, electromagnetic or similar characteristics or qualities. (Added to NRS by 2011, 2765 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.040",
@@ -52,7 +52,7 @@
   "text": "NRS 75.040 “Electronic record” defined. “Electronic record” means information that is stored in an electronic or other medium and is retrievable in paper form through an automated process used in conventional commercial practice or, if authorized in accordance with subsection 8 of NRS 75.150 , is otherwise retrievable in perceivable form. (Added to NRS by 2011, 2765 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.050",
@@ -63,7 +63,7 @@
   "text": "NRS 75.050 “Electronic transmission” and “electronically transmitted” defined. “Electronic transmission” or “electronically transmitted” means any form or process of communication not directly involving the physical transfer of paper or another tangible medium, including, without limitation, any form or process of communication through the use of or participation in a blockchain, which: 1. Is suitable for the retention, retrieval and reproduction of information by the recipient; and 2. Is retrievable and reproducible in paper form by the recipient through an automated process used in conventional commercial practice, unless otherwise authorized in accordance with subsection 8 of NRS 75.150 . (Added to NRS by 2011, 2766 ; A 2019, 2821 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.060",
@@ -74,7 +74,7 @@
   "text": "NRS 75.060 “Record” defined. “Record” means information that is inscribed on any tangible medium, including, without limitation, any writing or written instrument, or an electronic record. (Added to NRS by 2011, 2766 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.070",
@@ -85,7 +85,7 @@
   "text": "NRS 75.070 “Sign” and “signature” defined. “Sign” or “signature” means with the present intent to authenticate or adopt a record or identify oneself: 1. To execute or otherwise adopt a tangible symbol, name, word or mark, including, without limitation, any manual, facsimile or confirmed signature; or 2. To attach to or logically associate with an electronic transmission an electronic sound, symbol or process, including, without limitation, an electronic signature, in an electronic transmission. (Added to NRS by 2011, 2766 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.080",
@@ -96,7 +96,7 @@
   "text": "NRS 75.080 “Street address” defined. “Street address” of a registered agent means the actual physical location in this State at which a registered agent is available for service of process. As used in this section, “registered agent” has the meaning ascribed to it in NRS 77.230 . (Added to NRS by 2011, 2766 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.090",
@@ -107,7 +107,7 @@
   "text": "NRS 75.090 “Writing” and “written” defined. “Writing” or “written” means any information in the form of a record. (Added to NRS by 2011, 2766 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.150",
@@ -118,7 +118,7 @@
   "text": "NRS 75.150 Notices and other communications. 1. Except as otherwise provided by specific statute: (a) Any notice or other communication described in this title may be given or sent by any method of delivery and each agreement, instrument, certificate or other document enclosed with, or annexed or appended to, such notice or other communication shall be deemed part of the notice or communication solely for purposes of determining whether notice was duly given under this title and the organic rules of the entity giving or sending the notice or other communication; and (b) An electronic transmission must be in accordance with this section. 2. A notice or other communication given or sent pursuant to the organic law or organic rules of an entity may be delivered by electronic transmission if: (a) Consented to by the recipient or authorized by subsection 9; and (b) The electronic transmission contains or is accompanied by information from which the recipient can determine the date of the transmission. 3. Any consent under subsection 2 may be revoked by the person who consented by written or electronic notice to the person to whom the consent was delivered. Any such consent is deemed revoked if: (a) The person is unable to receive two consecutive electronic transmissions given by the entity or organization in accordance with such consent; and (b) Such inability becomes known to the secretary of the entity sending the electronic transmissions or to the transfer agent or other person responsible for the giving of notice or other communications. Ê The inadvertent failure to treat any such inability as a revocation does not invalidate any meeting or other action. 4. Unless otherwise agreed between sender and recipient, an electronic transmission is received when: (a) It enters an information processing system that the recipient has designated or uses for the purpose of receiving electronic transmissions or information of the type sent; and (b) It is in a form ordinarily capable of being processed by that system. 5. Receipt of an electronic acknowledgment from an information processing system described in paragraph (a) of subsection 4 establishes that an electronic transmission was received but, by itself, does not establish that the content sent corresponds to the content received. 6. An electronic transmission is received under this section even if no natural person is aware of its receipt. 7. Except as otherwise provided by specific statute, any notice or other communication, if in a comprehensible form or manner, is effective at the earliest of the following: (a) If in a physical form, when it is left at: (1) The address of a stockholder, member, partner or other owner of an entity, whichever is applicable, as it appears upon the records of the entity; (2) The residence or usual place of business of a director, manager or general partner, whichever is applicable; (3) The entity’s principal place of business; or (4) If to a recipient other than a stockholder, director, member, partner or other owner of an entity or an entity, such person’s residence or usual place of business; (b) If mailed by United States mail postage prepaid and correctly addressed to a stockholder, member, partner or other owner of an entity, upon deposit in the United States mail; (c) If mailed by United States mail postage prepaid and correctly addressed to a recipient other than a stockholder, member, partner or other owner of an entity, the earliest of: (1) If sent by registered or certified mail, return receipt requested, the date shown on the return receipt signed by or on behalf of the addressee; or (2) Five days after it is deposited in the United States mail; (d) If an electronic transmission, when it is received as provided in subsection 4; and (e) If oral, when communicated. Ê In the absence of fraud, an affidavit of the secretary of the entity or the transfer agent or any other agent of the entity that the notice has been given by a form of electronic transmission is prima facie evidence of the facts stated in the affidavit. 8. A notice or other communication may be in the form of an electronic transmission that cannot be directly reproduced in paper form by the recipient through an automated process used in conventional commercial practice only if: (a) The electronic transmission is otherwise retrievable in perceivable form; and (b) The sender and the recipient have consented in writing to the use of such form of electronic transmission. 9. If any provision of this title prescribes requirements for notices or other communication in particular circumstances, those requirements govern. If the organic rules of an entity prescribe requirements for notices or other communications, not inconsistent with this section or other provisions of this title, those requirements govern. The organic rules of an entity may authorize, require or prohibit delivery of notices of meetings of directors, managers, members, partners or other owners of the entity by electronic transmission. 10. In the event that any provisions of this section are deemed to modify, limit or supersede the federal Electronic Signatures in Global and National Commerce Act, 15 U.S.C. §§ 7001 et seq., the provisions of this section shall be deemed to control to the maximum extent permitted by section 102(a)(2) of that Act, 15 U.S.C. § 7002(a)(2). 11. As used in this section: (a) “Entity” has the meaning ascribed to it in NRS 77.060 . (b) “Organic law” has the meaning ascribed to it in NRS 77.170 . (c) “Organic rules” has the meaning ascribed to it in NRS 77.180 . (Added to NRS by 2011, 2766 ; A 2025, 792 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.160",
@@ -129,7 +129,7 @@
   "text": "NRS 75.160 Service of process on certain management persons. 1. Every nonresident of this State who, on or after October 1, 2013, accepts election or appointment, including reelection or reappointment, as a management person of an entity, or who, on or after October 1, 2014, serves in such capacity, and every resident of this State who accepts election or appointment or serves in such capacity and thereafter removes residence from this State shall be deemed, by the acceptance or by the service, to have consented to the appointment of the registered agent of the entity as an agent upon whom service of process may be made in all civil actions or proceedings brought in this State by, on behalf of or against the entity in which the management person is a necessary or proper party, or in any action or proceeding against the management person for a violation of a duty in such capacity, whether or not the person continues to serve as the management person at the time the action or proceeding is commenced. The acceptance or the service by the management person shall be deemed to be signification of the consent of the management person that any process so served has the same legal force and validity as if served upon the management person within this State. 2. Service of process must be effected by serving the registered agent with a true copy in the manner provided by law for service of process. In addition, the party serving the registered agent shall, within 7 days after such service, send by registered or certified mail, postage prepaid, copies of the documents served upon the registered agent, together with a statement that service is being made pursuant to this section, addressed to the management person at the address as it appears on the records of the Secretary of State, or if no such address appears, at the address last known to the serving party. 3. The appointment of the registered agent is irrevocable. If any entity or management person fails to appoint a registered agent, or fails to file a statement of change of registered agent pursuant to NRS 77.340 before the effective date of a vacancy in the agency pursuant to NRS 77.330 or 77.370 , on the production of a certificate of the Secretary of State showing either fact, which is conclusive evidence of the fact so certified to be made a part of the return of service, or if the street address of the registered agent of the entity is not staffed as required pursuant to NRS 14.020 , which fact is to be made part of the return of service, the management person may be served with any and all legal process, or a demand or notice described in NRS 14.020 , by delivering a copy to the Secretary of State or, in the absence of the Secretary of State, to any deputy secretary of state, and such service is valid to all intents and purposes. The copy must: (a) Include a specific citation to the provisions of this section. The Secretary of State may refuse to accept such service if the proper citation is not included. (b) Be accompanied by a fee of $10. Ê The Secretary of State shall keep a copy of the legal process received pursuant to this section in the Office of the Secretary of State for at least 1 year after receipt thereof and shall make those records available for public inspection during normal business hours. 4. In all cases of service pursuant to subsection 3, the defendant has 40 days, exclusive of the day of service, within which to answer or plead. Before such service is authorized, the plaintiff shall make or cause to be made and filed an affidavit setting forth the facts, showing that due diligence has been used to ascertain the whereabouts of the management person to be served, and the facts showing that direct or personal service on, or notice to, the management person cannot be made. 5. If it appears from the affidavit that there is a last known address of the management person, the plaintiff shall, in addition to and after such service on the Secretary of State, mail or cause to be mailed to the management person at such address, by registered or certified mail, a copy of the summons and a copy of the complaint, and in all such cases the defendant has 40 days after the date of the mailing within which to appear in the action. 6. Service pursuant to subsection 3 provides an additional manner of serving process, and does not affect the validity of any other valid service. 7. In any action in which any management person has been served with process pursuant to subsection 2, the time in which a defendant is required to appear and file a responsive pleading must be computed from the date of mailing by the serving party. The court may grant an extension of time as may be necessary to afford the management person reasonable opportunity to defend the action. 8. In a charter or other writing, a management person or owner of any entity may consent to be subject to the nonexclusive jurisdiction of the courts of, or arbitration in, a specified jurisdiction, or the exclusive jurisdiction of the courts of this State, or the exclusivity of arbitration in a specified jurisdiction or this State, and to be served with process in the manner prescribed in the charter or other writing. Notwithstanding any other provision of this subsection, except by agreeing to arbitrate any arbitrable matter in a specified jurisdiction or in this State, an owner of an entity who is not a management person may not waive its right to maintain a legal action or proceeding in the courts of this State with respect to matters relating to the organization or internal affairs of an entity. Without limiting or affecting the enforceability under the laws of this State governing corporations of any consent or agreement by a management person or stockholder of a corporation, this subsection does not apply to an entity which is a corporation. 9. This section does not limit or affect the right to serve process in any other manner now existing or hereafter enacted. This section is an extension of, and not a limitation upon, the right otherwise existing of service of legal process upon nonresidents. 10. As used in this section: (a) “Charter” means the articles of organization or an operating agreement of a limited-liability company, the certificate of limited partnership or partnership agreement of a limited partnership or the certificate of trust or governing instrument of a business trust. (b) “Entity” means a domestic: (1) Corporation, whether or not for profit; (2) Limited-liability company; (3) Limited partnership; or (4) Business trust. (c) “Management person” means a director, officer, manager, managing member, general partner or trustee of an entity. (d) “Owner” means a member of a limited-liability company, limited partner of a limited partnership or beneficial owner of a business trust. (e) “Registered agent” has the meaning ascribed to it in NRS 77.230 . (Added to NRS by 2013, 1267 ; A 2021, 1496 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec160",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.170",
@@ -140,7 +140,7 @@
   "text": "NRS 75.170 Veterans service organizations and agents and officers thereof exempt from fees. 1. Notwithstanding any other provision of law, a veterans service organization and any agent or officer of a veterans service organization are exempt from any fees imposed pursuant to this title. 2. As used in this section, “veterans service organization” means any organization recognized by the United States Secretary of Veterans Affairs pursuant to 38 U.S.C. § 5902 for the representation of veterans. (Added to NRS by 2023, 2784 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec170",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-75.180",
@@ -151,7 +151,7 @@
   "text": "NRS 75.180 Secretary of State prohibited from collecting or disclosing certain information identifying certain donors. [Effective July 1, 2027.] Pursuant to NRS 239B.027 , in carrying out the requirements of this title, the Secretary of State shall not collect or disclose any information that directly identifies a person as a donor of financial support to a nonprofit organization. (Added to NRS by 2025, 628 , effective July 1, 2027)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-075.html#NRS075Sec180",
   "status": "active",
-  "scrapedAt": "2026-08-17",
+  "scrapedAt": "2026-08-19",
   "effective": {
    "label": "Effective July 1, 2027.",
    "isCurrent": false

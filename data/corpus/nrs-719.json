@@ -8,7 +8,7 @@
   "text": "NRS 719.010 Short title. This chapter may be cited as the Uniform Electronic Transactions Act. (Added to NRS by 2001, 2714 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec010",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.020",
@@ -19,7 +19,7 @@
   "text": "NRS 719.020 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 719.030 to 719.185 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2001, 2714 ; A 2017, 2572 ; 2019, 2819 , 2826 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec020",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.030",
@@ -30,7 +30,7 @@
   "text": "NRS 719.030 “Agreement” defined. “Agreement” means the bargain of the parties in fact, as found in their language or inferred from other circumstances and from rules, regulations and procedures given the effect of agreements under laws otherwise applicable to a particular transaction. (Added to NRS by 2001, 2714 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec030",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.040",
@@ -41,7 +41,7 @@
   "text": "NRS 719.040 “Automated transaction” defined. “Automated transaction” means a transaction conducted or performed, in whole or in part, by electronic means or electronic records, in which the acts or records of one or both parties are not reviewed by a natural person in the ordinary course in forming a contract, performing under an existing contract or fulfilling an obligation required by the transaction. (Added to NRS by 2001, 2714 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec040",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.045",
@@ -52,7 +52,7 @@
   "text": "NRS 719.045 “Blockchain” defined. 1. “Blockchain” means an electronic record of transactions or other data which is: (a) Uniformly ordered; (b) Processed using a decentralized method by which one or more computers or machines verify the recorded transactions or other data; (c) Redundantly maintained by one or more computers or machines to guarantee the consistency or nonrepudiation of the recorded transactions or other data; and (d) Validated by the use of cryptography. 2. The term includes, without limitation, a public blockchain. (Added to NRS by 2017, 2572 ; A 2019, 2819 , 2826 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec045",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.050",
@@ -63,7 +63,7 @@
   "text": "NRS 719.050 “Computer program” defined. “Computer program” means a set of statements or instructions to be used directly or indirectly in an information processing system in order to bring about a certain result. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec050",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.060",
@@ -74,7 +74,7 @@
   "text": "NRS 719.060 “Contract” defined. “Contract” means the total legal obligation resulting from the parties’ agreement as affected by this chapter and other applicable law. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec060",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.070",
@@ -85,7 +85,7 @@
   "text": "NRS 719.070 “Electronic” defined. “Electronic” means relating to technology having electrical, digital, magnetic, wireless, optical, electromagnetic or similar capabilities. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec070",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.080",
@@ -96,7 +96,7 @@
   "text": "NRS 719.080 “Electronic agent” defined. “Electronic agent” means a computer program or an electronic or other automated means used independently to initiate an action or respond to electronic records or performances in whole or in part, without review or action by a natural person. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.090",
@@ -107,7 +107,7 @@
   "text": "NRS 719.090 “Electronic record” defined. “Electronic record” means a record created, generated, sent, communicated, received or stored by electronic means. The term includes, without limitation, a blockchain. (Added to NRS by 2001, 2715 ; A 2017, 2572 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.100",
@@ -118,7 +118,7 @@
   "text": "NRS 719.100 “Electronic signature” defined. “Electronic signature” means an electronic sound, symbol or process attached to or logically associated with a record and executed or adopted by a person with the intent to sign the record. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec100",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.110",
@@ -129,7 +129,7 @@
   "text": "NRS 719.110 “Governmental agency” defined. “Governmental agency” means an executive, legislative or judicial agency, department, board, commission, authority, institution or instrumentality of the Federal Government or of a state or of a county, municipality or other political subdivision of a state. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec110",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.120",
@@ -140,7 +140,7 @@
   "text": "NRS 719.120 “Information” defined. “Information” means data, text, images, sounds, codes, computer programs, software, databases or the like. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec120",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.130",
@@ -151,7 +151,7 @@
   "text": "NRS 719.130 “Information processing system” defined. “Information processing system” means an electronic system for creating, generating, sending, receiving, storing, displaying or processing information. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec130",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.140",
@@ -162,7 +162,7 @@
   "text": "NRS 719.140 “Person” defined. “Person” includes a governmental agency and a public corporation. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec140",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.145",
@@ -173,7 +173,7 @@
   "text": "NRS 719.145 “Public blockchain” defined. “Public blockchain” means an electronic record of transactions or other data which: 1. Is uniformly ordered; 2. Is processed using a decentralized method by which two or more unaffiliated computers or machines verify the recorded transactions or other data; 3. Is redundantly maintained by two or more unaffiliated computers or machines to guarantee the consistency or nonrepudiation of the recorded transactions or other data; 4. Is validated by the use of cryptography; and 5. Does not restrict the ability of any computer or machine to: (a) View the network on which the record is maintained; or (b) Maintain or validate the state of the public blockchain. (Added to NRS by 2019, 2818 , 2825 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec145",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.150",
@@ -184,7 +184,7 @@
   "text": "NRS 719.150 “Record” defined. “Record” means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec150",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.160",
@@ -195,7 +195,7 @@
   "text": "NRS 719.160 “Security procedure” defined. “Security procedure” means a procedure employed for the purpose of verifying that an electronic signature, record or performance is that of a specific person or for detecting changes or errors in the information in an electronic record. The term includes a procedure that requires the use of algorithms or other codes, identifying words or numbers, encryption or callback, or other acknowledgment procedures. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec160",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.170",
@@ -206,7 +206,7 @@
   "text": "NRS 719.170 “State” defined. “State” means a state of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands or any territory or insular possession subject to the jurisdiction of the United States. The term includes an Indian tribe or band, or Alaskan native village, which is recognized by federal law or formally acknowledged by a state. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec170",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.175",
@@ -217,7 +217,7 @@
   "text": "NRS 719.175 “State of the public blockchain” defined. “State of the public blockchain” means the cumulative record of data on a public blockchain, consisting of the first block of the public blockchain, all finalized transactions on the public blockchain and all block rewards recorded on the public blockchain. (Added to NRS by 2019, 2818 , 2826 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec175",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.180",
@@ -228,7 +228,7 @@
   "text": "NRS 719.180 “Transaction” defined. “Transaction” means an action or set of actions occurring between two or more persons relating to the conduct of business, commercial or governmental affairs. (Added to NRS by 2001, 2715 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec180",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.185",
@@ -239,7 +239,7 @@
   "text": "NRS 719.185 “Unaffiliated computers or machines” defined. “Unaffiliated computers or machines” means computers or machines that are not under common ownership or control. (Added to NRS by 2019, 2818 , 2826 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec185",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.200",
@@ -250,7 +250,7 @@
   "text": "NRS 719.200 Scope. 1. Except as otherwise provided in subsection 2, the provisions of this chapter apply to electronic records and electronic signatures relating to a transaction. 2. The provisions of this chapter do not apply to a transaction to the extent it is governed by: (a) Except as otherwise specifically provided by law, a law governing the creation and execution of wills, codicils or testamentary trusts; (b) The Uniform Commercial Code other than NRS 104.1306 , 104.2101 to 104.2725 , inclusive, and 104A.2101 to 104A.2532 , inclusive; or (c) The provisions of NRS 439.581 to 439.597 , inclusive, and the regulations adopted pursuant thereto. 3. The provisions of this chapter apply to an electronic record or electronic signature otherwise excluded from the application of this chapter under subsection 2 to the extent it is governed by a law other than those specified in subsection 2. 4. A transaction subject to the provisions of this chapter is also subject to other applicable substantive law. (Added to NRS by 2001, 2715 ; A 2005, 885 ; 2011, 1765 ; 2017, 3457 ; 2023, 1856 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec200",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.210",
@@ -261,7 +261,7 @@
   "text": "NRS 719.210 Prospective application; application of Electronic Signatures in Global and National Commerce Act. 1. The provisions of this chapter apply to any electronic record or electronic signature created, generated, sent, communicated, received or stored on or after October 1, 2001. 2. The provisions of section 101(c) of the Electronic Signatures in Global and National Commerce Act, 15 U.S.C. §§ 7001 et seq., apply under this chapter to a transaction in which a natural person acquires goods or services that are used primarily for personal, family or household purposes. (Added to NRS by 2001, 2716 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec210",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.220",
@@ -272,7 +272,7 @@
   "text": "NRS 719.220 Use of electronic records and electronic signatures; variation by agreement. 1. The provisions of this chapter do not require a record or signature to be created, generated, sent, communicated, received, stored or otherwise processed or used by electronic means or in electronic form. 2. The provisions of this chapter apply only to transactions between parties each of whom has agreed to conduct transactions by electronic means. Whether the parties agree to conduct a transaction by electronic means is determined from the context and surrounding circumstances, including the parties’ conduct. 3. A party that agrees to conduct a transaction by electronic means may refuse to conduct other transactions by electronic means. The right granted by this subsection may not be waived by agreement. 4. Except as otherwise provided in this chapter, the effect of any of the provisions of this chapter may be varied by agreement. The presence in certain provisions of this chapter of the words “unless otherwise agreed” or words of similar import does not imply that the effect of other provisions may not be varied by agreement. 5. Whether an electronic record or electronic signature has legal consequences is determined by the provisions of this chapter and other applicable law. (Added to NRS by 2001, 2716 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec220",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.230",
@@ -283,7 +283,7 @@
   "text": "NRS 719.230 Application and construction: Promotion of uniformity. In applying and construing this uniform act, consideration must be given to the need to promote uniformity of the law with respect to its subject matter among states that enact it. (Added to NRS by 2001, 2721 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec230",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.240",
@@ -294,7 +294,7 @@
   "text": "NRS 719.240 Legal recognition of electronic records, electronic signatures and electronic contracts. 1. A record or signature may not be denied legal effect or enforceability solely because it is in electronic form. 2. A contract may not be denied legal effect or enforceability solely because an electronic record was used in its formation. 3. If a law requires a record to be in writing, an electronic record satisfies the law. 4. If a law requires a signature, an electronic signature satisfies the law. (Added to NRS by 2001, 2716 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec240",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.245",
@@ -305,7 +305,7 @@
   "text": "NRS 719.245 Use of public blockchain to secure information does not affect right to ownership or use of information; exception. 1. A person who uses a public blockchain to secure information that the person owns or has the right to use does not thereby relinquish any right of ownership or use with respect to the information, except to the extent that an agreement of the person expressly provides for the transfer of such a right. 2. Nothing contained in subsection 1 shall be deemed to affect the status of, or any right or obligation established by law with respect to, any document that is: (a) Filed with or otherwise submitted to a governmental agency or official, including, without limitation, any document that is submitted for recording in the office of a county recorder; or (b) A public record for the purposes of NRS 239.010 . (Added to NRS by 2019, 2818 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec245",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.250",
@@ -316,7 +316,7 @@
   "text": "NRS 719.250 Provision of information in writing; presentation of records. 1. If parties have agreed to conduct a transaction by electronic means and a law requires that a contract or other record relating to the transaction be in writing, the legal effect, validity or enforceability of the contract or other record may be denied if an electronic record of the contract or other record is not in a form that is capable of being retained and accurately reproduced for later reference by all parties or other persons who are entitled to retain the contract or record. 2. If a law other than this chapter requires a record to be posted or displayed in a certain manner, to be sent, communicated or transmitted by a specified method or to contain information that is formatted in a certain manner, the following rules apply: (a) The record must be posted or displayed in the manner specified in the other law. (b) Except as otherwise provided in paragraph (b) of subsection 6, the record must be sent, communicated or transmitted by the method specified in the other law. (c) The record must contain the information formatted in the manner specified in the other law. 3. If a sender inhibits the ability of a recipient to store or print an electronic record, the electronic record is not enforceable against the recipient. 4. A requirement that a notice be in writing is not satisfied by providing or delivering the notice electronically if the notice is a notice of: (a) The cancellation or termination of service by a public utility; (b) Default, acceleration, repossession, foreclosure or eviction, or the right to cure, under a credit agreement secured by, or a rental agreement for, a primary residence of a natural person; (c) The cancellation or termination of a policy of health insurance, benefits received pursuant to a policy of health insurance or benefits received pursuant to a policy of life insurance, excluding annuities; or (d) The recall of a product, or material failure of a product, that risks endangering the health or safety of a person. 5. A requirement that a document be in writing is not satisfied by providing or delivering the document electronically if the document is required to accompany any transportation or handling of hazardous materials, pesticides, or other toxic or dangerous materials. 6. The requirements of this section may not be varied by agreement, but: (a) To the extent a law other than this chapter requires that a contract or other record relating to a transaction be in writing but permits that requirement to be varied by agreement, the provisions of subsection 1 concerning the denial of the legal effect, validity or enforceability of a contract or other record relating to a transaction may also be varied by agreement; and (b) A requirement under a law other than this chapter to send, communicate or transmit a record by first-class mail, postage prepaid, regular United States mail, may be varied by agreement to the extent permitted by the other law. (Added to NRS by 2001, 2716 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec250",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.260",
@@ -327,7 +327,7 @@
   "text": "NRS 719.260 Attribution and effect of electronic record and electronic signature. 1. An electronic record or electronic signature is attributable to a person if it was the act of the person. The act of the person may be shown in any manner, including a showing of the efficacy of any security procedure applied to determine the person to whom the electronic record or electronic signature was attributable. 2. The effect of an electronic record or electronic signature attributed to a person under subsection 1 is determined from the context and surrounding circumstances at the time of its creation, execution or adoption, including the parties’ agreement, if any, and otherwise as provided by law. (Added to NRS by 2001, 2717 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec260",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.270",
@@ -338,7 +338,7 @@
   "text": "NRS 719.270 Effect of change or error. If a change or error in an electronic record occurs in a transmission between parties to a transaction, the following rules apply: 1. If the parties have agreed to use a security procedure to detect changes or errors and one party has conformed to the procedure, but the other party has not, and the nonconforming party would have detected the change or error had that party also conformed, the conforming party may avoid the effect of the changed or erroneous electronic record. 2. In an automated transaction involving a natural person, the natural person may avoid the effect of an electronic record that resulted from an error made in dealing with the electronic agent of another person if the electronic agent did not provide an opportunity for the prevention or correction of the error and, at the time the natural person learns of the error, the natural person: (a) Promptly notifies the other person of the error and that the natural person did not intend to be bound by the electronic record received by the other person; (b) Takes reasonable steps, including steps that conform to the other person’s reasonable instructions, to return to the other person or, if instructed by the other person, to destroy the consideration received, if any, as a result of the erroneous electronic record; and (c) Has not used or received any benefit or value from the consideration, if any, received from the other person. 3. If neither subsection 1 nor subsection 2 applies, the change or error has the effect provided by other law, including the law of mistake and the parties’ contract, if any. 4. Subsections 2 and 3 may not be varied by agreement. (Added to NRS by 2001, 2718 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec270",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.280",
@@ -349,7 +349,7 @@
   "text": "NRS 719.280 Notarization and acknowledgment. If a law requires a signature or record to be notarized, acknowledged, verified or made under oath, the requirement is satisfied if the electronic signature of the person authorized to perform those acts, together with all other information required to be included by other applicable law, is attached to or logically associated with the signature or record. (Added to NRS by 2001, 2718 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec280",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.290",
@@ -360,7 +360,7 @@
   "text": "NRS 719.290 Retention of electronic records; originals. 1. If a law requires that a record be retained, the requirement is satisfied by retaining an electronic record of the information in the record which: (a) Accurately reflects the information set forth in the record after it was first generated in its final form as an electronic record or otherwise; and (b) Remains accessible to all persons who are legally entitled to access to the record, for the period required by law, in a form that is capable of being accurately reproduced for later reference. 2. A requirement to retain a record in accordance with subsection 1 does not apply to any information the sole purpose of which is to enable the record to be sent, communicated or received. 3. A person may satisfy subsection 1 by using the services of another person if the requirements of that subsection are satisfied. 4. If a law requires a record to be presented or retained in its original form, or provides consequences if the record is not presented or retained in its original form, that law is satisfied by an electronic record retained in accordance with subsection 1. 5. If a law requires retention of a check, that requirement is satisfied by retention of an electronic record of the information on the front and back of the check in accordance with subsection 1. 6. A record retained as an electronic record in accordance with subsection 1 satisfies a law requiring a person to retain a record for evidentiary, audit or like purposes, unless a law enacted after October 1, 2001, specifically prohibits the use of an electronic record for the specified purpose. 7. This section does not preclude a governmental agency of this state from specifying additional requirements for the retention of a record subject to the agency’s jurisdiction. (Added to NRS by 2001, 2718 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec290",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.300",
@@ -371,7 +371,7 @@
   "text": "NRS 719.300 Admissibility in evidence. In a proceeding, evidence of a record or signature must not be excluded solely because it is in electronic form. (Added to NRS by 2001, 2719 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec300",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.310",
@@ -382,7 +382,7 @@
   "text": "NRS 719.310 Automated transaction. In an automated transaction, the following rules apply: 1. A contract may be formed by the interaction of electronic agents of the parties, even if no natural person was aware of or reviewed the electronic agents’ actions or the resulting terms and agreements. 2. A contract may be formed by the interaction of an electronic agent and a natural person, acting on his or her own behalf or for another person, as by an interaction in which the natural person performs actions that the natural person is free to refuse to perform and which the natural person knows or has reason to know will cause the electronic agent to complete the transaction or performance. 3. The terms of the contract are determined by the substantive law applicable to it. (Added to NRS by 2001, 2719 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec310",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.320",
@@ -393,7 +393,7 @@
   "text": "NRS 719.320 Time and place of sending and receipt. 1. Unless otherwise agreed between the sender and the recipient, an electronic record is sent when it: (a) Is addressed properly or otherwise directed properly to an information processing system that the recipient has designated or uses for the purpose of receiving electronic records or information of the type sent and from which the recipient is able to retrieve the electronic record; (b) Is in a form capable of being processed by that system; and (c) Enters an information processing system outside the control of the sender or of a person that sent the electronic record on behalf of the sender or enters a region of the information processing system designated or used by the recipient which is under the control of the recipient. 2. Unless otherwise agreed between a sender and the recipient, an electronic record is received when: (a) It enters an information processing system that the recipient has designated or uses for the purpose of receiving electronic records or information of the type sent and from which the recipient is able to retrieve the electronic record; and (b) It is in a form capable of being processed by that system. 3. Subsection 2 applies even if the place the information processing system is located is different from the place the electronic record is deemed to be received under subsection 4. 4. Unless otherwise expressly provided in the electronic record or agreed between the sender and the recipient, an electronic record is deemed to be sent from the sender’s place of business and to be received at the recipient’s place of business. For purposes of this subsection, the following rules apply: (a) If the sender or recipient has more than one place of business, the place of business is the place having the closest relationship to the underlying transaction. (b) If the sender or the recipient does not have a place of business, the place of business is the sender’s or recipient’s residence, as the case may be. 5. An electronic record is received under subsection 2 even if no natural person is aware of its receipt. 6. Receipt of an electronic acknowledgment from an information processing system described in subsection 2 establishes that a record was received but, by itself, does not establish that the content sent corresponds to the content received. 7. If a person is aware that an electronic record purportedly sent under subsection 1, or purportedly received under subsection 2, was not actually sent or received, the legal effect of the sending or receipt is determined by other applicable law. Except to the extent permitted by the other law, the requirements of this subsection may not be varied by agreement. (Added to NRS by 2001, 2719 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec320",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.330",
@@ -404,7 +404,7 @@
   "text": "NRS 719.330 Transferable records. 1. In this section, “transferable record” means an electronic record that: (a) Would be a note under NRS 104.3101 to 104.3605 , inclusive, or a document under NRS 104.7101 to 104.7603 , inclusive, if the electronic record were in writing; and (b) The issuer of the electronic record expressly has agreed is a transferable record. 2. A person has control of a transferable record if a system employed for evidencing the transfer of interests in the transferable record reliably establishes him or her as the person to whom the transferable record was issued or transferred. 3. A system satisfies subsection 2, and a person is deemed to have control of a transferable record, if the transferable record is created, stored and assigned in such a manner that: (a) A single authoritative copy of the transferable record exists which is unique, identifiable, and, except as otherwise provided in paragraphs (d), (e) and (f), unalterable; (b) The authoritative copy identifies the person asserting control as: (1) The person to whom the transferable record was issued; or (2) If the authoritative copy indicates that the transferable record has been transferred, the person to whom the transferable record was most recently transferred; (c) The authoritative copy is communicated to and maintained by the person asserting control or its designated custodian; (d) Copies or revisions that add or change an identified assignee of the authoritative copy can be made only with the consent of the person asserting control; (e) Each copy of the authoritative copy and any copy of a copy is readily identifiable as a copy that is not the authoritative copy; and (f) Any revision of the authoritative copy is readily identifiable as authorized or unauthorized. 4. Except as otherwise agreed, a person having control of a transferable record is the holder, as defined in paragraph (v) of subsection 2 of NRS 104.1201 , of the transferable record and has the same rights and defenses as a holder of an equivalent record or writing under the Uniform Commercial Code, including, if the applicable statutory requirements under NRS 104.7501 or 104.9308 or subsection 1 of NRS 104.3302 are satisfied, the rights and defenses of a holder to whom a negotiable document of title has been duly negotiated, a purchaser, or a holder in due course, respectively. Delivery, possession and endorsement are not required to obtain or exercise any of the rights under this subsection. 5. Except as otherwise agreed, an obligor under a transferable record has the same rights and defenses as an equivalent obligor under equivalent records or writings under the Uniform Commercial Code. 6. If requested by a person against whom enforcement is sought, the person seeking to enforce the transferable record shall provide reasonable proof that the person is in control of the transferable record. Proof may include access to the authoritative copy of the transferable record and related business records sufficient to review the terms of the transferable record and to establish the identity of the person having control of the transferable record. (Added to NRS by 2001, 2720 ; A 2005, 886 ; 2023, 3255 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec330",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.340",
@@ -415,7 +415,7 @@
   "text": "NRS 719.340 Creation and retention of electronic records and conversion of written records by governmental agencies. Each governmental agency of this State shall determine whether, and the extent to which, it will create and retain electronic records and convert written records to electronic records. (Added to NRS by 2001, 2721 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec340",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.345",
@@ -426,7 +426,7 @@
   "text": "NRS 719.345 Governmental agency may be required to have certain electronic capabilities as condition of participation in state business portal. The Secretary of State may require a governmental agency of this State or a governmental agency of a political subdivision of this State, as a condition of participation in the state business portal established pursuant to chapter 75A of NRS, to send and accept electronic records and electronic signatures to and from other persons and otherwise create, generate, communicate, store, process, use and rely upon electronic records and electronic signatures. (Added to NRS by 2009, 2053 ; A 2015, 2676 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec345",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.350",
@@ -437,7 +437,7 @@
   "text": "NRS 719.350 Acceptance and distribution of electronic records by governmental agencies. 1. Except as otherwise provided in subsection 6 of NRS 719.290 and NRS 719.345 and 719.360 , each governmental agency of this state shall determine whether, and the extent to which, it will send and accept electronic records and electronic signatures to and from other persons and otherwise create, generate, communicate, store, process, use and rely upon electronic records and electronic signatures. 2. Except as otherwise provided in NRS 719.345 , to the extent that a governmental agency uses electronic records and electronic signatures under subsection 1, the governmental agency, giving due consideration to security, may specify: (a) The manner and format in which the electronic records must be created, generated, sent, communicated, received and stored and the systems established for those purposes; (b) If electronic records must be signed by electronic means, the type of electronic signature required, the manner and format in which the electronic signature must be affixed to the electronic record, and the identity of, or criteria that must be met by, any third party used by a person filing a document to facilitate the process; (c) Processes and procedures as appropriate to ensure adequate preservation, disposition, integrity, security, confidentiality and auditability of electronic records; and (d) Any other required attributes for electronic records which are specified for corresponding nonelectronic records or reasonably necessary under the circumstances. 3. Except as otherwise provided in subsection 6 of NRS 719.290 and NRS 719.345 and 719.360 , the provisions of this chapter do not require a governmental agency of this state to use or permit the use of electronic records or electronic signatures. (Added to NRS by 2001, 2721 ; A 2009, 2053 ; 2019, 2819 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec350",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-719.360",
@@ -448,6 +448,6 @@
   "text": "NRS 719.360 Governmental agencies and political subdivisions to consider use of equipment and software to enable use of electronic records and signatures; acceptance of certified copies in electronic form; fees. 1. Whenever a governmental agency of this State or a political subdivision of this State acquires, replaces or updates an information processing system or any part of such a system, including, without limitation, any software used by the system, the governmental agency shall consider the use of equipment and software that enables the governmental agency to send, accept, process, use and rely upon electronic records and electronic signatures, including, without limitation, certified copies of the records of the governmental agency in electronic form or certified copies of the records of an originating agency that are provided in electronic form. 2. If a person provides a receiving agency with a certified copy of a record of an originating agency, the receiving agency: (a) Shall not refuse to accept, process, use or rely upon the certified copy solely because it is in electronic form. (b) May refuse to accept, process, use or rely upon the certified copy if it is in electronic form and the receiving agency would be required to acquire and pay for any equipment or software to accept, process, use or rely upon the certified copy in the form provided. 3. An originating agency may charge and collect the same fee for a certified copy in electronic form as is provided by law for a certified copy in paper form. 4. If a receiving agency incurs a fee or other cost for accepting or processing a certified copy in electronic form, the receiving agency may charge and collect a fee to accept or process such a copy, in an amount not to exceed the actual cost to the receiving agency of accepting or processing the copy. 5. As used in this section: (a) “Originating agency” means a governmental agency which attests that a certified copy described in subsection 2 is a true copy of a record of the governmental agency. (b) “Receiving agency” means a governmental agency of this State or a political subdivision of this State to which a certified copy is provided as described in subsection 2. (Added to NRS by 2019, 2818 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-719.html#NRS719Sec360",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]

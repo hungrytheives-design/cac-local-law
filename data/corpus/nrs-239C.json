@@ -8,7 +8,7 @@
   "text": "NRS 239C.010 Legislative declaration. The Legislature hereby finds and declares that: 1. The tragic events of September 11, 2001, have refocused attention on the importance of domestic preparedness for acts of terrorism and related emergencies. 2. The events of September 11, 2001, not only impacted our homeland, but also the way of life for all Nevadans. 3. More than ever, the Nevada Legislature, representatives of local government, law enforcement and other public safety personnel, health care workers and technical service providers must lead the charge in fighting against these destructive and demoralizing acts of violence with strong and effective procedural deterrents and enhanced criminal penalties. 4. While local efforts and plans to respond to acts of terrorism and related emergencies are comprehensive, additional statewide provisions are necessary to adequately prepare for acts of cyber-terrorism, environmental catastrophes and other related incidents. 5. As a result of the increased threat of terrorism, the Legislature is compelled to address critical infrastructures, governmental oversight and continuity, communications, and the protection of important government documents and plans. 6. It is therefore within the public interest that the Legislature enact provisions to: (a) Protect sensitive state documents and computer systems from cyber-terrorism; (b) Secure the State’s energy, telecommunications and water infrastructures; (c) Ensure the continuity of government in the event of a terrorist attack; (d) Develop policies providing for effective communication and interoperability among federal, state and local law enforcement and other first responders; (e) Provide safeguards in the issuance of government identification; and (f) Create an effective and comprehensive state oversight structure to coordinate these and other antiterrorism initiatives. (Added to NRS by 2003, 2451 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec010",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.020",
@@ -19,7 +19,7 @@
   "text": "NRS 239C.020 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 239C.030 to 239C.110 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2003, 2452 ; A 2005, 1533 ; 2007, 2963 ; 2011, 2880 ; 2025, 1847 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec020",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.030",
@@ -30,7 +30,7 @@
   "text": "NRS 239C.030 “Act of terrorism” defined. 1. “Act of terrorism” means any act that involves the use or attempted use of sabotage, coercion or violence which is intended to: (a) Cause great bodily harm or death to the general population; or (b) Cause substantial destruction, contamination or impairment of: (1) Any building or infrastructure, communications, transportation, utilities or services; or (2) Any natural resource or the environment. 2. As used in this section, “coercion” does not include an act of civil disobedience. (Added to NRS by 2003, 2452 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec030",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.040",
@@ -41,7 +41,7 @@
   "text": "NRS 239C.040 “Commission” defined. “Commission” means the Nevada Commission on Homeland Security created by NRS 239C.120 . (Added to NRS by 2003, 2452 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec040",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.045",
@@ -51,8 +51,8 @@
   "heading": "“Division” defined. [Repealed.]",
   "text": "NRS 239C.045 “Division” defined. Repealed. (See chapter 279, Statutes of Nevada 2025, at page 1885 .)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec045",
-  "status": "active",
-  "scrapedAt": "2026-08-17"
+  "status": "repealed",
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.050",
@@ -63,7 +63,7 @@
   "text": "NRS 239C.050 “Governmental utility” defined. “Governmental utility” means: 1. Any utility that is owned, operated or controlled by this State or an agency or instrumentality of this State, including, without limitation, the Colorado River Commission of Nevada. 2. Any utility that is owned, operated or controlled by any county, city, town, general improvement district, special district or other local governmental entity under the authority of any general law, special law or city charter or any cooperative, interlocal or other agreement. (Added to NRS by 2003, 2452 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec050",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.060",
@@ -74,7 +74,7 @@
   "text": "NRS 239C.060 “Information system” defined. “Information system” means any equipment, facility, structure, tower, cable, line, fiber, wire, computer hardware or software, procedures or technology used to transmit, receive, produce, collect, process, distribute or store information that is related to the protection of homeland security. (Added to NRS by 2003, 2452 ; A 2017, 529 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec060",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.065",
@@ -85,7 +85,7 @@
   "text": "NRS 239C.065 “Law enforcement agency” defined. “Law enforcement agency” means: 1. The sheriff’s office of a county; 2. A metropolitan police department; 3. A police department of an incorporated city; or 4. The Department of Public Safety. (Added to NRS by 2007, 2962 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec065",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.067",
@@ -96,7 +96,7 @@
   "text": "NRS 239C.067 “Office” defined. “Office” means the Office of Emergency Management within the Office of the Governor. (Added to NRS by 2025, 1847 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec067",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.070",
@@ -107,7 +107,7 @@
   "text": "NRS 239C.070 “Political subdivision” defined. “Political subdivision” means a city or county of this State. (Added to NRS by 2003, 2452 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec070",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.080",
@@ -118,7 +118,7 @@
   "text": "NRS 239C.080 “Response agency” defined. “Response agency” means an agency of this State or of a political subdivision that provides services related to law enforcement, firefighting, emergency medical care or public safety, including, without limitation, the Nevada National Guard. (Added to NRS by 2003, 2452 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.090",
@@ -129,7 +129,7 @@
   "text": "NRS 239C.090 “Restricted document” defined. “Restricted document” means any blueprint or plan of a school, place of worship, airport other than an international airport, gaming establishment, governmental building or any other building or facility which is likely to be targeted for a terrorist attack. (Added to NRS by 2003, 2453 ; A 2005, 1533 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec090",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.100",
@@ -140,7 +140,7 @@
   "text": "NRS 239C.100 “System of communication” defined. “System of communication” includes, without limitation, any public safety radio system or telecommunication system. (Added to NRS by 2003, 2453 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec100",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.105",
@@ -151,7 +151,7 @@
   "text": "NRS 239C.105 “Tribal government” defined. “Tribal government” means a federally recognized American Indian tribe pursuant to 25 C.F.R. §§ 83.1 to 83.13, inclusive. (Added to NRS by 2011, 2880 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec105",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.110",
@@ -162,7 +162,7 @@
   "text": "NRS 239C.110 “Utility” defined. 1. “Utility” means any public or private entity that: (a) Provides water service, wastewater service, electric service or natural gas service to 500 or more service locations; or (b) Operates any pipeline that is necessary to provide such service. 2. The term includes, without limitation: (a) A governmental utility. (b) A public utility that is regulated by the Public Utilities Commission of Nevada pursuant to chapter 704 of NRS. (c) A rural electric cooperative established pursuant to chapter 81 of NRS. (d) A cooperative association, nonprofit corporation, nonprofit association or provider of electric service which is declared to be a public utility pursuant to NRS 704.673 and which provides service only to its members. (e) A community water system that is subject to the requirements of 42 U.S.C. § 300i-2. (Added to NRS by 2003, 2453 ; A 2021, 263 ) NEVADA COMMISSION ON HOMELAND SECURITY",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec110",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.120",
@@ -173,7 +173,7 @@
   "text": "NRS 239C.120 Creation; appointment of members; terms; designation of officers. 1. The Nevada Commission on Homeland Security is hereby created. 2. The Governor shall appoint to the Commission 16 voting members that the Governor determines to be appropriate and who serve at the Governor’s pleasure, which must include at least: (a) The sheriff of each county whose population is 100,000 or more. (b) The chief of the county fire department in each county whose population is 100,000 or more. (c) A member of the medical community in a county whose population is 700,000 or more. (d) An employee of the largest incorporated city in each county whose population is 700,000 or more. (e) A representative recommended by the Inter-Tribal Council of Nevada, Inc., or its successor organization, to represent tribal governments in Nevada. (f) The Director of the Department of Public Safety or his or her designee. 3. The Governor shall appoint the President and CEO, or his or her designee, of the Nevada Broadcasters Association, or its successor organization, to serve as an ex officio voting member of the Commission. 4. The Governor shall appoint: (a) An officer of the United States Department of Homeland Security whom the Department of Homeland Security has designated for this State; (b) The agent in charge of the office of the Federal Bureau of Investigation in this State; (c) The Chief of the Office; and (d) The Deputy Director of the Office of Information Security and Cyber Defense appointed pursuant to NRS 242.101 , Ê as nonvoting members of the Commission. 5. The Senate Majority Leader shall appoint one member of the Senate as a nonvoting member of the Commission. 6. The Speaker of the Assembly shall appoint one member of the Assembly as a nonvoting member of the Commission. 7. The term of office of each member of the Commission who is a Legislator is 2 years. 8. The Governor or his or her designee shall: (a) Serve as Chair of the Commission; and (b) Appoint a member of the Commission to serve as Vice Chair of the Commission. (Added to NRS by 2003, 2453 ; A 2005, 1533 ; 2007, 2920 ; 2011, 1154 , 2880 ; 2017, 1639 ; 2019, 1292 ; 2023, 80 ; 2025, 1847 , 3556 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec120",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.130",
@@ -184,7 +184,7 @@
   "text": "NRS 239C.130 Meetings; quorum. 1. The Commission shall meet at the call of the Chair as frequently as required to perform its duties, but no less than quarterly. 2. A majority of the voting members of the Commission constitutes a quorum for the transaction of business, and a majority of those voting members present at any meeting is sufficient for any official action taken by the Commission. (Added to NRS by 2003, 2453 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec130",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.140",
@@ -195,7 +195,7 @@
   "text": "NRS 239C.140 Meetings of Commission and appointed committees: Compliance with Open Meeting Law; exceptions; confidentiality. 1. Except as otherwise provided in subsections 2 and 3, the Commission and any committee appointed pursuant to NRS 239C.170 shall comply with the provisions of chapter 241 of NRS and shall conduct all meetings in accordance with that chapter. 2. The Commission and, with the prior approval of the Commission, any committee appointed pursuant to NRS 239C.170 may hold a closed meeting to: (a) Receive security briefings; (b) Discuss procedures for responding to acts of terrorism and related emergencies; or (c) Discuss deficiencies in security with respect to public services, public facilities and infrastructure, Ê if the Commission or committee determines, upon a majority vote of its members, that the public disclosure of such matters would be likely to compromise, jeopardize or otherwise threaten the safety of the public. 3. Except as otherwise provided in NRS 239.0115 , all information and materials received or prepared by the Commission or any committee appointed pursuant to NRS 239C.170 during a meeting closed pursuant to subsection 2 and all minutes and audiovisual or electronic reproductions of such a meeting are confidential, not subject to subpoena or discovery, and not subject to inspection by the general public. (Added to NRS by 2003, 2454 ; A 2007, 2064 ; 2013, 825 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec140",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.150",
@@ -206,7 +206,7 @@
   "text": "NRS 239C.150 Compensation of members. 1. Each member of the Commission who is not a public employee is entitled to receive compensation of not more than $80 per day, as fixed by the Commission, while engaged in the business of the Commission. 2. A member of the Commission who is a public employee may not receive any compensation for his or her services as a member of the Commission. Any member of the Commission who is a public employee must be granted administrative leave from the member’s duties to engage in the business of the Commission without loss of his or her regular compensation. Such leave does not reduce the amount of the member’s other accrued leave. 3. Except during a regular or special session of the Legislature, each legislative member of the Commission is entitled to receive the compensation provided for a majority of the members of the Legislature during the first 60 days of the preceding regular session for each day or portion of a day during which the legislative member attends a meeting of the Commission or is otherwise engaged in the business of the Commission. The compensation and expenses of the legislative members of the Commission must be paid from the Legislative Fund. 4. In addition to any compensation received pursuant to this section, while engaged in the business of the Commission, each member and employee of the Commission is entitled to receive the per diem allowance and travel expenses provided for state officers and employees generally. (Added to NRS by 2003, 2453 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec150",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.160",
@@ -217,7 +217,7 @@
   "text": "NRS 239C.160 Duties. The Commission shall, within the limits of available money: 1. Make recommendations to the Governor, the Legislature, agencies of this State, political subdivisions, tribal governments, businesses located within this State and private persons who reside in this State with respect to actions and measures that may be taken to protect residents of this State and visitors to this State from potential acts of terrorism and related emergencies. 2. Upon consideration of the most recent statewide strategic plan prepared by the Office of Information Security and Cyber Defense pursuant to NRS 242.1285 , make recommendations to the Governor, through the Office, on the use of money received by the State from any homeland security grant or related program, including, without limitation, the State Homeland Security Grant Program and Urban Area Security Initiative, in accordance with the following: (a) The Office shall provide the Commission with program guidance and briefings; (b) The Commission must be provided briefings on existing and proposed projects, and shall consider statewide readiness capabilities and priorities for the use of money, administered by the Office, from any homeland security grant or related program; (c) The Commission shall serve as the public body which reviews and makes recommendations for the State’s applications to the Federal Government for homeland security grants or related programs, as administered by the Office; and (d) The Commission shall serve as the public body which recommends, subject to approval by the Governor, the distribution of money from any homeland security grant or related program for use by state, local and tribal government agencies and private sector organizations. 3. Propose goals and programs that may be set and carried out, respectively, to counteract or prevent potential acts of terrorism and related emergencies before such acts of terrorism and related emergencies can harm or otherwise threaten residents of this State and visitors to this State. 4. With respect to buildings, facilities, geographic features and infrastructure that must be protected from acts of terrorism and related emergencies to ensure the safety of the residents of this State and visitors to this State, including, without limitation, airports other than international airports, the Capitol Complex, dams, gaming establishments, governmental buildings, highways, hotels, information technology infrastructure, lakes, places of worship, power lines, public buildings, public utilities, reservoirs, rivers and their tributaries, and water facilities: (a) Identify and categorize such buildings, facilities, geographic features and infrastructure according to their susceptibility to and need for protection from acts of terrorism and related emergencies; and (b) Study and assess the security of such buildings, facilities, geographic features and infrastructure from acts of terrorism and related emergencies. 5. Examine the use, deployment and coordination of response agencies within this State to ensure that those agencies are adequately prepared to protect residents of this State and visitors to this State from acts of terrorism and related emergencies. 6. Assess, examine and review the use of information systems and systems of communication used by response agencies within this State to determine the degree to which such systems are compatible and interoperable. After conducting the assessment, examination and review, the Commission shall: (a) Establish a state plan setting forth criteria and standards for the compatibility and interoperability of those systems when used by response agencies within this State; and (b) Advise and make recommendations to the Governor relative to the compatibility and interoperability of those systems when used by response agencies within this State, with particular emphasis upon the compatibility and interoperability of public safety radio systems. 7. Assess, examine and review the operation and efficacy of telephone systems and related systems used to provide emergency 911 service. 8. To the extent practicable, cooperate and coordinate with the Office to avoid duplication of effort in developing policies and programs for preventing and responding to acts of terrorism and related emergencies. 9. Submit an annual briefing to the Governor assessing the preparedness of the State to counteract, prevent and respond to potential acts of terrorism and related emergencies, including, but not limited to, an assessment of response plans and vulnerability assessments of utilities, public entities and private business in this State. The briefing must be based on information and documents reasonably available to the Commission and must be compiled with the advice of the Office after all utilities, public entities and private businesses assessed have a reasonable opportunity to review and comment on the Commission’s findings. 10. Perform any other acts related to their duties set forth in subsections 1 to 9, inclusive, that the Commission determines are necessary to protect or enhance: (a) The safety and security of the State of Nevada; (b) The safety of residents of the State of Nevada; and (c) The safety of visitors to the State of Nevada. (Added to NRS by 2003, 2454 ; A 2005, 931 , 1534 ; 2011, 2881 ; 2017, 1640 ; 2025, 1848 , 3557 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec160",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.170",
@@ -228,7 +228,7 @@
   "text": "NRS 239C.170 Appointment of committees. 1. The Chair of the Commission shall, with the approval of the Commission, appoint a Committee on Finance and any other committees deemed necessary by the Chair to assist in carrying out the duties of the Commission. The Chair of the Commission shall appoint to a committee the number of voting members or nonvoting members, or both, that the Chair determines to be appropriate. The Chair may appoint any person the Chair deems appropriate to serve on a committee, except that a committee must include at least one member of the Commission. At its first meeting and annually thereafter, a committee shall select a chair and a vice chair from the members of the committee. 2. If a member of a committee formed pursuant to subsection 1 is a public employee, the member’s employer must grant the member administrative leave from his or her duties to serve on the committee without loss of the member’s regular compensation and without reducing the amount of any other accrued leave the member may have. (Added to NRS by 2003, 2455 ; A 2005, 1535 ; 2007, 2921 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec170",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.175",
@@ -239,7 +239,7 @@
   "text": "NRS 239C.175 Employment of staff. 1. The Chief of the Office may employ such persons in the classified service of the State as the Chief determines to be necessary to carry out the duties of the Commission, including, without limitation, an Executive Assistant to the Commission, a Policy Analyst to the Commission, a Grant Analyst to the Commission and a Specialist in Public Information to the Commission. 2. If the Chief of the Office employs persons pursuant to subsection 1, the salaries for those positions must be paid from the State General Fund or from money received as grants from the Federal Government to the extent allowable pursuant to federal law, or both. (Added to NRS by 2005, 1532 ; A 2021, 2089 ; 2025, 1850 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec175",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.180",
@@ -250,7 +250,7 @@
   "text": "NRS 239C.180 Staff assistance. The Governor shall provide, in addition to any persons employed pursuant to NRS 239C.175 , such staff assistance to the Commission as the Governor deems appropriate and may designate a state agency to provide such assistance. (Added to NRS by 2003, 2455 ; A 2005, 1535 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec180",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.190",
@@ -261,7 +261,7 @@
   "text": "NRS 239C.190 Gifts, grants and contributions. The Commission may apply for and receive gifts, grants, contributions or other money from governmental and private agencies, affiliated associations and other persons to carry out the provisions of this chapter and to defray expenses incurred by the Commission in the discharge of its duties. (Added to NRS by 2003, 2456 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec190",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.200",
@@ -272,7 +272,7 @@
   "text": "NRS 239C.200 Annual report of Governor. On or before February 15 of each year, the Governor shall: 1. Prepare a report setting forth: (a) The activities of the Commission; and (b) A description of any matters with respect to which the Commission held a closed meeting or closed a portion of a meeting, if any, accompanied by an explanation of the reasons why the Commission determined that the meeting or portion thereof needed to be closed; and 2. Submit a copy of the report to the Director of the Legislative Counsel Bureau for transmittal to: (a) If the Legislature is in session, the standing committees of the Legislature which have jurisdiction of the subject matter; or (b) If the Legislature is not in session, the Legislative Commission. (Added to NRS by 2003, 2455 ) CONFIDENTIAL AND RESTRICTED DOCUMENTS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec200",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.210",
@@ -283,7 +283,7 @@
   "text": "NRS 239C.210 Confidentiality of certain documents, records or other items of information upon declaration of Governor; penalties; decennial review. 1. A document, record or other item of information described in subsection 2 that is prepared and maintained for the purpose of preventing or responding to an act of terrorism is confidential, not subject to subpoena or discovery, not subject to inspection by the general public and may only be inspected by or released to: (a) Public safety and public health personnel; and (b) Except as otherwise provided in this subsection, the Legislative Auditor conducting a postaudit pursuant to NRS 218G.010 to 218G.555 , inclusive, and 218G.600 to 218G.625 , inclusive, Ê if the Governor determines, by executive order, that the disclosure or release of the document, record or other item of information would thereby create a substantial likelihood of compromising, jeopardizing or otherwise threatening the public health, safety or welfare. Any information that is inspected by or released to the Legislative Auditor pursuant to this subsection is not subject to the exception from confidentiality set forth in NRS 218G.130 . The Legislative Auditor may confirm that vulnerability assessments have been submitted to or are in the possession of a state agency that is the subject of a postaudit, but the assessments must not be inspected by or released to the Legislative Auditor. An employee of the Audit Division of the Legislative Counsel Bureau who is conducting a postaudit that includes access to documents or information subject to the provisions of this section must be properly cleared through federal criteria or state or local background investigation and instructed, trained or certified, as applicable, regarding the security sensitivity of the documents or information. 2. The types of documents, records or other items of information subject to executive order pursuant to subsection 1 are as follows: (a) Assessments, plans or records that evaluate or reveal the susceptibility of fire stations, police stations and other law enforcement stations to acts of terrorism or other related emergencies. (b) Drawings, maps, plans or records that reveal the critical infrastructure of primary buildings, facilities and other structures used for storing, transporting or transmitting water or electricity, natural gas or other forms of energy, fiber optic cables, microwave towers or other vertical assets used for the transmission or receipt of data or communications used by response agencies and public safety and public health personnel. (c) Documents, records or other items of information which may reveal the details of a specific emergency response plan or other tactical operations by a response agency and any training relating to such emergency response plans or tactical operations. (d) Handbooks, manuals or other forms of information detailing procedures to be followed by response agencies in the event of an act of terrorism or other related emergency. (e) Documents, records or other items of information that reveal information pertaining to specialized equipment used for covert, emergency or tactical operations of a response agency, other than records relating to expenditures for such equipment. (f) Documents, records or other items of information regarding critical telecommunications facilities and the infrastructure and security of radio frequencies for transmissions used by response agencies, including, without limitation: (1) Access codes, passwords or programs used to ensure the security of radio frequencies for transmissions used by response agencies; (2) Procedures and processes used to ensure the security of radio frequencies for transmissions used by response agencies; and (3) Plans used to re-establish security and service with respect to radio frequencies for transmissions used by response agencies after security has been breached or service has been interrupted. (g) Vulnerability assessments and emergency response plans of utilities, public entities and private businesses in this State. As used in this paragraph, “public entities” means departments, agencies or instrumentalities of the State, any of its political subdivisions or tribal governments. The term includes general improvement districts. 3. If a person knowingly and unlawfully discloses a document, record or other item of information subject to an executive order issued pursuant to subsection 1 or assists, solicits or conspires with another person to disclose such a document, record or other item of information, the person is guilty of: (a) A gross misdemeanor; or (b) A category C felony and shall be punished as provided in NRS 193.130 if the person acted with the intent to: (1) Commit, cause, aid, further or conceal, or attempt to commit, cause, aid, further or conceal, any unlawful act involving terrorism or sabotage; or (2) Assist, solicit or conspire with another person to commit, cause, aid, further or conceal any unlawful act involving terrorism or sabotage. 4. The Governor shall review the documents, records and other items of information determined by executive order pursuant to subsection 1 to be confidential every 10 years to assess the continued need for the documents, records and other items of information to remain confidential. 5. As used in this section, “public safety and public health personnel” includes: (a) State, county, city and tribal emergency managers; (b) Members and staff of terrorism early warning centers or fusion intelligence centers in this State; (c) Employees of fire-fighting or law enforcement agencies, if the head of the agency has designated the employee as having an operational need to know of information that is prepared or maintained for the purpose of preventing or responding to an act of terrorism; and (d) Employees of a public health agency, if the agency is one that would respond to a disaster and if the head of the agency has designated the employee as having an operational need to know of information that is prepared or maintained for the purpose of preventing or responding to an act of terrorism. As used in this paragraph, “disaster” has the meaning ascribed to it in NRS 414.0335 . (Added to NRS by 2003, 2456 ; A 2007, 2963 , 2965 ; 2011, 2882 ; 2017, 529 ; 2023, 2782 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec210",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.220",
@@ -294,7 +294,7 @@
   "text": "NRS 239C.220 Inspection of restricted documents. 1. Unless made confidential by specific statute, a restricted document may be inspected only by a person who provides: (a) His or her name; (b) A copy of his or her driver’s license or other photographic identification that is issued by a governmental entity; (c) The name of his or her employer, if any; (d) His or her citizenship; and (e) Except as otherwise provided in this paragraph, a statement of the purpose for the inspection. A person is not required to indicate the purpose for inspecting a restricted document if the person is: (1) A state, county or city emergency manager; (2) A member or staff person of a terrorism early warning center or fusion intelligence center in this State; (3) An employee of any fire-fighting or law enforcement agency, if the head of the agency has designated the employee as having an operational need to inspect restricted documents; or (4) An employee of a public health agency, if the agency is one that would respond to a disaster and if the head of the agency has designated the employee as having an operational need to inspect restricted documents. As used in this subparagraph, “disaster” has the meaning ascribed to it in NRS 414.0335 . 2. Except as otherwise provided in subsection 3, a public officer or employee shall observe any person while the person inspects a restricted document in a location and in a manner which ensures that the person does not copy, duplicate or reproduce the restricted document in any way. 3. A restricted document may be copied, duplicated or reproduced: (a) Upon the lawful order of a court of competent jurisdiction; (b) As is reasonably necessary in the case of an act of terrorism or other related emergency; (c) To protect the rights and obligations of a governmental entity or the public; (d) Upon the request of a reporter or editorial employee who is employed by or affiliated with a newspaper, press association or commercially operated and federally licensed radio or television station and who uses the restricted document in the course of such employment or affiliation; or (e) Upon the request of a registered architect, licensed contractor or a designated employee of any such architect or contractor who uses the restricted document in his or her professional capacity. 4. A public officer or employee shall inform any person who inspects a restricted document of the provisions of this section. (Added to NRS by 2003, 2457 ; A 2007, 2964 , 2965 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec220",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.230",
@@ -305,7 +305,7 @@
   "text": "NRS 239C.230 Custodian of restricted document; log of inspections. 1. A public officer or employee who is the custodian of a restricted document shall establish a log to record: (a) The information described in subsection 1 of NRS 239C.220 when a person is allowed to inspect the document; and (b) The date and time of the inspection. 2. The log is not a public record and may be inspected only by: (a) A representative of a law enforcement agency; or (b) A reporter or editorial employee who is employed by or affiliated with a newspaper, press association or commercially operated and federally licensed radio or television station. (Added to NRS by 2003, 2457 ; A 2007, 2965 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec230",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.240",
@@ -316,7 +316,7 @@
   "text": "NRS 239C.240 Suspicious or unusual request to inspect restricted document. Nothing in NRS 239C.220 or 239C.230 shall be deemed to prohibit a public officer or employee from contacting a law enforcement agency to report a suspicious or unusual request to inspect a restricted document. (Added to NRS by 2003, 2457 ; A 2007, 2965 ) EMERGENCY PLANS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec240",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.250",
@@ -327,7 +327,7 @@
   "text": "NRS 239C.250 Response plans of political subdivisions; confidentiality. 1. Each political subdivision shall adopt and maintain a response plan. Each new or revised plan must be filed within 10 days after adoption or revision with: (a) The Office; and (b) Each response agency that provides services to the political subdivision. 2. The response plan required by subsection 1 and any revised response plan pursuant to subsection 3 must include: (a) A drawing or map of the layout and boundaries of the political subdivision; (b) A drawing or description of the streets and highways within, and leading into and out of, the political subdivision, including any approved routes for evacuation; (c) The location and inventory of emergency response equipment and resources within the political subdivision; (d) The location of any unusually hazardous substances within the political subdivision; (e) A telephone number that may be used by residents of the political subdivision to receive information and to make reports with respect to an act of terrorism or related emergency; (f) The location of one or more emergency response command posts that are located within the political subdivision; (g) A depiction of the location of each police station, sheriff’s office and fire station that is located within the political subdivision; (h) Plans for the continuity of the operations and services of the political subdivision, which plans must be consistent with the provisions of NRS 239C.260 ; and (i) Any other information that the Commission may determine to be relevant. 3. Each political subdivision shall review its response plan at least once each year and, as soon as practicable after the review is completed but not later than December 31 of each year, file with the Office and each response agency that provides services to the political subdivision: (a) Any revised response plan resulting from the review; or (b) A written certification that the most recent response plan filed pursuant to subsection 1 is the current response plan for the political subdivision. 4. Except as otherwise provided in NRS 239.0115 , a plan filed pursuant to the requirements of this section, including any revisions adopted thereto, is confidential and must be securely maintained by the entities with whom it is filed pursuant to subsection 1 or 3. An officer, employee or other person to whom the plan is entrusted by the entity with whom it is filed shall not disclose the contents of such a plan except: (a) Upon the lawful order of a court of competent jurisdiction; (b) As is reasonably necessary in the case of an act of terrorism or related emergency; or (c) Pursuant to the provisions of NRS 239.0115 . (Added to NRS by 2003, 2458 ; A 2005, 1535 ; 2007, 2064 ; 2019, 2465 ; 2025, 1850 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec250",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.260",
@@ -338,7 +338,7 @@
   "text": "NRS 239C.260 Plan for continuation of state and local governmental operations in event of catastrophic emergency. 1. In accordance with the provisions of Section 37 of Article 4 of the Nevada Constitution, the Nevada Legislature hereby establishes a plan for continuation of state and local governmental operations. The provisions set forth in this section apply only in, and must be used in accordance with, the circumstances described in subsection 2. 2. In the event that this State or a portion of this State is stricken by a catastrophic emergency of such magnitude that, in the opinion of the Governor or, in the absence of the Governor, the Lieutenant Governor, the existing provisions of the Nevada Constitution and the statutes of this State relating to the filling of vacancies in office are not able to provide for a sufficiently expedient continuity of government and temporary succession of power as a result of vacancies in office created by the catastrophic emergency, the provisions of subsections 3 to 11, inclusive, apply. 3. If a vacancy occurs in the Office of Governor as a result of a catastrophic emergency and none of the successors described in NRS 223.080 are able or available to act as Governor, the Legislature shall elect a person to serve as Governor. If the Legislature is not in session at the time the vacancy occurs, the members of the Legislature may convene a special session to elect a person to serve as Governor. 4. If vacancies occur in more than 15 percent of the seats in either house of the Legislature as a result of a catastrophic emergency: (a) The remaining Legislators available for duty constitute the Legislature and have full power to act in separate or joint assembly by majority vote of those present; (b) Any requirements for a quorum applicable to the Legislature must initially be suspended and must subsequently be adjusted as vacant offices are filled pursuant to NRS 218A.260 ; and (c) If the affirmative vote of a specified proportion of members of the Legislature is required for the approval of a legislative measure, the same proportion of remaining members of the Legislature is sufficient for approval of that measure. 5. If vacancies occur in more than 15 percent of the positions held by justices on the Supreme Court as a result of a catastrophic emergency, the vacancies must be filled by appointment of the Governor. 6. If vacancies occur in more than 50 percent of the positions held by judges on the Court of Appeals as a result of a catastrophic emergency, the vacancies must be filled by appointment of the Supreme Court. 7. If vacancies occur in more than 15 percent of the positions held by the district judges in any one judicial district as a result of a catastrophic emergency, the vacancies must be filled by appointment of the Supreme Court. 8. If vacancies occur on a board of county commissioners as a result of a catastrophic emergency: (a) The remaining members of the board available for duty constitute the board and have full power to act by majority vote of those present; and (b) Any requirements for a quorum applicable to the board must initially be suspended and must subsequently be adjusted as vacant offices are filled. Ê If a board of county commissioners is rendered entirely vacant as a result of a catastrophic emergency, such other elected officers of the county as may be available to serve on the board have full authority to act in all matters as a board of county commissioners. 9. If vacancies occur on a city council as a result of a catastrophic emergency: (a) The remaining members of the council available for duty constitute the council and have full power to act by majority vote of those present; and (b) Any requirements for a quorum applicable to the council must initially be suspended and must subsequently be adjusted as vacant offices are filled. Ê If a city council is rendered entirely vacant as a result of a catastrophic emergency, such other elected officers of the city as may be available to serve on the council have full authority to act in all matters as a city council. 10. If, during or following a catastrophic emergency, a majority of the members of a legislative body described in this section determines that, for purposes of safety or to address related concerns, the legislative body should meet at a location other than the location at which the legislative body ordinarily meets, the legislative body may arrange to meet at an alternate location. 11. After a catastrophic emergency has taken place, the Governor or, in the absence of the Governor, the Lieutenant Governor, shall: (a) Determine and announce publicly when conditions have normalized within this State or the portion thereof affected by the catastrophic emergency. (b) In cooperation with the Secretary of State, develop procedures and a reasonable schedule for filling by regular election the various offices filled temporarily pursuant to this section. 12. As used in this section, “catastrophic emergency” means an emergency resulting from disasters caused by enemy attack, in accordance with Section 37 of Article 4 of the Nevada Constitution. (Added to NRS by 2003, 2458 ; A 2013,1769, 3754)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec260",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.270",
@@ -349,7 +349,7 @@
   "text": "NRS 239C.270 Vulnerability assessment and response plan of utility and provider of new electric resources; confidentiality; penalties. 1. Each utility and each provider of new electric resources shall: (a) Conduct a vulnerability assessment in accordance with the requirements of the federal and regional agencies that regulate the utility or provider; and (b) Prepare and maintain an emergency response plan in accordance with the requirements of the federal and regional agencies that regulate the utility or provider. 2. Each utility shall: (a) As soon as practicable but not later than December 31, 2003, submit its vulnerability assessment and emergency response plan to the Office; and (b) At least once each year thereafter, review its vulnerability assessment and emergency response plan and, as soon as practicable after its review is completed but not later than December 31 of each year, submit the results of its review and any additions or modifications to its emergency response plan to the Office. 3. Each provider of new electric resources shall: (a) As soon as practicable but not later than December 31, 2019, submit its vulnerability assessment and emergency response plan to the Office; and (b) At least once each year thereafter, review its vulnerability assessment and emergency response plan and, as soon as practicable after its review is completed but not later than December 31 of each year, submit the results of its review and any additions or modifications to its emergency response plan to the Office. 4. On or before June 30 of each year, the Public Utilities Commission of Nevada, the Division of Environmental Protection of the State Department of Conservation and Natural Resources and the Office of Energy shall coordinate with the Office to compile a list of each utility and provider of new electric resources required to submit a vulnerability assessment and an emergency response plan pursuant to subsection 2 or 3. 5. Except as otherwise provided in NRS 239.0115 , each vulnerability assessment and emergency response plan of a utility or provider of new electric resources and any other information concerning a utility or provider that is necessary to carry out the provisions of this section is confidential and must be securely maintained by each person or entity that has possession, custody or control of the information. 6. Except as otherwise provided in NRS 239C.210 , a person shall not disclose such information, except: (a) Upon the lawful order of a court of competent jurisdiction; (b) As is reasonably necessary to carry out the provisions of this section or the operations of the utility or provider of new electric resources, as determined by the Office; (c) As is reasonably necessary in the case of an emergency involving public health or safety, as determined by the Office; or (d) Pursuant to the provisions of NRS 239.0115 . 7. If a person knowingly and unlawfully discloses such information or assists, solicits or conspires with another person to disclose such information, the person is guilty of: (a) A gross misdemeanor; or (b) A category C felony and shall be punished as provided in NRS 193.130 if the person acted with the intent to: (1) Commit, cause, aid, further or conceal, or attempt to commit, cause, aid, further or conceal, any unlawful act involving terrorism or sabotage; or (2) Assist, solicit or conspire with another person to commit, cause, aid, further or conceal any unlawful act involving terrorism or sabotage. 8. As used in this section, “provider of new electric resources” has the meaning ascribed to it in NRS 704B.130 . (Added to NRS by 2003, 2460 ; A 2005, 1536 ; 2007, 2065 ; 2011, 2884 ; 2019, 3530 ; 2021, 263 ; 2025, 1851 ) RECEIPT OF MONEY BY STATE, POLITICAL SUBDIVISION OR TRIBAL GOVERNMENT FOR EMERGENCY READINESS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec270",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.300",
@@ -360,7 +360,7 @@
   "text": "NRS 239C.300 Submission of written report to Commission required. 1. Except as otherwise provided in subsection 3, if the State, a political subdivision or a tribal government submits an application to and is approved to receive money from the Federal Government, this State, any other state, a local government, any agency or instrumentality of those governmental entities, or any private entity, to pay for a project or program relating to the prevention of, detection of, mitigation of, preparedness for, response to and recovery from acts of terrorism, the State, political subdivision or tribal government shall, not later than 60 days after receiving such approval, submit to the Commission a written report that includes, without limitation: (a) The total amount of money that the State, political subdivision or tribal government has been approved to receive for the project or program; (b) A description of the project or program, unless the State, political subdivision or tribal government previously submitted a written report pursuant to this section relating to the same project or program; and (c) The items to be paid for with the money that the State, political subdivision or tribal government has been approved to receive for the project or program. 2. A project or program for which the State, a political subdivision or a tribal government is required to report the receipt of money pursuant to subsection 1 includes, without limitation, a project or program related to: (a) Homeland security; (b) Emergency management; (c) Health or hospitals; (d) Emergency medical services; and (e) Chemical, biological, radiological, nuclear, explosive, agricultural or environmental acts of terrorism. 3. A report is not required to be submitted to the Commission if the money was awarded by the Office pursuant to the regulations adopted pursuant to NRS 414.040 . (Added to NRS by 2005, 1533 ; A 2011, 2885 ; 2019, 602 ; 2025, 1852 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec300",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.310",
@@ -371,7 +371,7 @@
   "text": "NRS 239C.310 Adoption of national system of emergency response; documentation evidencing compliance. 1. The State and each political subdivision and tribal government shall: (a) Adopt any national system that is required as a condition to the receipt of money from the Federal Government by the United States Department of Homeland Security pursuant to federal law in preparation for, prevention of, detection of, mitigation of, response to and recovery from a domestic incident, including, without limitation, an act of terrorism. (b) Submit to the Office documentation evidencing that the State, political subdivision or tribal government has adopted the national system. 2. The Office shall submit on a quarterly basis documentation to the Commission evidencing the compliance of this State and each political subdivision and tribal government with the provisions of paragraph (a) of subsection 1. (Added to NRS by 2005, 1533 ; A 2011, 2885 ; 2025, 1853 ) NEVADA RESILIENCE ADVISORY COMMITTEE",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec310",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.400",
@@ -382,7 +382,7 @@
   "text": "NRS 239C.400 Creation; appointment of members; designation of officers; term. 1. The Nevada Resilience Advisory Committee is hereby created. 2. With the approval of the Governor, the Chief of the Office shall appoint to the Committee not more than 34 voting members that the Chief determines to be appropriate and who have expertise in: (a) Emergency management; (b) Homeland security; (c) Public safety; (d) Cybersecurity; (e) School safety; or (f) Public health. 3. With the approval of the Governor, the Chief of the Office or his or her designee shall: (a) Serve as the Chair and a voting member of the Committee; and (b) Appoint one voting member of the Committee to serve as Vice Chair. 4. The term of office of each voting member of the Committee is 2 years. This term limit does not apply to the Chair. A member may be reappointed. (Added to NRS by 2019, 1024 ; A 2021, 2089 ; 2025, 1853 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec400",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.410",
@@ -393,7 +393,7 @@
   "text": "NRS 239C.410 Meetings; quorum. 1. The Nevada Resilience Advisory Committee shall meet at the call of the Chair of the Committee as frequently as required to perform its duties, but not less than once each quarter. 2. A majority of the voting members of the Committee constitutes a quorum for the transaction of business, and a majority of those voting members present at any meeting is sufficient for any official action taken by the Committee. (Added to NRS by 2019, 1024 ; A 2021, 275 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec410",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.420",
@@ -404,7 +404,7 @@
   "text": "NRS 239C.420 Compliance with Open Meeting Law; exceptions; confidentiality. 1. Except as otherwise provided in subsections 2 and 3, the Nevada Resilience Advisory Committee and any subcommittee formed pursuant to NRS 239C.450 shall comply with the provisions of chapter 241 of NRS and shall conduct all meetings in accordance with that chapter. 2. The Committee and, with the prior approval of the Committee, any subcommittee formed pursuant to NRS 239C.450 may hold a closed meeting for sensitive issues relating to emergency management or homeland security if the Committee or subcommittee, as applicable, determines that the public disclosure of such matters would be likely to compromise, jeopardize or otherwise threaten the safety of the public. 3. Except as otherwise provided in NRS 239.0115 , all information and materials received or prepared by the Committee and any subcommittee formed pursuant to NRS 239C.450 during a meeting closed pursuant to subsection 2 and all minutes and audiovisual or electronic reproductions of such a meeting are confidential, are not subject to subpoena or discovery and are not subject to inspection by the general public. (Added to NRS by 2019, 1024 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec420",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.430",
@@ -415,7 +415,7 @@
   "text": "NRS 239C.430 Compensation of members. 1. A member of the Nevada Resilience Advisory Committee or any subcommittee formed pursuant to NRS 239C.450 may not receive any compensation for his or her services as a member of the Committee or the subcommittee. 2. Any member of the Committee or any subcommittee formed pursuant to NRS 239C.450 who is a public employee must be granted administrative leave from his or her duties to engage in the business of the Committee or subcommittee, as applicable, without loss of his or her regular compensation. Such leave does not reduce the amount of his or her other accrued leave. 3. Each member of the Committee or any subcommittee formed pursuant to NRS 239C.450 is entitled, while engaged in the business of the Committee or subcommittee, to receive the per diem allowance and travel expenses provided for state officers and employees generally. The per diem allowance and travel expenses provided to a member of the Committee or subcommittee who is an officer or employee of the State of Nevada or a political subdivision of this State must be paid by the state agency or political subdivision which employs him or her. (Added to NRS by 2019, 1025 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec430",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.440",
@@ -426,7 +426,7 @@
   "text": "NRS 239C.440 Duties. The Nevada Resilience Advisory Committee shall, within the limits of available money: 1. Annually develop state resilience goals and related objectives for the Committee; 2. Formulate advisory recommendations and policies regarding the emergency management, emergency response and homeland security efforts for the State, as well as statewide mitigation, preparedness, response and recovery efforts; 3. In accordance with the state resilience goals and related objectives developed pursuant to subsection 1: (a) Review grants proposed by state agencies, political subdivisions or tribal governments that are responsible for homeland security and make recommendations and provide related advice concerning such grants to the Committee on Finance appointed pursuant to NRS 239C.170 ; (b) Review grants proposed by agencies of this State, political subdivisions or tribal governments that are responsible for emergency management or emergency response and make recommendations and provide related advice concerning such grants to the Chief of the Office; and (c) Review statewide mitigation, preparedness, response and recovery efforts in consultation with political subdivisions and tribal governments and make recommendations to such political subdivisions and tribal governments concerning these coordination efforts; and 4. Develop the annual report required pursuant to NRS 239C.480 . (Added to NRS by 2019, 1025 ; A 2025, 1853 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec440",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.450",
@@ -437,7 +437,7 @@
   "text": "NRS 239C.450 Appointment of subcommittees. 1. Subject to the provisions of subsection 2, the Nevada Resilience Advisory Committee may appoint any subcommittee deemed necessary by the Committee to assist in carrying out the duties of the Committee. 2. The Committee may appoint not more than two subcommittees at any time. 3. Each subcommittee formed pursuant to subsection 1 must: (a) Have a specific objective; and (b) Operate for not more than 6 months, unless an extension is approved by the Committee. 4. The Chair of the Committee shall appoint to a subcommittee formed pursuant to subsection 1 the number of voting members that the Chair of the Committee determines to be appropriate. The Chair may appoint any person the Chair deems appropriate to serve on a subcommittee, except that a subcommittee must include at least one member of the Committee. 5. At the first meeting of the subcommittee and, if an extension is approved pursuant to paragraph (b) of subsection 3, every 6 months thereafter, a subcommittee formed pursuant to subsection 1 shall select a chair and a vice chair from the members of the subcommittee. (Added to NRS by 2019, 1026 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec450",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.460",
@@ -448,7 +448,7 @@
   "text": "NRS 239C.460 Staff assistance. The Chief of the Office shall provide such staff assistance to the Nevada Resilience Advisory Committee as the Chief deems appropriate. (Added to NRS by 2019, 1026 ; A 2025, 1854 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec460",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.470",
@@ -459,7 +459,7 @@
   "text": "NRS 239C.470 Gifts, grants and contributions. The Nevada Resilience Advisory Committee may apply for and receive gifts, grants, contributions or other money from governmental and private agencies, affiliated associations and other persons to carry out the provisions of NRS 239C.400 to 239C.480 , inclusive, and to defray expenses incurred by the Committee in the discharge of its duties. (Added to NRS by 2019, 1026 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec470",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-239C.480",
@@ -470,6 +470,6 @@
   "text": "NRS 239C.480 Annual report. On or before February 1 of each year, the Nevada Resilience Advisory Committee shall: 1. Prepare a report setting forth: (a) The activities of the Committee which occurred during the preceding calendar year; (b) Any assessments of the programs and processes conducted by the Committee to achieve the state resilience goals and related objectives developed pursuant to NRS 239C.440 and the capacity of such programs and processes; (c) Any recommendations created by the Committee that are based on the activities and assessments conducted during the preceding calendar year; and (d) A description of any matters with respect to which the Committee held a closed meeting or a closed portion of a meeting, as applicable, accompanied by an explanation of the reasons why the Committee determined that the meeting or portion thereof needed to be closed; and 2. Submit a copy of the report to: (a) The Nevada Commission on Homeland Security; (b) The Governor; and (c) The Director of the Legislative Counsel Bureau for transmittal to: (1) If the Legislature is in session, the standing committees of the Legislature which have jurisdiction of the subject matter; or (2) If the Legislature is not in session, the Legislative Commission. (Added to NRS by 2019, 1026 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-239C.html#NRS239CSec480",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]

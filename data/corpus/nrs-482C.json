@@ -8,7 +8,7 @@
   "text": "NRS 482C.100 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 482C.110 to 482C.210 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec100",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.110",
@@ -19,7 +19,7 @@
   "text": "NRS 482C.110 “Car sharing delivery period” defined. “Car sharing delivery period” means the period of time before the car sharing start time during which a shared vehicle is being delivered to the location where the shared vehicle driver will assume control of the shared vehicle. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec110",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.115",
@@ -30,7 +30,7 @@
   "text": "NRS 482C.115 “Car sharing period” defined. “Car sharing period” means the period of time that: 1. Begins: (a) If there is a car sharing delivery period, at the start of that period; or (b) If there is no car sharing delivery period, at the car sharing start time; and 2. Ends at the car sharing termination time. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec115",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.120",
@@ -41,7 +41,7 @@
   "text": "NRS 482C.120 “Car sharing program agreement” defined. “Car sharing program agreement” means an agreement entered into between a peer-to-peer car sharing program and a shared vehicle driver or shared vehicle owner which establishes terms and conditions governing the sharing of a vehicle through the peer-to-peer car sharing program. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec120",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.125",
@@ -52,7 +52,7 @@
   "text": "NRS 482C.125 “Car sharing start time” defined. “Car sharing start time” means the time when the shared vehicle becomes subject to the control of the shared vehicle driver at or after the time the reservation of a shared vehicle is scheduled to begin, as documented in the records of the peer-to-peer car sharing program. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec125",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.130",
@@ -63,7 +63,7 @@
   "text": "NRS 482C.130 “Car sharing termination time” defined. “Car sharing termination time” means whichever of the following events occurs first: 1. The expiration of the agreed upon period of time established for the use of a shared vehicle according to the terms of the car sharing program agreement if the shared vehicle is delivered to the location agreed upon in the car sharing program agreement; 2. The expiration of the agreed upon period of time established for the use of a shared vehicle according to the terms of the car sharing program agreement if the shared vehicle is delivered to a location alternatively agreed upon by the shared vehicle owner and shared vehicle driver and as communicated through a peer-to-peer car sharing program and incorporated into the car sharing program agreement; or 3. When the shared vehicle owner or the authorized designee of the shared vehicle owner takes possession and control of the shared vehicle. (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec130",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.170",
@@ -74,7 +74,7 @@
   "text": "NRS 482C.170 “Passenger car” defined. “Passenger car” has the meaning ascribed to it in NRS 482.087 . (Added to NRS by 2021, 1841 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec170",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.175",
@@ -85,7 +85,7 @@
   "text": "NRS 482C.175 “Peer-to-peer car sharing” defined. “Peer-to-peer car sharing” means the authorized use of a vehicle by an individual other than the owner of the vehicle through a peer-to-peer car sharing program. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec175",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.180",
@@ -96,7 +96,7 @@
   "text": "NRS 482C.180 “Peer-to-peer car sharing program” defined. “Peer-to-peer car sharing program” means a platform operated by a business that connects shared vehicle owners with shared vehicle drivers to enable the sharing of vehicles in exchange for money. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec180",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.190",
@@ -107,7 +107,7 @@
   "text": "NRS 482C.190 “Shared vehicle” defined. “Shared vehicle” means a vehicle that is shared or available for sharing through a peer-to-peer car sharing program. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec190",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.195",
@@ -118,7 +118,7 @@
   "text": "NRS 482C.195 “Shared vehicle driver” defined. “Shared vehicle driver” means a person who has been authorized to drive a shared vehicle by the shared vehicle owner pursuant to the terms of a car sharing program agreement. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec195",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.200",
@@ -129,7 +129,7 @@
   "text": "NRS 482C.200 “Shared vehicle owner” defined. “Shared vehicle owner” means the registered owner of a shared vehicle or a person who is authorized by the registered owner to make a vehicle available for sharing through a peer-to-peer car sharing program. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec200",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.210",
@@ -140,7 +140,7 @@
   "text": "NRS 482C.210 “Vehicle” defined. “Vehicle” has the meaning ascribed to it in NRS 482.135 . (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec210",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.230",
@@ -151,7 +151,7 @@
   "text": "NRS 482C.230 Charging, collecting, reporting and remitting of fees in connection with program; deposit of money; certain amounts excluded from calculation of fees; exemptions; duties of Executive Director of Department of Taxation. 1. Except as otherwise provided in subsection 8, when a shared vehicle that is a passenger car is shared through a peer-to-peer car sharing program in this State, the peer-to-peer car sharing program shall charge and collect from the shared vehicle driver: (a) A governmental services fee of 10 percent of the total amount for which the shared vehicle was shared with the shared vehicle driver, excluding any taxes or other fees imposed by a governmental entity and the items described in subsection 7; and (b) Any fee required pursuant to NRS 244A.810 or 244A.860 , as applicable. Ê The amount of each fee charged pursuant to this subsection must be indicated in the car sharing program agreement. 2. The fees due from a peer-to-peer car sharing program to the Department of Taxation pursuant to subsection 1 are due on the last day of each calendar quarter. On or before the last day of the month following each calendar quarter, the peer-to-peer car sharing program shall: (a) File with the Department of Taxation, on a form prescribed by the Department of Taxation, a report indicating the total amount of each of the fees collected by the peer-to-peer car sharing program pursuant to subsection 1 during the immediately preceding calendar quarter; and (b) Remit to the Department of Taxation the fees collected by the peer-to-peer car sharing program pursuant to subsection 1 during the immediately preceding calendar quarter. 3. Except as otherwise provided in a contract made pursuant to NRS 244A.820 or 244A.870 , the Department of Taxation shall deposit all money received from a peer-to-peer car sharing program pursuant to the provisions of subsection 1 with the State Treasurer for credit to the State General Fund. 4. To ensure compliance with this section, the Department of Taxation may audit the records of a peer-to-peer car sharing program. 5. Except as otherwise provided in this subsection, the provisions of this section do not limit or affect the payment of any taxes or fees imposed pursuant to the provisions of chapter 482 of NRS. A shared vehicle owner is not required to: (a) Be licensed pursuant to NRS 482.363 to make a shared vehicle available for sharing through a peer-to-peer car sharing program; or (b) Charge and collect the fees required pursuant to subsection 1 or any fee required pursuant to NRS 244A.810 , 244A.860 or 482.313 when sharing a shared vehicle through a peer-to-peer car sharing program if the shared vehicle owner is the registered owner of the shared vehicle or a person authorized by the registered owner of the shared vehicle to make the shared vehicle available for sharing through the peer-to-peer car sharing program. 6. The Department of Motor Vehicles shall, upon request, provide to the Department of Taxation any information in its records relating to a peer-to-peer car sharing program that the Department of Taxation considers necessary to collect the fees described in subsection 1. 7. For the purposes of charging and collecting the governmental services fee described in paragraph (a) of subsection 1, the following items must not be included in the total amount for which the shared vehicle was shared: (a) The amount of any fee charged and collected pursuant to paragraph (b) of subsection 1; (b) The amount of any charge for fuel used to operate the shared vehicle; (c) The amount of any fee or charge for the delivery, transportation or other handling of the shared vehicle by an agent of the peer-to-peer vehicle sharing program, not including the shared vehicle driver; (d) The amount of any fee or charge for insurance, including, without limitation, personal accident insurance, extended coverage or insurance coverage for personal property; and (e) The amount of any charges assessed against a shared vehicle driver for damages for which the shared vehicle driver is held responsible. 8. The fees required pursuant to subsection 1 do not apply with respect to any shared vehicle made available through a peer-to-peer car sharing program to this State, its unincorporated agencies and instrumentalities or any county, city, district or other political subdivisions of this State. 9. The Executive Director of the Department of Taxation shall: (a) Adopt such regulations as the Executive Director determines are necessary to carry out the provisions of this section; and (b) Upon the request of the Director of the Department of Motor Vehicles, provide to the Director of the Department of Motor Vehicles a copy of any record or report described in this section. (Added to NRS by 2021, 1842 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec230",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.240",
@@ -162,7 +162,7 @@
   "text": "NRS 482C.240 Duty of program to remit sales and use tax on shared vehicle; circumstances in which program is not liable for tax; program to collect electronic certification regarding payment of tax by shared vehicle owner. 1. Except as otherwise provided in subsection 2, a peer-to-peer car sharing program shall collect and remit, on behalf of any shared vehicle owner, sales and use taxes measured by the gross charges for the sharing of a vehicle that is placed on a digital network or software application of the peer-to-peer car sharing program on or after October 1, 2021, for the purpose of making the vehicle available for sharing through the peer-to-peer car sharing program if the shared vehicle owner has not paid any sales or use tax due or has elected to collect sales and use taxes measured by the gross charges for the sharing of the vehicle. 2. The Department of Taxation shall not hold a peer-to-peer car sharing program liable for the payment, collection or remittance of sales and use taxes owed by a shared vehicle owner if: (a) The peer-to-peer car sharing program provides proof satisfactory to the Department of Taxation that the peer-to-peer car sharing program has made a reasonable effort to obtain accurate information from the shared vehicle owner regarding whether the shared vehicle owner has paid the sales and use taxes due on a shared vehicle described in subsection 1; and (b) The failure to collect and remit the sales and use taxes measured by the gross charges for the sharing of the vehicle through the peer-to-peer car sharing program was due to incorrect or false information provided to the peer-to-peer car sharing program by the shared vehicle owner. 3. On or after October 1, 2021, a peer-to-peer car sharing program shall not allow a vehicle to be placed on a digital network or software application of the peer-to-peer car sharing program for the purpose of making the vehicle available for sharing through the peer-to-peer car sharing program unless the peer-to-peer car sharing program first requests an electronic certification from the shared vehicle owner as to whether the shared vehicle owner paid all sales and use taxes due on the purchase of the shared vehicle. The Department of Taxation may prescribe by regulation the method by which a peer-to-peer car sharing program shall obtain an electronic certification from the shared vehicle owner as to whether the shared vehicle owner paid all sales and use taxes due on the purchase of the shared vehicle. 4. Nothing in this section shall be construed to relieve a peer-to-peer car sharing program of liability for collecting but failing to remit to the Department of Taxation any sales and use tax pursuant to this section. The Department of Taxation shall not require a peer-to-peer car sharing program to collect or remit sales and use taxes measured by the gross charges for the sharing of the vehicle if the full amount of sales and use taxes were paid on the purchase price of the shared vehicle by the shared vehicle owner. (Added to NRS by 2021, 1843 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec240",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.245",
@@ -173,7 +173,7 @@
   "text": "NRS 482C.245 Records of program: Maintenance; inspection; type; penalty. 1. Each person responsible for maintaining the records of a peer-to-peer car sharing program shall: (a) Keep such records as may be necessary to determine the amount of the liability of the peer-to-peer car sharing program pursuant to NRS 482C.230 and 482C.240 ; (b) Preserve those records for 4 years or until any litigation or prosecution pursuant to chapter 360 of NRS or audit conducted pursuant to NRS 482C.230 is finally determined, whichever is longer; and (c) Make the records available for inspection by the Department of Taxation upon demand at reasonable times during regular business hours. 2. The Department of Taxation may by regulation specify the types of records which must be kept to determine the amount of the liability of a taxpayer pursuant to NRS 482C.230 and 482C.240 . 3. Any person who violates the provisions of subsection 1 is guilty of a misdemeanor. (Added to NRS by 2021, 1844 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec245",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.250",
@@ -184,7 +184,7 @@
   "text": "NRS 482C.250 Regulations. The Director shall adopt such regulations as are necessary to carry out the provisions of this chapter. (Added to NRS by 2021, 1844 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec250",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.255",
@@ -195,7 +195,7 @@
   "text": "NRS 482C.255 Tort liability of program; duty to ensure shared vehicle owner and driver are insured under policy meeting certain requirements; coverage under motor vehicle insurance policy of program; ability of program to seek indemnification for certain losses. 1. Except as otherwise provided in subsection 2, a peer-to-peer car sharing program assumes any tort liability of a shared vehicle owner arising out of the use or operation of the shared vehicle during the car sharing period up to an amount of: (a) For bodily injury to or death of one person in any one crash, $50,000; (b) For bodily injury to or death of two or more persons in any one crash and subject to the limit for one person, $100,000; and (c) For injury to or destruction of property of others in any one crash, $20,000, Ê or any amount set forth in the car sharing program agreement which is greater than an amount provided for by this section. 2. The provisions of subsection 1 do not apply to a shared vehicle owner: (a) Who made an intentional and fraudulent material misrepresentation or omission to the peer-to-peer car sharing program before the car sharing period in which the liability arose; or (b) Who acts in concert with a shared vehicle driver who fails to return the shared vehicle pursuant to the terms of the car sharing program agreement. 3. The assumption of liability pursuant to subsection 1 includes, without limitation, liability for bodily injury, property damage, uninsured and underinsured motorist or personal injury protection losses by damaged third parties to the same extent as the insurance required by NRS 485.185 is required to include coverage for such damage or losses, up to any applicable amount set forth in subsection 1. 4. A peer-to-peer car sharing program shall ensure that, during each car sharing period: (a) Both the shared vehicle owner and the shared vehicle driver are insured under a motor vehicle liability insurance policy that includes coverage which is not less than: (1) For bodily injury to or death of one person in any one crash, $50,000; (2) For bodily injury to or death of two or more persons in any one crash and subject to the limit for one person, $100,000; and (3) For injury to or destruction of property of others in any one crash, $20,000, Ê or any amount set forth in the car sharing program agreement which is greater than an amount provided for by this section. (b) Any insurance policy used to satisfy the requirements of paragraph (a): (1) Expressly recognizes that the shared vehicle insured under the policy is made available and used through a peer-to-peer car sharing program; or (2) Does not prohibit or exclude the use of the shared vehicle by a shared vehicle driver. 5. The insurance policy used to satisfy the requirements of subsection 4 may be a policy maintained by: (a) The shared vehicle owner; (b) The shared vehicle driver; (c) The peer-to-peer car sharing program; or (d) The shared vehicle owner, shared vehicle driver and peer-to-peer car sharing program. 6. The insurance policy used to satisfy the requirements of subsection 4 must provide primary insurance during each car sharing period. If, during the car sharing period, a claim arises in another state with minimum financial responsibility requirements that are higher than the amounts set forth in paragraph (a) of subsection 4, the insurance policy used to satisfy the requirements of subsection 4 must satisfy the difference in minimum coverage amounts, up to the applicable policy limits. 7. The insurer providing the insurance used to satisfy the requirements of subsection 4 shall assume primary liability for a claim when: (a) A dispute exists as to who was in control of the shared vehicle at the time of the occurrence out of which liability arose and the peer-to-peer car sharing program does not have available, did not retain or fails to provide the information required by NRS 482C.270 ; or (b) A dispute exists as to whether the shared vehicle was returned to an alternatively agreed upon location. 8. If the insurance used to satisfy the requirements of subsection 4 has lapsed or does not provide the coverage required pursuant to subsection 4, the peer-to-peer car sharing program: (a) Shall assume liability for damages up to the amounts set forth in subsection 1, which may be satisfied through the peer-to-peer car sharing program’s own insurance policy, beginning with the first dollar of any claim; and (b) Is responsible for defending against any such claim, Ê except in the situation where the shared vehicle owner acts in concert with a shared vehicle driver who fails to return the shared vehicle pursuant to the terms of the car sharing program agreement. 9. Coverage under a motor vehicle liability insurance policy maintained by a peer-to-peer car sharing program must not be dependent on another insurer first denying a claim or require another motor vehicle liability insurance policy to first deny a claim. 10. Nothing in this chapter shall be construed to: (a) Limit the liability of a peer-to-peer car sharing program for any act or omission of the peer-to-peer car sharing program that results in injury to any person as a result of the use of a shared vehicle through the peer-to-peer car sharing program; or (b) Limit the ability of a peer-to-peer car sharing program to, by contract, seek indemnification from the shared vehicle owner or shared vehicle driver for economic loss sustained by the peer-to-peer car sharing program resulting from a breach of the terms and conditions of the car sharing program agreement. 11. As used in this section, “alternatively agreed upon location” means a location alternatively agreed upon by the shared vehicle owner and shared vehicle driver, as communicated through a peer-to-peer car sharing program for the return of the shared vehicle. (Added to NRS by 2021, 1844 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec255",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.260",
@@ -206,7 +206,7 @@
   "text": "NRS 482C.260 Notice to shared vehicle owner that car sharing may violate terms of lien. At the time the owner of a motor vehicle registers as a shared vehicle owner through a peer-to-peer car sharing program and before the shared vehicle owner is permitted to make his or her vehicle available for car sharing through a peer-to-peer car sharing program, the peer-to-peer car sharing program shall notify the shared vehicle owner that, if the shared vehicle has a lien against it, the use of the shared vehicle through a peer-to-peer car sharing program, including, without limitation, use without insurance coverage for physical damage, may violate the terms of the contract with the lienholder. (Added to NRS by 2021, 1846 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec260",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.265",
@@ -217,7 +217,7 @@
   "text": "NRS 482C.265 Exclusion of certain coverage by authorized insurer. 1. An authorized insurer that writes motor vehicle liability insurance in this State may exclude any and all coverage for and any duty to defend or indemnify for any claim afforded under a shared vehicle owner’s motor vehicle liability insurance policy, including, without limitation: (a) Liability coverage for bodily injury and property damage; (b) Personal injury protection coverage; (c) Uninsured and underinsured motorist coverage; (d) Medical payments coverage; (e) Comprehensive physical damage coverage; and (f) Collision physical damage coverage. 2. Nothing in this section shall be construed to: (a) Invalidate or limit an exclusion contained in a motor vehicle liability insurance policy, including, without limitation, any insurance policy in use or approved for use that excludes coverage for motor vehicles made available for rent, sharing or hire or for any business use. (b) Invalidate, limit or restrict an insurer’s ability to underwrite an insurance policy or to cancel or decline to renew a policy. 3. As used in this section, “authorized insurer” has the meaning ascribed to it in NRS 679A.030 . (Added to NRS by 2021, 1846 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec265",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.270",
@@ -228,7 +228,7 @@
   "text": "NRS 482C.270 Records relating to car sharing: Contents; maintenance; production of copies and inspection; payment of expenses of Department for examination of records outside State; regulations. 1. A peer-to-peer car sharing program shall collect and maintain the following records relating to the sharing of a shared vehicle through the peer-to-peer car sharing program in such format as the Director may prescribe: (a) The exact car sharing start time and car sharing termination time, plus the exact start and end time of any car sharing delivery period; (b) The pick-up and drop-off locations for each car sharing period; (c) The amount of any fees paid by the shared vehicle driver for each car sharing period; (d) The amount of any revenues received by the shared vehicle owner for each car sharing period; and (e) Such other records as the Director may require by regulation. 2. The peer-to-peer car sharing program shall maintain the peer-to-peer car sharing records required pursuant to subsection 1 for a period of not less than 6 years after the record is created. 3. Upon request, the peer-to-peer car sharing program shall provide copies of the peer-to-peer car sharing records maintained pursuant to this section and NRS 482C.330 to the shared vehicle owner, shared vehicle driver, insurer of the shared vehicle owner or shared vehicle driver or a claimant alleging damages related to the use of the shared vehicle to facilitate a claim coverage investigation or the settlement, negotiation or litigation of a claim. 4. Upon request, each peer-to-peer car sharing record maintained pursuant to this section and NRS 482C.330 must be made available for inspection by a shared vehicle owner, shared vehicle driver, the insurer of a shared vehicle owner or shared vehicle driver or the Department or its designee at any time during regular business hours, subject to the provisions of any applicable data security or data privacy law. 5. A peer-to-peer car sharing program that keeps outside of this State any books, papers and records maintained pursuant to this section and NRS 482C.330 shall pay to the Department an amount equal to the allowance provided for state officers and employees generally while traveling outside of the State for each day or fraction thereof during which an employee of the Department is engaged in examining those documents, plus any other actual expenses incurred by the employee while he or she is absent from his or her regular place of employment to examine those documents. 6. The Director shall adopt such regulations as the Director determines are necessary to carry out the provisions of this section. (Added to NRS by 2021, 1847 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec270",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.275",
@@ -239,7 +239,7 @@
   "text": "NRS 482C.275 Chapter imposes no liability inconsistent with federal law governing vicarious liability of vehicle owners who rent or lease vehicles. The provisions of this chapter shall not be construed to impose liability which is inconsistent with the provisions of 49 U.S.C. § 30106. (Added to NRS by 2021, 1847 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec275",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.280",
@@ -250,7 +250,7 @@
   "text": "NRS 482C.280 Recovery by motor vehicle insurer against insurer of program. A motor vehicle insurer that defends or indemnifies a claim arising from the use of a shared vehicle shall have the right to seek recovery against the motor vehicle insurer of the peer-to-peer car sharing program if the claim is: 1. Made against the shared vehicle owner or shared vehicle driver for loss or injury that occurs during the car sharing period; and 2. Excluded under the terms of the motor vehicle liability insurance policy of the motor vehicle insurer who is not the motor vehicle insurer of the peer-to-peer car sharing program. (Added to NRS by 2021, 1847 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec280",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.285",
@@ -261,7 +261,7 @@
   "text": "NRS 482C.285 Program has insurable interest in shared vehicle; program may own or maintain insurance providing certain coverage. 1. Notwithstanding any other provision of law, a peer-to-peer car sharing program shall be deemed to have an insurable interest in a shared vehicle during the car sharing period. 2. A peer-to-peer car sharing program may own and maintain as the named insured one or more policies of motor vehicle liability insurance that provide coverage for: (a) Liabilities assumed by the peer-to-peer car sharing program under a peer-to-peer car sharing program agreement; (b) Any liability of a shared vehicle owner; (c) Any liability of a shared vehicle driver; or (d) Damage or loss to a shared motor vehicle. 3. Nothing in this section shall be construed to require a peer-to-peer car sharing program to obtain or maintain the motor vehicle liability insurance policy necessary to satisfy the requirements of subsection 4 of NRS 482C.255 or to impose any liability on the peer-to-peer car sharing program which does not obtain or maintain such a policy. (Added to NRS by 2021, 1848 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec285",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.295",
@@ -272,7 +272,7 @@
   "text": "NRS 482C.295 Licensure of program required; application; evidence of insurance; fee; expiration and renewal of license. 1. A peer-to-peer car sharing program shall not engage in business in this State unless the person who operates the peer-to-peer car sharing program holds a valid license issued by the Department pursuant to this chapter. 2. A person who desires to operate a peer-to-peer car sharing program in this State must: (a) Submit to the Department an application for the issuance of a license to operate a peer-to-peer car sharing program in such form and including such information and documentation as the Director may require by regulation. (b) Provide evidence of insurance coverage to satisfy any liability that accrues to a peer-to-peer car sharing program for damage that arises from the failure of the peer-to-peer car sharing program to comply with the provisions of this chapter in an amount established by the Director by regulation, which is separate from any insurance coverage a peer-to-peer car sharing program may use to satisfy the liability which may accrue to a peer-to-peer car sharing program pursuant to NRS 482C.255 or which may be used to satisfy the requirements of subsection 4 of NRS 482C.255 , or file a bond or make a deposit pursuant to NRS 482C.320 . (c) Pay a fee of $125. 3. Licenses issued pursuant to subsection 2 expire on December 31 of each year. Before December 31 of each year, licensees shall submit to the Department an application for renewal of the license in such form and including such information and documentation as the Director may require by regulation accompanied by an annual renewal fee of $50. (Added to NRS by 2021, 1848 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec295",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.300",
@@ -283,7 +283,7 @@
   "text": "NRS 482C.300 Grounds for refusal to issue or suspension or revocation of license. The Department may refuse to issue or suspend or revoke a license as a peer-to-peer car sharing program upon any of the following grounds: 1. Material misstatement in the application for a license. 2. Willful failure to comply with any provision of this chapter or regulations adopted pursuant thereto. If the Department notifies a peer-to-peer car sharing program that the peer-to-peer car sharing program has violated the provisions of this chapter or the regulations adopted pursuant thereto and the peer-to-peer car sharing program fails to take corrective action within 10 days after having received the notice or continues to violate the provisions of this chapter or the regulations adopted pursuant thereto, the failure to take corrective action or the continuing violation, as applicable, shall be deemed prima facie evidence of willful failure to comply with the provisions of this chapter or the regulations adopted pursuant thereto. 3. Failure or refusal to furnish and keep in force any bond or maintain insurance in an amount established by the Director in regulations adopted pursuant to NRS 482C.295 to satisfy any liability that accrues to a peer-to-peer car sharing program for damage that arises from the failure of the peer-to-peer car sharing program to comply with the provisions of this chapter. 4. Failure or refusal to pay or otherwise discharge any final judgment entered against the licensee arising out of a violation of this chapter. (Added to NRS by 2021, 1848 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec300",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.305",
@@ -294,7 +294,7 @@
   "text": "NRS 482C.305 Petition for hearing on denial, suspension or revocation of license; timeline for hearing and final decision; Director may issue subpoenas. 1. An applicant or licensee may, within 30 days after receipt of the notice of denial, suspension or revocation, petition the Director in writing for a hearing. 2. Except as otherwise provided in subsection 3, the Director shall make written findings of fact and conclusions and grant or finally deny the application or suspend or revoke the license within 15 days after the hearing unless, by interim order, the Director extends the time to 30 days after the hearing. If the license has been temporarily suspended, the suspension expires not later than 15 days after the hearing. 3. If the Director finds that the action is necessary in the public interest, upon notice to the licensee, the Director may temporarily suspend or refuse to renew the license issued to a peer-to-peer car sharing program for a period not to exceed 30 days. A hearing must be held, and a final decision rendered, within 30 days after notice of the temporary suspension. 4. The Director may issue subpoenas for the attendance of witnesses and the production of evidence. (Added to NRS by 2021, 1849 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec305",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.310",
@@ -305,7 +305,7 @@
   "text": "NRS 482C.310 Trial de novo. Upon judicial review of the denial or revocation of a license, the court for good cause shown may order a trial de novo. (Added to NRS by 2021, 1849 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec310",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.320",
@@ -316,7 +316,7 @@
   "text": "NRS 482C.320 Program may file bond or make deposit in lieu of insurance coverage; compensation from bond or deposit; refund of deposit. 1. In lieu of insurance coverage to satisfy any liability that accrues to a peer-to-peer car sharing program for damage that arises from the failure of the peer-to-peer car sharing program to comply with the provisions of this chapter, a peer-to-peer car sharing program may: (a) File with the Department a bond of a surety company authorized to transact business in this State in an amount not less than $5,000 conditioned that the peer-to-peer car sharing program will comply with the provisions of this chapter in the operation of the peer-to-peer car sharing program. (b) Deposit with the Department, under such terms as the Director may prescribe, a like amount of lawful money of the United States or a savings certificate of a bank, credit union, savings and loan association or savings bank situated in Nevada, which must state that the amount is unavailable for withdrawal except upon order of the Director. Interest earned on the amount accrues to the account of the licensee or applicant. 2. The bond must be continuous in form, and the total aggregate liability on the bond must be limited to the payment of the total amount of the bond. 3. The bond must provide that a shared vehicle owner or shared vehicle driver injured by the failure of the licensee to provide the disclosures required by NRS 482C.325 or to otherwise comply with the provisions of this chapter may apply to the Director for compensation from the bond. The Director, for good cause shown and after notice and an opportunity for hearing, may determine the amount of compensation and the person to whom it is to be paid. The surety shall then make the payment. 4. A deposit made pursuant to paragraph (b) of subsection 1 may be disbursed by the Director, for good cause shown and after notice and an opportunity for hearing, in an amount determined by the Director to compensate a shared vehicle owner or shared vehicle driver for an injury incurred due to the failure of the licensee to provide the disclosures required by NRS 482C.325 or to otherwise comply with the provisions of this chapter, or released upon receipt of: (a) A court order requiring the Director to release all or a specified portion of the deposit; or (b) A statement signed by the licensee requesting the Director to release the deposit, or a specified portion thereof, and stating the purpose for which the release is requested. 5. When a deposit is made pursuant to paragraph (b) of subsection 1, liability under the deposit must be in the amount prescribed by the Department. If the amount of the deposit is reduced or if there is an outstanding court judgment for which the licensee is liable under the deposit, the license as a peer-to-peer car sharing program is automatically suspended. The license must be reinstated if the licensee: (a) Files an additional bond pursuant to subsection 1; (b) Restores the deposit with the Department to the original amount required under this section; or (c) Satisfies the outstanding judgment for which the licensee is liable under the deposit. 6. A deposit made pursuant to paragraph (b) of subsection 1 may be refunded: (a) By order of the Director, 3 years after the date the licensee ceases to be licensed by the Department, if the Director is satisfied that there are no outstanding claims against the deposit; or (b) By order of court, at any time within 3 years after the date the licensee ceases to be licensed by the Department, upon evidence satisfactory to the court that there are no outstanding claims against the deposit. (Added to NRS by 2021, 1849 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec320",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.325",
@@ -327,7 +327,7 @@
   "text": "NRS 482C.325 Disclosures required in car sharing program agreement. Each car sharing program agreement entered into between a peer-to-peer car sharing program and a shared vehicle driver or shared vehicle owner shall disclose: 1. Any right of the peer-to-peer car sharing program to seek indemnification from the shared vehicle owner or the shared vehicle driver for economic loss sustained by the peer-to-peer car sharing program resulting from a breach of the terms and conditions of the car sharing program agreement. 2. That a motor vehicle liability insurance policy issued to the shared vehicle owner for the shared vehicle or to the shared vehicle driver does not provide a defense or indemnification for any claim asserted by the peer-to-peer car sharing program. 3. That the insurance coverage of the peer-to-peer car sharing program on the shared vehicle owner and the shared vehicle driver is in effect only during each car sharing period and that, for any use of the shared vehicle by the shared vehicle driver after the car sharing termination time, the shared vehicle driver and shared vehicle owner may not have insurance coverage. 4. The daily rate, fees and, if applicable, any insurance or protection package costs that are charged to the shared vehicle owner or the shared vehicle driver. 5. That the motor vehicle liability insurance of the shared vehicle owner may not provide coverage for a shared vehicle. 6. An emergency telephone number to personnel capable of fielding roadside assistance and other customer service inquiries. 7. If there are conditions under which a shared vehicle driver must maintain a personal motor vehicle liability insurance policy with certain applicable coverage limits on a primary basis in order to book a shared motor vehicle. (Added to NRS by 2021, 1850 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec325",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.330",
@@ -338,7 +338,7 @@
   "text": "NRS 482C.330 Shared vehicle driver must possess driver’s license; records regarding shared vehicle drivers to be kept by program. 1. A peer-to-peer car sharing program may not enter into a car sharing program agreement with a person to be a shared vehicle driver unless the person: (a) Possesses a valid driver’s license issued by the Department that authorizes the person to operate vehicles of the class of the shared vehicle; or (b) Is exempt from the requirement to obtain a Nevada driver’s license pursuant to subsection 3 of NRS 483.240 and possesses a valid driver’s license issued to the person in his or her home state or country that authorizes the person to operate vehicles of the class of the shared vehicle in that home state or country. 2. A peer-to-peer car sharing program shall keep a record of: (a) The name and address of each shared vehicle driver; (b) The number of the driver’s license of each shared vehicle driver and each other person, if any, who will operate the shared vehicle; and (c) The place of issuance of each driver’s license described in paragraph (b). (Added to NRS by 2021, 1851 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec330",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.335",
@@ -349,7 +349,7 @@
   "text": "NRS 482C.335 Program has sole responsibility for certain equipment; indemnification by shared vehicle driver. A peer-to-peer car sharing program shall have sole responsibility for any equipment, such as a GPS system or other special equipment, that is put in or on the shared vehicle to monitor or facilitate the car sharing transaction and shall indemnify and hold harmless the shared vehicle owner for any damage to or theft of such equipment during the car sharing period not caused by the shared vehicle owner. A peer-to-peer car sharing program may enter into an agreement with a shared vehicle driver wherein the shared vehicle driver agrees to indemnify the peer-to-peer car sharing program for any loss or damage to such equipment that occurs during the car sharing period. (Added to NRS by 2021, 1851 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec335",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.340",
@@ -360,7 +360,7 @@
   "text": "NRS 482C.340 Safety recalls: Program to verify shared vehicle not subject to recall; program to notify vehicle owner of duties regarding safety recalls; duties of shared vehicle owner. 1. At the time a motor vehicle owner registers as a shared vehicle owner through a peer-to-peer car sharing program and before being permitted to make a shared vehicle available for car sharing through the peer-to-peer car sharing program, the peer-to-peer car sharing program shall: (a) Verify that the shared vehicle is not subject to any safety recalls on the vehicle for which the repairs have not been made; and (b) Notify the shared vehicle owner of the requirements of subsections 2, 3 and 4. 2. If a shared vehicle owner has received an actual notice of a safety recall on the vehicle, the shared vehicle owner may not make the vehicle available as a shared vehicle on a peer-to-peer car sharing program until the safety recall repair has been made. 3. If a shared vehicle owner receives an actual notice of a safety recall on a shared vehicle while the shared vehicle is made available through a peer-to-peer car sharing program, the shared vehicle owner shall remove the shared vehicle from being made available through the peer-to-peer car sharing program as soon as possible after receiving the notice of the safety recall and until the safety recall repair has been made. 4. If a shared vehicle owner receives an actual notice of a safety recall on a shared vehicle while the shared vehicle is in the possession of a shared vehicle driver, the shared vehicle owner shall notify the peer-to-peer car sharing program as soon as possible after receiving the notice of the safety recall so that the shared vehicle owner may address the safety recall repair. (Added to NRS by 2021, 1851 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec340",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-482C.350",
@@ -371,6 +371,6 @@
   "text": "NRS 482C.350 Restrictions on regulation of program, shared vehicle driver, shared vehicle owner or shared vehicle by local governmental entities; exceptions; provisions of section do not exempt person from requirement to obtain state business license. 1. Except as otherwise provided in subsection 2 and NRS 244A.810 and 244A.860 , a local governmental entity shall not: (a) Impose any tax or fee on: (1) Any peer-to-peer car sharing program operating within the scope of a valid license issued pursuant to NRS 482C.295 ; (2) Any shared vehicle driver; (3) Any shared vehicle owner; or (4) Any shared vehicle. (b) Require: (1) A peer-to-peer car sharing program operating within the scope of a valid license issued pursuant to NRS 482C.295 to obtain from the local government any certificate, license or permit to operate as a peer-to-peer car sharing program; or (2) A shared vehicle owner who makes a shared vehicle available through a peer-to-peer car sharing program to obtain from the local government any certificate, license or permit to make the shared vehicle available through a peer-to-peer car sharing program. (c) Impose any other requirement on a peer-to-peer car sharing program, shared vehicle owner or shared vehicle driver which is not of general applicability to all similarly situated persons or entities within the jurisdiction of the local government. 2. Nothing in this section shall be construed to: (a) Prohibit a local government from requiring a peer-to-peer car sharing program, or a shared vehicle owner operating as a corporation, limited partnership or limited-liability company through which the shared vehicle owner shares a vehicle using a peer-to-peer car sharing program, to obtain from the local government a business license or to pay any business license fee in the same manner that is generally applicable to any other business that operates within the jurisdiction of the local government. (b) Prohibit an airport or its governing body from requiring a peer-to-peer car sharing program or shared vehicle owner to: (1) Obtain a permit or certification to operate at the airport; (2) Pay a fee to operate at the airport; or (3) Comply with any other requirement to operate at the airport. (c) Exempt a shared vehicle from any tax imposed pursuant to NRS 354.705 , 371.043 or 371.045 . 3. Nothing in this section shall be construed to exempt a peer-to-peer car sharing program from the requirement to obtain a state business license pursuant to chapter 76 of NRS. (Added to NRS by 2021, 1852 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-482C.html#NRS482CSec350",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]

@@ -227,7 +227,11 @@ def parse_chapter(doc: str, chapter: str, url: str) -> list:
         records.sort(key=lambda r: not (r[3] is None or is_current(r[3])))
 
         for n, (citation, heading, text, label) in enumerate(records):
-            repealed = bool(re.match(r"^\s*Repealed\b", heading, re.I))
+            # The marker is a bracketed tag at the END of the heading -
+            # "“Disseminator” defined. [Repealed.]" - not a prefix. Anchoring
+            # to the start matched zero of 920 repealed sections, so the -20
+            # repealed penalty in the app had never once fired.
+            repealed = bool(re.search(r"\[\s*repealed", heading, re.I))
             eff = label
 
             sec = {

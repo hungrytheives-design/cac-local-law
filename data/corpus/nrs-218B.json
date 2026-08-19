@@ -8,7 +8,7 @@
   "text": "NRS 218B.010 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 218B.020 to 218B.080 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 1981, 1109 ; A 1991, 1454 ; 2001 Special Session, 295 ; 2019, 985 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec010",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.020",
@@ -19,7 +19,7 @@
   "text": "NRS 218B.020 “Block” defined. “Block” means the smallest geographical unit whose boundaries were designated by the Bureau of the Census of the United States Department of Commerce in its topographically integrated geographic encoding and referencing system. (Added to NRS by 1981, 1109 ; A 1991, 1454 ; 2001 Special Session, 295 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec020",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.030",
@@ -30,7 +30,7 @@
   "text": "NRS 218B.030 “Block group” defined. “Block group” means a combination of blocks whose numbers begin with the same digit. (Added to NRS by 1981, 1109 ; A 1991, 1454 ; 2001 Special Session, 295 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec030",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.040",
@@ -41,7 +41,7 @@
   "text": "NRS 218B.040 “Census tract” defined. “Census tract” means a combination of block groups. (Added to NRS by 1981, 1109 ; A 1991, 1454 ; 2001 Special Session, 295 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec040",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.080",
@@ -52,7 +52,7 @@
   "text": "NRS 218B.080 “ State Demographer” defined. “State Demographer” means the demographer employed by the Department of Taxation pursuant to NRS 360.283 . (Added to NRS by 2019, 985 ) CREATION AND USE IN ELECTIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.100",
@@ -63,7 +63,7 @@
   "text": "NRS 218B.100 Creation of legislative districts; Legislator must be elected by registered voters of district in which Legislator resides. 1. The assembly districts described in the shapefile adopted by NRS 218B.260 are hereby created. 2. The senate districts described in the shapefile adopted by NRS 218B.250 are hereby created. 3. Each Legislator must be elected from within the district wherein the Legislator resides by the registered voters residing in that district. (Added to NRS by 1965 Special Session, 7 ; A 1971, 1523 ; 1977, 323 ; 1981, 1120 ; 1991, 1455 ; 2001 Special Session, 295 ; 2011, 3181 ; 2021, 33rd Special Session, 3 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec100",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.105",
@@ -74,7 +74,7 @@
   "text": "NRS 218B.105 Certain population counts involving state inmates must be used for apportionment of legislative districts. The population counts for every block, block group and census tract as revised by the State Demographer pursuant to NRS 360.288 must be used for the apportionment of legislative districts. (Added to NRS by 2019, 985 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec105",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.110",
@@ -85,7 +85,7 @@
   "text": "NRS 218B.110 Establishment of election precincts based on legislative districts. 1. Each county clerk and the Carson City Clerk shall, before all elections and pursuant to NRS 293.205 , establish the election precincts within the county and Carson City, respectively, in such manner that each election precinct for all elections at which any Legislator is to be elected, or nominated for election, is wholly within one of the legislative districts. 2. The establishment of an election precinct for any such election which lies partly in two or more legislative districts is void. (Added to NRS by 1971, 1519 ; A 1981, 1124 ; 1991, 1491 ; 2011, 3181 ) CORRECTION OF OMISSIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec110",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.150",
@@ -96,7 +96,7 @@
   "text": "NRS 218B.150 Attachment of omitted area to legislative district. 1. If any area of this State is omitted from the shapefiles adopted by NRS 218B.250 and 218B.260 inadvertently or by virtue of the complexities of the information supplied to the Legislature, the county clerk, the Carson City Clerk or the Director, upon discovery of the omission, shall notify the Secretary of State of the omission. The Secretary of State shall attach that area to the appropriate assembly district or senate district as follows: (a) If the area is surrounded by an assembly district or senate district, the area must be attached to that district. (b) If the area is contiguous to two or more assembly districts or senate districts, the area must be attached to the district that has the least population. 2. Any attachments made pursuant to the provisions of this section must be certified in writing and filed with the Director and with the Secretary of State. No change may be made in any attachments until the Legislature is again reapportioned. (Added to NRS by 1971, 1520 ; A 1979, 507 ; 1981, 1125 ; 1991, 1491 ; 2001 Special Session, 346 ; 2011, 3181 ; 2021, 33rd Special Session, 4 ) MAPS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec150",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.180",
@@ -107,7 +107,7 @@
   "text": "NRS 218B.180 Duties of Director of Legislative Counsel Bureau. The Director shall: 1. File a copy of the shapefiles adopted by NRS 218B.250 and 218B.260 with the Secretary of State. 2. Retain in an office of the Legislative Counsel Bureau, copies of maps of the legislative districts described in the shapefiles adopted by NRS 218B.250 and 218B.260 . 3. Make available copies of the maps to any interested person for a reasonable fee, not to exceed the actual costs of producing copies of the maps. 4. File a copy of the maps with the Secretary of State. (Added to NRS by 1991, 1454 ; A 2001 Special Session, 346 ; 2011, 3182 ; 2021, 33rd Special Session, 4 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec180",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.190",
@@ -118,7 +118,7 @@
   "text": "NRS 218B.190 Duties of Secretary of State. The Secretary of State shall: 1. Provide to the clerk of each county and the Clerk of Carson City, copies of the shapefiles filed pursuant to subsection 1 of NRS 218B.180 and maps filed pursuant to subsection 4 of NRS 218B.180 . 2. Make available copies of the shapefiles and maps to any interested person for a reasonable fee, not to exceed the actual costs of producing copies of the shapefiles or maps. (Added to NRS by 1991, 1454 ; A 2021, 33rd Special Session, 4 ) LEGISLATIVE DISTRICTS BASED ON 2020 CENSUS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec190",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.250",
@@ -129,7 +129,7 @@
   "text": "NRS 218B.250 Adoption of senate districts. The shapefile identified as “2021Senate_Final_SB1_Amd2,” filed with the Secretary of State pursuant to NRS 218B.180 , is hereby adopted to describe the senate districts in this State. (Added to NRS by 2021, 33rd Special Session, 3 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec250",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-218B.260",
@@ -140,6 +140,6 @@
   "text": "NRS 218B.260 Adoption of assembly districts. The shapefile identified as “2021Assembly_Final_SB1_Amd2,” filed with the Secretary of State pursuant to NRS 218B.180 , is hereby adopted to describe the assembly districts in this State. (Added to NRS by 2021, 33rd Special Session, 3 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-218B.html#NRS218BSec260",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]

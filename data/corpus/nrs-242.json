@@ -8,7 +8,7 @@
   "text": "NRS 242.011 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 242.015 to 242.068 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 1969, 930 ; A 1973, 975 ; 1977, 1183 ; 1981, 1145 ; 1993, 1540 ; 2011, 1858 , 2949 ; 2023, 3558 ; 2025, 1957 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec011",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.013",
@@ -18,8 +18,8 @@
   "heading": "“Administrator” defined. [Repealed.]",
   "text": "NRS 242.013 “Administrator” defined. Repealed. (See chapter 294, Statutes of Nevada 2025, at page 1970 .)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec013",
-  "status": "active",
-  "scrapedAt": "2026-08-17"
+  "status": "repealed",
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.015",
@@ -30,7 +30,7 @@
   "text": "NRS 242.015 “Board” defined. “Board” means the Information Technology Advisory Board. (Added to NRS by 1993, 1538 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec015",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.017",
@@ -41,7 +41,7 @@
   "text": "NRS 242.017 “Chief” or “Chief Information Officer” defined. “Chief” or “Chief Information Officer” means the Chief of the Governor’s Technology Office within the Office of the Governor. (Added to NRS by 2023, 3558 ; A 2025, 1957 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec017",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.031",
@@ -51,8 +51,8 @@
   "heading": "“Department” defined. [Repealed.]",
   "text": "NRS 242.031 “Department” defined. Repealed. (See chapter 294, Statutes of Nevada 2025, at page 1970 .)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec031",
-  "status": "active",
-  "scrapedAt": "2026-08-17"
+  "status": "repealed",
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.045",
@@ -62,8 +62,8 @@
   "heading": "“Division” defined. [Repealed.]",
   "text": "NRS 242.045 “Division” defined. Repealed. (See chapter 294, Statutes of Nevada 2025, at page 1970 .)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec045",
-  "status": "active",
-  "scrapedAt": "2026-08-17"
+  "status": "repealed",
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.051",
@@ -74,7 +74,7 @@
   "text": "NRS 242.051 “Equipment” defined. “Equipment” means any machine or device designed for the electronic handling of data or information, including, without limitation, for the acquisition, storage, processing, management, use, maintenance, display, distribution, disposal, transmission and retrieval of data or information. (Added to NRS by 1969, 930 ; A 1981, 1146 ; 1993, 1540 ; 2023, 173 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec051",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.055",
@@ -85,7 +85,7 @@
   "text": "NRS 242.055 “Information service” defined. “Information service” means any service provided by the Office to a using agency relating to the creation, maintenance, operation, security validation, testing, continuous monitoring or use of an information system. The term includes, without limitation, the real-time monitoring of cyberinfrastructure, threat mitigation, incident response and cybersecurity enforcement. (Added to NRS by 1993, 1538 ; A 2011, 1858 ; 2025, 36th Special Session, 40 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec055",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.057",
@@ -96,7 +96,7 @@
   "text": "NRS 242.057 “Information system” defined. “Information system” means any communications or computer equipment, software, firmware, procedures, personnel or technology used to acquire, store, process, manage, use, maintain, display, distribute, dispose of, transmit or retrieve data or information. (Added to NRS by 1993, 1538 ; A 2011, 1859 ; 2023, 173 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec057",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.059",
@@ -107,7 +107,7 @@
   "text": "NRS 242.059 “Information technology” defined. “Information technology” means any information, information system or information service acquired, developed, operated, maintained or otherwise used. (Added to NRS by 1993, 1539 ; A 2011, 1859 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec059",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.061",
@@ -118,7 +118,7 @@
   "text": "NRS 242.061 “Local governmental agency” defined. “Local governmental agency” means: 1. Any branch, agency, bureau, board, commission, department or division of a county, incorporated city or town in this State; or 2. The board of trustees of a school district. (Added to NRS by 2011, 1858 ; A 2025, 36th Special Session, 40 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec061",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.062",
@@ -129,7 +129,7 @@
   "text": "NRS 242.062 “ Office” defined. “Office” means the Governor’s Technology Office within the Office of the Governor. (Added to NRS by 2023, 3558 ; A 2025, 1957 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec062",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.063",
@@ -140,7 +140,7 @@
   "text": "NRS 242.063 “Security validation” defined. “Security validation” means a process or processes used to ensure that an information system or a network associated with an information system is resistant to any known threat. (Added to NRS by 2011, 1858 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec063",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.068",
@@ -151,7 +151,7 @@
   "text": "NRS 242.068 “Using agency” defined. “Using agency” means: 1. A state agency or elected state officer who is required to use the services and equipment of the Office pursuant to subsection 1 of NRS 242.131 . 2. Any other state agency or local governmental agency that has negotiated with the Office for its services or equipment pursuant to subsection 2 of NRS 242.131 . (Added to NRS by 1981, 1143 ; A 1993, 1540 ; 2025, 36th Special Session, 40 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec068",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.071",
@@ -162,7 +162,7 @@
   "text": "NRS 242.071 Legislative declaration; purposes of Governor’s Technology Office. 1. The Legislature hereby determines and declares that the creation of the Governor’s Technology Office within the Office of the Governor is necessary for the secure, coordinated, orderly and economical processing of data and information in State Government, to ensure the secure and economical use of information systems and to prevent the unnecessary proliferation of equipment and personnel among the various state agencies. 2. The purposes of the Office are: (a) To perform information services for using agencies. (b) To provide technical advice but not administrative control of the information systems within the using agencies. (Added to NRS by 1965, 972 ; A 1969, 933 ; 1973, 352 ; 1981, 1143 ; 1993, 1540 ; 1997, 3083 ; 2011, 1859 , 2949 ; 2023, 173 , 3558 ; 2025, 1957 ; 2025, 36th Special Session, 40 ) GOVERNOR’S TECHNOLOGY OFFICE General Provisions",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec071",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.080",
@@ -173,7 +173,7 @@
   "text": "NRS 242.080 Creation; composition. 1. The Governor’s Technology Office is hereby created within the Office of the Governor. 2. The Office consists of the Chief Information Officer and: (a) The Director’s Office. The Chief is the head of the Director’s Office. (b) The Client Services Division. (c) The Computing Services Division. (d) The Network Services Division. (e) The Office of Information Security and Cyber Defense. (f) Other units, groups, divisions or departments deemed necessary by the Chief to the extent such functions are supported by the appropriations allocated to the functions of the Office. 3. A Network Transport Services Unit and a Unified Communications Unit are hereby created within the Network Services Division of the Office. 4. The Security Operations Center is hereby created within the Office of Information Security and Cyber Defense. (Added to NRS by 1981, 1143 ; A 1993, 1541 ; 1997, 3083 ; 2007, 915 ; 2009, 1163 ; 2011, 2949 ; 2013, 3825 ; 2023, 173 , 3559 ; 2025, 1957 , 3564 ; 2025, 36th Special Session, 40 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.090",
@@ -184,7 +184,7 @@
   "text": "NRS 242.090 Chief Information Officer: Appointment; classification; other employment prohibited. 1. The Governor shall appoint the Chief Information Officer in the unclassified service of the State. 2. The Chief Information Officer: (a) Serves at the pleasure of, and is responsible to, the Governor. (b) Shall not engage in any other gainful employment or occupation. (Added to NRS by 1981, 1143 ; A 1983, 641 ; 1985, 413 ; 2011, 2949 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec090",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.101",
@@ -195,7 +195,7 @@
   "text": "NRS 242.101 Chief Information Officer: General powers and duties. 1. The Chief Information Officer shall: (a) Appoint a Deputy Director of the Office of Information Security and Cyber Defense who is in the unclassified service of the State; (b) Administer the provisions of this chapter and other provisions of law relating to the duties of the Governor’s Technology Office; (c) Employ, within the limits of the approved budget of the Office, such other staff as is necessary for the performance of the duties of the Office; and (d) Carry out other duties and exercise other powers specified by law. 2. The Chief may form committees to establish standards and determine criteria for evaluation of policies relating to informational services. (Added to NRS by 1981, 1143 ; A 2011, 1859 , 2949 ; 2015, 2756 ; 2023, 3559 ; 2025, 1957 , 3564 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec101",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.105",
@@ -206,7 +206,7 @@
   "text": "NRS 242.105 Confidentiality of certain documents relating to homeland security: List; biennial review; annual report. 1. Except as otherwise provided in subsection 3, records and portions of records that are assembled, maintained, overseen or prepared by the Office to mitigate, prevent or respond to cybersecurity incidents or acts of terrorism, the public disclosure of which would, in the determination of the Chief, create a substantial likelihood of threatening the cybersecurity of a using agency or the safety of the general public are confidential and not subject to inspection by the general public to the extent that such records and portions of records consist of or include: (a) Information regarding the infrastructure and security of information systems, including, without limitation: (1) Access codes, passwords and programs used to ensure the security of an information system; (2) Access codes used to ensure the security of software applications; (3) Procedures and processes used to ensure the security of an information system; and (4) Plans used to re-establish security and service with respect to an information system after security has been breached or service has been interrupted. (b) Assessments and plans that relate specifically and uniquely to the vulnerability of an information system or to the measures which will be taken to respond to such vulnerability, including, without limitation, any compiled underlying data necessary to prepare such assessments and plans. (c) The results of tests of the security of an information system, insofar as those results reveal specific vulnerabilities relative to the information system. 2. The Chief shall maintain or cause to be maintained a list of each record or portion of a record that the Chief has determined to be confidential pursuant to subsection 1. The list described in this subsection must be prepared and maintained so as to recognize the existence of each such record or portion of a record without revealing the contents thereof. 3. At least once each biennium, the Chief shall review the list described in subsection 2 and shall, with respect to each record or portion of a record that the Chief has determined to be confidential pursuant to subsection 1: (a) Determine that the record or portion of a record remains confidential in accordance with the criteria set forth in subsection 1; (b) Determine that the record or portion of a record is no longer confidential in accordance with the criteria set forth in subsection 1; or (c) If the Chief determines that the record or portion of a record is obsolete, cause the record or portion of a record to be disposed of in the manner described in NRS 239.073 to 239.125 , inclusive. 4. On or before February 15 of each year, the Chief shall: (a) Prepare a report setting forth a detailed description of each record or portion of a record determined to be confidential pursuant to this section, if any, accompanied by an explanation of why each such record or portion of a record was determined to be confidential; and (b) Submit a copy of the report to the Director of the Legislative Counsel Bureau for transmittal to: (1) If the Legislature is in session, the standing committees of the Legislature which have jurisdiction of the subject matter; or (2) If the Legislature is not in session, the Legislative Commission. 5. As used in this section, “act of terrorism” has the meaning ascribed to it in NRS 239C.030 . (Added to NRS by 2003, 2461 ; A 2005, 268 ; 2011, 2950 ; 2025, 36th Special Session, 41 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec105",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.111",
@@ -217,7 +217,7 @@
   "text": "NRS 242.111 Regulations. The Chief shall adopt regulations necessary for the administration of this chapter, including: 1. The policy for the information systems of using agencies, as that policy relates, but is not limited, to such items as standards for systems and programming and criteria for selection, location and use of information systems to meet the requirements of using agencies and officers in the best interests of the State and using agencies; 2. The procedures of the Office in providing information services, which may include provision for the performance, by a using agency which uses the services or equipment of the Office, of preliminary procedures, such as data recording and verification, within the using agency; 3. The effective administration of the Office, including, without limitation, security to prevent unauthorized access to information systems and plans for the recovery of systems and applications after they have been disrupted; 4. The development of standards to ensure the security of the information systems of the using agencies; 5. Specifications and standards for the employment of all personnel of the Office; and 6. The policies and procedures necessary to coordinate the cybersecurity activities of state agencies and local governments. (Added to NRS by 1965, 973 ; A 1973, 1462 ; 1981, 1145 ; 1989, 2154 ; 1993, 369 , 1541 ; 1995, 585 ; 1997, 3084 ; 2007, 915 ; 2023, 3559 ; 2025, 3565 ; 2025, 36th Special Session, 42 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec111",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.115",
@@ -228,7 +228,7 @@
   "text": "NRS 242.115 Development of policies, standards, guidelines and biennial state plan for information systems of Executive Branch of Government. 1. Except as otherwise provided in subsection 2, the Chief shall: (a) Develop policies and standards for the information systems of the Executive Branch of Government; (b) Coordinate the development of a biennial state plan for the information systems of the Executive Branch of Government; (c) Develop guidelines to assist state agencies in the development of short- and long-term plans for their information systems; and (d) Develop guidelines and procedures for the procurement and maintenance of the information systems of the Executive Branch of Government. 2. This section does not apply to the Nevada System of Higher Education or the Nevada Criminal Justice Information System used to provide support for the operations of law enforcement agencies in this State. (Added to NRS by 1989, 2153 ; A 1993, 370 , 1541 ; 1995, 586 ; 1997, 3084 ; 2007, 916 ; 2009, 1163 ; 2023, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec115",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.116",
@@ -239,7 +239,7 @@
   "text": "NRS 242.116 Security Operations Center: Development of certain policies and procedures. 1. The Security Operations Center shall develop policies and procedures to: (a) Combat the increasing threats to using agencies posed by cybercriminals; (b) Protect sensitive data in the possession of a using agency; and (c) Ensure a coordinated and rapid response to any cybersecurity incident that affects a using agency. 2. The policies and procedures developed pursuant to subsection 1 must include, without limitation: (a) A requirement that a using agency notify the Security Operations Center of any specific or immediate threat to the cybersecurity of an information system operated or maintained by the using agency; (b) A requirement that the Security Operations Center notify the appropriate law enforcement agency and prosecuting attorney and any other appropriate public or private entity of any specific threat to the cybersecurity of an information system of which the Security Operations Center has been notified; (c) A strategy for developing ongoing programs for professional development in cybersecurity for the employees of a using agency; and (d) The use of security orchestration automation and response systems to automate repetitive tasks, enhance operational efficiency and standardize procedures and responses for the various information technology support of using agencies. (Added to NRS by 2025, 36th Special Session, 38 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec116",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1165",
@@ -250,7 +250,7 @@
   "text": "NRS 242.1165 Oversight by Chief of certain using agencies. If a using agency does not comply with the cybersecurity policies and protocols developed by the Security Operations Center pursuant to NRS 242.116 , the Chief may impose additional oversight or audit requirements on the using agency relating to cybersecurity. (Added to NRS by 2025, 36th Special Session, 39 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1165",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.117",
@@ -261,7 +261,7 @@
   "text": "NRS 242.117 Account for the Security Operations Center: Creation; administration; use; grants; interest. 1. The Account for the Security Operations Center is hereby created in the State General Fund. The Chief must administer the Account. 2. The money in the Account must only be used for the purposes of supporting and carrying out the duties of the Security Operations Center. 3. The Chief may apply for and accept federal grants for the purposes of this section. 4. The Security Operations Center may serve as a fiscal agent to pool federal grant funds for the purposes of cybersecurity support and infrastructure development. The Security Operations Center may establish criteria for using agencies to access shared resources which must ensure equitable distribution of the resources and maximize competiveness for federal opportunities. 5. All interest earned on the money in the Account, after deducting any applicable charges, must be credited to the Account. 6. All claims against the Account must be paid as other claims against the State are paid. 7. Any money remaining in the Account at the end of a fiscal year does not revert to the State General Fund and must be carried forward to the next fiscal year. (Added to NRS by 2025, 36th Special Session, 39 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec117",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.118",
@@ -272,7 +272,7 @@
   "text": "NRS 242.118 Security Operations Center: Duty to collaborate with Office of Information Security and Cyber Defense for certain purposes. The Security Operations Center shall collaborate with the Office of Information Security and Cyber Defense created by NRS 242.080 to enhance communication and coordination of incident responses to cyber threats or cyberattacks on information systems and to provide each using agency information relating to emerging cyber threats and best practices for cybersecurity. (Added to NRS by 2025, 36th Special Session, 39 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec118",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.119",
@@ -283,7 +283,7 @@
   "text": "NRS 242.119 Security Operations Center: Report assessing effectiveness. 1. On or before January 1 of each year, the Security Operations Center shall prepare a report assessing the effectiveness of the Security Operations Center relating to its duties. The report must include, without limitation: (a) A summary of the progress made by the Security Operations Center during the immediately preceding year in performing its duties and exercising such powers as are conferred upon it; (b) A general description of any threats or attacks responded to by the Security Operations Center during the immediately preceding year, and a summary of the response to the threat; (c) A summary of the goals and objectives of the Security Operations Center for the upcoming year; (d) A summary of any issues presenting challenges to the Security Operations Center; and (e) Any other information that the Chief determines is appropriate to include in the report. 2. The report required pursuant to subsection 1 must be submitted not later than July 1 of each year to the Governor, Attorney General and Director of the Legislative Counsel Bureau for transmission to the Legislature. (Added to NRS by 2025, 36th Special Session, 39 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec119",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.122",
@@ -294,7 +294,7 @@
   "text": "NRS 242.122 Information Technology Advisory Board: Creation; members; Chair. 1. There is hereby created an Information Technology Advisory Board. The Board consists of: (a) One member appointed by the Majority Floor Leader of the Senate from the membership of the Senate Standing Committee on Finance. (b) One member appointed by the Speaker of the Assembly from the membership of the Assembly Standing Committee on Ways and Means. (c) Two representatives of using agencies which are major users of the services of the Office. The Governor shall appoint the two representatives. Each such representative serves for a term of 4 years. For the purposes of this paragraph, an agency is a “major user” if it is among the top five users of the services of the Office, based on the amount of money paid by each agency for the services of the Office during the immediately preceding biennium. (d) The Chief of the Office or his or her designee. (e) The Attorney General or his or her designee. (f) Five persons appointed by the Governor as follows: (1) Three persons who represent a city or county in this State, at least one of whom is engaged in information technology or information security; and (2) Two persons who represent the information technology industry but who: (I) Are not employed by this State; (II) Do not hold any elected or appointed office in State Government; (III) Do not have an existing contract or other agreement to provide information services, systems or technology to an agency of this State; and (IV) Are independent of and have no direct or indirect pecuniary interest in a corporation, association, partnership or other business organization which provides information services, systems or technology to an agency of this State. 2. Each person appointed pursuant to paragraph (f) of subsection 1 serves for a term of 4 years. No person so appointed may serve more than 2 consecutive terms. 3. At the first regular meeting of each calendar year, the members of the Board shall elect a Chair by majority vote. (Added to NRS by 1993, 1539 ; A 2011, 1859 ; 2025, 1958 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec122",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.123",
@@ -305,7 +305,7 @@
   "text": "NRS 242.123 Information Technology Advisory Board: Meetings; compensation. 1. The Board shall meet at least once every 3 months and may meet at such further times as deemed necessary by the Chair. 2. Members of the Board who are officers or employees of the Executive Department of State Government serve without additional compensation. Members who are not officers or employees of the Executive Department of State Government are entitled to a salary of $80 for each day or part of a day spent on the business of the Board. All members of the Board are entitled to receive the per diem allowance and travel expenses provided for state officers and employees generally. (Added to NRS by 1993, 1539 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec123",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.124",
@@ -316,7 +316,7 @@
   "text": "NRS 242.124 Information Technology Advisory Board: Duties; powers. 1. The Board shall: (a) Advise the Office concerning issues relating to information technology, including, without limitation, the development, acquisition, consolidation and integration of, and policies, planning and standards for, information technology. (b) Periodically review the Office’s statewide strategic plans and standards manual for information technology. (c) Review the Office’s proposed budget before its submission to the Budget Division of the Office of Finance created by NRS 223.400 . 2. The Board may: (a) With the consent of the Office, recommend goals and objectives for the Office, including periods and deadlines in which to achieve those goals and objectives. (b) Upon request by a using agency, review issues and policies concerning information technology to resolve disputes with the Office. (c) Review the plans for information technology of each using agency. (Added to NRS by 1993, 1539 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec124",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.125",
@@ -327,7 +327,7 @@
   "text": "NRS 242.125 Consultation and coordination with state agencies not required to use services or equipment of Office. Regulations, policies, standards and guidelines adopted pursuant to the provisions of this chapter must be developed after consultation and coordination with state agencies that are not required to use the services or equipment of the Office. (Added to NRS by 1989, 2154 ) Office of Information Security and Cyber Defense",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec125",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.127",
@@ -338,7 +338,7 @@
   "text": "NRS 242.127 Definitions. As used in NRS 242.127 to 242.129 , inclusive, unless the context otherwise requires, the words and terms defined in NRS 242.1273 , 242.1275 and 242.1277 have the meanings ascribed to them in those sections. (Added to NRS by 2025, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec127",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1273",
@@ -349,7 +349,7 @@
   "text": "NRS 242.1273 “Deputy Director” defined. “Deputy Director” means the Deputy Director of the Office of Information Security and Cyber Defense appointed by the Chief pursuant to NRS 242.101 . (Added to NRS by 2025, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1273",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1275",
@@ -360,7 +360,7 @@
   "text": "NRS 242.1275 “Security of an information system” defined. “Security of an information system” includes, without limitation, the security of: 1. The physical infrastructure of an information system; and 2. Information, including, without limitation, personal information, that is stored on, transmitted to, from or through or generated by an information system. (Added to NRS by 2025, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1275",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1277",
@@ -371,7 +371,7 @@
   "text": "NRS 242.1277 “State agency” defined. “State agency” means every public agency, bureau, board, commission, department or division of the Executive Branch of the State Government. (Added to NRS by 2025, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1277",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1279",
@@ -382,7 +382,7 @@
   "text": "NRS 242.1279 Legislative declaration. The Legislature hereby finds and declares that: 1. The protection and security of information systems, and the coordination of efforts to promote the protection and security of information systems, are essential to protecting the health, safety and welfare of the people of this State. 2. The continued development of technologies relating to information systems and the expanding and diverse applications of those technologies pose significant implications for the functioning of any infrastructure in this State that is critical to the health, safety and welfare of the people of this State, particularly in the areas of transportation, health care, energy, education, law enforcement and commercial enterprises. 3. Information systems and the application of information systems relating to the operation of the State Government and local governments make up a statewide cyberinfrastructure that is integral to the delivery of essential services to the people of this State and the essential functions of government that ensure the protection of the health, safety and welfare of the people of this State. 4. Protecting and securing the statewide cyberinfrastructure requires the identification of the areas in which information systems may be vulnerable to attack, unauthorized use or misuse or other dangerous, harmful or destructive acts. 5. Protecting and securing the statewide cyberinfrastructure requires an ability to identify and eliminate threats to information systems in both the public and private sectors. 6. Protecting and securing the statewide cyberinfrastructure requires a strategic statewide plan for responding to incidents in which information systems are compromised, breached or damaged, including, without limitation, actions taken to: (a) Minimize the harmful impacts of such incidents on the health, safety and welfare of the people of this State; (b) Minimize the disruptive effects of such incidents on the delivery of essential services to the people of this State and on the essential functions of government that ensure the protection of the health, safety and welfare of the people of this State; and (c) Ensure the uninterrupted and continuous delivery of essential services to the people of this State and the uninterrupted and continuous operations of the essential functions of government that ensure the protection of the health, safety and welfare of the people of this State. 7. Protecting and securing the statewide cyberinfrastructure depends on collaboration and cooperation, including the sharing of information and analysis regarding cybersecurity threats, among local, state and federal agencies and across a broad spectrum of the public and private sectors. 8. Institutions of higher education play a critical role in protecting and securing statewide cyberinfrastructure by developing programs that support a skilled workforce, promote innovation and contribute to a more secure statewide cyberinfrastructure. 9. It is therefore in the public interest that the Legislature enact provisions to enable the State to prepare for and mitigate risks to, and otherwise protect, information systems and statewide cyberinfrastructure. (Added to NRS by 2025, 3559 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1279",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.128",
@@ -393,7 +393,7 @@
   "text": "NRS 242.128 Duties. The Office of Information Security and Cyber Defense shall: 1. Develop procedures for risk-based assessments that identify vulnerabilities in the information systems that are operated or maintained by state agencies and any potential threats that may exploit such vulnerabilities; 2. Based on the results of risk-based assessments, identify risks to the security of information systems that are operated or maintained by state agencies; and 3. Develop best practices for preparing for and mitigating risks to, and otherwise protecting, the security of information systems that are operated or maintained by state agencies. (Added to NRS by 2025, 3560 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec128",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1281",
@@ -404,7 +404,7 @@
   "text": "NRS 242.1281 Establishment of certain partnerships; consultation and coordination with certain state agencies. The Office of Information Security and Cyber Defense shall: 1. Establish partnerships with: (a) Local governments; (b) The Nevada System of Higher Education; and (c) Private entities, to the extent practicable, Ê to encourage the development of strategies to prepare for and mitigate risks to, and otherwise protect, the security of information systems that are operated or maintained by a public or private entity in this State. 2. Establish partnerships to assist and receive assistance from local governments and appropriate agencies of the Federal Government regarding the development of strategies to prepare for and mitigate risks to, and otherwise protect, the security of information systems. 3. Consult with the Office of Emergency Management of the Office of the Governor regarding the development of strategies to prepare for and mitigate risks to, and otherwise protect, the security of information systems. 4. Coordinate with the Investigation Division of the Department of Public Safety regarding gathering intelligence on and initiating investigations of cyber threats and incidents. (Added to NRS by 2025, 3561 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1281",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1283",
@@ -415,7 +415,7 @@
   "text": "NRS 242.1283 Establishment of certain policies and procedures for notification of specific threats; appointment of cybersecurity incident response teams; duties. 1. The Office of Information Security and Cyber Defense shall establish policies and procedures for: (a) A state agency to notify the Office of any specific threat to the security of an information system operated or maintained by the state agency; (b) Any other public or private entity to voluntarily notify the Office of any specific threat to the security of an information system; (c) The Office to notify state agencies, appropriate law enforcement and prosecuting authorities and any other appropriate public or private entity of any specific threat to the security of an information system of which the Office has been notified; and (d) The Deputy Director to convene a cybersecurity incident response team appointed pursuant to subsection 2 upon notification of the Office of a specific threat to the security of an information system. 2. In consultation with appropriate state agencies, local governments and agencies of the Federal Government, the Deputy Director shall appoint a cybersecurity incident response team or teams. Such a team may include, without limitation, an investigator employed by the Investigation Division of the Department of Public Safety. 3. A cybersecurity incident response team appointed pursuant to subsection 2 shall convene at the call of the Deputy Director and, subject to the direction of the Deputy Director, shall assist the Office of Information Security and Cyber Defense and any appropriate state agencies, local governments or agencies of the Federal Government in responding to a threat to the security of an information system. 4. A private entity may, in its discretion, use the services of a cybersecurity incident response team appointed pursuant to subsection 2. (Added to NRS by 2025, 3561 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1283",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1285",
@@ -426,7 +426,7 @@
   "text": "NRS 242.1285 Statewide strategic plan: Requirements; biannual updates; use by private entity; testing of adherence to cybersecurity policy. 1. The Office of Information Security and Cyber Defense shall prepare and make publicly available a statewide strategic plan that outlines policies, procedures, best practices and recommendations for preparing for and mitigating risks to, and otherwise protecting, the security of information systems in this State and for recovering from and otherwise responding to threats to or attacks on the security of information systems in this State. The statewide strategic plan prepared and made available pursuant to this subsection must not identify or include information which allows for the identification of specific vulnerabilities in the information systems in this State. 2. The statewide strategic plan must include, without limitation, policies, procedures, best practices and recommendations for: (a) Identifying, preventing and responding to threats to and attacks on the security of information systems in this State; (b) Ensuring the safety of, and the continued delivery of essential services to, the people of this State in the event of a threat to or attack on the security of an information system in this State; (c) Protecting the confidentiality of personal information that is stored on, transmitted to, from or through or generated by an information system in this State; (d) Investing in technologies, infrastructure and personnel for protecting the security of information systems; and (e) Enhancing the voluntary sharing of information and any other collaboration among state agencies, local governments, agencies of the Federal Government and appropriate private entities regarding protecting the security of information systems. 3. The statewide strategic plan prepared pursuant to this section must be updated at least every 2 years. 4. A private entity may, in its discretion, make use of the information set forth in the statewide strategic plan. 5. Each agency of the State Government that has adopted a cybersecurity policy shall test the adherence of its employees to that policy on a periodic basis. Such an agency shall submit the results of the testing to the Office of Information Security and Cyber Defense annually for consideration in the update of the statewide strategic plan. (Added to NRS by 2025, 3562 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1285",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1287",
@@ -437,7 +437,7 @@
   "text": "NRS 242.1287 Submission of quarterly reports to Governor; submission of annual reports to Governor and Nevada Commission on Homeland Security. 1. The Office of Information Security and Cyber Defense shall quarterly prepare and submit to the Governor a report assessing the preparedness of the State, as of the date of the report, to counteract, prevent and respond to potential cybersecurity threats. The report must be based on information and documents readily available to the Office. 2. Not later than July 1 of each year, the Office of Information Security and Cyber Defense shall prepare and submit to the Governor and the Nevada Commission on Homeland Security created by NRS 239C.120 a report that includes, without limitation: (a) A summary of the progress made by the Office during the immediately preceding year in executing, administering and enforcing the provisions of NRS 242.127 to 242.129 , inclusive, and performing such duties and exercising such powers as are conferred upon it pursuant to NRS 242.127 to 242.129 , inclusive, and any other specific statute; (b) A general description of any threat during the immediately preceding year to the security of an information system that prompted the Deputy Director to convene a cybersecurity incident response team pursuant to NRS 242.1283 , and a summary of the response to the threat; (c) A summary of the goals and objectives of the Office for the upcoming year; (d) A summary of any issues presenting challenges to the Office; and (e) Any other information that the Deputy Director determines is appropriate to include in the report. (Added to NRS by 2025, 3562 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1287",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.1289",
@@ -448,7 +448,7 @@
   "text": "NRS 242.1289 Adoption of cybersecurity incident response plan; requirements for regulations; review of plans; confidentiality of plans. 1. Each political subdivision shall adopt and maintain a cybersecurity incident response plan. Each new or revised plan must be filed within 10 days after adoption or revision with the Office of Information Security and Cyber Defense. 2. The Chief shall, by regulation, prescribe the contents of a cybersecurity incident response plan, which must include, without limitation, a plan: (a) To prepare for a cybersecurity threat; (b) To detect and analyze a cybersecurity threat; (c) To contain, eradicate and recover from a cybersecurity incident; and (d) For postincident activity that includes a discussion regarding information learned and any analytics associated with the cybersecurity incident. 3. Each political subdivision shall review its cybersecurity incident response plan at least once each year and, as soon as practicable after the review is completed but not later than December 31 of each year, file with the Office of Information Security and Cyber Defense: (a) Any revised cybersecurity incident response plan resulting from the review; or (b) A written certification that the most recent cybersecurity incident response plan filed pursuant to subsection 1 is the current cybersecurity incident response plan for the political subdivision. 4. Except as otherwise provided in NRS 239.0115 , a cybersecurity incident response plan filed pursuant to the requirements of this section, including any revisions adopted thereto, is confidential and must be securely maintained by the Office of Information Security and Cyber Defense. An officer, employee or other person to whom the plan is entrusted by the Office shall not disclose the contents of such a plan except: (a) Upon the lawful order of a court of competent jurisdiction; (b) As is reasonably necessary in the case of an act of terrorism or related emergency; or (c) Pursuant to the provisions of NRS 239.0115 . 5. As used in this section, “political subdivision” means a city or county of this State. (Added to NRS by 2025, 3563 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec1289",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.129",
@@ -459,7 +459,7 @@
   "text": "NRS 242.129 Confidentiality of certain records. 1. Any record of a state agency, including, without limitation, a record of the Office of Information Security and Cyber Defense or local government or a record obtained from a private entity which identifies the detection or investigation of or a response to a suspected or confirmed threat to or attack on the security of an information system is not a public record and may be disclosed by the Deputy Director only to another state agency, local government, a cybersecurity incident response team convened pursuant to NRS 242.1283 and appropriate law enforcement or prosecuting authorities and only for the purposes of preparing for and mitigating risks to, and otherwise protecting, the security of an information system or as part of a criminal investigation. 2. The Office of Information Security and Cyber Defense shall not require any private entity to provide any information or data that, in the sole discretion of the private entity, would compromise any information system operated or maintained by the private entity if such information or data were made public. (Added to NRS by 2025, 3564 ) Services",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec129",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.131",
@@ -470,7 +470,7 @@
   "text": "NRS 242.131 Services provided for agencies and elected officers of State: Negotiation; withdrawal; contracts to provide services. 1. The Office shall provide state agencies and elected state officers with all their required design of information systems. The Security Operations Center shall provide each state agency and elected state officer with cybersecurity services, including, without limitation, real-time monitoring of cyberinfrastructure, threat mitigation, incident response and cybersecurity enforcement. All agencies and officers must use those services and equipment, except as otherwise provided in subsection 2. 2. The following agencies may negotiate with the Office for its services, including, without limitation, cybersecurity services, including, without limitation, real-time monitoring of cyberinfrastructure, threat mitigation, incident response and cybersecurity enforcement, or the use of its equipment, subject to the provisions of this chapter, and the Office shall provide those services and the use of that equipment as may be mutually agreed: (a) The Court Administrator; (b) The Department of Motor Vehicles; (c) The Department of Public Safety; (d) The Department of Transportation; (e) The Employment Security Division of the Department of Employment, Training and Rehabilitation; (f) The Department of Wildlife; (g) The Housing Division of the Department of Business and Industry; (h) The Legislative Counsel Bureau; (i) The State Controller; (j) The Nevada Gaming Control Board and Nevada Gaming Commission; (k) The Nevada System of Higher Education; and (l) Any local governmental agency. 3. Any state agency or elected state officer who uses the services of the Office and desires to withdraw substantially from that use must apply to the Chief for approval. The application must set forth justification for the withdrawal. If the Chief denies the application, the agency or officer must: (a) If the Legislature is in regular or special session, obtain the approval of the Legislature by concurrent resolution. (b) If the Legislature is not in regular or special session, obtain the approval of the Interim Finance Committee. The Chief shall, within 45 days after receipt of the application, forward the application together with his or her recommendation for approval or denial to the Interim Finance Committee. The Interim Finance Committee has 45 days after the application and recommendation are submitted to its Secretary within which to consider the application. Any application which is not considered by the Committee within the 45-day period shall be deemed approved. 4. Any local governmental agency and any state agency that is not an agency of the Executive Department of the State Government which has entered into an agreement to use the equipment or services of the Office and desires to withdraw substantially from that use must, not less than 120 days before the next regular session of the Legislature, notify the Chief of the intent of the agency to so withdraw. The notification must: (a) Set forth the justification for the withdrawal; and (b) Unless a later date is approved by the Chief, set a date, not earlier than July 1 of the next fiscal year, for termination of the use of the equipment or services of the Office. 5. If the demand for services or use of equipment exceeds the capability of the Office to provide them, the Office may contract with other agencies or independent contractors to furnish the required services or use of equipment and is responsible for the administration of the contracts. (Added to NRS by 1965, 972 ; A 1969, 933 ; 1973, 1462 ; 1979, 1789 ; 1981, 1144 , 1521 , 1831 ; 1985, 1981 ; 1991, 1577 ; 1993, 370 , 1542 ; 1995, 586 ; 1999, 1662 , 1811 ; 2001, 2591 ; 2003, 1559 , 2194 ; 2023, 3560 ; 2025, 36th Special Session, 42 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec131",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.135",
@@ -481,7 +481,7 @@
   "text": "NRS 242.135 Employment of one or more persons to provide information services for agency or elected officer of State. 1. The Chief may recommend to the Governor that a state agency or elected officer that is required to use the Office’s equipment or services be authorized to employ one or more persons to provide information services exclusively for the agency or officer if: (a) The Chief finds that it is in the best interests of the State to authorize the employment by the agency or elected officer; (b) The agency or elected officer agrees to provide annually to the Office sufficient information to determine whether the authorized employment continues to be in the best interests of the State; and (c) The agency or elected officer agrees to ensure that the person or persons employed comply with the provisions of this chapter and the regulations adopted thereunder. 2. The Chief may recommend to the Governor the revocation of the authority of a state agency or elected officer to employ a person or persons pursuant to subsection 1 if the Chief finds that the person or persons employed have not complied with the provisions of this chapter or the regulations adopted thereunder. (Added to NRS by 1989, 2153 ; A 1993, 1543 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec135",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.141",
@@ -491,8 +491,8 @@
   "heading": "Services provided for agencies not under Governor’s control and local governmental agencies. [Repealed.]",
   "text": "NRS 242.141 Services provided for agencies not under Governor’s control and local governmental agencies. Repealed. (See chapter 4, Statutes of Nevada 2025, 36th Special Session, at page 48 .)",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec141",
-  "status": "active",
-  "scrapedAt": "2026-08-17"
+  "status": "repealed",
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.151",
@@ -503,7 +503,7 @@
   "text": "NRS 242.151 Chief to advise agencies. The Chief shall advise the using agencies regarding: 1. The policy for information services of the Office, as that policy relates, but is not limited, to such items as standards for systems and programming and criteria for the selection, location and use of information systems in order that the requirements of using agencies may be met in the best interests of the State; 2. The procedures in performing information services; and 3. The effective administration and use of the computer facility, including security to prevent unauthorized access to data, information and plans for the recovery of systems and applications after they have been disrupted. (Added to NRS by 1969, 930 ; A 1981, 1147 ; 1989, 2154 ; 1993, 1543 ; 2023, 174 ; 2025, 36th Special Session, 43 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec151",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.161",
@@ -514,7 +514,7 @@
   "text": "NRS 242.161 Control of equipment owned or leased by using agency; agreement on standards and policies for equipment or software systems deployed by Security Operations Center. 1. All equipment of a using agency which is owned or leased by the State must be under the managerial control of the Office, except the equipment of the agencies and officers specified in subsection 2 of NRS 242.131 . 2. The Office may permit a using agency which is required to use such equipment to operate it on the using agency’s premises. 3. The Security Operations Center shall not assume operational control of the equipment or software systems of a using agency. Before providing services, the Security Operations Center shall provide to the using agency standards and policies for the equipment or software systems to be deployed by the Security Operations Center, which must be agreed upon in writing. (Added to NRS by 1969, 931 ; A 1981, 1147 ; 2025, 36th Special Session, 44 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec161",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.171",
@@ -525,7 +525,7 @@
   "text": "NRS 242.171 Responsibilities of Office; review of proposed applications of information systems. 1. The Office is responsible for: (a) The applications of information systems; (b) Designing and placing those information systems in operation; (c) Any application of an information system which it furnishes to using agencies after negotiation; and (d) The security validation, testing, including, without limitation, penetration testing, and continuous monitoring of information systems, Ê for using agencies. 2. The Chief shall review and approve or disapprove, pursuant to standards for justifying cost, any application of an information system having an estimated developmental cost of $50,000 or more. No using agency may commence development work on any such applications until approval and authorization have been obtained from the Chief. 3. As used in this section, “penetration testing” means a method of evaluating the security of an information system or application of an information system by simulating unauthorized access to the information system or application. (Added to NRS by 1969, 931 ; A 1973, 680 ; 1981,1147; 1993, 1543 ; 2011, 1860 ; 2025, 36th Special Session, 44 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec171",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.181",
@@ -536,7 +536,7 @@
   "text": "NRS 242.181 Adherence by using agencies to regulations; reporting of certain incidents; authority to establish uniform reporting system; uniformity of services. 1. Any using agency which uses the equipment or services of the Office shall adhere to the regulations, standards, practices, policies and conventions of the Office. 2. Each using agency shall report any suspected incident of: (a) A data breach; (b) A distributed denial of service incident; (c) A ransomware incident; (d) Any other incident that disrupts the delivery or essential services for more than 1 business day or directly affects life or property; or (e) Noncompliance with the regulations, standards, practices, policies and conventions of the Office that is identified by the Office as security-related, Ê to the Office of Information Security and Cyber Defense of the Office and the Security Operations Center within 24 hours after discovery of the suspected incident. If the Office of Information Security and Cyber Defense, in consultation with the Security Operations Center, determines that an incident of unauthorized access or noncompliance occurred, it shall immediately report the incident to the Chief. The Chief shall assist in the investigation and resolution of any such incident. 3. A report submitted by a using agency pursuant to subsection 2 must contain the following information: (a) The date and time of the incident; (b) The type of incident; (c) The type of information system or data affected by the incident; (d) The known and projected impact of the incident to the using agency; (e) Whether law enforcement, a regulatory body or any other entity that could be affected by the incident has been notified, as applicable; and (f) Any additional resources needed by the using agency to respond to the incident, as applicable. 4. The Chief may establish a uniform reporting system if the Office and Security Operations Center are organizationally collocated. 5. The Office shall provide services to each using agency uniformly with respect to degree of service, priority of service, availability of service and cost of service. (Added to NRS by 1969, 931 ; A 1981, 1148 ; 1993, 1544 ; 2011, 1861 ; 2025, 3565 ; 2025, 36th Special Session, 44 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec181",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.183",
@@ -547,7 +547,7 @@
   "text": "NRS 242.183 Investigation, resolution and notification of certain breaches or applications of information systems or certain unauthorized acquisitions of computerized data; certain information technology personnel to report to Chief under certain circumstances. 1. The Deputy Director of the Office of Information Security and Cyber Defense, in consultation with the Security Operations Center, shall investigate and resolve any breach of an information system of a using agency or an application of such an information system or unauthorized acquisition of computerized data that materially compromises the security, confidentiality or integrity of such an information system. 2. The Chief Information Officer or Deputy Director of the Office of Information Security and Cyber Defense, at his or her discretion, may inform members of the Nevada Commission on Homeland Security created by NRS 239C.120 and the Information Technology Advisory Board created by NRS 242.122 of any breach of an information system of a using agency or application of such an information system or unauthorized acquisition of computerized data or information that materially compromises the security, confidentiality or integrity of such an information system. 3. If a state of emergency or declaration of disaster is proclaimed by the Governor pursuant to NRS 414.070 concerning a critical cybersecurity incident, the Governor may authorize the information technology personnel of using agencies of the Executive Branch to report directly to the Chief. (Added to NRS by 2011, 1858 ; A 2023, 174 ; 2025, 469 , 1958 , 3565 ; 2025, 36th Special Session, 45 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec183",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.191",
@@ -558,7 +558,7 @@
   "text": "NRS 242.191 Amount receivable for use of services or equipment of Office: Determination; itemized statement. 1. Except as otherwise provided in subsection 3, the amount receivable from a using agency which uses the services or equipment of the Office must be determined by the Chief in each case and include: (a) The annual expense, including depreciation, of operating and maintaining the Network Services Division and the cybersecurity services provided by the Security Operations Center, distributed among the agencies in proportion to the services performed for each agency. (b) A service charge in an amount determined by distributing the monthly installment for the construction costs of the computer facility among the agencies in proportion to the services performed for each agency. 2. The Chief shall prepare and submit monthly to the using agencies for which services of the Office have been performed an itemized statement of the amount receivable from each using agency. 3. The Chief may authorize, if in his or her judgment the circumstances warrant, a fixed cost billing, including a factor for depreciation, for services rendered to a using agency. (Added to NRS by 1969, 931 ; A 1973, 680 ; 1979, 68 ; 1981, 1148 ; 1997, 3085 ; 2011, 1861 ; 2023, 174 ; 2025, 1959 ; 2025, 36th Special Session, 46 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec191",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.211",
@@ -569,7 +569,7 @@
   "text": "NRS 242.211 Fund for Information Services: Creation; source and use. 1. The Fund for Information Services is hereby created as an internal service fund. Money from the Fund must be paid out on claims as other claims against the State are paid. The claims must be made in accordance with budget allotments and are subject to postaudit examination and approval. 2. Except as otherwise provided in NRS 242.117 , all operating, maintenance, rental, repair and replacement costs of equipment and all salaries of personnel assigned to the Office must be paid from the Fund. 3. Each using agency using the services or equipment of the Office shall pay a fee for that use to the Fund, which must be set by the Chief in an amount sufficient to reimburse the Office for the entire cost of providing those services, including overhead. Each using agency shall budget for those services. All fees, proceeds from the sale of equipment and any other money received by the Office must be deposited with the State Treasurer for credit to the Fund. (Added to NRS by 1965, 973 ; A 1979, 103 ; 1981, 255 , 1145 ; 1989, 1470 ; 1993, 1544 ; 2003, 627 ; 2025, 36th Special Session, 46 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec211",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.221",
@@ -580,7 +580,7 @@
   "text": "NRS 242.221 Approval and payment of claims; temporary advances. 1. All claims made pursuant to NRS 242.122 to 242.241 , inclusive, must, when approved by the Office, be paid as other claims against the State are paid. 2. If the State Controller finds that current claims against the Fund for Information Services exceed the amount available in the Fund to pay the claims, the State Controller may advance temporarily from the State General Fund to the Fund the amount required to pay the claims, but no more than 25 percent of the revenue expected to be received in the current fiscal year from any source authorized for the Fund. No amount may be transferred unless requested by the Chief of the Budget Division of the Office of Finance created by NRS 223.400 . (Added to NRS by 1969, 932 ; A 1981, 1148 ; 1987, 150 , 415 ; 1989, 1470 ; 1993, 1544 ; 2003, 627 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec221",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.231",
@@ -591,7 +591,7 @@
   "text": "NRS 242.231 Payment by state agency or officer for services. Upon the receipt of a statement submitted pursuant to subsection 2 of NRS 242.191 , each state agency or officer shall authorize the State Controller by transfer or warrant to draw money from the agency’s account in the amount of the statement for transfer to or placement in the Fund for Information Services. (Added to NRS by 1969, 932 ; A 1979, 69 ; 1981, 1148 ; 1989, 1471 ; 1993, 1545 ; 2011, 1861 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec231",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.241",
@@ -602,7 +602,7 @@
   "text": "NRS 242.241 Repayment of costs of construction of computer facility. 1. Until the construction costs of $535,600 for the computer facility in Carson City, Nevada, have been paid, the Chief shall pay annually from the Fund for Information Services to the State Treasurer for deposit in the State General Fund 2 percent of the facility’s original acquisition cost. 2. For any subsequent capital additions to the computer facility, the Chief shall pay annually from that Fund to the State Treasurer for deposit in the State General Fund 2 percent of the original cost of such capital additions, until this cost has been fully paid. (Added to NRS by 1969, 932 ; A 1973, 681 ; 1981, 1148 ; 1989, 1471 ; 1993, 1545 ) MISCELLANEOUS PROVISIONS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec241",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.300",
@@ -613,7 +613,7 @@
   "text": "NRS 242.300 Policy of state agency for appropriate use of computers by employees of agency. 1. A state agency that uses at least one computer in the course of its work shall: (a) Create a written policy setting forth the appropriate uses of the computers of the state agency; and (b) Provide all employees of the state agency with a copy of the written policy. 2. As used in this section, “state agency” means an agency, bureau, board, commission, department, division or any other unit of the Executive Department of the government of this State. (Added to NRS by 1999, 2714 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec300",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.380",
@@ -624,7 +624,7 @@
   "text": "NRS 242.380 Existing agreements with federally recognized tribes not affected; requirement to respect sovereign governance. Nothing in this chapter shall be construed to impair or affect existing agreements with a federally recognized Indian tribe. Any interlocal agreement entered into with the governing body of an Indian tribe, group of tribes, organized segment of a tribe or any organization representing two or more such entities must respect sovereign governance and provide for jointly agreed upon data protocols. (Added to NRS by 2025, 36th Special Session, 39 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec380",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-242.390",
@@ -635,6 +635,6 @@
   "text": "NRS 242.390 Cybersecurity Talent Pipeline Program. To the extent that funding is available: 1. The Security Operations Center shall, in collaboration with the Nevada System of Higher Education, develop the Cybersecurity Talent Pipeline Program. The Program must develop a system for the career development of students in the field of computer science or cybersecurity. 2. The Program must provide opportunities for students within the Nevada System of Higher Education who are majoring in a field related to cybersecurity to obtain working experience in the Security Operations Center. (Added to NRS by 2025, 36th Special Session, 40 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-242.html#NRS242Sec390",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]

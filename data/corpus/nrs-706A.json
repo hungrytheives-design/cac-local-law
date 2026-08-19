@@ -8,7 +8,7 @@
   "text": "NRS 706A.010 Legislative declaration. It is hereby declared to be the purpose and policy of the Legislature in enacting this chapter to ensure the safety, reliability and cost-effectiveness of the transportation services provided by drivers and monitored autonomous vehicle providers affiliated with transportation network companies in this State. (Added to NRS by 2015, 1401 ; A 2021, 3755 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec010",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.020",
@@ -19,7 +19,7 @@
   "text": "NRS 706A.020 Definitions. As used in this chapter, unless the context otherwise requires, the words and terms defined in NRS 706A.030 to 706A.060 , inclusive, have the meanings ascribed to them in those sections. (Added to NRS by 2015, 1379 , 1401 ; A 2021, 2247 , 3755 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec020",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.030",
@@ -30,7 +30,7 @@
   "text": "NRS 706A.030 “Authority” defined. “Authority” means the Nevada Transportation Authority. (Added to NRS by 2015, 1401 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec030",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.040",
@@ -41,7 +41,7 @@
   "text": "NRS 706A.040 “Driver” defined. “Driver”: 1. Means a natural person who: (a) Operates a motor vehicle that is owned, leased or otherwise authorized for use by the person; and (b) Enters into an agreement with a transportation network company to receive connections to potential passengers and related services from a transportation network company in exchange for the payment of a fee to the transportation network company. 2. Does not include a limousine driver who provides limousine services under a contract entered into pursuant to NRS 706A.163 . (Added to NRS by 2015, 1379 , 1401 ; A 2021, 2247 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec040",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.042",
@@ -52,7 +52,7 @@
   "text": "NRS 706A.042 “Limousine driver” defined. “Limousine driver” means a person who has been issued a driver’s permit by the Authority pursuant to NRS 706.462 and is employed or under a contract to operate a limousine for a limousine motor carrier. (Added to NRS by 2021, 2246 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec042",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.043",
@@ -63,7 +63,7 @@
   "text": "NRS 706A.043 “Limousine motor carrier” defined. “Limousine motor carrier” means a motor carrier who has obtained a certificate of public convenience and necessity to operate a limousine which does not limit the number of limousines that the motor carrier is authorized to operate. (Added to NRS by 2021, 2246 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec043",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.044",
@@ -74,7 +74,7 @@
   "text": "NRS 706A.044 “Limousine services” defined. “Limousine services” means the transportation in a limousine by a limousine driver of one or more passengers between points chosen by the passenger or passengers and prearranged through the use of the digital network or software application service of a transportation network company. The term includes only the period beginning when a limousine driver accepts a request by a passenger for transportation through the digital network or software application service of a transportation network company and ending when the last such passenger fully disembarks from the limousine operated by the limousine driver. (Added to NRS by 2021, 2246 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec044",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.045",
@@ -85,7 +85,7 @@
   "text": "NRS 706A.045 “Monitored autonomous vehicle” defined. “Monitored autonomous vehicle” means an autonomous vehicle, as defined in NRS 482A.030 , in which a monitored autonomous vehicle monitor is physically present at all times during the operation of the vehicle. (Added to NRS by 2021, 3754 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec045",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.046",
@@ -96,7 +96,7 @@
   "text": "NRS 706A.046 “Monitored autonomous vehicle monitor” defined. “Monitored autonomous vehicle monitor” means a person employed by a monitored autonomous vehicle provider to remain physically present in a monitored autonomous vehicle at all times during the operation of the vehicle to ensure: 1. The safety of the operations of the monitored autonomous vehicle; and 2. That the monitored autonomous vehicle complies with the applicable motor vehicle laws and traffic laws of this State. (Added to NRS by 2021, 3754 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec046",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.047",
@@ -107,7 +107,7 @@
   "text": "NRS 706A.047 “Monitored autonomous vehicle provider” defined. “Monitored autonomous vehicle provider” means a person who: 1. Owns and operates a monitored autonomous vehicle; and 2. Enters into an agreement with a transportation network company to receive connections to potential passengers and related services from a transportation network company in exchange for the payment of a fee to the transportation network company. (Added to NRS by 2021, 3754 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec047",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.050",
@@ -118,7 +118,7 @@
   "text": "NRS 706A.050 “Transportation network company” and “company” defined. “Transportation network company” or “company” means an entity that uses a digital network or software application service to connect a passenger to a driver or monitored autonomous vehicle provider who can provide transportation services to the passenger. (Added to NRS by 2015, 1379 , 1401 ; A 2021, 3755 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec050",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.060",
@@ -129,7 +129,7 @@
   "text": "NRS 706A.060 “Transportation services” defined. “Transportation services” means the transportation by a driver or monitored autonomous vehicle provider of one or more passengers between points chosen by the passenger or passengers and prearranged through the use of the digital network or software application service of a transportation network company. The term includes only the period beginning when a driver or a monitored autonomous vehicle provider accepts a request by a passenger for transportation through the digital network or software application service of a transportation network company and ending when the last such passenger fully disembarks from the motor vehicle operated by the driver or the monitored autonomous vehicle operated by the monitored autonomous vehicle provider. (Added to NRS by 2015, 1379 , 1401 ; A 2021, 3755 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec060",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.070",
@@ -140,7 +140,7 @@
   "text": "NRS 706A.070 Provisions of chapter not applicable to certain persons. The provisions of this chapter do not apply to: 1. Common motor carriers or contract motor carriers that are providing transportation services pursuant to a contract with the Nevada Health Authority entered into pursuant to NRS 422.27495 . 2. A person who provides a digital network or software application service to enable persons who are interested in sharing expenses for transportation to a destination, commonly known as carpooling, to connect with each other, regardless of whether a fee is charged by the person who provides the digital network or software application service. (Added to NRS by 2015, 1402 ; A 2025, 3774 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec070",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.075",
@@ -151,7 +151,7 @@
   "text": "NRS 706A.075 Applicability of laws governing motor vehicles to persons regulated under chapter; exemptions from provisions of this chapter and chapters 704 and 706 of NRS; inapplicability of chapter to permitted autonomous vehicle network companies or fully autonomous vehicles operated by such companies. 1. Except as otherwise provided in subsection 2, the provisions of this chapter do not exempt any person from any law governing the operation of a motor vehicle upon the highways of this State. 2. A transportation network company which holds a valid permit issued by the Authority pursuant to this chapter, a driver or monitored autonomous vehicle provider who has entered into an agreement with such a company and a vehicle or monitored autonomous vehicle operated by such a driver or monitored autonomous vehicle provider are exempt from: (a) The provisions of chapter 704 of NRS relating to public utilities; and (b) Except as otherwise provided in NRS 706.88396 and 706A.163 , the provisions of chapter 706 of NRS, Ê to the extent that the services provided by the company, driver or monitored autonomous vehicle provider are within the scope of the permit. 3. The provisions of this chapter relating to monitored autonomous vehicles and monitored autonomous vehicle providers do not apply to an autonomous vehicle network company which has been issued a permit pursuant to NRS 706B.130 or to a fully autonomous vehicle operated by such a company. (Added to NRS by 2015, 1409 ; A 2017, 3838 ; 2021, 2247 , 3755 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec075",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.077",
@@ -162,7 +162,7 @@
   "text": "NRS 706A.077 Transportation network company not prohibited from obtaining permit as and providing services of autonomous vehicle network company. Nothing in this chapter shall be construed to prohibit a transportation network company from obtaining a permit to act as an autonomous vehicle network company pursuant to NRS 706B.130 and providing, within the scope of such a permit, the services authorized by chapter 706B of NRS. (Added to NRS by 2017, 4480 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec077",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.080",
@@ -173,7 +173,7 @@
   "text": "NRS 706A.080 Motor vehicle operated by driver or monitored autonomous vehicle operated by monitored autonomous vehicle provider not commercial motor vehicle. Nothing in this chapter shall be construed to deem a motor vehicle operated by a driver to provide transportation services or a monitored autonomous vehicle operated by a monitored autonomous vehicle provider to provide transportation services to be a commercial motor vehicle. (Added to NRS by 2015, 1402 ; A 2021, 3756 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec080",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.090",
@@ -184,7 +184,7 @@
   "text": "NRS 706A.090 Company prohibited from controlling, directing or managing driver, motor vehicle operated by driver, monitored autonomous vehicle provider or monitored autonomous vehicle operated by monitored autonomous vehicle provider. Except as otherwise provided in this chapter and the regulations adopted pursuant thereto or by a written contract between a transportation network company and a driver or monitored autonomous vehicle provider, a company shall not control, direct or manage: 1. A driver or the motor vehicle operated by a driver; or 2. A monitored autonomous vehicle provider or any monitored autonomous vehicle operated by a monitored autonomous vehicle provider. (Added to NRS by 2015, 1402 ; A 2021, 3756 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec090",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.100",
@@ -195,7 +195,7 @@
   "text": "NRS 706A.100 Regulations. The Authority shall adopt such regulations as are necessary to carry out the provisions of this chapter. (Added to NRS by 2015, 1410 ) PERMITS",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec100",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.110",
@@ -206,7 +206,7 @@
   "text": "NRS 706A.110 Permit required for companies; driver or monitored autonomous vehicle provider providing transportation services required to be affiliated with company holding permit; Authority authorized to regulate companies, drivers and monitored autonomous vehicle providers; inapplicability of chapter 706 of NRS to companies, drivers and monitored autonomous vehicle providers. 1. A transportation network company shall not engage in business in this State unless the company holds a valid permit issued by the Authority pursuant to this chapter. 2. A driver or monitored autonomous vehicle provider shall not provide transportation services unless the company with which the driver or monitored autonomous vehicle provider is affiliated holds a valid permit issued by the Authority pursuant to this chapter. 3. The Authority is authorized and empowered to regulate, pursuant to the provisions of this chapter, all transportation network companies, drivers and monitored autonomous vehicle providers who operate or wish to operate within this State. Except as otherwise provided in NRS 706.88396 and 706A.163 , the Authority shall not apply any provision of chapter 706 of NRS to a transportation network company, driver or monitored autonomous vehicle provider who operates within the provisions of this chapter and the regulations adopted pursuant thereto. (Added to NRS by 2015, 1402 ; A 2017, 3838 ; 2021, 2248 , 3756 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec110",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.120",
@@ -217,7 +217,7 @@
   "text": "NRS 706A.120 Submission of application for permit. A person who desires to operate a transportation network company in this State must submit to the Authority an application for the issuance of a permit to operate a transportation network company. The application must be in the form required by the Authority and must include such information as the Authority, by regulation, determines is necessary to prove the person meets the requirements of this chapter for the issuance of a permit. (Added to NRS by 2015, 1380 , 1402 ; A 2015, 1410 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec120",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.130",
@@ -228,7 +228,7 @@
   "text": "NRS 706A.130 Issuance and scope of permit. 1. Upon receipt of a completed application and upon a determination by the Authority that an applicant meets the requirements for the issuance of a permit to operate a transportation network company, the Authority shall issue to the applicant within 30 days a permit to operate a transportation network company in this State. 2. In accordance with the provisions of this chapter, a permit issued pursuant to this section: (a) Authorizes a transportation network company to connect one or more passengers through the use of a digital network or software application service to a driver or monitored autonomous vehicle provider who can provide transportation services. (b) Authorizes a transportation network company to make its digital network or software application service available to one or more drivers or monitored autonomous vehicle providers to receive connections to potential passengers from the company in exchange for the payment of a fee by the driver or monitored autonomous vehicle provider to the company. (c) Except as otherwise provided in NRS 706.88396 and 706A.163 , does not authorize a transportation network company or any driver or monitored autonomous vehicle provider to engage in any activity otherwise regulated pursuant to chapter 706 of NRS other than the activity authorized by this chapter. 3. Nothing in this chapter prohibits the issuance of a permit to operate a transportation network company to a person who is regulated pursuant to chapter 706 of NRS if the person submits an application pursuant to NRS 706A.120 and meets the requirements for the issuance of a permit. (Added to NRS by 2015, 1380 , 1402 ; A 2015, 1411 ; 2017, 3838 ; 2021, 2248 , 3756 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec130",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.140",
@@ -239,7 +239,7 @@
   "text": "NRS 706A.140 Fee; annual assessment. 1. The Authority shall charge and collect a fee in an amount established by the Authority by regulation from each applicant for a permit to operate a transportation network company in this State. The fee required by this subsection is not refundable. The Authority shall not issue a permit to operate a transportation network company in this State unless the applicant has paid the fee required by this subsection. 2. For each year after the year in which the Authority issues a permit to a transportation network company, the Authority shall levy and collect an annual assessment from the transportation network company at a rate determined by the Authority based on the gross operating revenue derived from the intrastate operations of the transportation network company in this State. 3. The annual assessment levied and collected by the Authority pursuant to subsection 2 must be used by the Authority for the regulation of transportation network companies. (Added to NRS by 2015, 1380 ; A 2015, 1411 ) REGULATION OF BUSINESS PRACTICES",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec140",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.150",
@@ -250,7 +250,7 @@
   "text": "NRS 706A.150 Company required to appoint and keep registered agent. A transportation network company shall appoint and keep in this State a registered agent as provided in NRS 14.020 . (Added to NRS by 2015, 1403 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec150",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.155",
@@ -261,7 +261,7 @@
   "text": "NRS 706A.155 Company not vicariously liable for act or omission of driver or passenger. 1. A transportation network company is not vicariously liable for any act or omission of a driver or passenger that harms a person or property under any theory of liability or duty of care. 2. This section does not alter or preclude any other theory of liability against a transportation network company or duty of care owed by a transportation network company to the extent available and proven under law. (Added to NRS by 2025, 13 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec155",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.160",
@@ -272,7 +272,7 @@
   "text": "NRS 706A.160 Agreements between companies and drivers: Application and investigation of driver; qualifications of driver; verification that driver holds state business license; termination. 1. A transportation network company may enter into an agreement with one or more drivers to receive connections to potential passengers from the company in exchange for the payment of a fee by the driver to the company. 2. Before a transportation network company allows a person to be connected to potential passengers using the digital network or software application service of the company pursuant to an agreement with the company, except for a contract entered into pursuant to NRS 706A.163 , the company must: (a) Require the person to submit an application to the company, which must include, without limitation: (1) The name, age and address of the applicant. (2) A copy of the driver’s license of the applicant. (3) A record of the driving history of the applicant. (4) A description of the motor vehicle of the applicant and a copy of the motor vehicle registration. (5) Proof that the applicant has complied with the requirements of NRS 485.185 . (b) At the time of application and not less than once every 3 years thereafter, conduct or contract with a third party to conduct an investigation of the criminal history of the applicant, which must include, without limitation: (1) A review of a commercially available database containing criminal records from each state which are validated using a search of the primary source of each record. (2) A search of a database containing the information available in the sex offender registry maintained by each state. (c) At the time of application and not less than once every year thereafter, obtain and review a complete record of the driving history of the applicant. 3. A transportation network company may enter into an agreement with a driver if: (a) The applicant is at least 19 years of age. (b) The applicant possesses a valid driver’s license issued by the Department of Motor Vehicles unless the applicant is exempt from the requirement to obtain a Nevada driver’s license pursuant to NRS 483.240 . (c) The applicant provides proof that the motor vehicle operated by him or her is registered with the Department of Motor Vehicles unless the applicant is exempt from the requirement to register the motor vehicle in this State pursuant to NRS 482.385 . (d) The applicant provides proof that the motor vehicle operated by him or her is operated and maintained in compliance with all applicable federal, state and local laws. (e) The applicant provides proof that he or she currently is in compliance with the provisions of NRS 485.185 . (f) In the 3 years immediately preceding the date on which the application is submitted, the applicant has not been found guilty of three or more violations of the motor vehicle laws of this State or any traffic ordinance of any city or town, the penalty prescribed for which is a misdemeanor. (g) In the 3 years immediately preceding the date on which the application is submitted, the applicant has not been found guilty of any violation of the motor vehicle laws of this State or any traffic ordinance of any city or town, the penalty prescribed for which is a gross misdemeanor or felony. (h) In the 7 years immediately preceding the date on which the application is submitted, the applicant has not been found guilty of any violation of federal, state or local law prohibiting driving or being in actual physical control of a vehicle while under the influence of intoxicating liquor or a controlled substance. (i) In the 7 years immediately preceding the date on which the application is submitted, the applicant has not been found guilty of any crime involving an act of terrorism, an act of violence, a sexual offense, fraud, theft, damage to property of another or the use of a motor vehicle in the commission of a felony. (j) The name of the applicant does not appear in the database searched pursuant to subparagraph (2) of paragraph (b) of subsection 2. 4. A driver shall, not later than 6 months after a transportation network company allows the driver to be connected to potential passengers using the digital network or software application service of the company pursuant to an agreement with the company and annually thereafter, on or before the anniversary date of that agreement, provide to the company verification that the driver holds a valid state business license pursuant to chapter 76 of NRS. Such verification may consist of the business identification number assigned by the Secretary of State to the driver upon compliance with the provisions of chapter 76 of NRS. 5. A transportation network company shall terminate an agreement with any driver who: (a) Fails to submit to the transportation network company a change in his or her address, driver’s license or motor vehicle registration within 30 days after the date of the change. (b) Fails to immediately report to the transportation network company any change in his or her driving history or criminal history. (c) Refuses to authorize the transportation network company to obtain and review an updated complete record of his or her driving history not less than once each year and an investigation of his or her criminal history not less than once every 3 years. (d) Is determined by the transportation network company to be ineligible for an agreement pursuant to subsection 3 on the basis of any updated information received by the transportation network company. (e) Fails to comply with the provisions of subsection 4. (Added to NRS by 2015, 1403 ; A 2017, 4183 ; 2021, 2248 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec160",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.161",
@@ -283,7 +283,7 @@
   "text": "NRS 706A.161 Agreements between companies and monitored autonomous vehicle providers; compensation of monitored autonomous vehicle monitor. 1. A transportation network company may enter into an agreement with one or more monitored autonomous vehicle providers to receive connections to potential passengers from the company in exchange for the payment of a fee by the monitored autonomous vehicle provider to the company. 2. A monitored autonomous vehicle monitor employed by a monitored autonomous vehicle provider which has entered into an agreement with a transportation network company pursuant to subsection 1 may only accept compensation for his or her services from the monitored autonomous vehicle provider by which he or she is employed. (Added to NRS by 2021, 3754 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec161",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.162",
@@ -294,7 +294,7 @@
   "text": "NRS 706A.162 Liability in tort of monitored autonomous vehicle providers. A monitored autonomous vehicle provider who provides transportation services using a monitored autonomous vehicle is liable in tort for any damages arising out of the provision of transportation services in the same manner and to the same extent as if the monitored autonomous vehicle provider were a driver providing transportation services using a motor vehicle. (Added to NRS by 2021, 3754 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec162",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.163",
@@ -305,7 +305,7 @@
   "text": "NRS 706A.163 Contracts between companies and limousine motor carriers: Limousine services not to be provided through company without valid permit; applicability of laws governing motor carriers; requirement to notify company of change in limousine carrier’s certificate of public convenience and necessity; applicability of certain taxes to fare. 1. A transportation network company may enter into a contract with a limousine motor carrier whereby limousine drivers employed by the limousine motor carrier may receive connections to potential passengers and related services from a transportation network company in exchange for the payment of a fee by the limousine motor carrier to the transportation network company. 2. Notwithstanding any contract entered into pursuant to subsection 1, a limousine motor carrier shall not provide limousine services through a transportation network company unless the transportation network company holds a valid permit issued by the Authority pursuant to this chapter. 3. A limousine motor carrier which enters into a contract pursuant to subsection 1: (a) Remains subject to the provisions of chapter 706 of NRS and any regulations adopted pursuant thereto, including with respect to limousine services provided pursuant to a contract entered into pursuant to subsection 1. (b) Shall notify the transportation network company of any change in the status of the certificate of public convenience and necessity of the limousine motor carrier within 24 hours after the limousine motor carrier receives notice of or becomes aware of such a change. 4. The fare charged for the transportation of a passenger by a limousine driver pursuant to a contract entered into pursuant to subsection 1 is subject to the excise tax imposed pursuant to NRS 372B.140 and exempt from the excise tax imposed pursuant to NRS 372B.150 . (Added to NRS by 2021, 2246 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec163",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.170",
@@ -316,7 +316,7 @@
   "text": "NRS 706A.170 Company authorized to charge fare for transportation services or limousine services; disclosure of rates; provision of estimate; payment; additional charges to passengers with disabilities prohibited; regulations establishing maximum fare during emergencies. 1. In accordance with the provisions of this chapter, a transportation network company which holds a valid permit issued by the Authority pursuant to this chapter may, on behalf of a driver, monitored autonomous vehicle provider or a limousine motor carrier with which the company has entered into a contract pursuant to NRS 706A.163 , charge a fare for transportation services or limousine services provided to a passenger by the driver, monitored autonomous vehicle provider or limousine driver. 2. If a fare is charged, the company must disclose the rates charged by the company and the method by which the amount of a fare is calculated: (a) On an Internet website maintained by the company; or (b) Within the digital network or software application service of the company. 3. If a fare is charged, the company must offer to each passenger the option to receive, before the passenger enters the motor vehicle of a driver, the monitored autonomous vehicle of a monitored autonomous vehicle provider or the limousine of a limousine driver, an estimate of the amount of the fare that will be charged to the passenger. 4. A transportation network company may accept payment of a fare only electronically. A transportation network company, driver, monitored autonomous vehicle provider or limousine driver when providing limousine services shall not solicit or accept cash as payment of a fare. 5. A transportation network company shall not impose any additional charge for a driver or monitored autonomous vehicle provider who provides transportation services or a limousine driver who provides limousine services to a person with a physical disability because of the disability. 6. The Authority may adopt regulations establishing a maximum fare that may be charged during an emergency, as defined in NRS 414.0345 . (Added to NRS by 2015, 1404 ; A 2021, 2250 , 3757 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec170",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.180",
@@ -327,7 +327,7 @@
   "text": "NRS 706A.180 Company prohibited from allowing driver or monitored autonomous vehicle provider to connect to passenger under certain circumstances; inspection of vehicles used by drivers and monitored autonomous vehicles used by monitored autonomous vehicle providers. 1. A transportation network company shall not allow a driver or monitored autonomous vehicle provider to be connected to potential passengers using the digital network or software application service of the company if the motor vehicle operated by the driver or the monitored autonomous vehicle operated by the monitored autonomous vehicle provider to provide transportation services: (a) Is not in compliance with all federal, state and local laws concerning the operation and maintenance of the motor vehicle or monitored autonomous vehicle. (b) Has less than four doors. (c) Is designed to carry more than eight passengers, including the driver. (d) Is a farm tractor, mobile home, recreational vehicle, semitractor, semitrailer, trailer, bus, motorcycle or tow car. 2. A transportation network company shall inspect or cause to be inspected every motor vehicle used by a driver to provide transportation services and every monitored autonomous vehicle used by a monitored autonomous vehicle provider to provide transportation services before allowing the driver to use the motor vehicle or the monitored autonomous vehicle provider to use the monitored autonomous vehicle to provide transportation services and not less than once each year thereafter. 3. The inspection required by subsection 2 must include, without limitation, an inspection of the foot and emergency brakes, steering, windshield, rear window, other glass, windshield wipers, headlights, tail lights, turn indicator lights, braking lights, front seat adjustment mechanism, doors, horn, speedometer, bumpers, muffler, exhaust, tires, rear view mirrors and safety belts of the vehicle which ensures the proper functioning of each component. (Added to NRS by 2015, 1405 ; A 2021, 3757 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec180",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.190",
@@ -338,7 +338,7 @@
   "text": "NRS 706A.190 Adoption of policy prohibiting discrimination; prohibition against discrimination; accommodations for passenger who requires wheelchair-accessible vehicle. 1. A transportation network company shall adopt a policy which prohibits discrimination against a passenger or potential passenger on account of national origin, religion, age, disability, sex, race, color, sexual orientation or gender identity or expression. 2. A driver or monitored autonomous vehicle provider shall not discriminate against a passenger or potential passenger on account of national origin, religion, age, disability, sex, race, color, sexual orientation or gender identity or expression. 3. A transportation network company shall provide to each passenger an opportunity to indicate whether the passenger requires transportation in a motor vehicle or monitored autonomous vehicle that is wheelchair accessible. If the company cannot provide the passenger with transportation services in a motor vehicle or monitored autonomous vehicle that is wheelchair accessible, the company must direct the passenger to an alternative provider or means of transportation that is wheelchair accessible, if available. (Added to NRS by 2015, 1405 ; A 2021, 3758 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec190",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.200",
@@ -349,7 +349,7 @@
   "text": "NRS 706A.200 Provision of photograph of driver or limousine driver and license plate number of vehicle required before provision of transportation services or limousine services. 1. For each instance in which a driver, monitored autonomous vehicle provider or limousine driver provides transportation services or limousine services to a passenger, the transportation network company which connected the passenger to the driver, monitored autonomous vehicle provider or limousine driver shall provide to the passenger, before the passenger enters the motor vehicle of a driver, the monitored autonomous vehicle of a monitored autonomous vehicle provider or the limousine of a limousine driver, as applicable: (a) A photograph of the driver or limousine driver who will provide the transportation services or limousine services and the license plate number of the motor vehicle operated by the driver or limousine operated by the limousine driver; or (b) The license plate number of the monitored autonomous vehicle operated by the monitored autonomous vehicle provider. 2. The information required by subsection 1 must be provided to the passenger: (a) On an Internet website maintained by the company; or (b) Within the digital network or software application service of the company. (Added to NRS by 2015, 1405 ; A 2021, 2251 , 3758 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec200",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.210",
@@ -360,7 +360,7 @@
   "text": "NRS 706A.210 Transmission of receipt to passenger; contents of receipt. A transportation network company which connected a passenger to a driver, monitored autonomous vehicle provider or limousine driver when providing limousine services shall, within a reasonable period following the provision of transportation services or limousine services by the driver, monitored autonomous vehicle provider or limousine driver to the passenger, transmit to the passenger an electronic receipt, which must include, without limitation: 1. A description of the point of origin and the destination of the transportation services or limousine services; 2. The total time for which transportation services or limousine services were provided; 3. The total distance traveled; and 4. An itemization of the fare, if any, charged for the transportation services or limousine services. (Added to NRS by 2015, 1406 ; A 2021, 2251 , 3758 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec210",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.220",
@@ -371,7 +371,7 @@
   "text": "NRS 706A.220 Contract between company and Nevada Health Authority authorized. A transportation network company may enter into a contract with any agency of the Nevada Health Authority to provide assistance in transportation pursuant to the programs administered by the agency. (Added to NRS by 2015, 1406 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec220",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.230",
@@ -382,7 +382,7 @@
   "text": "NRS 706A.230 Records maintained by company: Period of maintenance; contents; inspection; confidentiality. 1. A transportation network company shall maintain the following records relating to the business of the company for a period of at least 3 years after the date on which the record is created: (a) Trip records; (b) Driver records and vehicle inspection records; (c) Monitored autonomous vehicle provider records and monitored autonomous vehicle inspection records; (d) Records of each complaint and the resolution of each complaint; and (e) Records of each accident or motor vehicle crash or other incident that involved a driver or monitored autonomous vehicle provider and was reported to the transportation network company. 2. Each transportation network company shall make its records available for inspection by the Authority upon request and only as necessary for the Authority to investigate complaints. This subsection does not require a company to make any proprietary information available to the Authority. Except as otherwise provided in subsection 3, any records provided to the Authority are confidential and must not be disclosed other than to employees of the Authority. 3. The Authority shall disclose to the Secretary of State the name of each driver and monitored autonomous vehicle provider and such other information as the Secretary of State determines necessary to enforce the provisions of chapter 76 of NRS. If the Secretary of State obtains any confidential information pursuant to this subsection, the Secretary of State, and any employee of the Secretary of State engaged in the administration of chapter 76 of NRS or charged with the custody of any records or files relating to the administration of chapter 76 of NRS, shall maintain the confidentiality of that information in the same manner and to the same extent as provided by law for the Authority. (Added to NRS by 2015, 1406 ; A 2017, 4185 ; 2021, 3759 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec230",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.240",
@@ -393,7 +393,7 @@
   "text": "NRS 706A.240 Accounts of business transactions maintained by companies; provision of annual report to Authority; regulations. 1. Each transportation network company shall: (a) Keep uniform and detailed accounts of all business transacted in this State and provide such accounts to the Authority upon request; (b) On or before May 15 of each year, provide an annual report to the Authority regarding all business conducted by the company in this State during the preceding calendar year; and (c) Provide the information determined by the Authority to be necessary to verify the collection of money owed to the State. 2. The Authority shall adopt regulations setting forth the form and contents of the information required to be provided pursuant to subsection 1. 3. If the Authority determines that a transportation network company has failed to include information in its accounts or report required pursuant to subsection 1, the Authority shall notify the company to provide such information. A company which receives a notice pursuant to this subsection shall provide the specified information within 15 days after receipt of such a notice. 4. All information required to be provided pursuant to this section must be signed by an officer or agent of, or other person authorized by, the transportation network company under oath. (Added to NRS by 2015, 1406 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec240",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.250",
@@ -404,7 +404,7 @@
   "text": "NRS 706A.250 Prohibition against disclosure of personally identifiable information of passengers; exceptions. 1. Except as otherwise provided in this section, a transportation network company shall not disclose to any person the personally identifiable information of a passenger who received services from the company unless: (a) The disclosure is otherwise required by law; (b) The company determines that disclosure is required to protect or defend the terms of use of the services or to investigate violations of those terms of use; or (c) The passenger consents to the disclosure. 2. A transportation network company may disclose to a driver, monitored autonomous vehicle provider or limousine driver when providing limousine services the name and telephone number of a passenger for the purposes of facilitating correct identification of the passenger and facilitating communication between the driver, monitored autonomous vehicle provider or limousine driver and the passenger. (Added to NRS by 2015, 1408 : A 2021, 2251 , 3759 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec250",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.260",
@@ -415,7 +415,7 @@
   "text": "NRS 706A.260 Provision of contact information of Authority by company; creation of system to receive and address consumer complaints required. Each transportation network company shall: 1. Provide notice of the contact information of the Authority on an Internet website maintained by the company or within the digital network or software application service of the company; and 2. Create a system to receive and address complaints from consumers which is available during normal business hours in this State. (Added to NRS by 2015, 1408 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec260",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.270",
@@ -426,7 +426,7 @@
   "text": "NRS 706A.270 Companies required to report information to Authority relating to crashes involving drivers or monitored autonomous vehicle providers; Authority required to submit annual report concerning such information and sufficiency of insurance coverage limits to Legislature. 1. Each transportation network company shall provide to the Authority reports containing information relating to motor vehicle crashes involving drivers or monitored autonomous vehicle providers affiliated with the company which occurred in this State while the driver or monitored autonomous vehicle provider was providing transportation services or logged into the digital network or software application service of the company and available to receive requests for transportation services. The reports required by this subsection must contain the information identified in subsection 2 and be submitted: (a) For all crashes that occurred during the first 6 months that the company operates within this State, on or before the date 7 months after the company was issued a permit. (b) For all crashes that occurred during the first 12 months that the company operates within this State, on or before the date 13 months after the company was issued a permit. 2. The reports submitted pursuant to subsection 1 must include, for the period of time specified in subsection 1: (a) The number of motor vehicle crashes which occurred in this State involving such a driver or monitored autonomous vehicle provider; (b) The highest, lowest and average amount paid for bodily injury or death to one or more persons that occurred as a result of such a crash; and (c) The highest, lowest and average amount paid for damage to property that occurred as a result of such a crash. 3. The Authority shall collect the reports submitted by transportation network companies pursuant to subsection 1 and determine whether the limits of coverage required pursuant to NRS 690B.470 are sufficient. The Authority shall submit a report stating whether the limits of coverage required pursuant to NRS 690B.470 are sufficient and containing the information, in an aggregated format which does not reveal the identity of any person, submitted by transportation network companies pursuant to subsection 1 since the last report of the Authority pursuant to this subsection: (a) To the Legislative Commission on or before December 1 of each odd-numbered year. (b) To the Director of the Legislative Counsel Bureau for transmittal to the Nevada Legislature on or before December 1 of each even-numbered year. (Added to NRS by 2015, 1409 ; A 2021, 3759 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec270",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.280",
@@ -437,7 +437,7 @@
   "text": "NRS 706A.280 Prohibited acts by drivers and monitored autonomous vehicle providers. 1. A driver or monitored autonomous vehicle provider shall not solicit or accept a passenger or provide transportation services to any person unless the person has arranged for the transportation services through the digital network or software application service of the transportation network company. 2. With respect to a passenger’s destination, a driver or monitored autonomous vehicle provider shall not: (a) Deceive or attempt to deceive any passenger who rides or desires to ride in the driver’s motor vehicle or the monitored autonomous vehicle provider’s monitored autonomous vehicle. (b) Convey or attempt to convey any passenger to a destination other than the one directed by the passenger. (c) Take a longer route to the passenger’s destination than is necessary, unless specifically requested to do so by the passenger. (d) Fail to comply with the reasonable and lawful requests of the passenger as to speed of travel and route to be taken. 3. A driver or monitored autonomous vehicle provider shall not, at the time the driver or monitored autonomous vehicle provider picks up a passenger, refuse or neglect to provide transportation services to any orderly passenger unless the driver or monitored autonomous vehicle provider can demonstrate to the satisfaction of the Authority that: (a) For a driver, the driver has good reason to fear for the driver’s personal safety; (b) For a monitored autonomous vehicle provider, the monitored autonomous vehicle provider or monitored autonomous vehicle monitor has good reason to fear for the personal safety of the monitor in the monitored autonomous vehicle picking up the person requesting transportation services; or (c) The driver or monitored autonomous vehicle provider is prohibited by law or regulation from carrying the person requesting transportation services. (Added to NRS by 2015, 1407 ; A 2021, 3760 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec280",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.290",
@@ -448,7 +448,7 @@
   "text": "NRS 706A.290 Drivers prohibited from consuming, using or being under influence of intoxicating liquor or controlled substance; company to provide notice of prohibition; submission and receipt of complaints of suspected violation; suspension and investigation of drivers; termination of agreement; records of complaints. 1. A driver is prohibited from consuming, using or being under the influence of any intoxicating liquor or controlled substance during any period in which the driver is providing transportation services on behalf of the transportation network company and any period in which the driver is logged into the digital network or software application service of the transportation network company and available to receive requests for transportation services but is not providing transportation services. 2. Each transportation network company shall: (a) Provide notice of the provisions of subsection 1: (1) On an Internet website maintained by the company; or (2) Within the digital network or software application service of the company; and (b) Provide for the submission to the company of a complaint by a passenger who reasonably believes that a driver is operating a motor vehicle in violation of the provisions of subsection 1. 3. Upon receipt of a complaint submitted by a passenger who reasonably believes that a driver is operating a motor vehicle in violation of the provisions of subsection 1, a transportation network company shall immediately suspend the access of the driver to the digital network or software application service of the company and conduct an investigation of the complaint. The company shall not allow the driver to access the digital network or software application service of the company or provide transportation services in affiliation with the company until after the investigation is concluded. 4. If a transportation network company determines, pursuant to an investigation conducted pursuant to subsection 3, that a driver has violated the provisions of subsection 1, the company shall terminate the agreement entered into with the driver and shall not allow the driver to access the digital network or software application service of the company. 5. Each transportation network company shall maintain a record of each complaint described in subsection 3 and received by the company for a period of not less than 3 years after the date on which the complaint is received. The record must include, without limitation, the name of the driver, the date on which the complaint was received, a summary of the investigation conducted by the company and the results of the investigation. (Added to NRS by 2015, 1407 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec290",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.300",
@@ -459,7 +459,7 @@
   "text": "NRS 706A.300 Suspension or revocation of permit by Authority; administrative fine; person who violates provision of chapter not subject to criminal penalty. 1. If the Authority determines that a transportation network company, driver or monitored autonomous vehicle provider has violated the terms of a permit issued pursuant to this chapter or any provision of this chapter or any regulations adopted pursuant thereto, the Authority may, depending on whether the violation was committed by the company, the driver, both the company and the driver or both the company and the monitored autonomous vehicle provider: (a) If the Authority determines that the violation is willful and endangers public safety, suspend or revoke the permit issued to the transportation network company; (b) If the Authority determines that the violation is willful and endangers public safety, impose against the transportation network company an administrative fine in an amount not to exceed $100,000 per violation; (c) Prohibit a person from operating as a driver or monitored autonomous vehicle provider; or (d) Impose any combination of the penalties provided in paragraphs (a), (b) and (c). 2. To determine the amount of an administrative fine imposed pursuant to paragraph (b) or (d) of subsection 1, the Authority shall consider: (a) The size of the transportation network company; (b) The severity of the violation; (c) Any good faith efforts by the transportation network company to remedy the violation; (d) The history of previous violations by the transportation network company; and (e) Any other factor that the Authority determines to be relevant. 3. Notwithstanding the provisions of NRS 193.151 , a person who violates any provision of this chapter is not subject to any criminal penalty for such a violation. (Added to NRS by 2015, 1408 ; A 2021, 3761 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec300",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  },
  {
   "id": "NRS-706A.310",
@@ -470,6 +470,6 @@
   "text": "NRS 706A.310 Restrictions on regulation of companies, drivers, monitored autonomous vehicle providers, limousine motor carriers, limousine drivers and vehicles by local governmental entities; exceptions; provisions of chapter do not exempt person from requirement to obtain state business license; company to provide notice of requirement and penalties to drivers and monitored autonomous vehicle providers. 1. Except as otherwise provided in subsection 2, a local governmental entity shall not: (a) Impose any tax or fee on: (1) A transportation network company operating within the scope of a valid permit issued by the Authority pursuant to this chapter; (2) A driver who has entered into an agreement with a transportation network company described in subparagraph (1) or a vehicle operated by such a driver or for transportation services provided by such a driver; (3) A monitored autonomous vehicle provider who has entered into an agreement with a transportation network company described in subparagraph (1) or a monitored autonomous vehicle operated by such a monitored autonomous vehicle provider or for transportation services provided by such a monitored autonomous vehicle provider; or (4) A limousine motor carrier that has entered into a contract with such a company pursuant to NRS 706A.163 for the provision of limousine services or a vehicle operated by a limousine driver when providing limousine services or limousine services provided by such a limousine driver. (b) Require a transportation network company operating within the scope of a valid permit issued by the Authority pursuant to this chapter to obtain from the local governmental entity any certificate, license or permit to operate within that scope or require a driver or monitored autonomous vehicle provider who has entered into an agreement with such a company, a limousine motor carrier that has entered into a contract with a transportation network company pursuant to NRS 706A.163 or a limousine driver when providing limousine services to obtain from the local governmental entity any certificate, license or permit to provide transportation services or limousine services. (c) Impose any other requirement upon a transportation network company, driver, monitored autonomous vehicle provider, a limousine motor carrier that has entered into a contract with a transportation network company pursuant to NRS 706A.163 or a limousine driver when providing limousine services which is not of general applicability to all persons who operate a motor vehicle within the jurisdiction of the local governmental entity. 2. Nothing in this section: (a) Prohibits a local governmental entity from requiring a transportation network company, a driver, monitored autonomous vehicle provider, a limousine motor carrier that has entered into a contract with a transportation network company pursuant to NRS 706A.163 or a limousine driver who provides limousine services to obtain from the local governmental entity a business license or to pay any business license fee in the same manner that is generally applicable to any other business that operates within the jurisdiction of the local governmental entity. (b) Prohibits an airport or its governing body from requiring a transportation network company, a driver, monitored autonomous vehicle provider, a limousine motor carrier that has entered into a contract with a transportation network company pursuant to NRS 706A.163 or a limousine driver who provides limousine services to: (1) Obtain a permit or certification to operate at the airport; (2) Pay a fee to operate at the airport; or (3) Comply with any other requirement to operate at the airport. (c) Exempts a vehicle operated by a driver, monitored autonomous vehicle provider, a limousine motor carrier that has entered into a contract with a transportation network company pursuant to NRS 706A.163 or a limousine driver who provides limousine services from any tax imposed pursuant to NRS 354.705 , 371.043 or 371.045 . 3. The provisions of this chapter do not exempt any person from the requirement to obtain a state business license issued pursuant to chapter 76 of NRS. A transportation network company shall notify each driver and monitored autonomous vehicle provider of the requirement to obtain a state business license issued pursuant to chapter 76 of NRS and the penalties for failing to obtain a state business license. (Added to NRS by 2015, 1409 ; A 2021, 2251 , 3761 )",
   "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-706A.html#NRS706ASec310",
   "status": "active",
-  "scrapedAt": "2026-08-17"
+  "scrapedAt": "2026-08-19"
  }
 ]
