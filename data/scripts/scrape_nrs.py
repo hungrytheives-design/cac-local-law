@@ -149,6 +149,33 @@ def label_of(s: str):
     return normalize(m.group(1)) if m else None
 
 
+def split_by_label(body: str, labels: list) -> dict:
+    """Cut one body that carries several versions into a piece per version.
+
+    A chapter page frequently lists both versions of a section in the table of
+    contents but ships their text as ONE run under a single anchor, each part
+    introduced by its own [Effective ...] marker. Cutting on those markers is
+    the only way to give each version the text that belongs to it.
+    """
+    marks = []
+    for lab in labels:
+        if not lab:
+            continue
+        i = body.find("[" + lab + "]")
+        if i < 0:
+            i = body.find(lab)
+        if i >= 0:
+            marks.append((i, lab))
+    if len(marks) < 2:
+        return {}
+    marks.sort()
+    out = {}
+    for n, (pos, lab) in enumerate(marks):
+        end = marks[n + 1][0] if n + 1 < len(marks) else len(body)
+        out[lab] = body[pos:end].strip()
+    return out
+
+
 def pair_versions(heads: list, bods: list) -> list:
     """Match each TOC heading to the body carrying the SAME effective label.
 
@@ -159,6 +186,12 @@ def pair_versions(heads: list, bods: list) -> list:
     """
     if len(heads) == 1 and len(bods) == 1:
         return [(heads[0], bods[0])]
+
+    # Several headings, one body: the versions are concatenated inside it.
+    if len(bods) == 1 and len(heads) > 1:
+        pieces = split_by_label(bods[0], [label_of(h) for _, h in heads])
+        if pieces:
+            return [(h, pieces.get(label_of(h[1]), "")) for h in heads]
 
     out, remaining = [], list(bods)
     for cite, head in heads:
