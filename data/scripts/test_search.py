@@ -39,6 +39,7 @@ App.tsx affects results.
 
 import argparse
 import json
+import math
 import os
 import re
 import sys
@@ -122,6 +123,36 @@ def expand(tokens, raw, concepts):
     return terms, chapters
 
 
+# --- rarity -----------------------------------------------------------------
+# "school" is in 805 headings, "truancy" in 12. Scoring both at +10 let 805
+# irrelevant sections drown the 12 relevant ones. A word's worth should fall
+# as it gets commoner.
+_DF = None
+
+
+def rarity(token, sections):
+    global _DF
+    if _DF is None:
+        _DF = {}
+        for s in sections:
+            for w in set(re.findall(r"[a-z0-9]{3,}", s["h"].lower())):
+                _DF[w] = _DF.get(w, 0) + 1
+    n = len(sections)
+    df = _DF.get(token, 0)
+    return math.log(n / (1 + df)) / math.log(n)
+
+
+# Sections that administer the law rather than state it. They match query words
+# as readily as real rules and then outrank them: "off highway vehicle
+# registration" returned the Revolving Account for OHV Titling.
+ADMIN = re.compile(
+    r"^(?:.*\b(?:regulations|account|fund|legislative declaration|appropriation"
+    r"|reports?|records|fees|budget|membership|meetings)\b"
+    r"|department|commission|board|division|director|administrator)",
+    re.I,
+)
+
+
 def search(query, sections, titles, concepts, limit=10):
     """Mirrors search() in app/App.tsx. Returns [(score, section)]."""
     tokens = tokenize(query)
@@ -135,15 +166,29 @@ def search(query, sections, titles, concepts, limit=10):
         heading = s["h"].lower()
         text = s.get("t")
 
+        matched = 0
         for t in tokens:
+            w = rarity(t, sections)
+            hit = False
             if t in heading:
-                score += 10
+                score += 10 * w
+                hit = True
             if any(k.startswith(t) for k in s["k"]):
-                score += 6
+                score += 6 * w
+                hit = True
             if t in titles.get(s["ch"], "").lower():
-                score += 2
+                score += 2 * w
+                hit = True
             if text and t in text.lower():
-                score += 1
+                score += 1 * w
+                hit = True
+            matched += hit
+
+        # Catching one rare word is not the same as catching the question.
+        # Rarity alone made "skipping school" return "Generation-skipping
+        # transfer" defined, on the strength of "skipping" and nothing else.
+        if tokens:
+            score *= matched / len(tokens)
 
         fh = flat(s["h"])
         ft = flat(text) if text else None
@@ -155,6 +200,8 @@ def search(query, sections, titles, concepts, limit=10):
 
         if score > 0 and s["ch"] in chapters:
             score += 20
+        if ADMIN.match(s["h"]):
+            score -= 6          # administers the law, does not state it
         if s.get("r"):
             score -= 20
         if s.get("e") and s.get("ec") == 0:
@@ -163,6 +210,16 @@ def search(query, sections, titles, concepts, limit=10):
             scored.append((score, s))
 
     scored.sort(key=lambda x: -x[0])
+
+    # 0.45 is the measured edge. At 0.48 the eval gains one case but
+    # "my friend wants to drive me home from school" goes dark, which is a
+    # real question and a worse loss than the gain.
+    # If the best hit only caught a common word, we have not answered the
+    # question, and a confident wrong statute is worse than saying nothing.
+    # "what are my rights" used to return marital property law.
+    reach = sum(10 * rarity(t, sections) for t in tokens)
+    if not scored or (reach and scored[0][0] < 0.45 * reach):
+        return [], tokens, chapters
     return scored[:limit], tokens, chapters
 
 

@@ -1,0 +1,189 @@
+[
+ {
+  "g": "compound",
+  "q": "can i drive my friends to school at 16 before 10pm",
+  "ch": [
+   "484B",
+   "483"
+  ]
+ },
+ {
+  "g": "compound",
+  "q": "im 15 and want to ride my dirtbike on the road to my friends house",
+  "ch": [
+   "490"
+  ]
+ },
+ {
+  "g": "compound",
+  "q": "can my 12 year old brother sit in the front seat if the back is full",
+  "ch": [
+   "484B"
+  ]
+ },
+ {
+  "g": "compound",
+  "q": "working past midnight on a school night at 16",
+  "ch": [
+   "609"
+  ]
+ },
+ {
+  "g": "compound",
+  "q": "drinking at home with my parents permission at 17",
+  "ch": [
+   "202"
+  ]
+ },
+ {
+  "g": "vague",
+  "q": "am i allowed to do this",
+  "none": true
+ },
+ {
+  "g": "vague",
+  "q": "is this legal",
+  "none": true
+ },
+ {
+  "g": "vague",
+  "q": "what are my rights",
+  "none": true
+ },
+ {
+  "g": "vague",
+  "q": "school stuff",
+  "none": true
+ },
+ {
+  "g": "vague",
+  "q": "trouble with cops",
+  "none": true
+ },
+ {
+  "g": "vague",
+  "q": "my parents are being unfair",
+  "none": true
+ },
+ {
+  "g": "slang",
+  "q": "can i vape at school",
+  "ch": [
+   "202",
+   "370"
+  ]
+ },
+ {
+  "g": "slang",
+  "q": "getting pulled over",
+  "ch": [
+   "484A",
+   "484B"
+  ]
+ },
+ {
+  "g": "slang",
+  "q": "my boss wont pay me",
+  "ch": [
+   "608"
+  ]
+ },
+ {
+  "g": "slang",
+  "q": "someone jumped me",
+  "ch": [
+   "200"
+  ]
+ },
+ {
+  "g": "slang",
+  "q": "can cops search my backpack",
+  "ch": [
+   "179"
+  ]
+ },
+ {
+  "g": "specific",
+  "q": "boater education card",
+  "cite": "NRS 488.730"
+ },
+ {
+  "g": "specific",
+  "q": "child restraint system",
+  "cite": "NRS 484B.157"
+ },
+ {
+  "g": "specific",
+  "q": "instruction permit age",
+  "cite": "NRS 483.280"
+ },
+ {
+  "g": "specific",
+  "q": "off highway vehicle registration",
+  "cite": "NRS 490.082"
+ },
+ {
+  "g": "specific",
+  "q": "protective headgear motorcycle",
+  "cite": "NRS 486.231"
+ },
+ {
+  "g": "vocab-gap",
+  "q": "skipping school",
+  "ch": [
+   "392",
+   "385A"
+  ]
+ },
+ {
+  "g": "vocab-gap",
+  "q": "someone stole my bike",
+  "ch": [
+   "205"
+  ]
+ },
+ {
+  "g": "vocab-gap",
+  "q": "can i move out at 17",
+  "ch": [
+   "129"
+  ]
+ },
+ {
+  "g": "vocab-gap",
+  "q": "getting bullied",
+  "ch": [
+   "388"
+  ]
+ },
+ {
+  "g": "vocab-gap",
+  "q": "shoplifting",
+  "ch": [
+   "205",
+   "597"
+  ]
+ },
+ {
+  "g": "vocab-gap",
+  "q": "renting an apartment at 18",
+  "ch": [
+   "118A"
+  ]
+ },
+ {
+  "g": "out-of-scope",
+  "q": "how do i get a passport",
+  "none": true
+ },
+ {
+  "g": "out-of-scope",
+  "q": "federal income tax",
+  "none": true
+ },
+ {
+  "g": "out-of-scope",
+  "q": "california speed limit",
+  "none": true
+ }
+]

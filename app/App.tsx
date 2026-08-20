@@ -210,7 +210,24 @@ function expand(tokens: string[], raw: string) {
 // This is a pure memoisation: no weight, threshold or comparison changed, so
 // the hand port in test_search.py stays valid as written.
 type Cached = { h: string; fh: string; t: string | null; ft: string | null };
-let CACHE: { sections: Cached[]; chapters: Record<string, string> } | null = null;
+let CACHE: {
+  sections: Cached[];
+  chapters: Record<string, string>;
+  df: Record<string, number>;
+} | null = null;
+
+// "school" is in 805 headings, "truancy" in 12. Scoring both at +10 let 805
+// irrelevant sections drown the 12 relevant ones, so a word is worth less the
+// commoner it is. Document frequency is counted once, with the rest of the cache.
+function rarity(token: string, df: Record<string, number>, n: number): number {
+  return Math.log(n / (1 + (df[token] ?? 0))) / Math.log(n);
+}
+
+// Sections that administer the law rather than state it. They match query words
+// as readily as real rules and then outrank them: "off highway vehicle
+// registration" returned the Revolving Account for OHV Titling.
+const ADMIN =
+  /^(?:.*\b(?:regulations|account|fund|legislative declaration|appropriation|reports?|records|fees|budget|membership|meetings)\b|department|commission|board|division|director|administrator)/i;
 
 function cached() {
   if (!CACHE) {
@@ -218,7 +235,13 @@ function cached() {
     for (const ch of Object.keys(CHAPTER_TITLES)) {
       chapters[ch] = CHAPTER_TITLES[ch].toLowerCase();
     }
+    const df: Record<string, number> = {};
+    for (const sec of SECTIONS) {
+      const seen = new Set(sec.h.toLowerCase().match(/[a-z0-9]{3,}/g) ?? []);
+      for (const w of seen) df[w] = (df[w] ?? 0) + 1;
+    }
     CACHE = {
+      df,
       chapters,
       sections: SECTIONS.map((s) => ({
         h: s.h.toLowerCase(),
@@ -237,7 +260,8 @@ function search(query: string): { hits: Section[]; total: number } {
   const tokens = tokenize(query);
   if (!tokens.length) return { hits: [], total: 0 };
   const { terms, chapters } = expand(tokens, query);
-  const { sections: lc, chapters: lcChapter } = cached();
+  const { sections: lc, chapters: lcChapter, df } = cached();
+  const N = SECTIONS.length;
 
   const scored: { s: Section; score: number }[] = [];
   for (let i = 0; i < SECTIONS.length; i++) {
@@ -245,15 +269,23 @@ function search(query: string): { hits: Section[]; total: number } {
     const c = lc[i];
     let score = 0;
 
+    let matched = 0;
     for (const t of tokens) {
       // Heading matches are worth far more than body matches. Without this,
       // a tax provision that happens to say "bicycle" outranks the actual
-      // bicycle statute.
-      if (c.h.includes(t)) score += 10;
-      if (s.k.some((k) => k.startsWith(t))) score += 6;
-      if (lcChapter[s.ch] && lcChapter[s.ch].includes(t)) score += 2;
-      if (c.t && c.t.includes(t)) score += 1;
+      // bicycle statute. Each is scaled by how rare the word is.
+      const w = rarity(t, df, N);
+      let hit = false;
+      if (c.h.includes(t)) { score += 10 * w; hit = true; }
+      if (s.k.some((k) => k.startsWith(t))) { score += 6 * w; hit = true; }
+      if (lcChapter[s.ch] && lcChapter[s.ch].includes(t)) { score += 2 * w; hit = true; }
+      if (c.t && c.t.includes(t)) { score += 1 * w; hit = true; }
+      if (hit) matched++;
     }
+
+    // Catching one rare word is not the same as catching the question. Rarity
+    // alone made "skipping school" return "Generation-skipping transfer".
+    if (tokens.length) score *= matched / tokens.length;
 
     // Lexicon-derived phrases score lower than what the user actually typed, so
     // a literal match always beats an inferred one.
@@ -270,11 +302,23 @@ function search(query: string): { hits: Section[]; total: number } {
     // NRS 207.200 Unlawful trespass on the strength of "property" alone.
     if (score > 0 && chapters.has(s.ch)) score += 20;
 
+    if (ADMIN.test(s.h)) score -= 6;         // administers the law, does not state it
     if (s.r) score -= 20;                    // repealed, bury it
     if (s.e && s.ec === 0) score -= 15;      // not yet in force
     if (score > 0) scored.push({ s, score });
   }
   scored.sort((a, b) => b.score - a.score);
+
+  // If the best hit only caught a common word we have not answered the
+  // question, and a confident wrong statute is worse than saying nothing.
+  // "what are my rights" used to return marital property law. 0.45 is the
+  // measured edge: at 0.48 the eval gains a case but "my friend wants to
+  // drive me home from school" goes dark, which is the worse loss.
+  let reach = 0;
+  for (const t of tokens) reach += 10 * rarity(t, df, N);
+  if (!scored.length || (reach && scored[0].score < 0.45 * reach)) {
+    return { hits: [], total: 0 };
+  }
   return { hits: scored.slice(0, SHOWN).map((x) => x.s), total: scored.length };
 }
 
