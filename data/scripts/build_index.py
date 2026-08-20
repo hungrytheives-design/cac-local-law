@@ -92,6 +92,69 @@ def user_facing(sec: dict, text_chapters: set) -> bool:
     return len(sec.get("text", "")) >= 200
 
 
+# --------------------------------------------------------- obligation extraction
+#
+# The curated tier answers eight topics because a human wrote each one. This
+# covers the rest of the corpus WITHOUT writing anything: statutes are formulaic
+# ("A person shall not...", "must be at least 16 years of age", "is guilty of a
+# misdemeanor"), so the obligations can be lifted out mechanically.
+#
+# Every bullet produced here is a VERBATIM sentence from the statute. Nothing is
+# paraphrased, summarised or generated, so this cannot say something the law does
+# not say - the worst case is quoting a less useful sentence than the best one.
+
+# An institution carrying the duty means the sentence is procedure, not a rule a
+# person can follow. "The court shall provide the person with a list..." is not
+# an answer to "can I do this".
+PROCEDURAL = re.compile(
+    r"\b(?:court|department|commission|board|division|director|administrator"
+    r"|agency|bureau|legislature|governor)\s+(?:shall|must|may|is required)\b",
+    re.I,
+)
+
+# A top-level rule names who it binds, up front. Sentences that match this are
+# shown first, so an exception buried at (2) does not outrank the actual rule.
+PRIMARY = re.compile(
+    r"^(?:except[^,]{0,80},\s*)?(?:it is unlawful|no |a |an |any |every |each |the )?"
+    r"\s*(?:person|operator|driver|owner|parent|guardian|employer|child|pupil"
+    r"|applicant|bicycle|vehicle|motorist)\b",
+    re.I,
+)
+
+SENTENCE = re.compile(r"(?<=[.;])\s+(?=[A-Z(])|\s+Ê\s+")
+
+OBLIGATION = [
+    ("no", re.compile(r"\b(?:shall|must|may)\s+not\b|\bis unlawful\b|\bprohibited\b", re.I)),
+    ("age", re.compile(r"\b\d{1,2}\s+years of age\b", re.I)),
+    ("penalty", re.compile(r"\bis guilty of a\b", re.I)),
+    ("must", re.compile(r"\b(?:shall|must)\b(?!\s+not)", re.I)),
+]
+
+CRUFT = re.compile(r"\((?:Added to NRS|NRS A)[^)]*\)|—\(Substituted[^)]*\)")
+
+
+def obligations(citation: str, heading: str, text: str, limit: int = 3) -> list:
+    """Verbatim sentences from the statute that state a duty, limit or penalty."""
+    prefix = f"{citation} {heading}"
+    body = text[len(prefix):] if text.startswith(prefix) else text
+    body = CRUFT.sub("", body).strip()
+
+    primary, other = [], []
+    for raw in SENTENCE.split(body):
+        sent = re.sub(r"\s+", " ", raw).strip(" Ê")
+        sent = re.sub(r"^\d+\.\s*", "", sent)
+        sent = re.sub(r"^\[[^\]]*\]\s*", "", sent)   # drop a leading [Effective ...]
+        if len(sent) < 30 or len(sent) > 700:
+            continue
+        if PROCEDURAL.search(sent):
+            continue
+        for kind, rx in OBLIGATION:
+            if rx.search(sent):
+                (primary if PRIMARY.match(sent) else other).append({"k": kind, "t": sent})
+                break
+    return (primary + other)[:limit]
+
+
 def main() -> int:
     files = sorted(glob.glob(os.path.join(CORPUS, "nrs-*.json")))
     if not files:
@@ -100,6 +163,7 @@ def main() -> int:
 
     text_chapters = load_lexicon_chapters()
     sections, kept_text, titles = [], 0, {}
+    with_points = 0
     for path in files:
         with open(path, encoding="utf-8") as f:
             for sec in json.load(f):
@@ -118,6 +182,12 @@ def main() -> int:
                 if uf:
                     entry["t"] = sec["text"]
                     kept_text += 1
+                    pts = obligations(
+                        sec["citation"], sec["heading"], sec["text"]
+                    )
+                    if pts:
+                        entry["p"] = pts
+                        with_points += 1
                 if sec.get("status") == "repealed":
                     entry["r"] = 1
                 if "effective" in sec:
@@ -181,6 +251,7 @@ def main() -> int:
     mb = os.path.getsize(OUT) / 1_000_000
     print(f"chapters      {len(titles)}")
     print(f"sections      {len(sections)}  (all searchable)")
+    print(f"w/ points     {with_points}  ({with_points * 100 // max(kept_text,1)}% of texted sections)")
     print(f"w/ full text  {kept_text}  ({kept_text * 100 // max(len(sections),1)}%)")
     print(f"bundle size   {mb:.1f} MB -> app/assets/nrs-index.json")
     if mb > 25:

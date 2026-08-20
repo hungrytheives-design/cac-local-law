@@ -32,6 +32,7 @@ type Section = {
   r?: number; // repealed
   e?: string; // effective-date label
   ec?: number;// 1 if that label is the version in force today
+  p?: { k: string; t: string }[]; // verbatim duty/limit/penalty sentences
 };
 
 const SECTIONS = (index as any).sections as Section[];
@@ -109,6 +110,15 @@ const EXAMPLES = [
 // 40+, but a wall of 40 statutes reads as "no answer" to someone who just wants
 // to know if they can drive the boat.
 const SHOWN = 12;
+
+// What kind of obligation a quoted sentence carries. The glyph does the work a
+// label would, without spending a line on it.
+const POINT_MARK: Record<string, string> = {
+  no: '\u2715',      // a prohibition
+  must: '\u2713',    // a requirement
+  age: '#',           // an age limit
+  penalty: '!',       // a penalty
+};
 
 // ---------------------------------------------------------------------- search
 
@@ -513,7 +523,16 @@ export default function App() {
                     {item.e}
                   </Text>
                 ) : null}
-                {item.t ? (
+                {item.p?.length ? (
+                  <View style={styles.cardPoint}>
+                    <Text style={styles.pointMark}>
+                      {POINT_MARK[item.p[0].k] ?? '\u2022'}
+                    </Text>
+                    <Text style={styles.preview} numberOfLines={3}>
+                      {item.p[0].t}
+                    </Text>
+                  </View>
+                ) : item.t ? (
                   <Text style={styles.preview} numberOfLines={3}>
                     {bodyOf(item)}
                   </Text>
@@ -595,6 +614,25 @@ function Detail({ section, onBack }: { section: Section; onBack: () => void }) {
           <View style={styles.detailFlag}>
             <Text style={[styles.flag, styles.flagWarn]}>
               This section has been repealed.
+            </Text>
+          </View>
+        ) : null}
+
+        {section.p?.length ? (
+          <View style={styles.points}>
+            <Text style={styles.pointsLabel}>WHAT THIS SECTION SAYS</Text>
+            {section.p.map((pt, n) => (
+              <View key={`pt-${n}`} style={styles.pointRow}>
+                <Text style={styles.pointMark}>
+                  {POINT_MARK[pt.k] ?? '\u2022'}
+                </Text>
+                <Text style={styles.pointText}>{pt.t}</Text>
+              </View>
+            ))}
+            <Text style={styles.pointsFoot}>
+              Quoted word for word from the statute below, picked out by looking
+              for the sentences that state a duty, a limit or a penalty. Nothing
+              here is reworded, so read the full text before relying on it.
             </Text>
           </View>
         ) : null}
@@ -876,6 +914,26 @@ const styles = StyleSheet.create({
   },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
+
+  cardPoint: { flexDirection: 'row', gap: 7, marginTop: 10 },
+  points: {
+    backgroundColor: C.accentSoft, borderRadius: 12, padding: 14, marginTop: 18,
+    borderLeftWidth: 3, borderLeftColor: C.accent,
+  },
+  pointsLabel: {
+    color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+    marginBottom: 10,
+  },
+  pointRow: { flexDirection: 'row', gap: 8, marginBottom: 10 },
+  pointMark: {
+    color: C.accent, fontSize: 13, fontWeight: '800', lineHeight: 20,
+    minWidth: 12,
+  },
+  pointText: { flex: 1, color: C.ink, fontSize: 14, lineHeight: 20 },
+  pointsFoot: {
+    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 4,
+    borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 9,
+  },
 
   // The curated answer. Sage field and a left rule so it reads as OUR writing,
   // clearly separated from the verbatim statute cards below it.
