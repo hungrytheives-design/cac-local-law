@@ -25,7 +25,6 @@ type Section = {
   i: string;
   c: string;  // citation, "NRS 484B.130"
   h: string;  // heading
-  u: string;  // source URL
   k: string[];// keywords
   ch: string; // chapter number, "484B". Title comes from CHAPTER_TITLES.
   t?: string; // verbatim text, present for user-facing sections
@@ -281,6 +280,13 @@ function search(query: string): { hits: Section[]; total: number } {
 
 // Statute text repeats its own citation and heading before the body. Showing
 // that again under a heading we already rendered wastes the first screenful.
+// The official URL is a pure function of the citation, so it is rebuilt here
+// instead of being stored 50,299 times. That repetition was 3.2 MB of bundle.
+function urlOf(s: Section): string {
+  const num = s.c.includes('.') ? s.c.split('.').slice(1).join('.') : '';
+  return `https://www.leg.state.nv.us/NRS/NRS-${s.ch}.html#NRS${s.ch}Sec${num}`;
+}
+
 function bodyOf(s: Section): string {
   const t = s.t;
   if (!t) return '';
@@ -648,7 +654,7 @@ function Detail({ section, onBack }: { section: Section; onBack: () => void }) {
 
         <Pressable
           style={styles.sourceBtn}
-          onPress={() => Linking.openURL(section.u)}
+          onPress={() => Linking.openURL(urlOf(section))}
           accessibilityRole="link"
           accessibilityLabel={`Open ${section.c} on the Nevada Legislature website`}
         >

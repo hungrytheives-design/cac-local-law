@@ -133,7 +133,28 @@ OBLIGATION = [
 CRUFT = re.compile(r"\((?:Added to NRS|NRS A)[^)]*\)|—\(Substituted[^)]*\)")
 
 
-def obligations(citation: str, heading: str, text: str, limit: int = 3) -> list:
+# Full text is rationed by chapter because 54 MB of statute text cannot ship.
+# Bullets are not: three sentences cost a fraction of a whole statute, so every
+# live section in the code can carry them. This is what decouples "can the app
+# answer you" from "did a human write a lexicon entry for your topic".
+def has_bullets(sec: dict) -> bool:
+    if sec.get("status") == "repealed":
+        return False
+    if "effective" in sec and not sec["effective"].get("isCurrent", True):
+        return False
+    if BORING.match(sec.get("heading", "")):
+        return False
+    return len(sec.get("text", "")) >= 200
+
+
+# Two bullets at 300 characters is the point where corpus-wide coverage still
+# fits in the bundle: 20,621 sections for 5.4 MB, against 13.2 MB for three
+# uncapped bullets. Measured, not guessed.
+MAX_BULLETS = 2
+MAX_BULLET_CHARS = 300
+
+
+def obligations(citation: str, heading: str, text: str, limit: int = MAX_BULLETS) -> list:
     """Verbatim sentences from the statute that state a duty, limit or penalty."""
     prefix = f"{citation} {heading}"
     body = text[len(prefix):] if text.startswith(prefix) else text
@@ -152,7 +173,8 @@ def obligations(citation: str, heading: str, text: str, limit: int = 3) -> list:
             if rx.search(sent):
                 (primary if PRIMARY.match(sent) else other).append({"k": kind, "t": sent})
                 break
-    return (primary + other)[:limit]
+    picked = [x for x in primary + other if len(x["t"]) <= MAX_BULLET_CHARS]
+    return picked[:limit]
 
 
 def main() -> int:
@@ -175,13 +197,16 @@ def main() -> int:
                     "i": sec["id"],
                     "c": sec["citation"],
                     "h": sec["heading"],
-                    "u": sec["sourceUrl"],
+                    # sourceUrl is NOT stored: it is a pure function of the
+                    # citation, and repeating it 50,299 times cost 3.2 MB of
+                    # the bundle. urlOf() in App.tsx rebuilds it.
                     "k": keywords(sec["heading"], sec.get("chapterTitle", "")),
                     "ch": sec["chapter"],
                 }
                 if uf:
                     entry["t"] = sec["text"]
                     kept_text += 1
+                if has_bullets(sec):
                     pts = obligations(
                         sec["citation"], sec["heading"], sec["text"]
                     )
@@ -251,7 +276,7 @@ def main() -> int:
     mb = os.path.getsize(OUT) / 1_000_000
     print(f"chapters      {len(titles)}")
     print(f"sections      {len(sections)}  (all searchable)")
-    print(f"w/ points     {with_points}  ({with_points * 100 // max(kept_text,1)}% of texted sections)")
+    print(f"w/ bullets    {with_points}  (all chapters, not just lexicon)")
     print(f"w/ full text  {kept_text}  ({kept_text * 100 // max(len(sections),1)}%)")
     print(f"bundle size   {mb:.1f} MB -> app/assets/nrs-index.json")
     if mb > 25:
