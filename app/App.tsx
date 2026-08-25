@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useDeferredValue, useMemo, useState } from 'react';
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import {
   FlatList,
   Image,
@@ -9,6 +9,7 @@ import {
   Pressable,
   SafeAreaView,
   ScrollView,
+  ActivityIndicator,
   StyleSheet,
   Text,
   TextInput,
@@ -18,6 +19,7 @@ import {
 import index from './assets/nrs-index.json';
 import concepts from './assets/concepts.json';
 import activities from './assets/activities.json';
+import { explain, explainAvailable, type Source } from './lib/explain';
 
 // Every section is searchable. Only `t` (verbatim text) is selective, because
 // carrying full text for all of NRS would be ~150 MB. See data/scripts/build_index.py
@@ -658,6 +660,76 @@ export default function App() {
   );
 }
 
+// Plain-English rewrite of THIS section, when a key is configured. Retrieval
+// already happened locally; this only restates text the reader can see below.
+function Explain({ section, body }: { section: Section; body: string }) {
+  const [state, setState] = useState<'idle' | 'loading' | 'done' | 'error'>('idle');
+  const [text, setText] = useState('');
+  const [why, setWhy] = useState('');
+  const abort = useRef<AbortController | null>(null);
+
+  useEffect(() => () => abort.current?.abort(), []);
+
+  if (!explainAvailable() || !body) return null;
+
+  const run = async () => {
+    setState('loading');
+    abort.current?.abort();
+    abort.current = new AbortController();
+    const src: Source[] = [
+      { citation: section.c, heading: section.h, text: body },
+    ];
+    try {
+      const out = await explain(`What does ${section.c} require?`, src, abort.current.signal);
+      if (out) {
+        setText(out);
+        setState('done');
+      } else {
+        setWhy('No answer came back.');
+        setState('error');
+      }
+    } catch (e: any) {
+      setWhy(
+        e?.message === 'rate-limited'
+          ? "Today's free requests are used up. The statute text below is unaffected."
+          : 'Could not reach the service. The statute text below is unaffected.'
+      );
+      setState('error');
+    }
+  };
+
+  return (
+    <View style={styles.explain}>
+      {state === 'idle' ? (
+        <Pressable onPress={run} style={styles.explainBtn} accessibilityRole="button">
+          <Text style={styles.explainBtnText}>Explain this in plain English</Text>
+        </Pressable>
+      ) : null}
+
+      {state === 'loading' ? (
+        <View style={styles.explainRow}>
+          <ActivityIndicator color={C.accent} />
+          <Text style={styles.explainWait}>Reading the statute…</Text>
+        </View>
+      ) : null}
+
+      {state === 'done' ? (
+        <>
+          <Text style={styles.explainLabel}>PLAIN ENGLISH, WRITTEN BY AI</Text>
+          <Text style={styles.explainText}>{text}</Text>
+          <Text style={styles.explainFoot}>
+            Written by an AI model from the statute text below and nothing else.
+            It can still get things wrong. The official wording is right there,
+            so check it.
+          </Text>
+        </>
+      ) : null}
+
+      {state === 'error' ? <Text style={styles.explainWait}>{why}</Text> : null}
+    </View>
+  );
+}
+
 function Detail({ section, onBack }: { section: Section; onBack: () => void }) {
   const body = bodyOf(section);
   return (
@@ -691,6 +763,8 @@ function Detail({ section, onBack }: { section: Section; onBack: () => void }) {
             </Text>
           </View>
         ) : null}
+
+        <Explain section={section} body={body} />
 
         {section.p?.length ? (
           <View style={styles.points}>
@@ -990,6 +1064,24 @@ const styles = StyleSheet.create({
   list: { paddingHorizontal: 16, paddingBottom: 24 },
 
   cardPoint: { flexDirection: 'row', gap: 7, marginTop: 10 },
+
+  explain: { marginTop: 18 },
+  explainBtn: {
+    borderWidth: 1, borderColor: C.accent, borderRadius: 12, minHeight: 44,
+    alignItems: 'center', justifyContent: 'center', paddingHorizontal: 14,
+  },
+  explainBtnText: { color: C.accent, fontSize: 14, fontWeight: '700' },
+  explainRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  explainWait: { color: C.muted, fontSize: 13, lineHeight: 19 },
+  explainLabel: {
+    color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
+    marginBottom: 8,
+  },
+  explainText: { color: C.ink, fontSize: 14.5, lineHeight: 22 },
+  explainFoot: {
+    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 10,
+    borderTopWidth: 1, borderTopColor: C.line, paddingTop: 9,
+  },
   points: {
     backgroundColor: C.accentSoft, borderRadius: 12, padding: 14, marginTop: 18,
     borderLeftWidth: 3, borderLeftColor: C.accent,
