@@ -25,7 +25,6 @@ type Section = {
   i: string;
   c: string;  // citation, "NRS 484B.130"
   h: string;  // heading
-  k: string[];// keywords
   ch: string; // chapter number, "484B". Title comes from CHAPTER_TITLES.
   t?: string; // verbatim text, present for user-facing sections
   r?: number; // repealed
@@ -209,7 +208,31 @@ function expand(tokens: string[], raw: string) {
 // Built on first search rather than at import, so it costs nothing at launch.
 // This is a pure memoisation: no weight, threshold or comparison changed, so
 // the hand port in test_search.py stays valid as written.
-type Cached = { h: string; fh: string; t: string | null; ft: string | null };
+type Cached = {
+  h: string;
+  fh: string;
+  t: string | null;
+  ft: string | null;
+  k: string[];
+};
+
+// Mirrors keywords() in build_index.py. Shipping these cost 5.3 MB when they
+// are a pure function of the heading and chapter title, both already in the
+// bundle. Rebuilt once, with the rest of the cache.
+const KW_STOP = new Set(
+  ('the a an of to in for or and by on with certain other otherwise provided when ' +
+   'which that this these those is are be been as at from not no any all such may ' +
+   'shall must person persons required requirement use used using').split(' ')
+);
+
+function keywordsOf(heading: string, chapterTitle: string): string[] {
+  const words = `${heading} ${chapterTitle}`.toLowerCase().match(/[a-z]{3,}/g) ?? [];
+  const out: string[] = [];
+  for (const w of words) {
+    if (!KW_STOP.has(w) && !out.includes(w)) out.push(w);
+  }
+  return out.slice(0, 14);
+}
 let CACHE: {
   sections: Cached[];
   chapters: Record<string, string>;
@@ -248,6 +271,7 @@ function cached() {
         fh: flat(s.h),
         t: s.t ? s.t.toLowerCase() : null,
         ft: s.t ? flat(s.t) : null,
+        k: keywordsOf(s.h, CHAPTER_TITLES[s.ch] ?? ''),
       })),
     };
   }
@@ -277,7 +301,7 @@ function search(query: string): { hits: Section[]; total: number } {
       const w = rarity(t, df, N);
       let hit = false;
       if (c.h.includes(t)) { score += 10 * w; hit = true; }
-      if (s.k.some((k) => k.startsWith(t))) { score += 6 * w; hit = true; }
+      if (c.k.some((k) => k.startsWith(t))) { score += 6 * w; hit = true; }
       if (lcChapter[s.ch] && lcChapter[s.ch].includes(t)) { score += 2 * w; hit = true; }
       if (c.t && c.t.includes(t)) { score += 1 * w; hit = true; }
       if (hit) matched++;

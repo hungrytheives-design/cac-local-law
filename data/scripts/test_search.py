@@ -153,6 +153,29 @@ ADMIN = re.compile(
 )
 
 
+# Mirrors keywords() in build_index.py and keywordsOf() in App.tsx. Keywords are
+# no longer shipped: they are a pure function of the heading and chapter title,
+# and storing them for 50,299 sections cost 5.3 MB.
+_KW_STOP = set(
+    "the a an of to in for or and by on with certain other otherwise provided when "
+    "which that this these those is are be been as at from not no any all such may "
+    "shall must person persons required requirement use used using".split()
+)
+_KW_CACHE = {}
+
+
+def kw_of(sec, titles):
+    key = sec["i"]
+    if key not in _KW_CACHE:
+        text = (sec["h"] + " " + titles.get(sec["ch"], "")).lower()
+        out = []
+        for w in re.findall(r"[a-z]{3,}", text):
+            if w not in _KW_STOP and w not in out:
+                out.append(w)
+        _KW_CACHE[key] = out[:14]
+    return _KW_CACHE[key]
+
+
 def search(query, sections, titles, concepts, limit=10):
     """Mirrors search() in app/App.tsx. Returns [(score, section)]."""
     tokens = tokenize(query)
@@ -173,7 +196,7 @@ def search(query, sections, titles, concepts, limit=10):
             if t in heading:
                 score += 10 * w
                 hit = True
-            if any(k.startswith(t) for k in s["k"]):
+            if any(k.startswith(t) for k in kw_of(s, titles)):
                 score += 6 * w
                 hit = True
             if t in titles.get(s["ch"], "").lower():

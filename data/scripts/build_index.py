@@ -197,10 +197,11 @@ def main() -> int:
                     "i": sec["id"],
                     "c": sec["citation"],
                     "h": sec["heading"],
-                    # sourceUrl is NOT stored: it is a pure function of the
-                    # citation, and repeating it 50,299 times cost 3.2 MB of
-                    # the bundle. urlOf() in App.tsx rebuilds it.
-                    "k": keywords(sec["heading"], sec.get("chapterTitle", "")),
+                    # Neither sourceUrl nor keywords are stored. The URL is a
+                    # pure function of the citation; the keywords are a pure
+                    # function of the heading and chapter title, both of which
+                    # already ship. Together they cost 8.5 MB of repetition.
+                    # urlOf() and the keyword pass in cached() rebuild them.
                     "ch": sec["chapter"],
                 }
                 if uf:
