@@ -23,7 +23,7 @@
 // from app/.env, which is gitignored.
 
 const KEY = process.env.EXPO_PUBLIC_OPENROUTER_KEY ?? '';
-const MODEL = process.env.EXPO_PUBLIC_OPENROUTER_MODEL ?? 'nvidia/nemotron-3.5-lightning:free';
+const MODEL = process.env.EXPO_PUBLIC_OPENROUTER_MODEL ?? 'liquid/lfm-2.5-2.6b:free';
 
 // ---------------------------------------------------------------- money guards
 //
@@ -136,7 +136,13 @@ export async function explain(
       messages: messages(question, sources),
       // Low temperature: this is a rewriting job, not a creative one.
       temperature: 0.1,
-      max_tokens: 400,
+      // Every free model on OpenRouter today is a reasoner: the first live test
+      // returned content:null with 1,600 characters of thinking and
+      // finish_reason "length". They need room to finish thinking BEFORE the
+      // answer exists, so the budget is generous. Tokens are free here; the
+      // only cost is latency.
+      max_tokens: 2000,
+      reasoning: { effort: 'low', exclude: true },
       // Refuse to route anywhere that costs anything. If no provider can serve
       // this for free the request fails, which is the outcome we want.
       max_price: { prompt: 0, completion: 0 },
@@ -153,5 +159,27 @@ export async function explain(
 
   const data = await res.json();
   const out = data?.choices?.[0]?.message?.content;
-  return typeof out === 'string' && out.trim() ? out.trim() : null;
+  return typeof out === 'string' ? clean(out) : null;
+}
+
+// Belt and braces for the same problem. Even with reasoning excluded, a model
+// can narrate its plan. Showing that to a reader is worse than showing nothing,
+// so anything that still looks like scratch work is dropped rather than
+// displayed, and the caller falls back to the verbatim bullets.
+const THINKING =
+  /^(?:here'?s? (?:a|my) (?:thinking|thought)|let me|first,? i|i need to|okay,? so|analysis:|step \d)/i;
+
+function clean(raw: string): string | null {
+  let t = raw.replace(/<\/?think(?:ing)?>/gi, '').trim();
+
+  // Keep only from the first bullet onward, when there is one.
+  const bullet = t.search(/^\s*(?:[-*\u2022]|\d+[.)])\s+/m);
+  if (bullet > 0) t = t.slice(bullet);
+  t = t.trim();
+
+  if (!t) return null;
+  if (THINKING.test(t)) return null;
+  // A wall of prose with no bullet is not the format we asked for.
+  if (t.length > 900 && !/^\s*(?:[-*\u2022]|\d+[.)])\s+/m.test(t)) return null;
+  return t;
 }
