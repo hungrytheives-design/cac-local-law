@@ -19,7 +19,14 @@ import {
 import index from './assets/nrs-index.json';
 import concepts from './assets/concepts.json';
 import activities from './assets/activities.json';
-import { explain, explainAvailable, type Source } from './lib/explain';
+import {
+  answerQuestion,
+  explain,
+  explainAvailable,
+  localReply,
+  type CuratedRule,
+  type Source,
+} from './lib/explain';
 
 // Every section is searchable. Only `t` (verbatim text) is selective, because
 // carrying full text for all of NRS would be ~150 MB. See data/scripts/build_index.py
@@ -497,15 +504,23 @@ export default function App() {
   const [query, setQuery] = useState('');
   const [screen, setScreen] = useState<Screen>({ kind: 'search' });
 
-  // Scanning 49,742 sections on every keystroke stuttered badly on a real
-  // phone. Deferring means the box stays live under your thumb and the results
-  // catch up a frame later, instead of the keyboard fighting the search.
-  const settled = useDeferredValue(query);
-  const { hits, total } = useMemo(() => search(settled), [settled]);
-  const hero = useMemo(() => matchActivity(settled), [settled]);
-  const signals = useMemo(() => detectSignals(settled), [settled]);
-  const age = useMemo(() => detectAge(settled), [settled]);
-  const searching = tokenize(settled).length > 0;
+  // Search runs on ENTER, not on every keystroke. Results used to appear and
+  // reshuffle under the reader while they were still typing the question, which
+  // is exactly the wrong moment to be showing anything.
+  const [asked, setAsked] = useState('');
+  const { hits, total } = useMemo(() => search(asked), [asked]);
+  const hero = useMemo(() => matchActivity(asked), [asked]);
+  const signals = useMemo(() => detectSignals(asked), [asked]);
+  const age = useMemo(() => detectAge(asked), [asked]);
+  const searching = asked.trim().length > 0;
+  const greeting = localReply(asked);
+
+  const ask = (q: string) => {
+    const t = q.trim();
+    if (!t) return;
+    setQuery(t);
+    setAsked(t);
+  };
 
   if (screen.kind === 'detail') {
     return (
@@ -530,7 +545,14 @@ export default function App() {
           there was no exit from a search at all. */}
       <Nav
         onAbout={() => setScreen({ kind: 'about' })}
-        onBack={searching ? () => setQuery('') : undefined}
+        onBack={
+          searching
+            ? () => {
+                setQuery('');
+                setAsked('');
+              }
+            : undefined
+        }
       />
 
       <KeyboardAvoidingView
@@ -550,30 +572,36 @@ export default function App() {
             ListHeaderComponent={
               <View>
                 {hero ? (
-                  <Hero
-                    activity={hero}
-                    signals={signals}
-                    age={age}
-                    onOpen={(citation, url) => {
+                  <Verdict activity={hero} signals={signals} age={age} />
+                ) : null}
+
+                <Answer
+                  question={asked}
+                  hits={hits}
+                  activity={hero}
+                  onOpen={(citation, url) => {
                       // Prefer our own reader so the statute opens in the app
                       // with its in-force flags; fall back to the official
                       // site only if the section is not in the index.
-                      const s = SECTIONS.find((x) => x.c === citation);
-                      if (s) setScreen({ kind: 'detail', section: s });
-                      else Linking.openURL(url);
-                    }}
-                  />
-                ) : null}
-                {hero ? (
-                  <Text style={styles.listLabel}>EVERY MATCHING STATUTE</Text>
-                ) : null}
-                <Text style={styles.count}>
-                  {total === 0
-                    ? 'Nothing matched. Try different words.'
-                    : total > SHOWN
-                    ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
-                    : `${total} match${total === 1 ? '' : 'es'}`}
-                </Text>
+                    const s = SECTIONS.find((x) => x.c === citation);
+                    if (s) setScreen({ kind: 'detail', section: s });
+                    else Linking.openURL(url);
+                  }}
+                />
+                {greeting ? null : (
+                  <>
+                    {hero ? (
+                      <Text style={styles.listLabel}>EVERY MATCHING STATUTE</Text>
+                    ) : null}
+                    <Text style={styles.count}>
+                      {total === 0
+                        ? 'Nothing matched. Try different words.'
+                        : total > SHOWN
+                        ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
+                        : `${total} match${total === 1 ? '' : 'es'}`}
+                    </Text>
+                  </>
+                )}
               </View>
             }
             renderItem={({ item, index: rank }) => (
@@ -629,7 +657,7 @@ export default function App() {
                 <Pressable
                   key={e}
                   style={styles.chip}
-                  onPress={() => setQuery(e)}
+                  onPress={() => ask(e)}
                   accessibilityRole="button"
                   accessibilityLabel={`Search: ${e}`}
                 >
@@ -648,6 +676,7 @@ export default function App() {
             autoCorrect={false}
             autoFocus
             returnKeyType="search"
+            onSubmitEditing={() => ask(query)}
             accessibilityLabel="Describe what you are planning to do"
           />
         </View>
@@ -702,7 +731,7 @@ function Explain({ section, body }: { section: Section; body: string }) {
     <View style={styles.explain}>
       {state === 'idle' ? (
         <Pressable onPress={run} style={styles.explainBtn} accessibilityRole="button">
-          <Text style={styles.explainBtnText}>Explain this in plain English</Text>
+          <Text style={styles.explainBtnText}>What does this mean?</Text>
         </Pressable>
       ) : null}
 
@@ -715,12 +744,10 @@ function Explain({ section, body }: { section: Section; body: string }) {
 
       {state === 'done' ? (
         <>
-          <Text style={styles.explainLabel}>PLAIN ENGLISH, WRITTEN BY AI</Text>
           <Text style={styles.explainText}>{text}</Text>
           <Text style={styles.explainFoot}>
-            Written by an AI model from the statute text below and nothing else.
-            It can still get things wrong. The official wording is right there,
-            so check it.
+            Based only on the statute text below. The official wording is right
+            there, so check it.
           </Text>
         </>
       ) : null}
@@ -879,27 +906,131 @@ function About({ onBack }: { onBack: () => void }) {
 // The answer, before the search results. Every line is hand-written and every
 // line carries the statute it came from, so a reader can check us rather than
 // trust us. Rules we are not certain about say so instead of being dropped.
-function Hero({
+// The written answer to what was actually asked. Local search has already
+// decided WHICH statutes are relevant and that decision is never delegated;
+// this only writes them up. When the topic is curated, the hand-checked rules
+// go in alongside the statute text and the model is told to prefer them.
+//
+// Degrades all the way down: no key, no network or no quota, and the curated
+// rules render on their own exactly as they did before any of this existed.
+function Answer({
+  question,
+  hits,
+  activity,
+  onOpen,
+}: {
+  question: string;
+  hits: Section[];
+  activity: Activity | null;
+  onOpen: (citation: string, url: string) => void;
+}) {
+  const [text, setText] = useState('');
+  const [state, setState] = useState<
+    'idle' | 'loading' | 'done' | 'greeting' | 'fallback'
+  >('idle');
+  const abort = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    // A greeting is not a legal question. Answering it locally is instant and
+    // does not spend one of the day's 50 requests.
+    const canned = localReply(question);
+    if (canned) {
+      setText(canned);
+      setState('greeting');
+      return;
+    }
+    if (!explainAvailable() || (!hits.length && !activity)) {
+      setState('fallback');
+      return;
+    }
+
+    const ctrl = new AbortController();
+    abort.current?.abort();
+    abort.current = ctrl;
+    setState('loading');
+    setText('');
+
+    const sources: Source[] = hits
+      .filter((h) => h.t)
+      .slice(0, 4)
+      .map((h) => ({ citation: h.c, heading: h.h, text: bodyOf(h) }));
+    const curated: CuratedRule[] = (activity?.rules ?? []).map((r) => ({
+      text: r.text,
+      citation: r.citation,
+    }));
+
+    answerQuestion(question, sources, curated, ctrl.signal)
+      .then((out) => {
+        if (ctrl.signal.aborted) return;
+        if (out) {
+          setText(out);
+          setState('done');
+        } else {
+          setState('fallback');
+        }
+      })
+      .catch(() => {
+        if (!ctrl.signal.aborted) setState('fallback');
+      });
+
+    return () => ctrl.abort();
+  }, [question, hits, activity]);
+
+  if (state === 'loading') {
+    return (
+      <View style={styles.answerWait}>
+        <ActivityIndicator color={C.accent} />
+        <Text style={styles.answerWaitText}>Reading the statutes…</Text>
+      </View>
+    );
+  }
+
+  // A greeting gets the words and nothing else: no statute footnote, because
+  // there are no statutes behind "hey".
+  if (state === 'greeting') {
+    return (
+      <View style={styles.answer}>
+        <Text style={styles.answerText}>{text}</Text>
+      </View>
+    );
+  }
+
+  if (state === 'done') {
+    return (
+      <View style={styles.answer}>
+        <Text style={styles.answerText}>{text}</Text>
+        <Text style={styles.answerFoot}>
+          Every statute this is based on is listed below. Not legal advice.
+        </Text>
+      </View>
+    );
+  }
+
+  // Fallback: the hand-written rules, which is what the app showed before.
+  if (activity) return <Curated activity={activity} onOpen={onOpen} />;
+  return null;
+}
+
+// Deterministic, and kept whatever else happens: this is hand-tagged data, not
+// a guess, so it sits above the written answer rather than inside it.
+function Verdict({
   activity,
   signals,
   age,
-  onOpen,
 }: {
   activity: Activity;
   signals: Set<string>;
   age: number | null;
-  onOpen: (citation: string, url: string) => void;
 }) {
-  // Rules the person's own description runs into. Not a prediction about what
-  // happens to them, just: you said X, and this rule says X is the problem.
   const tooYoung = (r: Rule) =>
     r.minAge !== undefined && age !== null && age < r.minAge;
   const conflicts = activity.rules.filter(
     (r) => r.brokenBy?.some((b) => signals.has(b)) || tooYoung(r)
   );
+  if (!conflicts.length) return null;
 
   return (
-    <View style={styles.hero}>
+    <View>
       {conflicts.length > 0 ? (
         <View style={styles.verdict}>
           <Text style={styles.verdictLabel}>THIS LOOKS LIKE A PROBLEM</Text>
@@ -923,7 +1054,21 @@ function Hero({
           </Text>
         </View>
       ) : null}
+    </View>
+  );
+}
 
+// Fallback only. When there is no written answer available - no key, no
+// network, quota gone - the hand-written rules still carry the topic.
+function Curated({
+  activity,
+  onOpen,
+}: {
+  activity: Activity;
+  onOpen: (citation: string, url: string) => void;
+}) {
+  return (
+    <View style={styles.hero}>
       <Text style={styles.heroLabel}>WHAT YOU NEED TO KNOW</Text>
       <Text style={styles.heroTitle}>{activity.displayName}</Text>
       <Text style={styles.heroSummary}>{activity.summary}</Text>
@@ -1065,6 +1210,21 @@ const styles = StyleSheet.create({
 
   cardPoint: { flexDirection: 'row', gap: 7, marginTop: 10 },
 
+  answer: {
+    backgroundColor: C.accentSoft, borderRadius: 14, padding: 16,
+    marginBottom: 20, borderLeftWidth: 3, borderLeftColor: C.accent,
+  },
+  answerText: { color: C.ink, fontSize: 15, lineHeight: 23 },
+  answerFoot: {
+    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 12,
+    borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 9,
+  },
+  answerWait: {
+    flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 26,
+    justifyContent: 'center',
+  },
+  answerWaitText: { color: C.muted, fontSize: 14 },
+
   explain: { marginTop: 18 },
   explainBtn: {
     borderWidth: 1, borderColor: C.accent, borderRadius: 12, minHeight: 44,
@@ -1073,10 +1233,6 @@ const styles = StyleSheet.create({
   explainBtnText: { color: C.accent, fontSize: 14, fontWeight: '700' },
   explainRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   explainWait: { color: C.muted, fontSize: 13, lineHeight: 19 },
-  explainLabel: {
-    color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
-    marginBottom: 8,
-  },
   explainText: { color: C.ink, fontSize: 14.5, lineHeight: 22 },
   explainFoot: {
     color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 10,

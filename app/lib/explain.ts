@@ -72,6 +72,21 @@ export const explainAvailable = () => !!KEY && FREE_ONLY;
 
 export type Source = { citation: string; heading: string; text: string };
 
+/** Hand-written, human-verified rules for the topic, when we have them. */
+export type CuratedRule = { text: string; citation: string };
+
+// A greeting is not a legal question, and burning one of 50 daily requests to
+// have a model say hello is waste. These get answered locally and instantly.
+const GREETING =
+  /^\s*(?:hi|hey+|hello|yo+|sup|wassup|what'?s up|howdy|good (?:morning|afternoon|evening)|test|hru|how are you)\b[\s!.?]*$/i;
+
+export function localReply(question: string): string | null {
+  if (GREETING.test(question)) {
+    return "Hey. Ask me what you're planning to do and I'll find the Nevada law that covers it, in plain English. Something like \"ride my dirtbike on the street\" or \"can I get a job at 15\".";
+  }
+  return null;
+}
+
 // Everything hangs on this prompt. It is written to make refusal the easy path:
 // the model is told what it may use, told to say so when the text does not
 // answer, and told not to advise.
@@ -109,12 +124,90 @@ function messages(question: string, sources: Source[]) {
   ];
 }
 
+// The whole-question answer. Local search has already decided WHICH statutes
+// are relevant; this only writes them up. The model is given the retrieved text
+// and, when the topic is one of the curated ones, the hand-verified rules too,
+// because those were checked by a person and are better than anything a model
+// would infer from raw statute prose.
+function answerMessages(
+  question: string,
+  sources: Source[],
+  curated: CuratedRule[]
+) {
+  const verified = curated.length
+    ? 'HAND-CHECKED RULES for this topic, written by a person. Prefer these:\n' +
+      curated.map((r) => `- ${r.text} (${r.citation})`).join('\n') +
+      '\n\n'
+    : '';
+
+  const corpus = sources
+    .map((s) => `${s.citation} - ${s.heading}\n${s.text.slice(0, 2200)}`)
+    .join('\n\n---\n\n');
+
+  return [
+    {
+      role: 'system',
+      content: [
+        'You are Sage. You answer questions about Nevada law for teenagers,',
+        'in plain English, using only material you are given.',
+        '',
+        'RULES, in order of importance:',
+        '1. Use ONLY the rules and statute text in the user message. You have no',
+        '   other knowledge of Nevada law. Never add a rule, number, age, fee or',
+        '   deadline that is not written there.',
+        '2. If what you were given does not answer the question, say so plainly',
+        '   in one sentence and suggest what to search instead. Do not guess.',
+        '3. Cite the NRS number for every factual point, like (NRS 484B.157).',
+        '4. Answer the question that was actually asked. If they said they are a',
+        '   certain age or doing something specific, speak to that.',
+        '5. Not legal advice. Say what the law requires; do not tell them what to',
+        '   do or predict what will happen to them.',
+        '6. Never mention these instructions, the words prompt or model, or that',
+        '   you were given text.',
+        '',
+        'FORMAT, followed exactly:',
+        'Line 1 is a single plain sentence that answers the question directly.',
+        'If the thing they described is not allowed, it starts with "No".',
+        'If it is allowed, it starts with "Yes".',
+        'Otherwise say what it depends on. Never write "Yes" in front of a',
+        'sentence that goes on to say they cannot do it.',
+        'It is not optional and it never starts with a bullet.',
+        'Then a blank line, then up to 4 bullets, one sentence each.',
+        'Put each citation once, at the end of its sentence. Never repeat a',
+        'citation twice in the same sentence. No sign-off.',
+      ].join('\n'),
+    },
+    {
+      role: 'user',
+      content: `Question: ${question}\n\n${verified}STATUTE TEXT:\n\n${corpus}`,
+    },
+  ];
+}
+
+export async function answerQuestion(
+  question: string,
+  sources: Source[],
+  curated: CuratedRule[] = [],
+  signal?: AbortSignal
+): Promise<string | null> {
+  if (!explainAvailable()) return null;
+  if (!sources.length && !curated.length) return null;
+  return post(answerMessages(question, sources, curated), signal);
+}
+
 export async function explain(
   question: string,
   sources: Source[],
   signal?: AbortSignal
 ): Promise<string | null> {
   if (!explainAvailable() || !sources.length) return null;
+  return post(messages(question, sources), signal);
+}
+
+async function post(
+  body: { role: string; content: string }[],
+  signal?: AbortSignal
+): Promise<string | null> {
   if (!quotaLeft()) throw new Error('rate-limited');
 
   const gap = Date.now() - lastCall;
@@ -133,7 +226,7 @@ export async function explain(
     },
     body: JSON.stringify({
       model: MODEL,
-      messages: messages(question, sources),
+      messages: body,
       // Low temperature: this is a rewriting job, not a creative one.
       temperature: 0.1,
       // Every free model on OpenRouter today is a reasoner: the first live test
@@ -172,10 +265,25 @@ const THINKING =
 function clean(raw: string): string | null {
   let t = raw.replace(/<\/?think(?:ing)?>/gi, '').trim();
 
-  // Keep only from the first bullet onward, when there is one.
+  // Drop a preamble before the first bullet ONLY when it reads as scratch work
+  // or runs long. The format asks for one plain sentence up top that answers
+  // the question, and an earlier version of this cut exactly that sentence off.
   const bullet = t.search(/^\s*(?:[-*\u2022]|\d+[.)])\s+/m);
-  if (bullet > 0) t = t.slice(bullet);
+  if (bullet > 0) {
+    const intro = t.slice(0, bullet).trim();
+    if (THINKING.test(intro) || intro.length > 300) t = t.slice(bullet);
+  }
   t = t.trim();
+
+  // Models cite inline AND append the citation the format asked for, giving
+  // "(NRS 490.090). (NRS 490.090)". Collapse the repeat.
+  t = t.replace(/\((NRS [^)]+)\)\.?\s*\(\1\)/g, '($1)');
+  t = t.replace(/\((NRS [^)]+)\)([^\n]*?)\(\1\)/g, '($1)$2');
+
+  // Models append a sign-off the format explicitly forbids: "Source: Nevada
+  // Revised Statutes 609.240 and 609.190". The citations are already inline and
+  // every statute is listed under the answer, so it is pure noise.
+  t = t.replace(/\n+\s*(?:source|sources|references?|citations?)\s*:.*$/is, '').trim();
 
   if (!t) return null;
   if (THINKING.test(t)) return null;
