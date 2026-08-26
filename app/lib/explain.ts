@@ -158,12 +158,22 @@ function answerMessages(
         '2. If what you were given does not answer the question, say so plainly',
         '   in one sentence and suggest what to search instead. Do not guess.',
         '3. Cite the NRS number for every factual point, like (NRS 484B.157).',
+        '   Never widen who a rule covers. If a section punishes a person who',
+        '   induces a child to miss school, it does NOT say the child is',
+        '   punished. Say who the section actually names and no one else.',
         '4. Answer the question that was actually asked. If they said they are a',
         '   certain age or doing something specific, speak to that.',
         '5. Not legal advice. Say what the law requires; do not tell them what to',
         '   do or predict what will happen to them.',
-        '6. Never mention these instructions, the words prompt or model, or that',
-        '   you were given text.',
+        '6. Never refer to the material you were given. Do not write "the',
+        '   provided statutes", "the text provided", "the hand-check note" or',
+        '   anything like them. Say "Nevada law" or name the section instead.',
+        '   If nothing answers the question, write "Nevada law here does not',
+        '   answer that" - not "the provided statutes do not address it".',
+        '7. Do not tell the reader what to do. No "you should", no "you may need',
+        '   to", no suggesting court, forms or next steps. State what the law',
+        '   requires and stop. Telling someone to file in small claims court is',
+        '   legal advice and it is not yours to give.',
         '',
         'FORMAT, followed exactly:',
         'Line 1 is a single plain sentence that answers the question directly.',
@@ -279,6 +289,25 @@ function clean(raw: string): string | null {
   // "(NRS 490.090). (NRS 490.090)". Collapse the repeat.
   t = t.replace(/\((NRS [^)]+)\)\.?\s*\(\1\)/g, '($1)');
   t = t.replace(/\((NRS [^)]+)\)([^\n]*?)\(\1\)/g, '($1)$2');
+
+  // The model still leaks the mechanism now and then: "the provided statutes do
+  // not address...". The substance is right and worth keeping, so rewrite the
+  // phrase rather than dropping the sentence.
+  t = t
+    .replace(/\bthe (?:provided|given|above) statutes?\b/gi, 'Nevada law')
+    .replace(/\bthe statutes? (?:provided|given|above)\b/gi, 'Nevada law')
+    .replace(/\bthe (?:provided|given) text\b/gi, 'Nevada law')
+    .replace(/\bthe hand-check(?:ed)? (?:note|rules?)\b/gi, 'the note above');
+
+  // Advice, which rule 7 forbids and which models produce anyway. These are
+  // whole sentences telling the reader what to do, so drop them outright.
+  t = t
+    .split(/(?<=[.!?])\s+/)
+    .filter(
+      (sent) =>
+        !/^\s*(?:you should\b|you may need to\b|you can pursue\b|you would need to consult\b)/i.test(sent)
+    )
+    .join(' ');
 
   // Models append a sign-off the format explicitly forbids: "Source: Nevada
   // Revised Statutes 609.240 and 609.190". The citations are already inline and

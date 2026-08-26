@@ -986,5 +986,30 @@
       "268"
     ],
     "note": "Duplicate of the noise concept but with party phrasing."
+  },
+  {
+    "id": "weapons",
+    "colloquial": [
+      "knife",
+      "pocket knife",
+      "pocketknife",
+      "blade",
+      "switchblade",
+      "brass knuckles",
+      "carry a knife",
+      "weapon",
+      "weapons",
+      "taser",
+      "pepper spray"
+    ],
+    "statutory": [
+      "dangerous weapon",
+      "deadly weapon"
+    ],
+    "chapters": [
+      "202",
+      "392"
+    ],
+    "note": "'knife' appears in exactly one NRS heading, in HEALING ARTS. The statutory term is 'dangerous weapon' (chapter 202), and chapter 392 covers weapons at school."
   }
 ]

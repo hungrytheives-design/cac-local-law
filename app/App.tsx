@@ -103,6 +103,21 @@ const C = {
   warnSoft: '#F7EFE0',
 };
 
+// Two families, doing different jobs. The serif carries anything the reader is
+// meant to READ - the answer, statute headings, statute text - and gives the
+// app the register of a reference book rather than a settings screen. The sans
+// carries chrome: labels, counts, buttons. Georgia ships on iOS and Android;
+// the fallbacks matter for web.
+const F = Platform.select({
+  ios: { read: 'Georgia', ui: 'System' },
+  android: { read: 'serif', ui: 'sans-serif' },
+  default: { read: 'Georgia, "Times New Roman", serif', ui: 'system-ui, sans-serif' },
+}) as { read: string; ui: string };
+
+// One scale instead of the twelve ad-hoc sizes this had grown. Everything on
+// screen is one of these.
+const T = { xs: 11, sm: 13, base: 15, lg: 17, xl: 20, xxl: 26 };
+
 // Situations, not keywords. The app's whole pitch is "describe your plan", so
 // the examples have to look like plans. Every one was checked against the real
 // index first: each returns a correct statute in the top 3.
@@ -1180,9 +1195,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center', gap: 7,
     minHeight: 44, paddingHorizontal: 8,
   },
-  navMark: { width: 20, height: 20 },
+  navMark: { width: 24, height: 24 },
   navWordmark: {
-    color: C.ink, fontSize: 17, fontWeight: '700', letterSpacing: -0.3,
+    color: C.ink, fontSize: T.xl, fontWeight: '700', letterSpacing: 0.2,
+    fontFamily: F.read,
   },
 
   // The empty space above the box on the home screen, and the results list once
@@ -1196,14 +1212,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginBottom: 10,
   },
   chip: {
-    backgroundColor: C.accentSoft, borderRadius: 14,
-    paddingHorizontal: 11, paddingVertical: 7,
+    backgroundColor: C.accentSoft, borderRadius: 16,
+    paddingHorizontal: 13, paddingVertical: 8,
   },
-  chipText: { color: C.accent, fontSize: 12.5, fontWeight: '600' },
+  chipText: { color: C.accent, fontSize: T.sm, fontWeight: '600', fontFamily: F.ui },
   input: {
-    backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 16,
-    paddingVertical: 14, fontSize: 17, borderWidth: 1, borderColor: C.line,
-    color: C.ink,
+    backgroundColor: C.card, borderRadius: 26, paddingHorizontal: 20,
+    paddingVertical: 15, fontSize: T.lg, borderWidth: 1, borderColor: C.line,
+    color: C.ink, fontFamily: F.read,
+    shadowColor: '#2A3327', shadowOpacity: 0.07, shadowRadius: 12,
+    shadowOffset: { width: 0, height: 3 }, elevation: 3,
   },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
@@ -1211,19 +1229,26 @@ const styles = StyleSheet.create({
   cardPoint: { flexDirection: 'row', gap: 7, marginTop: 10 },
 
   answer: {
-    backgroundColor: C.accentSoft, borderRadius: 14, padding: 16,
-    marginBottom: 20, borderLeftWidth: 3, borderLeftColor: C.accent,
+    backgroundColor: C.card, borderRadius: 18, padding: 20, marginBottom: 22,
+    borderWidth: 1, borderColor: C.line,
+    // A soft lift instead of a hard outline. The old card was four 1px borders
+    // fighting each other.
+    shadowColor: '#2A3327', shadowOpacity: 0.06, shadowRadius: 14,
+    shadowOffset: { width: 0, height: 4 }, elevation: 2,
   },
-  answerText: { color: C.ink, fontSize: 15, lineHeight: 23 },
+  answerText: {
+    color: C.ink, fontSize: T.lg, lineHeight: 27, fontFamily: F.read,
+  },
   answerFoot: {
-    color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 12,
-    borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 9,
+    color: C.faint, fontSize: T.xs, lineHeight: 17, marginTop: 16,
+    borderTopWidth: 1, borderTopColor: C.line, paddingTop: 11,
+    fontFamily: F.ui,
   },
   answerWait: {
     flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 26,
     justifyContent: 'center',
   },
-  answerWaitText: { color: C.muted, fontSize: 14 },
+  answerWaitText: { color: C.muted, fontSize: T.base, fontFamily: F.ui },
 
   explain: { marginTop: 18 },
   explainBtn: {
@@ -1233,7 +1258,7 @@ const styles = StyleSheet.create({
   explainBtnText: { color: C.accent, fontSize: 14, fontWeight: '700' },
   explainRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   explainWait: { color: C.muted, fontSize: 13, lineHeight: 19 },
-  explainText: { color: C.ink, fontSize: 14.5, lineHeight: 22 },
+  explainText: { color: C.ink, fontSize: T.base, lineHeight: 24, fontFamily: F.read },
   explainFoot: {
     color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 10,
     borderTopWidth: 1, borderTopColor: C.line, paddingTop: 9,
@@ -1251,7 +1276,7 @@ const styles = StyleSheet.create({
     color: C.accent, fontSize: 13, fontWeight: '800', lineHeight: 20,
     minWidth: 12,
   },
-  pointText: { flex: 1, color: C.ink, fontSize: 14, lineHeight: 20 },
+  pointText: { flex: 1, color: C.ink, fontSize: T.base, lineHeight: 23, fontFamily: F.read },
   pointsFoot: {
     color: C.muted, fontSize: 11.5, lineHeight: 17, marginTop: 4,
     borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 9,
@@ -1273,7 +1298,7 @@ const styles = StyleSheet.create({
     color: C.warn, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
     marginBottom: 7,
   },
-  verdictText: { color: C.ink, fontSize: 14.5, lineHeight: 21, fontWeight: '600' },
+  verdictText: { color: C.ink, fontSize: T.base, lineHeight: 23, fontWeight: '600', fontFamily: F.read },
   verdictIf: { color: C.muted, fontSize: 12.5, lineHeight: 18, marginTop: 5, fontStyle: 'italic' },
   verdictCite: { color: C.warn, fontSize: 12.5, fontWeight: '700', marginTop: 6 },
   verdictFoot: {
@@ -1287,13 +1312,13 @@ const styles = StyleSheet.create({
     color: C.ink, fontSize: 19, fontWeight: '700', marginTop: 6,
     lineHeight: 25,
   },
-  heroSummary: { color: C.ink, fontSize: 14.5, lineHeight: 21, marginTop: 8 },
+  heroSummary: { color: C.ink, fontSize: T.base, lineHeight: 23, marginTop: 10, fontFamily: F.read },
   rule: {
     marginTop: 14, borderTopWidth: 1, borderTopColor: '#DDE3DA', paddingTop: 12,
   },
   ruleRow: { flexDirection: 'row', gap: 8 },
   bullet: { color: C.accent, fontSize: 14, lineHeight: 21, fontWeight: '800' },
-  ruleText: { flex: 1, color: C.ink, fontSize: 14, lineHeight: 21 },
+  ruleText: { flex: 1, color: C.ink, fontSize: T.base, lineHeight: 23, fontFamily: F.read },
   ruleIf: {
     color: C.muted, fontSize: 12.5, lineHeight: 18, marginTop: 6,
     marginLeft: 16, fontStyle: 'italic',
@@ -1316,10 +1341,10 @@ const styles = StyleSheet.create({
     color: C.faint, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
     marginLeft: 2, marginBottom: 6,
   },
-  count: { color: C.muted, fontSize: 13, marginBottom: 12, marginLeft: 2 },
+  count: { color: C.faint, fontSize: T.sm, marginBottom: 14, marginLeft: 2, fontFamily: F.ui },
 
   card: {
-    backgroundColor: C.card, borderRadius: 14, padding: 16, marginBottom: 10,
+    backgroundColor: C.card, borderRadius: 16, padding: 18, marginBottom: 12,
     borderWidth: 1, borderColor: C.line,
   },
   cardTop: { borderColor: C.accent, borderWidth: 1.5 },
@@ -1327,7 +1352,10 @@ const styles = StyleSheet.create({
     color: C.accent, fontSize: 10, fontWeight: '800', letterSpacing: 0.9,
     marginBottom: 6,
   },
-  heading: { color: C.ink, fontSize: 16, fontWeight: '600', lineHeight: 22 },
+  heading: {
+    color: C.ink, fontSize: T.lg, lineHeight: 25, fontFamily: F.read,
+    fontWeight: '600',
+  },
   metaRow: {
     flexDirection: 'row', alignItems: 'center', marginTop: 8, gap: 8,
   },
@@ -1338,13 +1366,17 @@ const styles = StyleSheet.create({
   },
   flag: { fontSize: 12, color: C.muted, fontWeight: '600', marginTop: 8 },
   flagWarn: { color: C.warn },
-  preview: { marginTop: 10, color: C.muted, fontSize: 13, lineHeight: 20 },
+  preview: {
+    marginTop: 10, color: C.muted, fontSize: T.sm, lineHeight: 21,
+    fontFamily: F.read,
+  },
   tapFor: { marginTop: 10, color: C.faint, fontSize: 13, fontStyle: 'italic' },
 
   detail: { paddingHorizontal: 20, paddingBottom: 40 },
   detailCitation: { color: C.accent, fontSize: 15, fontWeight: '800' },
   detailHeading: {
-    color: C.ink, fontSize: 20, fontWeight: '700', lineHeight: 27, marginTop: 6,
+    color: C.ink, fontSize: T.xl, fontWeight: '700', lineHeight: 29,
+    marginTop: 8, fontFamily: F.read,
   },
   detailChapter: {
     color: C.faint, fontSize: 12, marginTop: 8, textTransform: 'uppercase',
@@ -1354,7 +1386,10 @@ const styles = StyleSheet.create({
     backgroundColor: C.warnSoft, borderRadius: 8, paddingHorizontal: 12,
     paddingVertical: 4, marginTop: 14, alignSelf: 'flex-start',
   },
-  detailBody: { color: C.ink, fontSize: 15, lineHeight: 24, marginTop: 18 },
+  detailBody: {
+    color: C.ink, fontSize: T.base, lineHeight: 26, marginTop: 20,
+    fontFamily: F.read,
+  },
   detailMissing: {
     color: C.muted, fontSize: 15, lineHeight: 23, marginTop: 18,
     fontStyle: 'italic',
@@ -1366,12 +1401,12 @@ const styles = StyleSheet.create({
   sourceBtnText: { color: '#fff', fontSize: 15, fontWeight: '700' },
   captured: { color: C.faint, fontSize: 12, lineHeight: 18, marginTop: 16 },
 
-  aboutTitle: { color: C.ink, fontSize: 26, fontWeight: '800' },
+  aboutTitle: { color: C.ink, fontSize: T.xxl, fontWeight: '700', fontFamily: F.read },
   aboutH: {
     color: C.accent, fontSize: 13, fontWeight: '800', marginTop: 24,
     textTransform: 'uppercase', letterSpacing: 0.6,
   },
-  aboutBody: { color: C.ink, fontSize: 15, lineHeight: 23, marginTop: 8 },
+  aboutBody: { color: C.ink, fontSize: T.base, lineHeight: 25, marginTop: 10, fontFamily: F.read },
 
   disclaimer: {
     borderTopWidth: 1, borderTopColor: C.line, backgroundColor: C.card,

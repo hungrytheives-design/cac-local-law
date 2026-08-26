@@ -270,7 +270,7 @@ def show(hits, indent="      "):
             flag = " [REPEALED]"
         elif s.get("e") and s.get("ec") == 0:
             flag = " [NOT YET IN FORCE]"
-        print(f"{indent}{DIM}{score:4d}{OFF}  {s['c']:<15} {s['h'][:62]}{flag}")
+        print(f"{indent}{DIM}{score:6.1f}{OFF}  {s['c']:<15} {s['h'][:62]}{flag}")
 
 
 def main():
