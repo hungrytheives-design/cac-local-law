@@ -25,7 +25,50 @@
 const KEY = process.env.EXPO_PUBLIC_OPENROUTER_KEY ?? '';
 const MODEL = process.env.EXPO_PUBLIC_OPENROUTER_MODEL ?? 'nvidia/nemotron-3.5-lightning:free';
 
-export const explainAvailable = () => KEY.length > 0;
+// ---------------------------------------------------------------- money guards
+//
+// Four independent layers, because one of them silently failing should not cost
+// anyone money. Listed weakest to strongest.
+//
+// 1. FREE MODELS ONLY. OpenRouter charges for anything without the :free
+//    suffix, so a non-free model turns the whole feature off rather than
+//    quietly billing.
+// 2. max_price 0. OpenRouter will not route a request no provider can serve at
+//    that price, so this fails CLOSED - the call errors instead of costing.
+// 3. allow_fallbacks false. Without it, an unavailable free provider can be
+//    swapped for a working paid one mid-request.
+// 4. A local daily cap under the free tier's own 50/day, plus a minimum gap
+//    between calls, so a render loop cannot burn the quota in seconds.
+//
+// The real backstop is not in this file: an OpenRouter account with no payment
+// method on it cannot be charged at all. Keep it that way.
+
+const FREE_ONLY = MODEL.trim().endsWith(':free');
+
+const DAILY_CAP = 40;        // free tier allows 50; leave headroom
+const MIN_GAP_MS = 1500;     // free tier allows 20/min
+
+let day = '';
+let used = 0;
+let lastCall = 0;
+
+function quotaLeft(): boolean {
+  const today = new Date().toISOString().slice(0, 10);
+  if (today !== day) {
+    day = today;
+    used = 0;
+  }
+  return used < DAILY_CAP;
+}
+
+/** Why the feature is off, or null when it is on. For humans, not for logic. */
+export function explainDisabledReason(): string | null {
+  if (!KEY) return 'no API key configured';
+  if (!FREE_ONLY) return `${MODEL} is not a :free model, so it is blocked`;
+  return null;
+}
+
+export const explainAvailable = () => !!KEY && FREE_ONLY;
 
 export type Source = { citation: string; heading: string; text: string };
 
@@ -71,7 +114,15 @@ export async function explain(
   sources: Source[],
   signal?: AbortSignal
 ): Promise<string | null> {
-  if (!KEY || !sources.length) return null;
+  if (!explainAvailable() || !sources.length) return null;
+  if (!quotaLeft()) throw new Error('rate-limited');
+
+  const gap = Date.now() - lastCall;
+  if (gap < MIN_GAP_MS) {
+    await new Promise((r) => setTimeout(r, MIN_GAP_MS - gap));
+  }
+  lastCall = Date.now();
+  used += 1;
 
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
@@ -86,6 +137,11 @@ export async function explain(
       // Low temperature: this is a rewriting job, not a creative one.
       temperature: 0.1,
       max_tokens: 400,
+      // Refuse to route anywhere that costs anything. If no provider can serve
+      // this for free the request fails, which is the outcome we want.
+      max_price: { prompt: 0, completion: 0 },
+      // And never swap a free provider for a paid one to satisfy the request.
+      provider: { allow_fallbacks: false },
     }),
   });
 
