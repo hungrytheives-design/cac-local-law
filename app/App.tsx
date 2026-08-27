@@ -600,7 +600,9 @@ export default function App() {
                       // site only if the section is not in the index.
                     const s = SECTIONS.find((x) => x.c === citation);
                     if (s) setScreen({ kind: 'detail', section: s });
-                    else Linking.openURL(url);
+                    // Citation chips pass no url; a section we cannot find is
+                    // simply not tappable rather than opening nothing.
+                    else if (url) Linking.openURL(url);
                   }}
                 />
                 {greeting ? null : (
@@ -921,6 +923,78 @@ function About({ onBack }: { onBack: () => void }) {
 // The answer, before the search results. Every line is hand-written and every
 // line carries the statute it came from, so a reader can check us rather than
 // trust us. Rules we are not certain about say so instead of being dropped.
+// Citations in the written answer become tappable chips instead of staying as
+// "(NRS 484B.363, NRS 484B.350)" clutter mid-sentence. The reader gets the
+// claim and a way to check it in the same breath, which is the entire point of
+// grounding the answer in real statutes.
+//
+// Matches a parenthesised run of citations, or a bare one inside a sentence
+// ("Under NRS 392.220, any person..."). A trailing subsection like 205.222(b)
+// stays plain text, since the section is what we can actually open.
+const CITE_RE =
+  /\((?:\s*NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*\s*[,;]?\s*)+\)|NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*/g;
+const ONE_CITE = /NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*/g;
+
+type Seg = { t: 'text' | 'cite'; v: string };
+
+function segments(raw: string): Seg[] {
+  // Drop the brackets first, keeping one space in front, so a sentence ending
+  // "...requirements (NRS 484B.783)." becomes "...requirements NRS 484B.783."
+  // and the full stop stays attached to the chip instead of drifting off.
+  const text = raw
+    .replace(
+      /\s*\(\s*((?:NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*\s*[,;]?\s*)+)\)/g,
+      (_m, inner: string) => ' ' + inner.trim()
+    )
+    // Collapse runs of SPACES only. An earlier \s{2,} here also ate the
+    // newlines between bullets and flattened the answer into one paragraph.
+    .replace(/[ \t]{2,}/g, ' ')
+    // The model formats its list as real newlines on one run and as inline
+    // " - " separators on the next. Normalise so the reader always gets a list
+    // rather than a wall of prose that happens to contain dashes.
+    .replace(/\s+-\s+(?=[A-Z])/g, '\n- ')
+    .trim();
+
+  const out: Seg[] = [];
+  let last = 0;
+  for (const m of text.matchAll(ONE_CITE)) {
+    const at = m.index ?? 0;
+    if (at > last) out.push({ t: 'text', v: text.slice(last, at) });
+    out.push({ t: 'cite', v: m[0].replace(/\s+/g, ' ').trim() });
+    last = at + m[0].length;
+  }
+  if (last < text.length) out.push({ t: 'text', v: text.slice(last) });
+  return out;
+}
+
+function Cited({
+  text,
+  onOpen,
+}: {
+  text: string;
+  onOpen: (citation: string) => void;
+}) {
+  return (
+    <Text style={styles.answerText}>
+      {segments(text).map((seg, i) =>
+        seg.t === 'text' ? (
+          <Text key={i}>{seg.v}</Text>
+        ) : (
+          <Text
+            key={i}
+            style={styles.citeChip}
+            onPress={() => onOpen(seg.v)}
+            accessibilityRole="button"
+            accessibilityLabel={`Open ${seg.v}`}
+          >
+            {seg.v}
+          </Text>
+        )
+      )}
+    </Text>
+  );
+}
+
 // The written answer to what was actually asked. Local search has already
 // decided WHICH statutes are relevant and that decision is never delegated;
 // this only writes them up. When the topic is curated, the hand-checked rules
@@ -1013,7 +1087,7 @@ function Answer({
   if (state === 'done') {
     return (
       <View style={styles.answer}>
-        <Text style={styles.answerText}>{text}</Text>
+        <Cited text={text} onOpen={(c) => onOpen(c, '')} />
         <Text style={styles.answerFoot}>
           Every statute this is based on is listed below. Not legal advice.
         </Text>
@@ -1238,6 +1312,11 @@ const styles = StyleSheet.create({
   },
   answerText: {
     color: C.ink, fontSize: T.lg, lineHeight: 27, fontFamily: F.read,
+  },
+  citeChip: {
+    color: C.accentDeep, fontSize: T.sm, fontWeight: '700', fontFamily: F.ui,
+    backgroundColor: C.accentSoft, paddingHorizontal: 5, paddingVertical: 2,
+    borderRadius: 5, overflow: 'hidden',
   },
   answerFoot: {
     color: C.faint, fontSize: T.xs, lineHeight: 17, marginTop: 16,
