@@ -175,6 +175,12 @@ function answerMessages(
         '   requires and stop. Telling someone to file in small claims court is',
         '   legal advice and it is not yours to give.',
         '',
+        'VOCABULARY. Write for a fifteen year old. Short words, short sentences,',
+        'the active voice. If a statute uses a word people do not say out loud -',
+        'astride, thereof, shall, herein, prima facie, ordinance, promulgate -',
+        'do not repeat it. Say what it means. "Must be on or astride the seat"',
+        'becomes "has to be sitting on the seat".',
+        '',
         'FORMAT, followed exactly:',
         'Line 1 is a single plain sentence that answers the question directly.',
         'If the thing they described is not allowed, it starts with "No".',
@@ -194,6 +200,15 @@ function answerMessages(
   ];
 }
 
+// Answers are cached by question for the session. Opening a statute and
+// pressing back used to refire the whole request and sit on a spinner for
+// fifteen seconds, which made reading the sources feel like a punishment.
+const ANSWERS = new Map<string, string>();
+
+export function cachedAnswer(question: string): string | null {
+  return ANSWERS.get(question.trim().toLowerCase()) ?? null;
+}
+
 export async function answerQuestion(
   question: string,
   sources: Source[],
@@ -202,7 +217,14 @@ export async function answerQuestion(
 ): Promise<string | null> {
   if (!explainAvailable()) return null;
   if (!sources.length && !curated.length) return null;
-  return post(answerMessages(question, sources, curated), signal);
+
+  const key = question.trim().toLowerCase();
+  const hit = ANSWERS.get(key);
+  if (hit) return hit;
+
+  const out = await post(answerMessages(question, sources, curated), signal);
+  if (out) ANSWERS.set(key, out);
+  return out;
 }
 
 export async function explain(
@@ -316,7 +338,11 @@ function clean(raw: string): string | null {
 
   if (!t) return null;
   if (THINKING.test(t)) return null;
-  // A wall of prose with no bullet is not the format we asked for.
-  if (t.length > 900 && !/^\s*(?:[-*\u2022]|\d+[.)])\s+/m.test(t)) return null;
+  // There used to be a rule here rejecting anything over 900 characters that
+  // had no line-starting bullet. The model returns inline " - " separators
+  // about half the time, so that rule silently binned perfectly good answers
+  // and the app fell back to the pre-written card - which read to a user as the
+  // summary being random. The renderer normalises those separators into a list
+  // now, so the rule had nothing left to protect and has been removed.
   return t;
 }

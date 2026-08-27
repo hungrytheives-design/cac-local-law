@@ -21,6 +21,7 @@ import concepts from './assets/concepts.json';
 import activities from './assets/activities.json';
 import {
   answerQuestion,
+  cachedAnswer,
   explain,
   explainAvailable,
   localReply,
@@ -967,15 +968,17 @@ function segments(raw: string): Seg[] {
   return out;
 }
 
-function Cited({
+function Inline({
   text,
+  style,
   onOpen,
 }: {
   text: string;
+  style: any;
   onOpen: (citation: string) => void;
 }) {
   return (
-    <Text style={styles.answerText}>
+    <Text style={style}>
       {segments(text).map((seg, i) =>
         seg.t === 'text' ? (
           <Text key={i}>{seg.v}</Text>
@@ -992,6 +995,44 @@ function Cited({
         )
       )}
     </Text>
+  );
+}
+
+// The lead sentence is the answer; the bullets are the detail. Rendering them
+// as one blob of text with newlines gave loose, evenly-spaced paragraphs with
+// no shape. Real rows, a marker column and tighter leading make it scannable.
+function Cited({
+  text,
+  onOpen,
+}: {
+  text: string;
+  onOpen: (citation: string) => void;
+}) {
+  const lines = text
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const lead: string[] = [];
+  const bullets: string[] = [];
+  for (const l of lines) {
+    const m = l.match(/^(?:[-*\u2022]|\d+[.)])\s+(.*)$/);
+    if (m) bullets.push(m[1]);
+    else if (bullets.length) bullets.push(l);   // wrapped continuation
+    else lead.push(l);
+  }
+
+  return (
+    <View>
+      {lead.length ? (
+        <Inline text={lead.join(' ')} style={styles.answerLead} onOpen={onOpen} />
+      ) : null}
+      {bullets.map((b, i) => (
+        <View key={i} style={styles.bulletRow}>
+          <Text style={styles.bulletDot}>•</Text>
+          <Inline text={b} style={styles.answerText} onOpen={onOpen} />
+        </View>
+      ))}
+    </View>
   );
 }
 
@@ -1026,6 +1067,14 @@ function Answer({
     if (canned) {
       setText(canned);
       setState('greeting');
+      return;
+    }
+    // Straight from cache when this question has been answered already, so
+    // coming back from a statute is instant instead of another long spinner.
+    const seen = cachedAnswer(question);
+    if (seen) {
+      setText(seen);
+      setState('done');
       return;
     }
     if (!explainAvailable() || (!hits.length && !activity)) {
@@ -1310,8 +1359,16 @@ const styles = StyleSheet.create({
     shadowColor: '#2A3327', shadowOpacity: 0.06, shadowRadius: 14,
     shadowOffset: { width: 0, height: 4 }, elevation: 2,
   },
+  answerLead: {
+    color: C.ink, fontSize: T.lg, lineHeight: 26, fontFamily: F.read,
+    fontWeight: '600', marginBottom: 12,
+  },
   answerText: {
-    color: C.ink, fontSize: T.lg, lineHeight: 27, fontFamily: F.read,
+    flex: 1, color: C.ink, fontSize: T.base, lineHeight: 22, fontFamily: F.read,
+  },
+  bulletRow: { flexDirection: 'row', gap: 9, marginBottom: 8 },
+  bulletDot: {
+    color: C.accent, fontSize: T.base, lineHeight: 22, fontWeight: '700',
   },
   citeChip: {
     color: C.accentDeep, fontSize: T.sm, fontWeight: '700', fontFamily: F.ui,
