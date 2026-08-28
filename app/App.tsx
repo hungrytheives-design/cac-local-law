@@ -163,6 +163,9 @@ const STOP = new Set([
   'if', 'but', 'not', 'all', 'any', 'some', 'just', 'like', 'really', 'still',
   'even', 'only', 'very', 'much', 'many', 'more', 'most', 'also', 'then',
   'than', 'little', 'big', 'one', 'two', 'old', 'new', 'say', 'know', 'think',
+  // Vague nouns. "can i do the thing" returned 143 hits led by "Assignment of
+  // thing in action", because rarity weighting gave "thing" real weight.
+  'thing', 'things', 'stuff', 'something', 'anything', 'someone', 'anyone',
 ]);
 
 function tokenize(q: string): string[] {
@@ -306,6 +309,16 @@ function cached() {
 // NOTE: data/scripts/test_search.py is a hand port of everything below. If you
 // change ranking here, change it there in the same sitting or the tests lie.
 function search(query: string): { hits: Section[]; total: number } {
+  // Somebody who already has a citation - off a ticket, a form, a friend -
+  // types it in. Search only ever looked at headings and text, never at the
+  // citation itself, so "NRS 484B.783" found everything except NRS 484B.783.
+  const cite = query.match(/\b(?:nrs\s*)?(\d{1,3}[A-Z]?)\.(\d+[A-Za-z]*)\b/i);
+  if (cite) {
+    const want = `NRS ${cite[1].toUpperCase()}.${cite[2]}`;
+    const exact = SECTIONS.filter((s) => s.c === want);
+    if (exact.length) return { hits: exact, total: exact.length };
+  }
+
   const tokens = tokenize(query);
   if (!tokens.length) return { hits: [], total: 0 };
   const { terms, chapters } = expand(tokens, query);

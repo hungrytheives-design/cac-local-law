@@ -66,6 +66,7 @@ their we us our he she her him your
 if but not all any some just like really still
 even only very much many more most also then
 than little big one two old new say know think
+thing things stuff something anything someone anyone
 """.split())
 
 
@@ -178,6 +179,14 @@ def kw_of(sec, titles):
 
 def search(query, sections, titles, concepts, limit=10):
     """Mirrors search() in app/App.tsx. Returns [(score, section)]."""
+    # Mirrors the exact-citation shortcut in App.tsx.
+    cite = re.search(r"\b(?:nrs\s*)?(\d{1,3}[A-Z]?)\.(\d+[A-Za-z]*)\b", query, re.I)
+    if cite:
+        want = f"NRS {cite.group(1).upper()}.{cite.group(2)}"
+        exact = [(999.0, s) for s in sections if s["c"] == want]
+        if exact:
+            return exact, tokenize(query), set()
+
     tokens = tokenize(query)
     if not tokens:
         return [], tokens, set()
