@@ -1078,6 +1078,47 @@ function Inline({
   );
 }
 
+// Split prose into sentences. The lookbehind avoids cutting inside a citation,
+// since "NRS 484B.157" has a full stop with no space after it. Fragments under
+// 30 characters are glued onto the one before so a stray "See also." does not
+// become its own bullet.
+function sentences(text: string): string[] {
+  const out: string[] = [];
+  for (const raw of text.split(/(?<=[.!?])\s+(?=[A-Z("\u2022])/)) {
+    const t = raw.trim();
+    if (!t) continue;
+    if (out.length && t.length < 30) out[out.length - 1] += ' ' + t;
+    else out.push(t);
+  }
+  return out;
+}
+
+// One lead sentence, then bullets, always - whatever shape the answer arrives
+// in. The model returns a tidy list about half the time and a wall of prose the
+// rest, and nobody reads the wall. When there are no dashes to work with, the
+// prose after the first sentence is split into bullets itself.
+function structure(text: string): { lead: string; bullets: string[] } {
+  const marked: string[] = [];
+  const prose: string[] = [];
+
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line) continue;
+    const m = line.match(/^(?:[-*\u2022]|\d+[.)])\s+(.*)$/);
+    if (m) marked.push(m[1]);
+    else if (marked.length) marked[marked.length - 1] += ' ' + line; // wrapped
+    else prose.push(line);
+  }
+
+  const head = prose.join(' ').trim();
+  const parts = sentences(head);
+  const lead = parts.length ? parts[0] : marked.shift() ?? '';
+  const spare = parts.slice(1);
+
+  // Six is the most anyone scans. Past that it is a wall again.
+  return { lead, bullets: [...spare, ...marked].slice(0, 6) };
+}
+
 // The lead sentence is the answer; the bullets are the detail. Rendering them
 // as one blob of text with newlines gave loose, evenly-spaced paragraphs with
 // no shape. Real rows, a marker column and tighter leading make it scannable.
@@ -1088,24 +1129,11 @@ function Cited({
   text: string;
   onOpen: (citation: string) => void;
 }) {
-  const lines = text
-    .split('\n')
-    .map((l) => l.trim())
-    .filter(Boolean);
-  const lead: string[] = [];
-  const bullets: string[] = [];
-  for (const l of lines) {
-    const m = l.match(/^(?:[-*\u2022]|\d+[.)])\s+(.*)$/);
-    if (m) bullets.push(m[1]);
-    else if (bullets.length) bullets.push(l);   // wrapped continuation
-    else lead.push(l);
-  }
+  const { lead, bullets } = structure(text);
 
   return (
     <View>
-      {lead.length ? (
-        <Inline text={lead.join(' ')} style={styles.answerLead} onOpen={onOpen} />
-      ) : null}
+      {lead ? <Inline text={lead} style={styles.answerLead} onOpen={onOpen} /> : null}
       {bullets.map((b, i) => (
         <View key={i} style={styles.bulletRow}>
           <Text style={styles.bulletDot}>•</Text>
