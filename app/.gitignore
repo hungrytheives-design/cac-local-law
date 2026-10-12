@@ -43,3 +43,7 @@ yarn-error.*
 # API keys. Never commit these.
 .env
 .env.local
+
+# Static web exports. Built on demand, never committed.
+dist/
+dist-web/
