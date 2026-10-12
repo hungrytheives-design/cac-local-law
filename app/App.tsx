@@ -527,6 +527,7 @@ function matchActivity(query: string): Activity | null {
 type Screen =
   | { kind: 'search' }
   | { kind: 'detail'; section: Section }
+  | { kind: 'all'; hits: Section[]; total: number }
   | { kind: 'about' };
 
 export default function App() {
@@ -558,6 +559,16 @@ export default function App() {
   }
   if (screen.kind === 'about') {
     return <About onBack={() => setScreen({ kind: 'search' })} />;
+  }
+  if (screen.kind === 'all') {
+    return (
+      <AllStatutes
+        hits={screen.hits}
+        total={screen.total}
+        onBack={() => setScreen({ kind: 'search' })}
+        onOpen={(section) => setScreen({ kind: 'detail', section })}
+      />
+    );
   }
 
   // Home and results are ONE tree, not two returns. They used to be separate
@@ -591,92 +602,49 @@ export default function App() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
         {searching ? (
-          <FlatList
+          // The answer, and nothing else. Twelve statute cards used to sit
+          // underneath it, which buried the thing the reader came for. The
+          // statutes are still one tap away: every citation in the answer is a
+          // chip, and the button at the bottom opens the full list.
+          <ScrollView
             style={styles.fill}
-            data={hits}
-            keyExtractor={(s) => s.i}
+            contentContainerStyle={styles.list}
             keyboardShouldPersistTaps="handled"
             keyboardDismissMode="on-drag"
-            contentContainerStyle={styles.list}
-            ListHeaderComponent={
-              <View>
-                {hero ? (
-                  <Verdict activity={hero} signals={signals} age={age} />
-                ) : null}
+          >
+            {hero ? <Verdict activity={hero} signals={signals} age={age} /> : null}
 
-                <Answer
-                  question={asked}
-                  hits={hits}
-                  activity={hero}
-                  onOpen={(citation, url) => {
-                      // Prefer our own reader so the statute opens in the app
-                      // with its in-force flags; fall back to the official
-                      // site only if the section is not in the index.
-                    const s = SECTIONS.find((x) => x.c === citation);
-                    if (s) setScreen({ kind: 'detail', section: s });
-                    // Citation chips pass no url; a section we cannot find is
-                    // simply not tappable rather than opening nothing.
-                    else if (url) Linking.openURL(url);
-                  }}
-                />
-                {greeting ? null : (
-                  <>
-                    {hero ? (
-                      <Text style={styles.listLabel}>EVERY MATCHING STATUTE</Text>
-                    ) : null}
-                    <Text style={styles.count}>
-                      {total === 0
-                        ? 'Nothing matched. Try different words.'
-                        : total > SHOWN
-                        ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
-                        : `${total} match${total === 1 ? '' : 'es'}`}
-                    </Text>
-                  </>
-                )}
-              </View>
-            }
-            renderItem={({ item, index: rank }) => (
+            <Answer
+              question={asked}
+              hits={hits}
+              activity={hero}
+              onOpen={(citation, url) => {
+                // Prefer our own reader so the statute opens in the app with
+                // its in-force flags; fall back to the official site only if
+                // the section is not in the index.
+                const s = SECTIONS.find((x) => x.c === citation);
+                if (s) setScreen({ kind: 'detail', section: s });
+                // Citation chips pass no url; a section we cannot find is
+                // simply not tappable rather than opening nothing.
+                else if (url) Linking.openURL(url);
+              }}
+            />
+
+            {greeting ? null : total === 0 ? (
+              <Text style={styles.count}>Nothing matched. Try different words.</Text>
+            ) : (
               <Pressable
-                style={[styles.card, rank === 0 && styles.cardTop]}
-                onPress={() => setScreen({ kind: 'detail', section: item })}
+                style={styles.seeAll}
+                onPress={() => setScreen({ kind: 'all', hits, total })}
                 accessibilityRole="button"
-                accessibilityLabel={`${item.c}. ${item.h}`}
+                accessibilityLabel={`See all ${total} matching statutes`}
               >
-                {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
-                <Text style={styles.heading} numberOfLines={3}>
-                  {titleOf(item.h)}
+                <Text style={styles.seeAllText}>
+                  See all {total} matching statute{total === 1 ? '' : 's'}
                 </Text>
-                <View style={styles.metaRow}>
-                  <Text style={styles.citation}>{item.c}</Text>
-                  <Text style={styles.chapterTag} numberOfLines={1}>
-                    {CHAPTER_TITLES[item.ch]}
-                  </Text>
-                </View>
-                {item.e ? (
-                  <Text style={[styles.flag, item.ec !== 1 && styles.flagWarn]}>
-                    {item.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
-                    {item.e}
-                  </Text>
-                ) : null}
-                {item.p?.length ? (
-                  <View style={styles.cardPoint}>
-                    <Text style={styles.pointMark}>
-                      {POINT_MARK[item.p[0].k] ?? '\u2022'}
-                    </Text>
-                    <Text style={styles.preview} numberOfLines={3}>
-                      {item.p[0].t}
-                    </Text>
-                  </View>
-                ) : item.t ? (
-                  <Text style={styles.preview} numberOfLines={3}>
-                    {bodyOf(item)}
-                  </Text>
-                ) : (
-                  <Text style={styles.tapFor}>Tap to open the official text</Text>
-                )}
               </Pressable>
             )}
-          />
+          </ScrollView>
         ) : (
           <View style={styles.fill} />
         )}
@@ -785,6 +753,87 @@ function Explain({ section, body }: { section: Section; body: string }) {
 
       {state === 'error' ? <Text style={styles.explainWait}>{why}</Text> : null}
     </View>
+  );
+}
+
+// The statutes behind the answer, on their own screen. They used to be stacked
+// under the answer where they pushed it off the top of the page.
+function AllStatutes({
+  hits,
+  total,
+  onBack,
+  onOpen,
+}: {
+  hits: Section[];
+  total: number;
+  onBack: () => void;
+  onOpen: (s: Section) => void;
+}) {
+  return (
+    <SafeAreaView style={styles.screen}>
+      <StatusBar style="dark" />
+      <View style={styles.topbar}>
+        <Pressable onPress={onBack} style={styles.backBtn} accessibilityRole="button">
+          <Text style={styles.backText}>← Back to the answer</Text>
+        </Pressable>
+      </View>
+
+      <FlatList
+        data={hits}
+        keyExtractor={(s) => s.i}
+        contentContainerStyle={styles.list}
+        ListHeaderComponent={
+          <Text style={styles.count}>
+            {total > SHOWN
+              ? `Closest ${SHOWN} of ${total}. Add detail to narrow it down.`
+              : `${total} match${total === 1 ? '' : 'es'}`}
+          </Text>
+        }
+        renderItem={({ item, index: rank }) => (
+          <Pressable
+            style={[styles.card, rank === 0 && styles.cardTop]}
+            onPress={() => onOpen(item)}
+            accessibilityRole="button"
+            accessibilityLabel={`${item.c}. ${item.h}`}
+          >
+            {rank === 0 && <Text style={styles.bestLabel}>CLOSEST MATCH</Text>}
+            <Text style={styles.heading} numberOfLines={3}>
+              {titleOf(item.h)}
+            </Text>
+            <View style={styles.metaRow}>
+              <Text style={styles.citation}>{item.c}</Text>
+              <Text style={styles.chapterTag} numberOfLines={1}>
+                {CHAPTER_TITLES[item.ch]}
+              </Text>
+            </View>
+            {item.e ? (
+              <Text style={[styles.flag, item.ec !== 1 && styles.flagWarn]}>
+                {item.ec === 1 ? 'In force now · ' : 'Not yet in force · '}
+                {item.e}
+              </Text>
+            ) : null}
+            {item.p?.length ? (
+              <View style={styles.cardPoint}>
+                <Text style={styles.pointMark}>
+                  {POINT_MARK[item.p[0].k] ?? '\u2022'}
+                </Text>
+                <Text style={styles.preview} numberOfLines={3}>
+                  {item.p[0].t}
+                </Text>
+              </View>
+            ) : item.t ? (
+              <Text style={styles.preview} numberOfLines={3}>
+                {bodyOf(item)}
+              </Text>
+            ) : (
+              <Text style={styles.tapFor}>Tap to open the official text</Text>
+            )}
+          </Pressable>
+        )}
+      />
+
+      <Disclaimer />
+    </SafeAreaView>
   );
 }
 
@@ -1151,7 +1200,7 @@ function Answer({
       <View style={styles.answer}>
         <Cited text={text} onOpen={(c) => onOpen(c, '')} />
         <Text style={styles.answerFoot}>
-          Every statute this is based on is listed below. Not legal advice.
+          Tap any NRS number to read the law it came from. Not legal advice.
         </Text>
       </View>
     );
@@ -1361,6 +1410,13 @@ const styles = StyleSheet.create({
   },
 
   list: { paddingHorizontal: 16, paddingBottom: 24 },
+
+  seeAll: {
+    borderWidth: 1, borderColor: C.line, backgroundColor: C.card,
+    borderRadius: 14, minHeight: 46, alignItems: 'center',
+    justifyContent: 'center', marginTop: 4,
+  },
+  seeAllText: { color: C.accent, fontSize: T.base, fontWeight: '700', fontFamily: F.ui },
 
   cardPoint: { flexDirection: 'row', gap: 7, marginTop: 10 },
 
