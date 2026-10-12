@@ -91,7 +91,7 @@ def flat(s):
 
 def expand(tokens, raw, concepts):
     """Mirrors expand() in app/App.tsx. Returns (statutory phrases, chapter hints)."""
-    terms, chapters = set(), set()
+    terms, chapters, pins = set(), set(), set()
     q = raw.lower()
     stems = [s for s in (stem(t) for t in tokens) if len(s) >= 3]
 
@@ -121,7 +121,9 @@ def expand(tokens, raw, concepts):
             terms.add(flat(phrase))
         for ch in c["chapters"]:
             chapters.add(ch)
-    return terms, chapters
+        for cite in c.get("pin", []):
+            pins.add(cite)
+    return terms, chapters, pins
 
 
 # --- rarity -----------------------------------------------------------------
@@ -190,7 +192,7 @@ def search(query, sections, titles, concepts, limit=10):
     tokens = tokenize(query)
     if not tokens:
         return [], tokens, set()
-    terms, chapters = expand(tokens, query, concepts)
+    terms, chapters, pins = expand(tokens, query, concepts)
 
     scored = []
     for s in sections:
@@ -232,6 +234,8 @@ def search(query, sections, titles, concepts, limit=10):
 
         if score > 0 and s["ch"] in chapters:
             score += 20
+        if s["c"] in pins:
+            score += 40
         if ADMIN.match(s["h"]):
             score -= 6          # administers the law, does not state it
         if s.get("r"):

@@ -78,6 +78,9 @@
     ],
     "chapters": [
       "488"
+    ],
+    "pin": [
+      "NRS 488.730"
     ]
   },
   {
@@ -1011,5 +1014,41 @@
       "392"
     ],
     "note": "'knife' appears in exactly one NRS heading, in HEALING ARTS. The statutory term is 'dangerous weapon' (chapter 202), and chapter 392 covers weapons at school."
+  },
+  {
+    "id": "age-of-consent",
+    "colloquial": [
+      "age of consent",
+      "statutory rape",
+      "sexual assault",
+      "sexual assult",
+      "statutory sexual seduction",
+      "dating someone older",
+      "dating an adult",
+      "my girlfriend",
+      "my boyfriend",
+      "hook up",
+      "hooked up",
+      "have sex",
+      "having sex",
+      "sleep with",
+      "sexually active",
+      "consent"
+    ],
+    "statutory": [
+      "statutory sexual seduction",
+      "sexual assault",
+      "lewdness"
+    ],
+    "chapters": [
+      "200",
+      "201"
+    ],
+    "note": "Highest-stakes question this app gets, and it returned NOTHING before this entry existed. Chapter 200 is CRIMES AGAINST THE PERSON. NRS 200.364 defines 'statutory sexual seduction' as ordinary sexual intercourse, anal intercourse or sexual penetration committed by a person 18 years of age or older with a person who is 14 or 15 years of age AND who is at least 4 years younger than the perpetrator. NRS 200.368 sets the penalties, which differ above and below age 21. NRS 201.230 covers lewdness with a child under 16. The 4-year element is easy to miss and changes the answer, so the full text must be reachable. 'sexual assult' is in the colloquial list on purpose: people misspell it.",
+    "pin": [
+      "NRS 200.364",
+      "NRS 200.368",
+      "NRS 201.230"
+    ]
   }
 ]

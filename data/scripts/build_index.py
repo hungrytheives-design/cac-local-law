@@ -80,11 +80,25 @@ def load_lexicon_chapters() -> set:
         return {ch for c in json.load(f) for ch in c.get("chapters", [])}
 
 
+# Sections the BORING heuristic would drop but that carry the operative rule.
+# NRS 200.364 is titled "Definitions.", so the heuristic binned it - and that
+# section is where the ages live: statutory sexual seduction is defined there as
+# an act by a person 18 or older with a person who is 14 or 15 AND who is at
+# least 4 years younger. A reader asking about this got the penalty statute and
+# missed the element that decides the answer. For a question that serious, the
+# definition has to be readable.
+MUST_KEEP = {
+    "NRS 200.364",   # defines statutory sexual seduction, incl. the 4-year gap
+}
+
+
 def user_facing(sec: dict, text_chapters: set) -> bool:
     if sec.get("status") == "repealed":
         return False
     if "effective" in sec and not sec["effective"].get("isCurrent", True):
         return False  # pending version, not the law today
+    if sec.get("citation") in MUST_KEEP:
+        return len(sec.get("text", "")) >= 200
     if BORING.match(sec.get("heading", "")):
         return False
     if sec.get("chapter") not in text_chapters:

@@ -56,6 +56,11 @@ type Concept = {
   colloquial: string[];
   statutory: string[];
   chapters: string[];
+  // Sections that MUST surface when this topic comes up, named outright.
+  // Ranking cannot find NRS 200.364 on its own - its heading is the single
+  // word "Definitions." so it matches nothing anybody types - yet it holds the
+  // element that decides the answer. Some sections have to be pinned.
+  pin?: string[];
 };
 const CONCEPTS = concepts as Concept[];
 
@@ -199,6 +204,7 @@ function flat(s: string): string {
 function expand(tokens: string[], raw: string) {
   const terms = new Set<string>();
   const chapters = new Set<string>();
+  const pins = new Set<string>();
   const q = raw.toLowerCase();
   const stems = tokens.map(stem).filter((s) => s.length >= 3);
 
@@ -223,8 +229,9 @@ function expand(tokens: string[], raw: string) {
     // "all" and "vehicle" appear all over the code. The phrase is the signal.
     for (const phrase of c.statutory) terms.add(flat(phrase));
     for (const ch of c.chapters) chapters.add(ch);
+    for (const cite of c.pin ?? []) pins.add(cite);
   }
-  return { terms: [...terms], chapters };
+  return { terms: [...terms], chapters, pins };
 }
 
 // Lowercased and flattened copies of every string the scorer reads. Without
@@ -321,7 +328,7 @@ function search(query: string): { hits: Section[]; total: number } {
 
   const tokens = tokenize(query);
   if (!tokens.length) return { hits: [], total: 0 };
-  const { terms, chapters } = expand(tokens, query);
+  const { terms, chapters, pins } = expand(tokens, query);
   const { sections: lc, chapters: lcChapter, df } = cached();
   const N = SECTIONS.length;
 
@@ -363,6 +370,9 @@ function search(query: string): { hits: Section[]; total: number } {
     // through someone's property" ranked a tax-abatement statute above
     // NRS 207.200 Unlawful trespass on the strength of "property" alone.
     if (score > 0 && chapters.has(s.ch)) score += 20;
+    // Pinned sections clear the field. Without this the definition that sets
+    // the ages sits below a statute about forensic evidence kits.
+    if (pins.has(s.c)) score += 40;
 
     if (ADMIN.test(s.h)) score -= 6;         // administers the law, does not state it
     if (s.r) score -= 20;                    // repealed, bury it
