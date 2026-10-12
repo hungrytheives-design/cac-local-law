@@ -997,8 +997,10 @@ function About({ onBack }: { onBack: () => void }) {
 const CITE_RE =
   /\((?:\s*NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*\s*[,;]?\s*)+\)|NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*/g;
 const ONE_CITE = /NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*/g;
+// Emphasis spans and citations, matched together so neither splits the other.
+const RICH = /\*\*([^*\n]+)\*\*|NRS\s+\d+[A-Z]?\.\d+[A-Za-z]*/g;
 
-type Seg = { t: 'text' | 'cite'; v: string };
+type Seg = { t: 'text' | 'cite' | 'bold'; v: string };
 
 function segments(raw: string): Seg[] {
   // Drop the brackets first, keeping one space in front, so a sentence ending
@@ -1018,12 +1020,24 @@ function segments(raw: string): Seg[] {
     .replace(/\s+-\s+(?=[A-Z])/g, '\n- ')
     .trim();
 
+  // Citations and **emphasis** in one pass. The whole lead sentence used to be
+  // bold, which emphasises nothing; the model now marks the few words the
+  // answer actually turns on and only those are heavy.
   const out: Seg[] = [];
   let last = 0;
-  for (const m of text.matchAll(ONE_CITE)) {
+  let bolds = 0;
+  for (const m of text.matchAll(RICH)) {
     const at = m.index ?? 0;
     if (at > last) out.push({ t: 'text', v: text.slice(last, at) });
-    out.push({ t: 'cite', v: m[0].replace(/\s+/g, ' ').trim() });
+    // Hard cap. Asking the model nicely got "No" emphasised correctly and then
+    // four bullet lead-ins emphasised too, which is most of the way back to
+    // everything being bold. Past three spans the rest render as plain text, so
+    // the look holds no matter how the model behaves.
+    if (m[1] !== undefined) {
+      out.push({ t: bolds < 3 ? 'bold' : 'text', v: m[1] });
+      bolds++;
+    }
+    else out.push({ t: 'cite', v: m[0].replace(/\s+/g, ' ').trim() });
     last = at + m[0].length;
   }
   if (last < text.length) out.push({ t: 'text', v: text.slice(last) });
@@ -1044,6 +1058,10 @@ function Inline({
       {segments(text).map((seg, i) =>
         seg.t === 'text' ? (
           <Text key={i}>{seg.v}</Text>
+        ) : seg.t === 'bold' ? (
+          <Text key={i} style={styles.strong}>
+            {seg.v}
+          </Text>
         ) : (
           <Text
             key={i}
@@ -1430,8 +1448,10 @@ const styles = StyleSheet.create({
   },
   answerLead: {
     color: C.ink, fontSize: T.lg, lineHeight: 26, fontFamily: F.read,
-    fontWeight: '600', marginBottom: 12,
+    marginBottom: 14,
   },
+  // Emphasis is carried by the few marked words, not by the whole sentence.
+  strong: { fontWeight: '700', color: C.accentDeep },
   answerText: {
     flex: 1, color: C.ink, fontSize: T.base, lineHeight: 22, fontFamily: F.read,
   },

@@ -181,6 +181,17 @@ function answerMessages(
         'do not repeat it. Say what it means. "Must be on or astride the seat"',
         'becomes "has to be sitting on the seat".',
         '',
+        'EMPHASIS. Wrap only the decisive words in **double asterisks**: the',
+        'yes or no, the condition the answer hinges on, and the ages or numbers',
+        'that matter. Three or four short spans in the whole answer, never a',
+        'whole sentence.',
+        'Example: "**No**, not alone. A licensed driver who is **at least 21**',
+        'has to be sitting next to you."',
+        'Never emphasise a label or a lead-in. "**Bottom line:**",',
+        '"**Important:**" and "**Note:**" are wrong, and so is writing a label',
+        'at all. Emphasise words that carry meaning inside the sentence.',
+        'Do not add a closing summary paragraph; the first line already is one.',
+        '',
         'FORMAT, followed exactly:',
         'Line 1 is a single plain sentence that answers the question directly.',
         'If the thing they described is not allowed, it starts with "No".',
@@ -327,7 +338,7 @@ function clean(raw: string): string | null {
     .split(/(?<=[.!?])\s+/)
     .filter(
       (sent) =>
-        !/^\s*(?:you should\b|you may need to\b|you can pursue\b|you would need to consult\b)/i.test(sent)
+        !/^\s*(?:you should\b|you'?d need to\b|you would need to\b|you may need to\b|you can pursue\b|to ride legally\b)/i.test(sent)
     )
     .join(' ');
 
