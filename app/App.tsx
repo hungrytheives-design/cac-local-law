@@ -114,11 +114,15 @@ const C = {
 // app the register of a reference book rather than a settings screen. The sans
 // carries chrome: labels, counts, buttons. Georgia ships on iOS and Android;
 // the fallbacks matter for web.
-const F = Platform.select({
-  ios: { read: 'Georgia', ui: 'System' },
-  android: { read: 'serif', ui: 'sans-serif' },
-  default: { read: 'Georgia, "Times New Roman", serif', ui: 'system-ui, sans-serif' },
-}) as { read: string; ui: string };
+// ONE family. Two were fighting each other inside the same card - a serif
+// sentence with a sans-serif citation chip sitting in the middle of it looked
+// like two apps spliced together. Weight and size carry the hierarchy instead.
+const SERIF = Platform.select({
+  ios: 'Georgia',
+  android: 'serif',
+  default: 'Georgia, "Times New Roman", serif',
+}) as string;
+const F = { read: SERIF, ui: SERIF };
 
 // One scale instead of the twelve ad-hoc sizes this had grown. Everything on
 // screen is one of these.
@@ -127,11 +131,14 @@ const T = { xs: 11, sm: 13, base: 15, lg: 17, xl: 20, xxl: 26 };
 // Situations, not keywords. The app's whole pitch is "describe your plan", so
 // the examples have to look like plans. Every one was checked against the real
 // index first: each returns a correct statute in the top 3.
+// Three, not four, and chosen so the demo shows three different SHAPES of
+// answer: a flat no, a yes with conditions, and a yes that depends on gear.
+// "drive my dad's boat on Lake Mead" was cut because the answer buried the
+// yes/no under the boater-education detail.
 const EXAMPLES = [
-  'ride my dirtbike on the street',
-  'drive my dad’s boat on Lake Mead',
-  'ride my ebike to school',
-  'put my little brother in the front seat',
+  'ride my dirtbike on the street',     // No
+  'can i get a job at 15',              // Yes, with limits
+  'ride my ebike at night',             // Yes, if it has lights
 ];
 
 // How many results a person will actually look at. The index happily returns
@@ -628,6 +635,8 @@ export default function App() {
               question={asked}
               hits={hits}
               activity={hero}
+              signals={signals}
+              age={age}
               onOpen={(citation, url) => {
                 // Prefer our own reader so the statute opens in the app with
                 // its in-force flags; fall back to the official site only if
@@ -728,7 +737,7 @@ function Explain({ section, body }: { section: Section; body: string }) {
       }
     } catch (e: any) {
       setWhy(
-        e?.message === 'rate-limited'
+        e?.message === 'local-cap'
           ? "Today's free requests are used up. The statute text below is unaffected."
           : 'Could not reach the service. The statute text below is unaffected.'
       );
@@ -1107,9 +1116,16 @@ function sentences(text: string): string[] {
 // in. The model returns a tidy list about half the time and a wall of prose the
 // rest, and nobody reads the wall. When there are no dashes to work with, the
 // prose after the first sentence is split into bullets itself.
-function structure(text: string): { lead: string; bullets: string[] } {
+function structure(raw0: string): { lead: string; bullets: string[] } {
   const marked: string[] = [];
   const prose: string[] = [];
+
+  // Inline " - Item" separators become real lines FIRST. This used to live in
+  // segments(), which runs per fragment AFTER this function has already split
+  // on newlines - so an answer written on one line kept its literal dashes and
+  // the first bullet rendered as "- You must have a licence" with no dot while
+  // every later one had one.
+  const text = raw0.replace(/\s+-\s+(?=[A-Z])/g, '\n- ');
 
   for (const raw of text.split('\n')) {
     const line = raw.trim();
@@ -1161,20 +1177,41 @@ function Cited({
 //
 // Degrades all the way down: no key, no network or no quota, and the curated
 // rules render on their own exactly as they did before any of this existed.
+// The rules the reader's own words run into. The amber banner and the written
+// answer BOTH read this, so they cannot contradict each other - which they did
+// on screen: the banner said "You cannot ride on a paved road" directly above
+// an answer opening "You can ride your dirt bike on some streets".
+function conflictsFor(
+  activity: Activity | null,
+  signals: Set<string>,
+  age: number | null
+): Rule[] {
+  if (!activity) return [];
+  const tooYoung = (r: Rule) =>
+    r.minAge !== undefined && age !== null && age < r.minAge;
+  return activity.rules.filter(
+    (r) => r.brokenBy?.some((b) => signals.has(b)) || tooYoung(r)
+  );
+}
+
 function Answer({
   question,
   hits,
   activity,
+  signals,
+  age,
   onOpen,
 }: {
   question: string;
   hits: Section[];
   activity: Activity | null;
+  signals: Set<string>;
+  age: number | null;
   onOpen: (citation: string, url: string) => void;
 }) {
   const [text, setText] = useState('');
   const [state, setState] = useState<
-    'idle' | 'loading' | 'done' | 'greeting' | 'fallback'
+    'idle' | 'loading' | 'streaming' | 'done' | 'greeting' | 'fallback'
   >('idle');
   const abort = useRef<AbortController | null>(null);
 
@@ -1212,7 +1249,7 @@ function Answer({
     // rather than cutting it off at the first slow model, which is exactly what
     // a 25-second limit did. If the whole chain fails we say so, with the
     // statutes still one tap away.
-    const bail = setTimeout(() => ctrl.abort(), 70000);
+    const bail = setTimeout(() => ctrl.abort(), 120000);
 
     const sources: Source[] = hits
       .filter((h) => h.t)
@@ -1223,7 +1260,18 @@ function Answer({
       citation: r.citation,
     }));
 
-    answerQuestion(question, sources, curated, ctrl.signal)
+    const clash = conflictsFor(activity, signals, age).map((r) => ({
+      text: r.text,
+      citation: r.citation,
+    }));
+
+    answerQuestion(question, sources, curated, clash, ctrl.signal, (soFar) => {
+      // First token ends the spinner and the words start appearing. The
+      // structurer handles half-finished bullets the same as finished ones.
+      if (ctrl.signal.aborted) return;
+      setText(soFar);
+      setState('streaming');
+    })
       .then((out) => {
         if (ctrl.signal.aborted) {
           setState('fallback');
@@ -1236,14 +1284,17 @@ function Answer({
           setState('fallback');
         }
       })
-      .catch(() => setState('fallback'))
+      .catch(() =>
+        // Text already on screen beats an error message that erases it.
+        setState((prev) => (prev === 'streaming' && text ? 'done' : 'fallback'))
+      )
       .finally(() => clearTimeout(bail));
 
     return () => {
       clearTimeout(bail);
       ctrl.abort();
     };
-  }, [question, hits, activity]);
+  }, [question, hits, activity, signals, age]);
 
   if (state === 'loading') {
     return (
@@ -1260,6 +1311,15 @@ function Answer({
     return (
       <View style={styles.answer}>
         <Text style={styles.answerText}>{text}</Text>
+      </View>
+    );
+  }
+
+  if (state === 'streaming') {
+    return (
+      <View style={styles.answer}>
+        <Cited text={text} onOpen={(c) => onOpen(c, '')} />
+        <Text style={styles.caret}>▌</Text>
       </View>
     );
   }
@@ -1309,11 +1369,9 @@ function Verdict({
   signals: Set<string>;
   age: number | null;
 }) {
+  const conflicts = conflictsFor(activity, signals, age);
   const tooYoung = (r: Rule) =>
     r.minAge !== undefined && age !== null && age < r.minAge;
-  const conflicts = activity.rules.filter(
-    (r) => r.brokenBy?.some((b) => signals.has(b)) || tooYoung(r)
-  );
   if (!conflicts.length) return null;
 
   return (
@@ -1543,6 +1601,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   answerWaitText: { color: C.muted, fontSize: T.base, fontFamily: F.ui },
+  caret: { color: C.accent, fontSize: T.base, marginTop: 2 },
 
   explain: { marginTop: 18 },
   explainBtn: {

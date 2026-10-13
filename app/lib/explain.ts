@@ -56,13 +56,23 @@ const MODEL = process.env.EXPO_PUBLIC_OPENROUTER_MODEL ?? 'liquid/lfm-2.5-2.6b:f
 const MODELS = [
   'google/gemma-4-31b-it:free',      // instruction-tuned, not a reasoner
   'google/gemma-4-26b-a4b-it:free',
-  'apodex/apodex-1.1-mini:free',
-  'liquid/lfm-2.5-2.6b:free',        // correct but glacial, genuine last resort
+  // lfm sits here, not last. It answers - measured first token at 1.3s over a
+  // stream - and the only thing that ever made it look slow was oversized
+  // input. apodex is deliberately NOT in this list: it returns HTTP 200 and
+  // then emits reasoning only, which exclude:true discards, so it streams
+  // nothing at all and costs a full watchdog timeout before the chain moves on.
+  'liquid/lfm-2.5-2.6b:free',
   MODEL,
 ].filter((m, i, a) => m && m.trim().endsWith(':free') && a.indexOf(m) === i);
 
-// Per attempt. Past this the next model is likelier to answer than this one.
-const ATTEMPT_MS = 18000;
+// Two clocks, because "slow" and "stuck" are different problems. A model gets
+// FIRST_TOKEN_MS to say anything at all; after that it only has to keep
+// talking, with IDLE_MS between tokens. A fixed total budget killed the one
+// model that worked: streaming showed first token at 2.3s and completion at
+// 2.9s on a focused payload, but an 18-second total cap still aborted it on
+// longer answers that were streaming along perfectly well.
+const FIRST_TOKEN_MS = 14000;
+const IDLE_MS = 12000;
 
 const FREE_ONLY = MODELS.length > 0;
 
@@ -95,6 +105,9 @@ export type Source = { citation: string; heading: string; text: string };
 
 /** Hand-written, human-verified rules for the topic, when we have them. */
 export type CuratedRule = { text: string; citation: string };
+
+/** Rules the reader's own description already runs into, if any. */
+export type Conflict = { text: string; citation: string };
 
 // A greeting is not a legal question, and burning one of 50 daily requests to
 // have a model say hello is waste. These get answered locally and instantly.
@@ -199,7 +212,8 @@ function relevantSlice(text: string, question: string, max: number): string {
 function answerMessages(
   question: string,
   sources: Source[],
-  curated: CuratedRule[]
+  curated: CuratedRule[],
+  conflicts: Conflict[] = []
 ) {
   const verified = curated.length
     ? 'HAND-CHECKED RULES for this topic, written by a person. Prefer these:\n' +
@@ -240,7 +254,16 @@ function answerMessages(
     },
     {
       role: 'user',
-      content: `Question: ${question}\n\n${verified}STATUTE TEXT:\n\n${corpus}`,
+      content:
+        `Question: ${question}\n\n` +
+        (conflicts.length
+          ? 'ALREADY ESTABLISHED, and you must agree with it. What this person\n' +
+            'described runs into these rules, so your first sentence has to say\n' +
+            'NO or "not as described". Do not open by saying they can do it:\n' +
+            conflicts.map((c) => `- ${c.text} (${c.citation})`).join('\n') +
+            '\n\n'
+          : '') +
+        `${verified}STATUTE TEXT:\n\n${corpus}`,
     },
   ];
 }
@@ -258,16 +281,18 @@ export async function answerQuestion(
   question: string,
   sources: Source[],
   curated: CuratedRule[] = [],
-  signal?: AbortSignal
+  conflicts: Conflict[] = [],
+  signal?: AbortSignal,
+  onToken?: (soFar: string) => void
 ): Promise<string | null> {
   if (!explainAvailable()) return null;
   if (!sources.length && !curated.length) return null;
 
-  const key = question.trim().toLowerCase();
+  const key = question.trim().toLowerCase() + '|' + conflicts.map((c) => c.citation).join(',');
   const hit = ANSWERS.get(key);
   if (hit) return hit;
 
-  const body = answerMessages(question, sources, curated);
+  const body = answerMessages(question, sources, curated, conflicts);
   let out: string | null = null;
 
   for (const model of MODELS) {
@@ -276,20 +301,31 @@ export async function answerQuestion(
     // Each attempt gets its own clock, linked to the caller's abort so closing
     // the screen still cancels everything.
     const ctrl = new AbortController();
-    const stop = setTimeout(() => ctrl.abort(), ATTEMPT_MS);
     const relay = () => ctrl.abort();
     signal?.addEventListener('abort', relay);
 
+    // Watchdog: fires only when nothing has arrived for a while.
+    let last = Date.now();
+    let seen = false;
+    const watch = setInterval(() => {
+      const quiet = Date.now() - last;
+      if (quiet > (seen ? IDLE_MS : FIRST_TOKEN_MS)) ctrl.abort();
+    }, 1000);
+
     try {
-      out = await post(body, model, ctrl.signal);
+      out = await post(body, model, ctrl.signal, (soFar) => {
+        last = Date.now();
+        seen = true;
+        onToken?.(soFar);
+      });
       if (out) break;
     } catch (e: any) {
-      // Out of daily quota is the one failure another model cannot fix.
-      if (e?.message === 'rate-limited') throw e;
+      // Our own daily cap is the one failure another model cannot fix.
+      if (e?.message === 'local-cap') throw e;
       // Everything else - 429 from a busy provider, a reasoner that ran out of
       // budget, this model simply being too slow - means try the next one.
     } finally {
-      clearTimeout(stop);
+      clearInterval(watch);
       signal?.removeEventListener('abort', relay);
     }
   }
@@ -307,12 +343,18 @@ export async function explain(
   return post(messages(question, sources), MODELS[0] ?? MODEL, signal);
 }
 
+// Streaming. The answer arrives a few words at a time instead of after a long
+// blank pause, which is the difference between "is this broken?" and watching
+// it think. onToken is optional: the non-streaming path is unchanged for the
+// per-statute explainer.
 async function post(
   body: { role: string; content: string }[],
   model: string,
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  onToken?: (soFar: string) => void
 ): Promise<string | null> {
-  if (!quotaLeft()) throw new Error('rate-limited');
+  // OUR cap, which no other model can get around.
+  if (!quotaLeft()) throw new Error('local-cap');
 
   const gap = Date.now() - lastCall;
   if (gap < MIN_GAP_MS) {
@@ -331,6 +373,7 @@ async function post(
     body: JSON.stringify({
       model,
       messages: body,
+      stream: !!onToken,
       // Low temperature: this is a rewriting job, not a creative one.
       temperature: 0.1,
       // Every free model on OpenRouter today is a reasoner: the first live test
@@ -355,7 +398,53 @@ async function post(
   if (!res.ok) {
     // 429 is the free-tier daily cap. Everything else is equally non-fatal:
     // the caller falls back to the verbatim bullets it already has.
-    throw new Error(res.status === 429 ? 'rate-limited' : `http ${res.status}`);
+    // A 429 here is a BUSY PROVIDER, not our quota - a different thing with the
+    // same status code. Conflating the two made one busy Gemma kill the whole
+    // chain before it ever reached a model that would have answered.
+    throw new Error(res.status === 429 ? 'busy' : `http ${res.status}`);
+  }
+
+  if (onToken && res.body) {
+    const reader = res.body.getReader();
+    const decode = new TextDecoder();
+    let buf = '';
+    let text = '';
+    let finish: string | null = null;
+
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decode.decode(value, { stream: true });
+
+      // Server-sent events: one JSON object per "data:" line.
+      let nl;
+      while ((nl = buf.indexOf('\n')) !== -1) {
+        const line = buf.slice(0, nl).trim();
+        buf = buf.slice(nl + 1);
+        if (!line.startsWith('data:')) continue;
+        const payload = line.slice(5).trim();
+        if (payload === '[DONE]') continue;
+        try {
+          const j = JSON.parse(payload);
+          const c = j?.choices?.[0];
+          if (c?.finish_reason) finish = c.finish_reason;
+          const piece = c?.delta?.content;
+          if (piece) {
+            text += piece;
+            onToken(text);
+          }
+        } catch {
+          // A partial frame; the next chunk completes it.
+        }
+      }
+    }
+
+    if (finish === 'length' && !text) throw new Error('truncated');
+    const kept = clean(text);
+    if (__DEV__ && !kept) {
+      console.log(`[sage] ${model}: streamed ${text.length} chars, clean() kept none`);
+    }
+    return kept;
   }
 
   const data = await res.json();
@@ -424,9 +513,20 @@ function clean(raw: string): string | null {
   // formatting instruction is the prompt leaking, not an answer.
   t = t
     .split('\n')
-    .filter((l) => !/\b(?:double asterisks|asterisks around|bullets? each starting|NRS 484B\.157\)?\s*$)/i.test(l))
+    .filter(
+      (l) =>
+        !/\b(?:double asterisks|asterisks around|bullets? each starting|NRS 484B\.157\)?\s*$)/i.test(l) &&
+        // Models narrate their own formatting choices: "Deciding words:
+        // *unpaved county roads*, *registration*". That is working notes, not
+        // an answer, and it appeared at the end of a finished bullet list.
+        !/^\s*\*{0,2}(?:deciding|key|emphasi[sz]ed?|important)\s+words?\b/i.test(l)
+    )
     .join('\n')
     .trim();
+
+  // Single-asterisk italics are not rendered, so they arrive as literal
+  // characters mid-sentence. Double asterisks are kept: those drive emphasis.
+  t = t.replace(/(^|[^*])\*(?!\*)([^*\n]+)\*(?!\*)/g, '$1$2');
 
   if (!t) return null;
   if (THINKING.test(t)) return null;
