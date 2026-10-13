@@ -1206,6 +1206,14 @@ function Answer({
     setState('loading');
     setText('');
 
+    // A hanging spinner is the worst outcome available: the reader cannot tell
+    // broken from slow. This is the outer bound only - explain.ts walks a chain
+    // of models with 18 seconds each, so this has to leave room for that walk
+    // rather than cutting it off at the first slow model, which is exactly what
+    // a 25-second limit did. If the whole chain fails we say so, with the
+    // statutes still one tap away.
+    const bail = setTimeout(() => ctrl.abort(), 70000);
+
     const sources: Source[] = hits
       .filter((h) => h.t)
       .slice(0, 4)
@@ -1217,7 +1225,10 @@ function Answer({
 
     answerQuestion(question, sources, curated, ctrl.signal)
       .then((out) => {
-        if (ctrl.signal.aborted) return;
+        if (ctrl.signal.aborted) {
+          setState('fallback');
+          return;
+        }
         if (out) {
           setText(out);
           setState('done');
@@ -1225,11 +1236,13 @@ function Answer({
           setState('fallback');
         }
       })
-      .catch(() => {
-        if (!ctrl.signal.aborted) setState('fallback');
-      });
+      .catch(() => setState('fallback'))
+      .finally(() => clearTimeout(bail));
 
-    return () => ctrl.abort();
+    return () => {
+      clearTimeout(bail);
+      ctrl.abort();
+    };
   }, [question, hits, activity]);
 
   if (state === 'loading') {
@@ -1264,6 +1277,24 @@ function Answer({
 
   // Fallback: the hand-written rules, which is what the app showed before.
   if (activity) return <Curated activity={activity} onOpen={onOpen} />;
+
+  // And when there are no hand-written rules either, SAY SO. This returned
+  // null before, so a failed answer looked identical to a working app with
+  // nothing to say: the question vanished and the reader got a bare button.
+  // The statutes were found and sitting right there the whole time.
+  if (hits.length) {
+    return (
+      <View style={styles.answer}>
+        <Text style={styles.answerLead}>
+          I found the Nevada laws that cover this, but could not write them up
+          just now.
+        </Text>
+        <Text style={styles.answerFoot}>
+          Open the list below to read them yourself, or ask again in a moment.
+        </Text>
+      </View>
+    );
+  }
   return null;
 }
 

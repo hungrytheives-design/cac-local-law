@@ -43,7 +43,28 @@ const MODEL = process.env.EXPO_PUBLIC_OPENROUTER_MODEL ?? 'liquid/lfm-2.5-2.6b:f
 // The real backstop is not in this file: an OpenRouter account with no payment
 // method on it cannot be charged at all. Keep it that way.
 
-const FREE_ONLY = MODEL.trim().endsWith(':free');
+// A chain, not a bet. Free-tier models are volatile: on one run both Gemmas
+// returned 429 because the provider was busy, apodex burned its budget
+// reasoning and returned nothing, and lfm answered correctly in 109 SECONDS.
+// Any single choice is a coin flip, so try them in order and take the first
+// that actually answers. The env var, when set, goes first.
+// Order matters more than the list. Instruction-tuned models first, because
+// they answer in seconds; the reasoners last, because lfm took 152 SECONDS on
+// a hard question and then echoed the formatting instruction into its own
+// output. The env var is an override, appended rather than promoted, so
+// pointing it at a slow model cannot put that model in front again.
+const MODELS = [
+  'google/gemma-4-31b-it:free',      // instruction-tuned, not a reasoner
+  'google/gemma-4-26b-a4b-it:free',
+  'apodex/apodex-1.1-mini:free',
+  'liquid/lfm-2.5-2.6b:free',        // correct but glacial, genuine last resort
+  MODEL,
+].filter((m, i, a) => m && m.trim().endsWith(':free') && a.indexOf(m) === i);
+
+// Per attempt. Past this the next model is likelier to answer than this one.
+const ATTEMPT_MS = 18000;
+
+const FREE_ONLY = MODELS.length > 0;
 
 const DAILY_CAP = 40;        // free tier allows 50; leave headroom
 const MIN_GAP_MS = 1500;     // free tier allows 20/min
@@ -64,7 +85,7 @@ function quotaLeft(): boolean {
 /** Why the feature is off, or null when it is on. For humans, not for logic. */
 export function explainDisabledReason(): string | null {
   if (!KEY) return 'no API key configured';
-  if (!FREE_ONLY) return `${MODEL} is not a :free model, so it is blocked`;
+  if (!FREE_ONLY) return `no :free model configured (${MODEL} is blocked)`;
   return null;
 }
 
@@ -129,6 +150,52 @@ function messages(question: string, sources: Source[]) {
 // and, when the topic is one of the curated ones, the hand-verified rules too,
 // because those were checked by a person and are better than anything a model
 // would infer from raw statute prose.
+// Send the part of the statute that is actually about the question.
+//
+// Slicing from the start is wrong for long sections. NRS 200.364 is a list of
+// definitions, and "statutory sexual seduction" - the one that decides a
+// question about ages - sits well past the first 700 characters. The model was
+// handed definitions of "offense involving a pupil" and told to answer about
+// age of consent, so it correctly said it could not.
+//
+// Instead: score windows by how many of the asker's words they contain and send
+// the best one, snapped outward to sentence boundaries so it does not open
+// mid-clause.
+function relevantSlice(text: string, question: string, max: number): string {
+  if (text.length <= max) return text;
+
+  const words = (question.toLowerCase().match(/[a-z]{4,}/g) ?? []).filter(
+    (w, i, a) => a.indexOf(w) === i
+  );
+  if (!words.length) return text.slice(0, max);
+
+  const lower = text.toLowerCase();
+  const step = Math.max(120, Math.floor(max / 6));
+  let bestAt = 0;
+  let bestScore = -1;
+
+  for (let at = 0; at + 1 <= text.length; at += step) {
+    const window = lower.slice(at, at + max);
+    let score = 0;
+    for (const w of words) if (window.includes(w)) score++;
+    if (score > bestScore) {
+      bestScore = score;
+      bestAt = at;
+    }
+  }
+
+  let start = bestAt;
+  let end = Math.min(text.length, bestAt + max);
+  // Snap to a sentence start so the excerpt does not begin mid-clause.
+  const back = text.lastIndexOf('. ', start);
+  if (start > 0 && back > start - 220 && back !== -1) start = back + 2;
+  const fwd = text.indexOf('. ', end);
+  if (fwd !== -1 && fwd < end + 220) end = fwd + 1;
+
+  const cut = text.slice(start, end).trim();
+  return (start > 0 ? '…' : '') + cut + (end < text.length ? '…' : '');
+}
+
 function answerMessages(
   question: string,
   sources: Source[],
@@ -140,68 +207,35 @@ function answerMessages(
       '\n\n'
     : '';
 
+  // Two sections at 1200 characters, not four at 2200. Every free model here
+  // is a reasoner, and reasoning cost scales with how much you hand it: four
+  // long statutes on a sensitive question burned the whole budget before an
+  // answer existed. The pinned sections rank first, so the two that arrive are
+  // the two that matter.
   const corpus = sources
-    .map((s) => `${s.citation} - ${s.heading}\n${s.text.slice(0, 2200)}`)
+    .slice(0, 2)
+    .map((s) => `${s.citation} - ${s.heading}\n${relevantSlice(s.text, question, 1200)}`)
     .join('\n\n---\n\n');
 
   return [
     {
       role: 'system',
       content: [
-        'You are Sage. You answer questions about Nevada law for teenagers,',
-        'in plain English, using only material you are given.',
+        'You explain Nevada law to a 15 year old, in plain English.',
         '',
-        'RULES, in order of importance:',
-        '1. Use ONLY the rules and statute text in the user message. You have no',
-        '   other knowledge of Nevada law. Never add a rule, number, age, fee or',
-        '   deadline that is not written there.',
-        '2. If what you were given does not answer the question, say so plainly',
-        '   in one sentence and suggest what to search instead. Do not guess.',
-        '3. Cite the NRS number for every factual point, like (NRS 484B.157).',
-        '   Never widen who a rule covers. If a section punishes a person who',
-        '   induces a child to miss school, it does NOT say the child is',
-        '   punished. Say who the section actually names and no one else.',
-        '4. Answer the question that was actually asked. If they said they are a',
-        '   certain age or doing something specific, speak to that.',
-        '5. Not legal advice. Say what the law requires; do not tell them what to',
-        '   do or predict what will happen to them.',
-        '6. Never refer to the material you were given. Do not write "the',
-        '   provided statutes", "the text provided", "the hand-check note" or',
-        '   anything like them. Say "Nevada law" or name the section instead.',
-        '   If nothing answers the question, write "Nevada law here does not',
-        '   answer that" - not "the provided statutes do not address it".',
-        '7. Do not tell the reader what to do. No "you should", no "you may need',
-        '   to", no suggesting court, forms or next steps. State what the law',
-        '   requires and stop. Telling someone to file in small claims court is',
-        '   legal advice and it is not yours to give.',
+        'Use ONLY the rules and statute text below. You know nothing else about',
+        'Nevada law. Never state an age, number, fee or deadline that is not',
+        'written there. Never widen who a rule covers: if a section punishes an',
+        'adult for doing something to a minor, it does not punish the minor.',
+        'If the text does not answer the question, say so in one sentence.',
         '',
-        'VOCABULARY. Write for a fifteen year old. Short words, short sentences,',
-        'the active voice. If a statute uses a word people do not say out loud -',
-        'astride, thereof, shall, herein, prima facie, ordinance, promulgate -',
-        'do not repeat it. Say what it means. "Must be on or astride the seat"',
-        'becomes "has to be sitting on the seat".',
+        'Cite the NRS number for each fact, like (NRS 484B.157).',
+        'Say what the law requires. Never tell the reader what to do.',
+        'Short words. Do not reuse legal words people never say out loud.',
         '',
-        'EMPHASIS. Wrap only the decisive words in **double asterisks**: the',
-        'yes or no, the condition the answer hinges on, and the ages or numbers',
-        'that matter. Three or four short spans in the whole answer, never a',
-        'whole sentence.',
-        'Example: "**No**, not alone. A licensed driver who is **at least 21**',
-        'has to be sitting next to you."',
-        'Never emphasise a label or a lead-in. "**Bottom line:**",',
-        '"**Important:**" and "**Note:**" are wrong, and so is writing a label',
-        'at all. Emphasise words that carry meaning inside the sentence.',
-        'Do not add a closing summary paragraph; the first line already is one.',
-        '',
-        'FORMAT, followed exactly:',
-        'Line 1 is a single plain sentence that answers the question directly.',
-        'If the thing they described is not allowed, it starts with "No".',
-        'If it is allowed, it starts with "Yes".',
-        'Otherwise say what it depends on. Never write "Yes" in front of a',
-        'sentence that goes on to say they cannot do it.',
-        'It is not optional and it never starts with a bullet.',
-        'Then a blank line, then up to 4 bullets, one sentence each.',
-        'Put each citation once, at the end of its sentence. Never repeat a',
-        'citation twice in the same sentence. No sign-off.',
+        'Write one plain sentence answering the question, then up to 4 short',
+        'bullets each starting with "- ". Put **double asterisks** around only',
+        'the two or three words that decide the answer.',
       ].join('\n'),
     },
     {
@@ -233,7 +267,33 @@ export async function answerQuestion(
   const hit = ANSWERS.get(key);
   if (hit) return hit;
 
-  const out = await post(answerMessages(question, sources, curated), signal);
+  const body = answerMessages(question, sources, curated);
+  let out: string | null = null;
+
+  for (const model of MODELS) {
+    if (signal?.aborted) break;
+
+    // Each attempt gets its own clock, linked to the caller's abort so closing
+    // the screen still cancels everything.
+    const ctrl = new AbortController();
+    const stop = setTimeout(() => ctrl.abort(), ATTEMPT_MS);
+    const relay = () => ctrl.abort();
+    signal?.addEventListener('abort', relay);
+
+    try {
+      out = await post(body, model, ctrl.signal);
+      if (out) break;
+    } catch (e: any) {
+      // Out of daily quota is the one failure another model cannot fix.
+      if (e?.message === 'rate-limited') throw e;
+      // Everything else - 429 from a busy provider, a reasoner that ran out of
+      // budget, this model simply being too slow - means try the next one.
+    } finally {
+      clearTimeout(stop);
+      signal?.removeEventListener('abort', relay);
+    }
+  }
+
   if (out) ANSWERS.set(key, out);
   return out;
 }
@@ -244,11 +304,12 @@ export async function explain(
   signal?: AbortSignal
 ): Promise<string | null> {
   if (!explainAvailable() || !sources.length) return null;
-  return post(messages(question, sources), signal);
+  return post(messages(question, sources), MODELS[0] ?? MODEL, signal);
 }
 
 async function post(
   body: { role: string; content: string }[],
+  model: string,
   signal?: AbortSignal
 ): Promise<string | null> {
   if (!quotaLeft()) throw new Error('rate-limited');
@@ -268,7 +329,7 @@ async function post(
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: MODEL,
+      model,
       messages: body,
       // Low temperature: this is a rewriting job, not a creative one.
       temperature: 0.1,
@@ -277,7 +338,11 @@ async function post(
       // finish_reason "length". They need room to finish thinking BEFORE the
       // answer exists, so the budget is generous. Tokens are free here; the
       // only cost is latency.
-      max_tokens: 2000,
+      // Raising this to 4000 did not fix the empty answer, it just turned a
+      // blank card into a 90-second hang. The budget was never the lever: the
+      // fix is giving a reasoning model LESS to chew on, which is why sources
+      // are capped hard below. 2500 is headroom, not an invitation.
+      max_tokens: 2500,
       reasoning: { effort: 'low', exclude: true },
       // Refuse to route anywhere that costs anything. If no provider can serve
       // this for free the request fails, which is the outcome we want.
@@ -294,7 +359,13 @@ async function post(
   }
 
   const data = await res.json();
-  const out = data?.choices?.[0]?.message?.content;
+  const choice = data?.choices?.[0];
+  const out = choice?.message?.content;
+
+  // Ran out of budget mid-thought. Distinguishable from "model said nothing
+  // useful", because the fix is different: send it less to chew on.
+  if (choice?.finish_reason === 'length' && !out) throw new Error('truncated');
+
   return typeof out === 'string' ? clean(out) : null;
 }
 
@@ -346,6 +417,16 @@ function clean(raw: string): string | null {
   // Revised Statutes 609.240 and 609.190". The citations are already inline and
   // every statute is listed under the answer, so it is pure noise.
   t = t.replace(/\n+\s*(?:source|sources|references?|citations?)\s*:.*$/is, '').trim();
+
+  // Small models echo the instructions back. One answer ended with "Double
+  // asterisks needed around the two or three words that decide the answer".
+  // Any line talking about asterisks, bullets or "the statutes provided" as a
+  // formatting instruction is the prompt leaking, not an answer.
+  t = t
+    .split('\n')
+    .filter((l) => !/\b(?:double asterisks|asterisks around|bullets? each starting|NRS 484B\.157\)?\s*$)/i.test(l))
+    .join('\n')
+    .trim();
 
   if (!t) return null;
   if (THINKING.test(t)) return null;
